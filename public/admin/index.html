@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="StarterApp">
+  <head>
+    <title>General Election 2017 Graphics</title>
+    <link href="/css/semantic.css" rel="stylesheet" >
+    <link href="/css/style.css" rel="stylesheet" >
+    <link href="/css/spectrum.css" rel="stylesheet" >
+
+    <link href="/css/fonts/open_sans.css" rel="stylesheet" type="text/css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body ng-controller="AppCtrl">
+
+    <header class="ui one column page grid">
+      <div class="column" id="brand">
+        <div class="ui eight column grid">
+            <div class="ui large header"><img src="../images/logo.jpg" /> General Election 2017 Graphics</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="ui page grid">
+      <aside class="ui four wide column">
+        <div class="ui fluid large vertical pointing menu red">
+          <a ng-repeat="section in menu" class="item" ng-href="#{{section.url}}" ng-class="{active:isActive(section.url)}" >
+            {{ section.name }}
+            <i ng-class="section.icon" class="icon" ></i>
+            {{ section.live }}
+          </a>
+        </div>
+      </aside>
+
+      <div class="ui twelve wide column" ng-view>
+      </div>
+    </div>
+
+    <!-- Semantic UI -->
+    <script src="/js/jquery.js"></script>
+    <script src="/js/semantic.js"></script>
+    <script src="/js/socket.io.js"></script>
+
+    <!-- Angular Dependencies -->
+    <script type="text/javascript" src="/js/libs/angular.min.js"></script>
+    <script type="text/javascript" src="/js/libs/angular-animate.min.js"></script>
+    <script type="text/javascript" src="/js/libs/angular-route.min.js"></script>
+    <script type="text/javascript" src="/js/libs/angular-aria.min.js"></script>
+
+    <!-- 3rd party angular libs -->
+    <script src="/js/angular-local-storage.js"></script>
+    <script src="/js/angular-semantic-ui.js"></script>
+    <script src="/js/ng-socket-io.js"></script>
+
+    <script src="/js/dashboard.js"></script>
+    <script src="/js/spectrum.js"></script>
+  </body>
+</html>
