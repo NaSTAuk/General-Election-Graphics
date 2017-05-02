@@ -1,0 +1,66 @@
+[
+  {
+    "Party_ID": "Con",
+    "Party_Name": "Conservative",
+    "Seats": 330,
+    "Seats_Percent": "50.77%",
+    "Votes": 11299609,
+    "Votes_Percent": "36.81%"
+  },
+  {
+    "Party_ID": "Lab",
+    "Party_Name": "Labour",
+    "Seats": 232,
+    "Seats_Percent": "35.69%",
+    "Votes": 9347273,
+    "Votes_Percent": "30.45%"
+  },
+  {
+    "Party_ID": "UKIP",
+    "Party_Name": "UKIP",
+    "Seats": 1,
+    "Seats_Percent": "0.15%",
+    "Votes": 3881099,
+    "Votes_Percent": "12.64%"
+  },
+  {
+    "Party_ID": "LD",
+    "Party_Name": "Liberal Democrat",
+    "Seats": 8,
+    "Seats_Percent": "1.23%",
+    "Votes": 2415916,
+    "Votes_Percent": "7.87%"
+  },
+  {
+    "Party_ID": "SNP",
+    "Party_Name": "Scottish National Party",
+    "Seats": 56,
+    "Seats_Percent": "8.62%",
+    "Votes": 1454436,
+    "Votes_Percent": "4.74%"
+  },
+  {
+    "Party_ID": "Green",
+    "Party_Name": "Green Party",
+    "Seats": 1,
+    "Seats_Percent": "0.15%",
+    "Votes": 1157630,
+    "Votes_Percent": "3.77%"
+  },
+  {
+    "Party_ID": "PC",
+    "Party_Name": "Plaid Cymru",
+    "Seats": 3,
+    "Seats_Percent": "0.46%",
+    "Votes": 181704,
+    "Votes_Percent": "0.59%"
+  },
+  {
+    "Party_ID": "Other",
+    "Party_Name": "Others",
+    "Seats": 19,
+    "Seats_Percent": "2.92%",
+    "Votes": 959858,
+    "Votes_Percent": "3.13%"
+  }
+]
