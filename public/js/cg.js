@@ -93,7 +93,7 @@ app.controller('scoringCtrl', ['$scope', '$interval', '$http', 'socket',
             }
           };
 
-          $http.get('https://roseslive.co.uk/score.json', config)
+          $http.get('data/score.json', config)
             .success(function(data) {
               if(isNaN(data.york) || isNaN(data.lancs)){
                 console.log("Roses live is giving us nonsense");
