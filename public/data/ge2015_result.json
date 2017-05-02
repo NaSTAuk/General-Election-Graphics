@@ -1,0 +1,3252 @@
+{
+"W07000049": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"W07000058": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"S14000001": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"S14000002": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"S14000058": {
+"constituencyDeclarationString": "SNP GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"S14000003": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000530": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000531": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000532": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"W07000043": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000533": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"S14000004": {
+"constituencyDeclarationString": "SNP HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"W07000057": {
+"constituencyDeclarationString": "PC HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "PC"
+},
+"S14000005": {
+"constituencyDeclarationString": "SNP GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000534": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000535": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000536": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000537": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000538": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"S14000006": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"S14000010": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"S14000048": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000539": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"S14000007": {
+"constituencyDeclarationString": "SNP HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000540": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000541": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000542": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000543": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000544": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000933": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000545": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000546": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000547": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000548": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000549": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000550": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000551": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000552": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000813": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000841": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000949": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"N06000001": {
+"constituencyDeclarationString": "DUP GAIN FROM APNI",
+"mapPanelMessage": null,
+"winningPartyCode": "DUP"
+},
+"N06000002": {
+"constituencyDeclarationString": "DUP HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "DUP"
+},
+"N06000003": {
+"constituencyDeclarationString": "SDLP HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "SDLP"
+},
+"N06000004": {
+"constituencyDeclarationString": "SF HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "SF"
+},
+"E14000553": {
+"constituencyDeclarationString": "LAB GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000554": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"S14000008": {
+"constituencyDeclarationString": "SNP GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000555": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000556": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000557": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000558": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000559": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000560": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000561": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000562": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000563": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000564": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000565": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000566": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000567": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000568": {
+"constituencyDeclarationString": "LAB GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000569": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000570": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000571": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000572": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000573": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"W07000072": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000574": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000575": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000576": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000577": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000578": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000579": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000580": {
+"constituencyDeclarationString": "CON GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000581": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000582": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000583": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000584": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000585": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000586": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000587": {
+"constituencyDeclarationString": "LAB GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000588": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000589": {
+"constituencyDeclarationString": "LAB WIN",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000590": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"W07000068": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000591": {
+"constituencyDeclarationString": "LAB GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000592": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000593": {
+"constituencyDeclarationString": "LAB GAIN FROM CON",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000594": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"W07000073": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000595": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000596": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000597": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000598": {
+"constituencyDeclarationString": "GRN HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "GRN"
+},
+"E14000599": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000600": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000601": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000602": {
+"constituencyDeclarationString": "LAB GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000603": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000604": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000605": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000606": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000607": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000608": {
+"constituencyDeclarationString": "SPE HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "SPE"
+},
+"E14000609": {
+"constituencyDeclarationString": "LAB GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000610": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000611": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000612": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000613": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"W07000076": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"S14000009": {
+"constituencyDeclarationString": "SNP GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000614": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000615": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000616": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000617": {
+"constituencyDeclarationString": "LAB GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000842": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000855": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000934": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000937": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000618": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000619": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"W07000050": {
+"constituencyDeclarationString": "LAB GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"W07000051": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"W07000080": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"W07000079": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000620": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"W07000067": {
+"constituencyDeclarationString": "PC HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "PC"
+},
+"W07000066": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000621": {
+"constituencyDeclarationString": "LD HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LD"
+},
+"E14000622": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"W07000064": {
+"constituencyDeclarationString": "LD HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LD"
+},
+"E14000625": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000626": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000627": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000628": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000629": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000630": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000631": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000640": {
+"constituencyDeclarationString": "LAB GAIN FROM CON",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000632": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000633": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000634": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000635": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000636": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000637": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000638": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000639": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000642": {
+"constituencyDeclarationString": "UKIP WIN",
+"mapPanelMessage": null,
+"winningPartyCode": "UKIP"
+},
+"E14000643": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"W07000062": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"W07000059": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"S14000011": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000644": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000645": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000646": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000647": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000648": {
+"constituencyDeclarationString": "CON WIN",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000837": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000938": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000991": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000649": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000650": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000651": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000652": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000653": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000654": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000655": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000656": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"S14000012": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"W07000070": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000657": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000658": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000659": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000660": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"W07000042": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000661": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000662": {
+"constituencyDeclarationString": "CON GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000663": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000664": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000814": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000843": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000935": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000665": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000623": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000678": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000838": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000950": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001000": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000666": {
+"constituencyDeclarationString": "LAB GAIN FROM CON",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000667": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000668": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000669": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000815": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000839": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000936": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001031": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000670": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000671": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000672": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000673": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"S14000013": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"S14000014": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"S14000018": {
+"constituencyDeclarationString": "SNP GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"S14000059": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"S14000015": {
+"constituencyDeclarationString": "SNP HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"S14000016": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"S14000017": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000840": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000856": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000641": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"W07000061": {
+"constituencyDeclarationString": "PC HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "PC"
+},
+"E14000674": {
+"constituencyDeclarationString": "LAB GAIN FROM CON",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000675": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000676": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000677": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"N06000005": {
+"constituencyDeclarationString": "DUP HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "DUP"
+},
+"E14000679": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"S14000019": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"N06000006": {
+"constituencyDeclarationString": "DUP HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "DUP"
+},
+"S14000020": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000684": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000685": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000686": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"S14000022": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"S14000023": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"S14000024": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"S14000025": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"S14000026": {
+"constituencyDeclarationString": "SNP GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000687": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000688": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000689": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000690": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000691": {
+"constituencyDeclarationString": "LAB GAIN FROM CON",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000692": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000693": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000694": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000695": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000696": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000697": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000698": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"S14000028": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000699": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000700": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000701": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"N06000007": {
+"constituencyDeclarationString": "UUP GAIN FROM SF",
+"mapPanelMessage": null,
+"winningPartyCode": "UUP"
+},
+"S14000049": {
+"constituencyDeclarationString": "SNP GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000702": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000703": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000704": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000705": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"N06000008": {
+"constituencyDeclarationString": "SDLP HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "SDLP"
+},
+"E14000706": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000707": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000708": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000709": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000710": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000711": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"S14000029": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"S14000030": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"S14000031": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"S14000032": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"S14000033": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"S14000034": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"S14000035": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"S14000036": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000712": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"S14000037": {
+"constituencyDeclarationString": "SNP GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000713": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"W07000046": {
+"constituencyDeclarationString": "CON GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000714": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000715": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000716": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000717": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000718": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000719": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000720": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000721": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000722": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000723": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000724": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000725": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000726": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000680": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000844": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000857": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000727": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000728": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000729": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000730": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000731": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000732": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000733": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000734": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000735": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000736": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000737": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000738": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000739": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000740": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000741": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000742": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000743": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000847": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000744": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000845": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000951": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000745": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000746": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000747": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000748": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000749": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000750": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000751": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000752": {
+"constituencyDeclarationString": "LAB GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000753": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000754": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000755": {
+"constituencyDeclarationString": "LAB GAIN FROM CON",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000756": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000771": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000772": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000773": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000757": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000758": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000759": {
+"constituencyDeclarationString": "LAB GAIN FROM CON",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000760": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"S14000038": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"S14000039": {
+"constituencyDeclarationString": "SNP GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000761": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000762": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000763": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000764": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"W07000077": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000765": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000766": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000767": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000768": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000769": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"S14000040": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000770": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000774": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"S14000041": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000775": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"N06000009": {
+"constituencyDeclarationString": "DUP HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "DUP"
+},
+"S14000042": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14001033": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000776": {
+"constituencyDeclarationString": "LAB GAIN FROM CON",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000777": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000778": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000779": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000780": {
+"constituencyDeclarationString": "LD HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LD"
+},
+"E14000781": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000782": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000783": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000784": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000858": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000940": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000785": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000786": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000789": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000787": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000788": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000790": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000791": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000792": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"S14000043": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000793": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000794": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000795": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000796": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"S14000044": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"W07000045": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000797": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000798": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000799": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000800": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000801": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000802": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000803": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000804": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000805": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000806": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000807": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000808": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000809": {
+"constituencyDeclarationString": "LAB GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000810": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000811": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000812": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"W07000071": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"N06000010": {
+"constituencyDeclarationString": "SF HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "SF"
+},
+"E14000819": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000820": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"S14000045": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000821": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000822": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000823": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000824": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"W07000054": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"W07000063": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"S14000046": {
+"constituencyDeclarationString": "SNP HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000825": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000826": {
+"constituencyDeclarationString": "CON GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"S14000047": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"S14000027": {
+"constituencyDeclarationString": "SNP HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"W07000069": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000827": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000828": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000829": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000830": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000831": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000832": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000833": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000834": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"W07000055": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"W07000056": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"N06000011": {
+"constituencyDeclarationString": "SF HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "SF"
+},
+"E14000835": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000816": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000848": {
+"constituencyDeclarationString": "LD HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LD"
+},
+"E14000859": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000941": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000952": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000836": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"N06000012": {
+"constituencyDeclarationString": "DUP HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "DUP"
+},
+"N06000013": {
+"constituencyDeclarationString": "IND HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "IND"
+},
+"E14000861": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000862": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000942": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000863": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000864": {
+"constituencyDeclarationString": "LAB GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000865": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000866": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000867": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000868": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"S14000050": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"W07000074": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000869": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000870": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000871": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"S14000051": {
+"constituencyDeclarationString": "LD HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LD"
+},
+"E14000872": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000873": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000874": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"S14000052": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"S14000053": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000875": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000876": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000877": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"S14000054": {
+"constituencyDeclarationString": "SNP HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000878": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000879": {
+"constituencyDeclarationString": "CON GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000880": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"W07000075": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000881": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000882": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000883": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000884": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"W07000065": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000885": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000886": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000887": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000888": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000889": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000890": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000891": {
+"constituencyDeclarationString": "LAB GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000892": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000893": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"S14000021": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"W07000052": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000894": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000895": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000896": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000897": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000898": {
+"constituencyDeclarationString": "CON WIN",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000899": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000900": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000901": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"S14000055": {
+"constituencyDeclarationString": "SNP GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000902": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000903": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000904": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000905": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000906": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000907": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000908": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"S14000056": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000909": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000910": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000911": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000912": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000913": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000914": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000915": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000916": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000917": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000918": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000921": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000919": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000922": {
+"constituencyDeclarationString": "LD HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LD"
+},
+"E14000923": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000920": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000924": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000925": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000926": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000849": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000927": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000928": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000929": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000930": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000931": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000850": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000846": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000932": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"N06000014": {
+"constituencyDeclarationString": "UUP GAIN FROM DUP",
+"mapPanelMessage": null,
+"winningPartyCode": "UUP"
+},
+"N06000015": {
+"constituencyDeclarationString": "SDLP HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "SDLP"
+},
+"E14000939": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000943": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000944": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000955": {
+"constituencyDeclarationString": "CON GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000956": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000957": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000958": {
+"constituencyDeclarationString": "LD HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LD"
+},
+"E14000959": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000960": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000961": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000962": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000963": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000964": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000965": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000966": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000945": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000967": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000968": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"S14000057": {
+"constituencyDeclarationString": "SNP GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "SNP"
+},
+"E14000969": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000970": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000971": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000972": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000973": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000974": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000975": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000976": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"N06000016": {
+"constituencyDeclarationString": "DUP HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "DUP"
+},
+"E14000977": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000978": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000979": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000980": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000624": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000981": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000946": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001034": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000982": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000681": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000983": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000953": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000817": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000984": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000985": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"W07000048": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"W07000047": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000851": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000947": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000986": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000987": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000988": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000989": {
+"constituencyDeclarationString": "CON GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000990": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000852": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000948": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000993": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000994": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000995": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000996": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000997": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000998": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000999": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"W07000053": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001001": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001002": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001003": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001004": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001005": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001006": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000853": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"N06000017": {
+"constituencyDeclarationString": "DUP HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "DUP"
+},
+"E14001007": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"W07000060": {
+"constituencyDeclarationString": "CON GAIN FROM LAB",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"W07000078": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001008": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001009": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001010": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001011": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001012": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001013": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001014": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001015": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001016": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001017": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001018": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001019": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000854": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001020": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001021": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001022": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001023": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001024": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001025": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001026": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001027": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001028": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001029": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001030": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001032": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"N06000018": {
+"constituencyDeclarationString": "SF HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "SF"
+},
+"E14001036": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001037": {
+"constituencyDeclarationString": "LD HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LD"
+},
+"E14001038": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001039": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000860": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000954": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001040": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001041": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001042": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001043": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001044": {
+"constituencyDeclarationString": "LAB GAIN FROM CON",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001045": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001046": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001047": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001048": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001049": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001050": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001051": {
+"constituencyDeclarationString": "LAB GAIN FROM CON",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001052": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000818": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001035": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001053": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001054": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14000682": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001055": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000992": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"W07000044": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001056": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001057": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001058": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14001059": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001060": {
+"constituencyDeclarationString": "CON GAIN FROM LD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"W07000041": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001061": {
+"constituencyDeclarationString": "LAB HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "LAB"
+},
+"E14001062": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+},
+"E14000683": {
+"constituencyDeclarationString": "CON HOLD",
+"mapPanelMessage": null,
+"winningPartyCode": "CON"
+}
+}
