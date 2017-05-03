@@ -47,7 +47,7 @@ app.controller('AppCtrl', ['$scope', '$location',
             name: '2015 Results',
             url: '/2015results',
             type: 'link',
-            icon: 'yellow trophy',
+            icon: 'history',
         });
 
         $scope.menu.push({
