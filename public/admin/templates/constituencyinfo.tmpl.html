@@ -65,4 +65,42 @@
       </div>
     </div>
   </div>
-</div>
+</div>  
+<form role="form">
+        <div class="form-group">
+          <input type="text" class="form-control input-lg" id="search" placeholder="Sart type 'a' ....">
+        </div>
+</form>
+
+<div id="results"></div>
+
+<script>
+$(window).load(function(){
+        $('#search').keyup(function(){
+            var searchField = $('#search').val();
+            var regex = new RegExp(searchField, "i");
+            var output = '<div class="row">';
+            var count = 1;
+            $.getJSON('/data/data_dump.json', function(data) {
+              $.each(data, function(key, val){
+                if ((val.Const_Name.search(regex) != -1)) {
+                  output += '<div class="col-md-7">';
+                  output += '<h5>' + val.Const_Name + '</h5>';
+                  output += '<p>' + val.Winner15;
+                  output += ' Majority: ' + val.MAJ + '</p>';
+                  output += '<p>' + (val.EUHANLEAVE * 100).toFixed(2) + '% Leave ';
+                  output += (val.EUHANREM * 100).toFixed(2) + '% Remain</p>';
+                  output += '</div>';
+                  output += '</div>';
+                  if(count%2 == 0){
+                    output += '</div><div class="row">'
+                  }
+                  count++;
+                }
+              });
+              output += '</div>';
+              $('#results').html(output);
+            }); 
+        });
+      });
+</script>
