@@ -118,7 +118,7 @@ app.controller('scoringCtrl', ['$scope', '$interval', '$http', 'socket',
               }
           );
         };
-
+    
         socket.on("score", function (state) {
             $scope.showScore = state.showScore;
             $scope.showSubtitle = state.showSubtitle;
@@ -134,17 +134,7 @@ app.controller('scoringCtrl', ['$scope', '$interval', '$http', 'socket',
             $scope.showall = state.showall;
             $scope.manualScore = state.manualScore;
             $scope.subtitle = state.subtitle;
-            if(state.manualScore){
-              $scope.conScore = state.conScore;
-              $scope.labScore = state.labScore;
-              $scope.lancScore = state.libScore;
-              $scope.snpScore = state.snpScore;
-              $scope.othScore = state.othScore;
-              $scope.grnScore = state.grnScore;
-              $scope.pcScore = state.pcScore;
-              $scope.dupScore = state.dupScore;
-            };
-        });
+         });
 
         $scope.$watch('score', function() {
             if (!$scope.score) {
