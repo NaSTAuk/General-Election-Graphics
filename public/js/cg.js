@@ -121,6 +121,7 @@ app.controller('scoringCtrl', ['$scope', '$interval', '$http', 'socket',
 
         socket.on("score", function (state) {
             $scope.showScore = state.showScore;
+            $scope.showSubtitle = state.showSubtitle;
             $scope.showcon = state.showcon;
             $scope.showlab = state.showlab;
             $scope.showlib = state.showlib;
@@ -132,6 +133,7 @@ app.controller('scoringCtrl', ['$scope', '$interval', '$http', 'socket',
             $scope.showoth = state.showoth;
             $scope.showall = state.showall;
             $scope.manualScore = state.manualScore;
+            $scope.subtitle = state.subtitle;
             if(state.manualScore){
               $scope.conScore = state.conScore;
               $scope.labScore = state.labScore;

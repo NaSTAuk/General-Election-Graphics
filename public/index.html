@@ -14,7 +14,7 @@
         <div ng-controller="bugCtrl">
             <div class="wrapper slide-left">
                  <div class="bug top scale-fade-in" ng-show="state.showClock">
-                 	<h1 class="black clock">{{clock | date: "HH:mm"}}</h1>
+                 	<h1 class="black clock">{{clock | date: "h:mm a"}}</h1>
                  </div>
                  <div class="bug top scale-fade-in" ng-show="state.showLive">
                  	<h1 class="livetext" ng-show="state.showLive">{{bug.livetext}}</h1>
@@ -85,7 +85,9 @@
 					<div class="float-left party-score OTH" ng-show="showoth">
 					<p>OTH <span class="seats"> {{othScore}}</span></p>
 					</div>
-
+					<br>
+					<div ng-show="showSubtitle" class="subtitle scale-fade"><h1>{{subtitle}}</h1></div>
+                	
                 	<div class="clearfix"></div>
             	</div>
         </div>
