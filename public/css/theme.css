@@ -259,12 +259,12 @@ h1, h2, h3, h4 {
     display:inline;
     white-space: nowrap;
     clear:none;
-    background-color: rgba(0, 0, 0, 0.5);
     background-clip: padding-box;
 }
 
 .bug h1 {
     color: #fff;
+    border-top-right-radius: 5px;
     font-size: 30px;
     font-size: 1.55vw;
     line-height: 1.8vw;
@@ -272,6 +272,7 @@ h1, h2, h3, h4 {
     float: left;
     padding: 3px 10px;
     margin-right: 0px;
+    border-left:3px solid white;
     background-color: #BC204B;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
 }
@@ -307,34 +308,28 @@ h1, h2, h3, h4 {
 /**************************************************/
 
 .total-score h1 {
-    color: #000;
-    font-size: 35px;
-    font-size: 2vw;
-    padding: 6px;
     text-transform: uppercase;
-    background-color: #eee !important;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
 }
 
 .total-score {
     display: block;
     width: 100%;
-    margin: auto;
     color: #fff;
-    padding: 6px;
     bottom: 50px;
     position: absolute;
+    margin: 0 auto;
 }
 
 .party-score {
  	width: 130px;
+ 	margin: 0 auto;
  	padding-left: 6px;
  	padding-top: 3px;
  	padding-bottom: 3px;
  	padding-right: 6px;
     font-size: 24px;
     border-right:3px solid white;
-    border-left:3px solid white;
+    border-top-right-radius: 5px;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
 }
 
