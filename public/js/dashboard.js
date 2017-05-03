@@ -21,6 +21,13 @@ app.controller('AppCtrl', ['$scope', '$location',
             type: 'link',
             icon: 'violet list layout'
         });
+        
+        $scope.menu.push({
+            name: 'Constituency Info',
+            url: '/constituencyinfo',
+            type: 'link',
+            icon: 'violet home'
+        });
 
         $scope.menu.push({
             name: 'Grid',
@@ -66,6 +73,10 @@ app.config(['$routeProvider', 'localStorageServiceProvider',
             })
             .when("/lowerThirds", {
                 templateUrl: '/admin/templates/lowerThirds.tmpl.html',
+                controller: 'lowerThirdsCGController'
+            })
+            .when("/constituencyinfo", {
+                templateUrl: '/admin/templates/constituencyinfo.tmpl.html',
                 controller: 'lowerThirdsCGController'
             })
             .when("/roses", {

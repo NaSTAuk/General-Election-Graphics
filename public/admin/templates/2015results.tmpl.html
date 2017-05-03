@@ -5,11 +5,40 @@
 		<i class="close icon"></i>
 		<div class="header">Seats Winner Overview</div>
 		<p>This section is for showing results prior to the 2017 Election.</p>
-    <p>Seats from the parties were: Conservative: {{rosesConScore}}, Labour {{rosesLabScore}}.
+    <p>Seats from the parties were Conservative: {{rosesConScore}}, Labour {{rosesLabScore}}.
 	</div>
 
   <div class="inline field">
-    <checkbox size="large" ng-model="roses.showScore" type="toggle">Show Overall Score</checkbox>
+    <checkbox size="large" ng-model="roses.showScore" type="toggle">Show Current Seat Standings</checkbox>
   </div>
   <div class="ui divider"></div>
+      <div class="ui grid aligned">
+        <div class="twelve wide column">
+            <div class="field">
+                <checkbox ng-model="roses.showcon" style="margin-right:10px;" size="large" type="toggle">Show Con</checkbox>
+                <checkbox ng-model="roses.showlab" style="margin-right:10px;" size="large" type="toggle">Show Lab</checkbox>
+                <checkbox ng-model="roses.showlib" style="margin-right:10px;" size="large" type="toggle">Show Lib</checkbox>
+                <checkbox ng-model="roses.showsnp" style="margin-right:10px;" size="large" type="toggle">Show SNP</checkbox>
+             </div>
+		</div>
+		<div class="four wide column">
+            <div class="field">
+                <checkbox ng-model="roses.showtop" style="margin-right:10px;" size="large" type="toggle">Show Top</checkbox>         
+			</div>
+		</div>
+		<div class="twelve wide column">
+            <div class="field">   
+                <checkbox ng-model="roses.showgrn" style="margin-right:10px;" size="large" type="toggle">Show Grn</checkbox>
+                <checkbox ng-model="roses.showpc" style="margin-right:10px;" size="large" type="toggle">Show PC</checkbox>
+                <checkbox ng-model="roses.showdup" style="margin-right:10px;" size="large" type="toggle">Show DUP</checkbox>
+                <checkbox ng-model="roses.showoth" style="margin-right:10px;" size="large" type="toggle">Show OTH</checkbox>
+        	</div>
+		</div>
+		<div class="four wide column">
+            <div class="field">        
+                <checkbox ng-model="roses.showall" style="margin-right:10px;" size="large" type="toggle">Show All</checkbox>
+            </div>
+        </div>
+    </div>   
+  
 </div>

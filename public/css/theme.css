@@ -312,8 +312,6 @@ h1, h2, h3, h4 {
 }
 
 .total-score {
-    display: block;
-    width: 100%;
     color: #fff;
     bottom: 50px;
     position: absolute;
@@ -322,7 +320,6 @@ h1, h2, h3, h4 {
 
 .party-score {
  	width: 130px;
- 	margin: 0 auto;
  	padding-left: 6px;
  	padding-top: 3px;
  	padding-bottom: 3px;

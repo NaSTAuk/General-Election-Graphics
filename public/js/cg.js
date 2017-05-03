@@ -82,7 +82,7 @@ app.controller('bugCtrl', ['$scope', '$timeout', 'socket',
 
 app.controller('scoringCtrl', ['$scope', '$interval', '$http', 'socket',
     function($scope, $interval, $http, socket){
-        $scope.tickInterval = 5000;
+        $scope.tickInterval = 60000;
 
         var fetchScore = function () {
           var config = {headers:  {
@@ -121,6 +121,16 @@ app.controller('scoringCtrl', ['$scope', '$interval', '$http', 'socket',
 
         socket.on("score", function (state) {
             $scope.showScore = state.showScore;
+            $scope.showcon = state.showcon;
+            $scope.showlab = state.showlab;
+            $scope.showlib = state.showlib;
+            $scope.showsnp = state.showsnp;
+            $scope.showtop = state.showtop;
+            $scope.showgrn = state.showgrn;
+            $scope.showpc = state.showpc;
+            $scope.showdup = state.showdup;
+            $scope.showoth = state.showoth;
+            $scope.showall = state.showall;
             $scope.manualScore = state.manualScore;
             if(state.manualScore){
               $scope.conScore = state.conScore;

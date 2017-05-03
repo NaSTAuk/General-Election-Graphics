@@ -14,13 +14,13 @@
         <div ng-controller="bugCtrl">
             <div class="wrapper slide-left">
                  <div class="bug top scale-fade-in" ng-show="state.showClock">
-                        <h1 class="black">{{clock | date: "HH:mm"}}</h1>
+                 	<h1 class="black clock">{{clock | date: "HH:mm"}}</h1>
                  </div>
                  <div class="bug top scale-fade-in" ng-show="state.showLive">
-                 <h1 ng-show="state.showLive">{{bug.livetext}}</h1>
+                 	<h1 class="livetext" ng-show="state.showLive">{{bug.livetext}}</h1>
                  </div>
                  <div class="bug top scale-fade-in" ng-show="state.showLocation">
-                 <h1 class="white" ng-show="state.showLocation">{{bug.locationtext}}</h1></div>
+                 	<h1 class="locationtext white" ng-show="state.showLocation">{{bug.locationtext}}</h1></div>
                 </div>
 
                 <div class="logo right top toggle" ng-show="state.showLogo">
@@ -54,35 +54,35 @@
 
         <div ng-controller="scoringCtrl">
         		<div ng-show="showScore" class="total-score scale-fade" >
-					<div class="float-left party-score CON">
+					<div class="float-left party-score CON" ng-show="showcon">
 					<p>CON <span class="seats"> {{conScore}}</span></p>
 					</div>
 
-					<div class="float-left party-score LAB">
+					<div class="float-left party-score LAB" ng-show="showlab">
 					<p>LAB <span class="seats"> {{labScore}}</span></p>
 					</div>
 					
-					<div class="float-left party-score LIB">
+					<div class="float-left party-score LIB" ng-show="showlib">
 					<p>LIB <span class="seats"> {{libScore}}</span></p>
 					</div>
 					
-					<div class="float-left party-score SNP">
+					<div class="float-left party-score SNP" ng-show="showsnp">
 					<p>SNP <span class="seats"> {{snpScore}}</span></p>
 					</div>
 					
-					<div class="float-left party-score GRN">
+					<div class="float-left party-score GRN" ng-show="showgrn">
 					<p>GRN <span class="seats"> {{grnScore}}</span></p>
 					</div>
 					
-					<div class="float-left party-score PC">
+					<div class="float-left party-score PC" ng-show="showpc">
 					<p>PC <span class="seats"> {{pcScore}}</span></p>
 					</div>
 					
-					<div class="float-left party-score DUP">
+					<div class="float-left party-score DUP" ng-show="showdup">
 					<p>DUP <span class="seats"> {{dupScore}}</span></p>
 					</div>
 					
-					<div class="float-left party-score OTH">
+					<div class="float-left party-score OTH" ng-show="showoth">
 					<p>OTH <span class="seats"> {{othScore}}</span></p>
 					</div>
 
