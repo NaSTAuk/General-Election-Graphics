@@ -95,16 +95,16 @@ app.controller('scoringCtrl', ['$scope', '$interval', '$http', 'socket',
 
           $http.get('data/score.json', config)
             .success(function(data) {
-              if(isNaN(data.york) || isNaN(data.lancs)){
+              if(isNaN(data.Conservative) || isNaN(data.ScottishNationalParty)){
                 console.log("Roses live is giving us nonsense");
                 return;
               };
               if(!$scope.manualScore){
-                $scope.yorkScore = data.york;
-                $scope.lancScore = data.lancs;
+                $scope.yorkScore = data.Conservative;
+                $scope.lancScore = data.ScottishNationalParty;
               };
-                socket.emit('lancScore', data.lancs);
-                socket.emit('yorkScore', data.york);
+                socket.emit('lancScore', data.Conservative);
+                socket.emit('yorkScore', data.ScottishNationalParty);
             }
           );
         };
