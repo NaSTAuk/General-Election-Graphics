@@ -83,8 +83,6 @@ app.controller('bugCtrl', ['$scope', '$timeout', 'socket',
 app.controller('scoringCtrl', ['$scope', '$interval', '$http', 'socket',
     function($scope, $interval, $http, socket){
         $scope.tickInterval = 5000;
-        $scope.yorkScore = "";
-        $scope.lancScore = "";
 
         var fetchScore = function () {
           var config = {headers:  {
@@ -95,17 +93,29 @@ app.controller('scoringCtrl', ['$scope', '$interval', '$http', 'socket',
 
           $http.get('data/score.json', config)
             .success(function(data) {
-              if(isNaN(data.Conservative) || isNaN(data.ScottishNationalParty)){
-                console.log("Roses live is giving us nonsense");
+              if(isNaN(data.Con) || isNaN(data.Lab) || isNaN(data.LD)){
+                console.log("Live data is giving us nonsense");
                 return;
               };
               if(!$scope.manualScore){
-                $scope.yorkScore = data.Conservative;
-                $scope.lancScore = data.ScottishNationalParty;
+                $scope.conScore = data.Con;
+                $scope.labScore = data.Lab;
+                $scope.libScore = data.LD;
+                $scope.snpScore = data.SNP;
+                $scope.othScore = data.Oth;
+                $scope.grnScore = data.Green;
+                $scope.pcScore = data.PC;
+                $scope.dupScore = data.DUP;
               };
-                socket.emit('lancScore', data.Conservative);
-                socket.emit('yorkScore', data.ScottishNationalParty);
-            }
+                socket.emit('conScore', data.Con);
+                socket.emit('labScore', data.Lab);
+                socket.emit('libScore', data.LD);
+                socket.emit('snpScore', data.SNP);
+                socket.emit('othScore', data.Oth);
+                socket.emit('grnScore', data.Green);
+                socket.emit('pcScore', data.PC);
+                socket.emit('dupScore', data.DUP);
+              }
           );
         };
 
@@ -113,8 +123,14 @@ app.controller('scoringCtrl', ['$scope', '$interval', '$http', 'socket',
             $scope.showScore = state.showScore;
             $scope.manualScore = state.manualScore;
             if(state.manualScore){
-              $scope.yorkScore = state.yorkScore;
-              $scope.lancScore = state.lancScore;
+              $scope.conScore = state.conScore;
+              $scope.labScore = state.labScore;
+              $scope.lancScore = state.libScore;
+              $scope.snpScore = state.snpScore;
+              $scope.othScore = state.othScore;
+              $scope.grnScore = state.grnScore;
+              $scope.pcScore = state.pcScore;
+              $scope.dupScore = state.dupScore;
             };
         });
 

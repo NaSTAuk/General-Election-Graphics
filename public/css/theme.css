@@ -29,6 +29,133 @@ h1, h2, h3, h4 {
     font-size: 40px !important;
 }
 
+
+/**************************************************/
+/*              [Party Colors]                    */
+/**************************************************/
+
+.ANNI { 
+		background-color: #D26FBC; 
+}
+.APNI { 
+	background-color: #CDAF2D; 
+}
+.BNP { 
+	background-color: #9094C8; 
+}
+.CEID { 
+	background-color: #0575C9; 
+}
+.CON { 
+	background-color: #0575C9; 
+}
+.CPA { 
+	background-color: #CC3399; 
+}
+.DRh { 
+	background-color: #FE8300; 
+}
+.DUP { 
+	background-color: #C0153D; 
+}
+.ED { 
+	background-color: #B20A06; 
+}
+.Eraill { 
+	background-color: #999999; 
+}
+.GRDd { 
+	background-color: #78C31E; 
+}
+.GRN { 
+	background-color: #78C31E; 
+}
+.HUNG { 
+	background-color: #646464; 
+}
+.ICHC { 
+	background-color: #FF0078; 
+}
+.IND { 
+	background-color: #D26FBC; 
+}
+.LAB { 
+	background-color: #ED1E0E; 
+}
+.LD { 
+	background-color: #FE8300; 
+}
+.LIB { 
+	background-color: #FEAE14; 
+}
+.LLAF { 
+	background-color: #ED1E0E; 
+}
+.MK { 
+	background-color: #A09B1C; 
+}
+.NHA { 
+	background-color: #1554B6; 
+}
+.NI21 { 
+	background-color: #009FBD; 
+}
+.NOC { 
+	background-color: #646464; 
+}
+.OTH { 
+	background-color: #999999; 
+}
+.PC { 
+	background-color: #4E9F2F; 
+}
+.PUP { 
+	background-color: #000B66; 
+}
+.PV { 
+	background-color: #028948; 
+}
+.RA { 
+	background-color: #00B0AC; 
+}
+.RES { 
+	background-color: #31B56A; 
+}
+.SDLP { 
+	background-color: #65A966; 
+}
+.SF { 
+	background-color: #00623F; 
+}
+.SLP { 
+	background-color: #FF5B00; 
+}
+.SNP { 
+	background-color: #EBC31C; 
+}
+.SPE { 
+	background-color: #0575C9; 
+}
+.SSP { 
+	background-color: #990066; 
+}
+.TUSC { 
+	background-color: #6C0000; 
+}
+.TUV { 
+	background-color: #6DCAD2; 
+}
+.UKIP { 
+	background-color: #712F87; 
+}
+.UUP { 
+	background-color: #6AB1E6; 
+}
+.YF { 
+	background-color: #00B8FD; 
+}
+
+
 /**************************************************/
 /*              [Layout]                          */
 /**************************************************/
@@ -74,7 +201,7 @@ h1, h2, h3, h4 {
 }
 
 .clearfix:after {
-   content: " "; /* Older browser do not support empty content */
+   content:  ; /* Older browser do not support empty content */
    visibility: hidden;
    display: block;
    height: 0;
@@ -83,7 +210,7 @@ h1, h2, h3, h4 {
 
 .row:after {
   display: table;
-  content: " ";
+  content:  ;
 }
 
 .row:after {
@@ -179,13 +306,6 @@ h1, h2, h3, h4 {
 /*              [Total Score]                     */
 /**************************************************/
 
-.total-score, .football-score {
-    width: 35%;
-    text-align: center;
-    border-radius: 8px;
-    background-clip: padding-box;
-}
-
 .total-score h1 {
     color: #000;
     font-size: 35px;
@@ -196,32 +316,36 @@ h1, h2, h3, h4 {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
 }
 
-.total-score .lanc, .football-score .lanc {
+.total-score {
     display: block;
-    width: 50%;
-    font-size: 40px;
-    font-size: 2.5vw;
+    width: 100%;
+    margin: auto;
     color: #fff;
     padding: 6px;
-    background-color: #cd1d18;
+}
+
+.party-score {
+ 	width: 130px;
+ 	padding-left: 6px;
+ 	padding-top: 3px;
+ 	padding-bottom: 3px;
+ 	padding-right: 6px;
+    font-size: 32px;
+    font-size: 2vw;
+    border-right:3px solid white;
+    border-left:3px solid white;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
 }
 
-.total-score .york, .football-score .york {
-    display: block;
-    width: 50%;
-    font-size: 40px;
-    font-size: 2.5vw;
-    color: #000 ;
-    padding: 6px;
-    background-color: #efbb39 !important;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+.party-score .seats {
+	font-weight: 600;
+	float: right;	
 }
 
 
 .leftLogo, .rightLogo {
-    height: 175px;
-    width: 175px;
+    height: 150px;
+    width: 150px;
     z-index: 100;
     bottom: 30px;
 }

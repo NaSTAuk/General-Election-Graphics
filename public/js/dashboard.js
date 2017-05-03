@@ -202,12 +202,31 @@ app.controller('rosesCGController', ['$scope', 'socket',
             $scope.roses = msg;
         });
 
-        socket.on('lancScore', function(msg){
-          $scope.rosesLancScore = msg
+        socket.on('conScore', function(msg){
+          $scope.ConScore = msg
         });
-        socket.on('yorkScore', function(msg){
-          $scope.rosesYorkScore = msg
+        socket.on('labScore', function(msg){
+          $scope.LabScore = msg
         });
+        socket.on('libScore', function(msg){
+          $scope.LibScore = msg
+        });
+        socket.on('snpScore', function(msg){
+          $scope.SNPScore = msg
+        });
+        socket.on('othScore', function(msg){
+          $scope.OTHScore = msg
+        });
+        socket.on('grnScore', function(msg){
+          $scope.GRNScore = msg
+        });
+        socket.on('pcScore', function(msg){
+          $scope.PCScore = msg
+        });
+        socket.on('dupScore', function(msg){
+          $scope.DUPScore = msg
+        });
+        
         $scope.$watch('roses', function() {
             if ($scope.roses) {
                 socket.emit("score", $scope.roses);
