@@ -23,6 +23,9 @@
                  <div class="bug top scale-fade-in" ng-show="state.showLocation">
                  	<h1 class="locationtext white" ng-show="state.showLocation">{{bug.locationtext}}</h1></div>
                 </div>
+                <div class="bug top scale-fade-in" ng-show="state.showCountdown">
+                 	<h1 class="locationtext white" ng-show="state.showCountdown">{{bug.countdowntext}} {{bug.countdowntime | date: "H:mm:ss"}}</h1></div>
+                </div>
 
                 <div class="logo right top toggle" ng-show="state.showLogo">
                     <img src="/images/nastalogo.png" />

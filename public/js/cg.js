@@ -82,8 +82,12 @@ app.controller('bugCtrl', ['$scope', '$timeout', 'socket',
 
 app.controller('scoringCtrl', ['$scope', '$interval', '$http', 'socket',
     function($scope, $interval, $http, socket){
-        $scope.tickInterval = 60000;
-
+        $scope.tickInterval = 60000; 
+        
+        socket.on("score", function (msg) {
+				$scope.score = msg;
+			});
+        
         var fetchScore = function () {
           var config = {headers:  {
               'Accept': 'application/json',
@@ -145,12 +149,28 @@ app.controller('scoringCtrl', ['$scope', '$interval', '$http', 'socket',
         function getScoreData() {
             socket.emit("score:get");
         }
+                
+        function getTimeRemaining(endtime){
+		  var t = Date.parse(endtime) - Date.parse(new Date());
+		  var seconds = Math.floor( (t/1000) % 60 );
+		  var minutes = Math.floor( (t/1000/60) % 60 );
+		  var hours = Math.floor( (t/(1000*60*60)) % 24 );
+		  var days = Math.floor( t/(1000*60*60*24) );
+		  return {
+			'total': t,
+			'days': days,
+			'hours': hours,
+			'minutes': minutes,
+			'seconds': seconds
+		  };
+		}
 
         //Intial fetch
         fetchScore();
         // Start the timer
         $interval(fetchScore, $scope.tickInterval);
     }
+
 ]);
 
 app.controller('footballCtrl', ['$scope', 'socket',

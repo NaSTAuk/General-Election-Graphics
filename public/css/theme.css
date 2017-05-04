@@ -228,21 +228,21 @@ h1, h2, h3, h4 {
 
 .lowerthird h1 {
     color: #fff;
-    font-size: 40px;
-    font-size: 2.5vw;
-    font-weight: normal;
+    font-size: 28px;
+    font-weight: bold;
     padding: 5px 8px;
     background-color: #BC204B;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+	border-top-right-radius: 5px;
+	border-left:3px solid white;
 }
 
 .lowerthird h2 {
     color: #fff;
-    font-size: 35px;
-    font-size: 2vw;
+    font-size: 20px;
     font-weight: normal;
     padding: 5px 8px;
-
+	border-left:3px solid white;
     background-color: #1f1a34;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
 }
@@ -267,7 +267,7 @@ h1, h2, h3, h4 {
     border-top-right-radius: 5px;
     font-size: 18px;
     line-height: 22px;
-    font-weight: normal;
+    font-weight: bold;
     float: left;
     padding: 3px 10px;
     margin-right: 0px;
@@ -363,6 +363,15 @@ h1, h2, h3, h4 {
 	right: 300px;
 
 }
+
+/**************************************************/
+/*              [Constituency info]               */
+/**************************************************/
+
+#constituencyresults h2 {
+	margin-bottom: 0px !important;
+}
+
 
 /**************************************************/
 /*              [Football Score]                  */
