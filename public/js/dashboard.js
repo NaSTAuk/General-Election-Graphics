@@ -35,26 +35,19 @@ app.controller('AppCtrl', ['$scope', '$location',
             type: 'link',
             icon: 'teal grid layout',
         });
-
-        $scope.menu.push({
-            name: 'Roses',
-            url: '/roses',
-            type: 'link',
-            icon: 'yellow trophy',
-        });
-        
+      
         $scope.menu.push({
             name: '2015 Results',
             url: '/2015results',
             type: 'link',
             icon: 'history',
         });
-
+        
         $scope.menu.push({
-            name: 'Football',
-            url: '/football',
+            name: '2017 Live Results',
+            url: '/2017results',
             type: 'link',
-            icon: 'soccer',
+            icon: 'green forward',
         });
     }
 ]);
@@ -85,6 +78,10 @@ app.config(['$routeProvider', 'localStorageServiceProvider',
             })
             .when("/2015results", {
                 templateUrl: '/admin/templates/2015results.tmpl.html',
+                controller: 'rosesCGController'
+            })
+            .when("/2017results", {
+                templateUrl: '/admin/templates/2017liveresults.tmpl.html',
                 controller: 'rosesCGController'
             })
             .when("/football", {
@@ -333,5 +330,26 @@ app.controller('footballCGController', ['$scope', 'localStorageService', 'socket
             socket.emit("football:get");
             socket.emit("clock:get");
         }
+    }
+]);
+
+app.controller('seatsCGController', ['$scope', 'socket',
+    function($scope, socket) {
+        socket.on("seats", function (msg) {
+            $scope.seats = msg;
+        });
+
+        $scope.$watch('seats', function() {
+            if ($scope.seats) {
+                socket.emit("seats", $scope.seats);
+            } else {
+                getSeatsData();
+            }
+        }, true);
+
+        function getSeatsData() {
+            socket.emit("seats:get");
+        }
+
     }
 ]);

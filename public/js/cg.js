@@ -222,3 +222,11 @@ app.controller('gridCtrl', ['$scope', 'socket',
         });
     }
 ]);
+
+app.controller('seatsCtrl', ['$scope', 'socket',
+    function($scope, socket){
+        socket.on("seats", function (msg) {
+            $scope.seats = msg;
+        });
+    }
+]);

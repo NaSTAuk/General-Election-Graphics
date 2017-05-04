@@ -1,0 +1,53 @@
+<div class="ui form segment">
+  <h2>2017 Results</h2>
+
+	<div class="ui visible info message">
+		<i class="close icon"></i>
+		<div class="header">2017 Live Seats Overview</div>
+		<p>This section is for showing live results during the 2017 Election. The scores should update live, but if they don't there's the option to override.</p>
+	</div>
+
+
+  
+  <div class="fields sixteen wide column">
+  		  <div class="field six wide">
+				<checkbox size="large" ng-model="seats.showScore" type="toggle">Show Live Seats update</checkbox>
+		  </div>
+		  <div class="field six wide">
+				<input  type="text" placeholder="Subtitle" ng-model="seats.subtitle">
+		  </div>
+		  <div class="field four wide">		
+				<checkbox size="large" ng-model="seats.showSubtitle" type="toggle">Show</checkbox>
+		  </div>
+  </div>
+  <div class="ui divider"></div>
+      <div class="ui grid aligned">
+        <div class="twelve wide column">
+            <div class="field">
+                <checkbox ng-model="seats.showcon" style="margin-right:10px;" size="large" type="toggle">Show Con</checkbox>
+                <checkbox ng-model="seats.showlab" style="margin-right:10px;" size="large" type="toggle">Show Lab</checkbox>
+                <checkbox ng-model="seats.showlib" style="margin-right:10px;" size="large" type="toggle">Show Lib</checkbox>
+                <checkbox ng-model="seats.showsnp" style="margin-right:10px;" size="large" type="toggle">Show SNP</checkbox>
+             </div>
+		</div>
+		<div class="four wide column">
+            <div class="field">
+                <checkbox ng-model="seats.showtop" style="margin-right:10px;" size="large" type="toggle">Show Top</checkbox>         
+			</div>
+		</div>
+		<div class="twelve wide column">
+            <div class="field">   
+                <checkbox ng-model="seats.showgrn" style="margin-right:10px;" size="large" type="toggle">Show Grn</checkbox>
+                <checkbox ng-model="seats.showpc" style="margin-right:10px;" size="large" type="toggle">Show PC</checkbox>
+                <checkbox ng-model="seats.showdup" style="margin-right:10px;" size="large" type="toggle">Show DUP</checkbox>
+                <checkbox ng-model="seats.showoth" style="margin-right:10px;" size="large" type="toggle">Show OTH</checkbox>
+        	</div>
+		</div>
+		<div class="four wide column">
+            <div class="field">        
+                <checkbox ng-model="seats.showall" style="margin-right:10px;" size="large" type="toggle">Show All</checkbox>
+            </div>
+        </div>
+    </div>   
+  
+</div>
