@@ -4,6 +4,7 @@
 <div class="ui divider"></div>
   <div class="inline field">
     <checkbox size="large" ng-model="general.showLogo" type="toggle">Show Logo</checkbox>
+    <checkbox size="large" ng-model="general.showGeneral" type="toggle">Show General</checkbox>
     <checkbox size="large" ng-model="general.showClock" type="toggle">Show Clock</checkbox>
   </div>
 
@@ -29,12 +30,7 @@
 	
 <div class="sixteen wide column">
       <div class="inline fields">
-  		<div class="five wide field">
-           <input name="bugcountdowntime" placeholder="Countdown time" type="time" step="1" ng-model="bug.countdowntime" />
-        </div>  
         <div class="five wide">
-           <checkbox size="large" ng-model="bug.showCountdown" type="toggle">Show Countdown </checkbox>
-        </div>
-        <div class="two wide field">
+           <checkbox size="large" ng-model="bug.showCountdown" type="toggle">Show Countdown to Polls Close</checkbox>
         </div>
 	</div>

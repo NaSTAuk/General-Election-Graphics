@@ -169,10 +169,7 @@ app.controller('scoringCtrl', ['$scope', '$interval', '$http', 'socket',
 		  var clock = document.getElementById(id);
 		  var timeinterval = setInterval(function(){
 			var t = getTimeRemaining(endtime);
-			clock.innerHTML = 'Polls Close: ' + ('0' + t.hours).slice(-2) + ':' + ('0' + t.minutes).slice(-2) + ':' + ('0' + t.seconds).slice(-2);
-			if(t.total<=0){
-			  clearInterval(timeinterval);
-			}
+			clock.innerHTML = 'Polls Close ' + ('0' + t.hours).slice(-2) + ':' + ('0' + t.minutes).slice(-2) + ':' + ('0' + t.seconds).slice(-2);
 		  },1000);
 		}
 		
