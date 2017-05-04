@@ -82,7 +82,7 @@ app.config(['$routeProvider', 'localStorageServiceProvider',
             })
             .when("/2017results", {
                 templateUrl: '/admin/templates/2017liveresults.tmpl.html',
-                controller: 'rosesCGController'
+                controller: 'seatsCGController'
             })
             .when("/football", {
                 templateUrl: '/admin/templates/football.tmpl.html',

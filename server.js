@@ -10,22 +10,21 @@ var bug = {livetext: "Live", locationtext: ''};
 var score = {};
 var football = {homeTeam: "Lancaster", awayTeam: "York", lancScore: 0, yorkScore: 0};
 var grid = {headingcolor:"#BC204B", leftcolor: "#1f1a34", rightcolor:"#1f1a34"};
+var seats = {};
 
-//Clock Functions
-var stopwatch = new Stopwatch();
-
-stopwatch.on('tick:stopwatch', function(time) {
-	io.sockets.emit("clock:tick", time);
-});
-
-
-
-io.on('connection', function(socket) {
+	io.on('connection', function(socket) {
 	console.log("Client Socket Connected");
 
 	/*
 	 * 		Clock functions
 	 */
+	
+	var stopwatch = new Stopwatch();
+
+	stopwatch.on('tick:stopwatch', function(time) {
+		io.sockets.emit("clock:tick", time);
+	});
+	 
 	socket.on("clock:pause", function() {
 		stopwatch.pause();
 	});
@@ -50,12 +49,6 @@ io.on('connection', function(socket) {
         io.sockets.emit("clock:tick", stopwatch.getTime());
     });
 
-		socket.on("grid", function(payload) {
-        grid = payload;
-        io.sockets.emit("grid", payload);
-        console.log("Updating: grid");
-    });
-
 	/*
 	 * 		General Functions
 	 */
@@ -67,6 +60,16 @@ io.on('connection', function(socket) {
     socket.on("bug:get", function(msg) {
 		io.sockets.emit("bug", bug);
 	});
+    
+    /*
+	 * 		Grid functions
+	 */
+	
+	socket.on("grid", function(payload) {
+        grid = payload;
+        io.sockets.emit("grid", payload);
+        console.log("Updating: grid");
+    });
 
 	/*
 	 * 		Lower Thirds
@@ -115,6 +118,19 @@ io.on('connection', function(socket) {
 
     socket.on("score:get", function(msg) {
 		io.sockets.emit("score", score);
+	});
+	
+	
+	/*
+	 * 		Live Seats
+	 */
+	socket.on("seats", function(msg) {
+        seats = msg;
+		io.sockets.emit("seats", msg);
+	});
+
+    socket.on("seats:get", function(msg) {
+		io.sockets.emit("seats", seats);
 	});
 
 	/*

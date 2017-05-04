@@ -225,8 +225,19 @@ app.controller('gridCtrl', ['$scope', 'socket',
 
 app.controller('seatsCtrl', ['$scope', 'socket',
     function($scope, socket){
+
         socket.on("seats", function (msg) {
             $scope.seats = msg;
         });
+
+        $scope.$watch('seats', function() {
+            if (!$scope.seats) {
+                getSeatsData();
+            }
+        }, true);
+
+        function getSeatsData() {
+            socket.emit("seats:get");
+        }
     }
 ]);
