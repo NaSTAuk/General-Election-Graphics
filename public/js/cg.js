@@ -77,6 +77,32 @@ app.controller('bugCtrl', ['$scope', '$timeout', 'socket',
 
         // Start the timer
         $timeout(tick, $scope.tickInterval);
+        
+    function getTimeRemaining(endtime){
+		  var t = Date.parse(endtime) - Date.now();
+		  var seconds = Math.floor( (t/1000) % 60 );
+		  var minutes = Math.floor( (t/1000/60) % 60 );
+		  var hours = Math.floor( (t/(1000*60*60)) % 24 );
+		  var days = Math.floor( t/(1000*60*60*24) );
+		  return {
+			'total': t,
+			'days': days,
+			'hours': hours,
+			'minutes': minutes,
+			'seconds': seconds
+		  };
+		}
+		
+	function initializeClock(id, endtime){
+		  var clock = document.getElementById(id);
+		  var timeinterval = setInterval(function(){
+			var t = getTimeRemaining(endtime);
+			clock.innerHTML = 'Polls Close ' + ('0' + t.hours).slice(-2) + ':' + ('0' + t.minutes).slice(-2) + ':' + ('0' + t.seconds).slice(-2);
+		  },1000);
+		}
+		
+		var deadline = new Date(Date.parse('08 Jun 2017 22:00:00 GMT+0100'));
+		initializeClock('clockdiv', deadline);
     }
 ]);
 
@@ -150,62 +176,12 @@ app.controller('scoringCtrl', ['$scope', '$interval', '$http', 'socket',
             socket.emit("score:get");
         }
                 
-        function getTimeRemaining(endtime){
-		  var t = Date.parse(endtime) - Date.now();
-		  var seconds = Math.floor( (t/1000) % 60 );
-		  var minutes = Math.floor( (t/1000/60) % 60 );
-		  var hours = Math.floor( (t/(1000*60*60)) % 24 );
-		  var days = Math.floor( t/(1000*60*60*24) );
-		  return {
-			'total': t,
-			'days': days,
-			'hours': hours,
-			'minutes': minutes,
-			'seconds': seconds
-		  };
-		}
-		
-		function initializeClock(id, endtime){
-		  var clock = document.getElementById(id);
-		  var timeinterval = setInterval(function(){
-			var t = getTimeRemaining(endtime);
-			clock.innerHTML = 'Polls Close ' + ('0' + t.hours).slice(-2) + ':' + ('0' + t.minutes).slice(-2) + ':' + ('0' + t.seconds).slice(-2);
-		  },1000);
-		}
-		
-		var deadline = new Date(Date.parse('08 Jun 2017 22:00:00 GMT+0100'));
-		initializeClock('clockdiv', deadline);
-
         //Intial fetch
         fetchScore();
         // Start the timer
         $interval(fetchScore, $scope.tickInterval);
     }
 
-]);
-
-app.controller('footballCtrl', ['$scope', 'socket',
-    function($scope, socket){
-
-        socket.on("football", function (msg) {
-            $scope.football = msg;
-        });
-
-        socket.on("clock:tick", function (msg) {
-            $scope.clock = msg.slice(0, msg.indexOf("."));
-        });
-
-        $scope.$watch('football', function() {
-            if (!$scope.football) {
-                getFootballData();
-            }
-        }, true);
-
-        function getFootballData() {
-            socket.emit("football:get");
-            socket.emit("clock:get");
-        }
-    }
 ]);
 
 app.controller('gridCtrl', ['$scope', 'socket',

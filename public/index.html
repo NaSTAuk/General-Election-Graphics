@@ -137,60 +137,6 @@
             	</div>
         </div>
 
-        <div ng-controller="footballCtrl" class="football left top scale-fade" ng-show="football.show">
-            <div class="row">
-                <div class="clock">{{clock}}</div>
-                <div class="score lanc">LANCS {{football.lancScore}}</div>
-                <div class="score york">{{football.yorkScore}} YORK</div>
-            </div>
-            	<div ng-show="football.showextratime" class="extratime scale-fade">ET</div>
-        </div>
-
-        <div ng-controller="footballCtrl" ng-show="football.showpost">
-        		<img ng-src="images/YorkSport250.png" ng-show="football.showpost" class="bottom leftLogo scale-fade"/>
-				<img ng-src="images/LancasterSport250.png" ng-show="football.showpost" class="bottom rightLogo scale-fade"/>
-            	<div ng-show="football.showpost" class="center bottom football-score scale-fade" >
-            		<div class="footballtop">
-            			<h1 ng-show="football.showtop">{{football.matchname}}</h1>
-					</div>
-					<div class="float-left york">
-						YORK
-						<p>{{football.yorkScore}}</p>
-					</div>
-
-					<div class="float-right lanc">
-						LANCS
-						<p>{{football.lancScore}}</p>
-					</div>
-	              	<div class="clearfix"></div>
-	              	<div class="footballbottom">
-	              		<h1 ng-show="football.showbottom">{{football.starttime}}</h1>
-	              	</div>	
-            	</div>
-        </div>
-        
-        <div ng-controller="footballCtrl" ng-show="football.showpre">
-        		<img ng-src="images/YorkSport250.png" ng-show="football.showpre" class="bottom leftLogo scale-fade"/>
-				<img ng-src="images/LancasterSport250.png" ng-show="football.showpre" class="bottom rightLogo scale-fade"/>
-            	<div ng-show="football.showpre" class="center bottom football-score scale-fade" >
-            		<div class="footballtop">
-            			<h1 class="upper" ng-show="football.showtop">{{football.matchname}}</h1>
-            		</div>
-					<div class="float-left york">
-					YORK
-					</div>
-
-					<div class="float-right lanc">
-					LANCS
-					</div>
-					<div class="clearfix"></div>
-					<div class="footballbottom">
-						<h1 ng-show="football.showbottom">{{football.starttime}}</h1>
-					</div>
-                	<div class="clearfix"></div>
-            	</div>
-        </div>
-
         <div ng-controller="gridCtrl">
           <div class="center-page scale-fade" ng-show="show">
             <div class="grid center" style="margin-top: 20px; position: absolute;" >
