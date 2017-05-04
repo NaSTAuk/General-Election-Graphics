@@ -151,7 +151,7 @@ app.controller('scoringCtrl', ['$scope', '$interval', '$http', 'socket',
         }
                 
         function getTimeRemaining(endtime){
-		  var t = Date.parse(endtime) - Date.parse(new Date());
+		  var t = Date.parse(endtime) - Date.now();
 		  var seconds = Math.floor( (t/1000) % 60 );
 		  var minutes = Math.floor( (t/1000/60) % 60 );
 		  var hours = Math.floor( (t/(1000*60*60)) % 24 );
@@ -164,6 +164,20 @@ app.controller('scoringCtrl', ['$scope', '$interval', '$http', 'socket',
 			'seconds': seconds
 		  };
 		}
+		
+		function initializeClock(id, endtime){
+		  var clock = document.getElementById(id);
+		  var timeinterval = setInterval(function(){
+			var t = getTimeRemaining(endtime);
+			clock.innerHTML = 'Polls Close: ' + ('0' + t.hours).slice(-2) + ':' + ('0' + t.minutes).slice(-2) + ':' + ('0' + t.seconds).slice(-2);
+			if(t.total<=0){
+			  clearInterval(timeinterval);
+			}
+		  },1000);
+		}
+		
+		var deadline = new Date(Date.parse('08 Jun 2017 22:00:00 GMT+0100'));
+		initializeClock('clockdiv', deadline);
 
         //Intial fetch
         fetchScore();
