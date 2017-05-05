@@ -317,7 +317,6 @@ h1, h2, h3, h4 {
  	padding-top: 3px;
  	padding-bottom: 3px;
  	padding-right: 6px;
-
     border-left:3px solid white;
     border-top-right-radius: 5px;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
@@ -476,45 +475,48 @@ h1, h2, h3, h4 {
  *===================================
  */
  .grid {
-
     width: 650px;
     text-align: center;
     background-clip: padding-box;
   }
     .grid h1 {
-        color:  #ffffff;
-        font-size: 40px;
-        font-size: 2.5vw;
-        font-weight: normal;
+        color:  #a11a1e;
+        font-size: 32px;
+        font-weight: 600;
         padding: 5px;
-        background-color: #BC204B;
-        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+        background-color: #fff;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.04) 51%, rgba(0, 0, 0, 0.02));
+   		border-top-right-radius: 5px;
     }
 
     .grid .gridleft, .grid .gridright {
         float: left;
-        line-height: 40px;
-        background-color: #1f1a34;
+        line-height: 32px;
         background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .grid .gridleft {
         padding-left: 10px;
         text-align: left;
+        background-color: #a11a1e;
+        color: #fff;
         width: 80%;
     }
 
     .grid .gridright {
         width: 20%;
         border-left: 3px solid #fff;
+        background-color: #a11a1e;
+        color: #fff;
     }
 
     .grid .row {
-        color: #fff;
+        color: #000;
         border-top: 3px solid #fff;
     }
 
     .grid .row:last-child {
         margin-bottom: 5px;
+        border-bottom-left-radius: 5px;
     }

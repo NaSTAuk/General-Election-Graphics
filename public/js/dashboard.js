@@ -181,7 +181,7 @@ app.controller('gridCGController', ['$scope', '$log', 'localStorageService', 'so
         }
 
         $scope.add = function() {
-            $scope.grid.rows.push({left:'', right:''});
+            $scope.grid.rows.push({left:'', right:'', color:''});
         };
 
         $scope.remove = function(index){

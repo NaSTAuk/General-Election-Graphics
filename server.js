@@ -8,7 +8,7 @@ var io = require('socket.io').listen(server);
 
 var bug = {livetext: "Live", locationtext: ''};
 var score = {};
-var grid = {headingcolor:"#BC204B", leftcolor: "#1f1a34", rightcolor:"#1f1a34"};
+var grid = {headingcolor:"#BC204B", leftcolor: "#1f1a34"};
 var seats = {};
 
 	io.on('connection', function(socket) {

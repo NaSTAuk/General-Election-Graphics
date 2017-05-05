@@ -1,22 +1,6 @@
 <div class="ui form segment">
   <h2>Grid</h2>
 
-<div class="ui grid center aligned">
-    	<div class="five wide column">
-    		Heading Color
-    		<div class="field"><input id="headingcolorpicker" ng-model="grid.headingcolor" placeholder="Heading Color #"></div>
-    	</div>
-        <div class="five wide column">
-            Left Col Color
-    		<div class="field"><input id="leftcolorpicker" ng-model="grid.leftcolor" placeholder="Left Col Color #"></div>
-        </div>
-        <div class="five wide column">
-            Right Col Color
-    		<div class="field"><input id="rightcolorpicker" ng-model="grid.rightcolor" placeholder="Right Col Color #"></div>
-        </div>
-    </div>
-
-
   <div class="ui grid center aligned">
 
     <div class="sixteen wide column">
@@ -37,12 +21,16 @@
 
           <div class="ui error form segment">
             <div class="fields slide-left" ng-repeat="row in grid.rows">
-              <div class="eight wide field">
+              <div class="six wide field">
                 <input type="text" ng-model="row.left" placeholder="Left Colmun">
               </div>
 
-              <div class="six wide field">
+              <div class="four wide field">
                 <input type="text" ng-model="row.right" placeholder="Right Colmun">
+              </div>
+              
+               <div class="four wide field">
+                <input type="text" ng-model="row.color" placeholder="Color">
               </div>
 
               <div class="two wide field">
@@ -64,31 +52,3 @@
     </div>
   </div>
 </div>
-
-
-<script>
-    $("#headingcolorpicker").spectrum({
-        color: "#cd1d18",
-        preferredFormat: "hex",
-        flat: true,
-    	showInput: true,
-    	allowEmpty:true,
-    	showButtons: false
-    });
-    $("#leftcolorpicker").spectrum({
-        color: "#000000",
-        preferredFormat: "hex",
-        flat: true,
-    	showInput: true,
-    	allowEmpty:true,
-    	showButtons: false
-    });
-    $("#rightcolorpicker").spectrum({
-        color: "#cd1d18",
-        preferredFormat: "hex",
-        flat: true,
-    	showInput: true,
-    	allowEmpty:true,
-    	showButtons: false
-    });
-    </script>
