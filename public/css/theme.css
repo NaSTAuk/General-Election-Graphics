@@ -312,21 +312,48 @@ h1, h2, h3, h4 {
     margin: 0 auto;
 }
 
-.party-score {
- 	width: 90px;
+.party-score, .party-score-small {
  	padding-left: 6px;
  	padding-top: 3px;
  	padding-bottom: 3px;
  	padding-right: 6px;
-    font-size: 24px;
+
     border-left:3px solid white;
     border-top-right-radius: 5px;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
 }
 
+.party-name {
+	width: 70px;
+	display: block;
+	font-size: 24px;
+	text-align: left !important;
+	float: left;
+}
+
+.party-score {
+	min-width: 50px;
+	min-height: 30px;
+	font-size: 24px;
+}
+
+.party-score-small {
+	width: 40px;
+}
+
 .party-score .seats {
 	font-weight: 600;
 	float: right;	
+}
+
+.party-score .seatschange {
+	font-weight: 300;
+	text-align: center !important;	
+	font-size: 18px;
+}
+
+.total-score .subtitle h1 {
+	min-height: 28px;
 }
 
 .total-score h1 {
