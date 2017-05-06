@@ -502,6 +502,7 @@ h1, h2, h3, h4 {
         background-color: #a11a1e;
         color: #fff;
         width: 80%;
+        border-left: 3px solid white;
     }
 
     .grid .gridright {

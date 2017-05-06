@@ -123,7 +123,7 @@ app.controller('scoringCtrl', ['$scope', '$interval', '$http', 'socket',
 
           $http.get('data/score.json', config)
             .success(function(data) {
-              if(isNaN(data.Con) || isNaN(data.Lab) || isNaN(data.LD)){
+              if(isNaN(data.Con)){
                 console.log("Live data is giving us nonsense");
                 return;
               };
@@ -212,8 +212,8 @@ app.controller('recentgridCtrl', ['$scope', 'socket',
     }
 ]);
 
-app.controller('seatsCtrl', ['$scope', 'socket',
-    function($scope, socket){
+app.controller('seatsCtrl', ['$scope', '$http', 'socket',
+    function($scope, $http, socket){
 
         socket.on("seats", function (msg) {
             $scope.seats = msg;

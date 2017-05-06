@@ -37,7 +37,7 @@ app.controller('AppCtrl', ['$scope', '$location',
         });
         
         $scope.menu.push({
-            name: 'Recent Grid',
+            name: 'Automated Grids',
             url: '/recentgrid',
             type: 'link',
             icon: 'purple grid layout',
@@ -259,13 +259,13 @@ app.controller('recentgridCGController', ['$scope', '$log', '$http', 'localStora
 
 			$http.get('/data/live-seats.json', config).then(function (response) {
 				$scope.recentgrid.liveSeats = response.data;
+				$scope.liveSeats = response.data;
 			 });    
         };
          
          fetchSeats();
-         
          $scope.PartyOverview = function() {
-          	    
+     	    
           	    var liveSeats = {"rows":[
           	    {"left":$scope.recentgrid.liveSeats[0].Party_Name,"right":$scope.recentgrid.liveSeats[0].PreElection_Seats,"color":$scope.recentgrid.liveSeats[0].Color},
           	    {"left":$scope.recentgrid.liveSeats[1].Party_Name,"right":$scope.recentgrid.liveSeats[1].PreElection_Seats,"color":$scope.recentgrid.liveSeats[1].Color},
@@ -279,8 +279,7 @@ app.controller('recentgridCGController', ['$scope', '$log', '$http', 'localStora
           	    {"left":$scope.recentgrid.liveSeats[9].Party_Name,"right":$scope.recentgrid.liveSeats[9].PreElection_Seats,"color":$scope.recentgrid.liveSeats[9].Color},
           	    {"left":$scope.recentgrid.liveSeats[10].Party_Name,"right":$scope.recentgrid.liveSeats[10].PreElection_Seats,"color":$scope.recentgrid.liveSeats[10].Color},
           	    {"left":$scope.recentgrid.liveSeats[11].Party_Name,"right":$scope.recentgrid.liveSeats[11].PreElection_Seats,"color":$scope.recentgrid.liveSeats[11].Color}
-				],"header":"Party Overview"};
-          	    
+				],"header":"Party Overview"};    
           	    return localStorageService.set('recentgrid',liveSeats);
         };
 
