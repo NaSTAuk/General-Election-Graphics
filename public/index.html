@@ -150,6 +150,20 @@
               </div>
             </div>
           </div>
+          
+        <div ng-controller="recentgridCtrl">
+          <div class="center-page scale-fade" ng-show="show">
+            <div class="grid center" style="margin-top: 20px; position: absolute;" >
+              <div class="gradient-overlay">
+                <h1>{{ recentgrid.header }}</h1>
+              </div>
+
+              <div class="row animate-repeat" ng-repeat="row in recentgrid.rows">
+                <div style="background-color: {{row.color}} !important;" class="gridleft float-left">{{ row.left }}</div>
+                <div style="background-color: {{row.color}} !important;" class="gridright float-right">{{ row.right }}</div>
+              </div>
+            </div>
+          </div>
 
 
         <script type="text/javascript" src="/js/socket.io.js"></script>

@@ -35,6 +35,13 @@ app.controller('AppCtrl', ['$scope', '$location',
             type: 'link',
             icon: 'teal grid layout',
         });
+        
+        $scope.menu.push({
+            name: 'Recent Grid',
+            url: '/recentgrid',
+            type: 'link',
+            icon: 'purple grid layout',
+        });
       
         $scope.menu.push({
             name: '2015 Results',
@@ -92,6 +99,10 @@ app.config(['$routeProvider', 'localStorageServiceProvider',
                 templateUrl: '/admin/templates/grid.tmpl.html',
                 controller: 'gridCGController'
             })
+            .when("/recentgrid", {
+                templateUrl: '/admin/templates/recentgrid.tmpl.html',
+                controller: 'recentgridCGController'
+            })            
             .otherwise({redirectTo: '/general'});
     }
 ]);
@@ -114,6 +125,10 @@ app.controller('generalCGController', ['$scope', 'socket',
             $scope.bug = msg;
         });
         
+	  function clearAllData() {
+		return localStorageService.clearAll();
+	  }
+	
         function getBugData() {
             socket.emit("bug:get");
         }
@@ -201,6 +216,76 @@ app.controller('gridCGController', ['$scope', '$log', 'localStorageService', 'so
 
         $scope.$on("$destroy", function() {
             localStorageService.set('grid', $scope.grid);
+        });
+}]);
+
+app.controller('recentgridCGController', ['$scope', '$log', '$http', 'localStorageService', 'socket',
+    function($scope, $log, $http, localStorageService, socket){
+
+        var stored = localStorageService.get('recentgrid');
+
+        if(stored === null) {
+            $scope.recentgrid = {};
+            $scope.recentgrid.rows = [];
+        } else {
+            $scope.recentgrid = stored;
+        }
+
+        $scope.add = function() {
+            $scope.recentgrid.rows.push({left:'', right:'', color:''});
+        };
+
+        $scope.remove = function(index){
+            $scope.recentgrid.rows.splice(index, 1);
+        };
+
+        $scope.show = function() {
+            socket.emit('recentgrid', $scope.recentgrid);
+            $log.info("recentgrid.show()");
+            $log.info($scope.recentgrid);
+        };
+
+        $scope.hide = function() {
+            socket.emit('recentgrid', 'hide');
+            $log.info("recentgrid.hide()");
+        };
+          
+          var fetchSeats = function () {
+          var config = {headers:  {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json',
+            }
+          };
+
+			$http.get('/data/live-seats.json', config).then(function (response) {
+				$scope.recentgrid.liveSeats = response.data;
+			 });    
+        };
+         
+         fetchSeats();
+         
+         $scope.PartyOverview = function() {
+          	    
+          	    var liveSeats = {"rows":[
+          	    {"left":$scope.recentgrid.liveSeats[0].Party_Name,"right":$scope.recentgrid.liveSeats[0].PreElection_Seats,"color":$scope.recentgrid.liveSeats[0].Color},
+          	    {"left":$scope.recentgrid.liveSeats[1].Party_Name,"right":$scope.recentgrid.liveSeats[1].PreElection_Seats,"color":$scope.recentgrid.liveSeats[1].Color},
+          	    {"left":$scope.recentgrid.liveSeats[2].Party_Name,"right":$scope.recentgrid.liveSeats[2].PreElection_Seats,"color":$scope.recentgrid.liveSeats[2].Color},
+          	    {"left":$scope.recentgrid.liveSeats[3].Party_Name,"right":$scope.recentgrid.liveSeats[3].PreElection_Seats,"color":$scope.recentgrid.liveSeats[3].Color},
+          	    {"left":$scope.recentgrid.liveSeats[4].Party_Name,"right":$scope.recentgrid.liveSeats[4].PreElection_Seats,"color":$scope.recentgrid.liveSeats[4].Color},
+          	    {"left":$scope.recentgrid.liveSeats[5].Party_Name,"right":$scope.recentgrid.liveSeats[5].PreElection_Seats,"color":$scope.recentgrid.liveSeats[5].Color},
+          	    {"left":$scope.recentgrid.liveSeats[6].Party_Name,"right":$scope.recentgrid.liveSeats[6].PreElection_Seats,"color":$scope.recentgrid.liveSeats[6].Color},
+          	    {"left":$scope.recentgrid.liveSeats[7].Party_Name,"right":$scope.recentgrid.liveSeats[7].PreElection_Seats,"color":$scope.recentgrid.liveSeats[7].Color},
+          	    {"left":$scope.recentgrid.liveSeats[8].Party_Name,"right":$scope.recentgrid.liveSeats[8].PreElection_Seats,"color":$scope.recentgrid.liveSeats[8].Color},
+          	    {"left":$scope.recentgrid.liveSeats[9].Party_Name,"right":$scope.recentgrid.liveSeats[9].PreElection_Seats,"color":$scope.recentgrid.liveSeats[9].Color},
+          	    {"left":$scope.recentgrid.liveSeats[10].Party_Name,"right":$scope.recentgrid.liveSeats[10].PreElection_Seats,"color":$scope.recentgrid.liveSeats[10].Color},
+          	    {"left":$scope.recentgrid.liveSeats[11].Party_Name,"right":$scope.recentgrid.liveSeats[11].PreElection_Seats,"color":$scope.recentgrid.liveSeats[11].Color}
+				],"header":"Party Overview"};
+          	    
+          	    return localStorageService.set('recentgrid',liveSeats);
+        };
+
+        $scope.$on("$destroy", function() {
+            localStorageService.set('recentgrid', $scope.recentgrid);
         });
 }]);
 

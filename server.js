@@ -10,6 +10,7 @@ var bug = {livetext: "Live", locationtext: ''};
 var score = {};
 var grid = {headingcolor:"#BC204B", leftcolor: "#1f1a34"};
 var seats = {};
+var recentgrid = {};
 
 	io.on('connection', function(socket) {
 	console.log("Client Socket Connected");
@@ -68,6 +69,12 @@ var seats = {};
         grid = payload;
         io.sockets.emit("grid", payload);
         console.log("Updating: grid");
+    });
+    
+    socket.on("recentgrid", function(payload) {
+        recentgrid = payload;
+        io.sockets.emit("recentgrid", payload);
+        console.log("Updating recent results grid");
     });
 
 	/*

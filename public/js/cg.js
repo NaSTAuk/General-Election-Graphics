@@ -188,12 +188,25 @@ app.controller('gridCtrl', ['$scope', 'socket',
     function($scope, socket){
         socket.on("grid", function (payload) {
             if (payload === "hide") {
-                //We first remove every element with a delay
-                setTimeout(function(){$scope.grid = {};}, 1000);
+                $scope.grid = {};
                 $scope.show = false;
             } else {
                 $scope.show = true;
                 $scope.grid = payload;
+            }
+        });
+    }
+]);
+
+app.controller('recentgridCtrl', ['$scope', 'socket',
+    function($scope, socket){
+        socket.on("recentgrid", function (payload) {
+            if (payload === "hide") {
+                $scope.recentgrid = {};
+                $scope.show = false;
+            } else {
+                $scope.show = true;
+                $scope.recentgrid = payload;
             }
         });
     }
