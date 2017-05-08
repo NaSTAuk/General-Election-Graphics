@@ -6,13 +6,30 @@
 }
 
 body {
-    padding: 50px; /* Safe area */
+    padding: 36px 64px 36px 64px; /* Safe area */
     font-family: 'Ubuntu Condensed', sans-serif;
     background:transparent;                          /* The HTML consumer actually makes your background transparent by default, unless a color or image is specified - but this might be usefull when debugging in browsers */
     overflow:hidden;                                 /* Hide any overflowing elements - to disable scollbars */
     -webkit-font-smoothing:antialiased !important;
 }
 
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1280px;
+    height: 720px;
+}
 
 @-webkit-keyframes moving-gradient {
     0% { background-position: left bottom; }
@@ -161,25 +178,25 @@ h1, h2, h3, h4 {
 /**************************************************/
 .left{
     position: absolute;
-    left: 50px;
+    left: 64px;
 }
 
 .right {
     position: absolute;
-    right: 50px;
+    right: 64px;
     text-align: right;
 }
 
 .bottom {
-    bottom: 50px;
+    bottom: 36px;
 }
 
 .fullwidth {
-	width: 1180px;
+	width: 1152px;
 	}
 
 .top {
-    top: 50px;
+    top: 36px;
 }
 
 .center {
@@ -249,7 +266,7 @@ h1, h2, h3, h4 {
 
 .lowerthird.bottom.fullwidth {
     position: absolute;
-    left: 50px;
+    left:64px;
 } 
 
 /**************************************************/
@@ -292,7 +309,7 @@ h1, h2, h3, h4 {
 
 .logo {
     opacity: 0.5;
-    top: 40px;
+    top: 25px;
 }
 
 .logo.toggle.ng-leave,
@@ -307,7 +324,7 @@ h1, h2, h3, h4 {
 
 .total-score {
     color: #fff;
-    bottom: 50px;
+    bottom: 36px;
     position: absolute;
     margin: 0 auto;
 }
@@ -364,7 +381,7 @@ h1, h2, h3, h4 {
     font-size: 16px;
     line-height: 22px;
     border-left:3px solid white;
-	background-color: #eee !important;
+	background-color: #fff !important;
 	color: #1f1a34 !important;
 	width: 100%;
 	border-bottom-left-radius: 5px;

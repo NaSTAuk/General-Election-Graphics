@@ -278,7 +278,22 @@ app.controller('recentgridCGController', ['$scope', '$log', '$http', 'localStora
           	    {"left":$scope.recentgrid.liveSeats[8].Party_Name,"right":$scope.recentgrid.liveSeats[8].PreElection_Seats,"color":$scope.recentgrid.liveSeats[8].Color},
           	    {"left":$scope.recentgrid.liveSeats[9].Party_Name,"right":$scope.recentgrid.liveSeats[9].PreElection_Seats,"color":$scope.recentgrid.liveSeats[9].Color},
           	    {"left":$scope.recentgrid.liveSeats[10].Party_Name,"right":$scope.recentgrid.liveSeats[10].PreElection_Seats,"color":$scope.recentgrid.liveSeats[10].Color},
-          	    {"left":$scope.recentgrid.liveSeats[11].Party_Name,"right":$scope.recentgrid.liveSeats[11].PreElection_Seats,"color":$scope.recentgrid.liveSeats[11].Color}
+          	    {"left":$scope.recentgrid.liveSeats[11].Party_Name,"right":$scope.recentgrid.liveSeats[11].PreElection_Seats,"color":$scope.recentgrid.liveSeats[11].Color},
+          	    {"left":$scope.recentgrid.liveSeats[12].Party_Name,"right":$scope.recentgrid.liveSeats[12].PreElection_Seats,"color":$scope.recentgrid.liveSeats[12].Color}
+				],"header":"Party Overview"};    
+          	    return localStorageService.set('recentgrid',liveSeats);
+        };
+        
+        $scope.PartyOverviewTopFive = function() {
+     	    	var otherScoreTopFive = $scope.recentgrid.liveSeats[5].PreElection_Seats + $scope.recentgrid.liveSeats[6].PreElection_Seats + $scope.recentgrid.liveSeats[7].PreElection_Seats + $scope.recentgrid.liveSeats[8].PreElection_Seats + $scope.recentgrid.liveSeats[9].PreElection_Seats + $scope.recentgrid.liveSeats[10].PreElection_Seats + $scope.recentgrid.liveSeats[11].PreElection_Seats;
+     	    	
+          	    var liveSeats = {"rows":[
+          	    {"left":$scope.recentgrid.liveSeats[0].Party_Name,"right":$scope.recentgrid.liveSeats[0].PreElection_Seats,"color":$scope.recentgrid.liveSeats[0].Color},
+          	    {"left":$scope.recentgrid.liveSeats[1].Party_Name,"right":$scope.recentgrid.liveSeats[1].PreElection_Seats,"color":$scope.recentgrid.liveSeats[1].Color},
+          	    {"left":$scope.recentgrid.liveSeats[2].Party_Name,"right":$scope.recentgrid.liveSeats[2].PreElection_Seats,"color":$scope.recentgrid.liveSeats[2].Color},
+          	    {"left":$scope.recentgrid.liveSeats[3].Party_Name,"right":$scope.recentgrid.liveSeats[3].PreElection_Seats,"color":$scope.recentgrid.liveSeats[3].Color},
+          	    {"left":$scope.recentgrid.liveSeats[4].Party_Name,"right":$scope.recentgrid.liveSeats[4].PreElection_Seats,"color":$scope.recentgrid.liveSeats[4].Color},
+          	    {"left":"Others","right":otherScoreTopFive,"color":"#999999"}
 				],"header":"Party Overview"};    
           	    return localStorageService.set('recentgrid',liveSeats);
         };

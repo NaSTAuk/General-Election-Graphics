@@ -12,6 +12,12 @@
     </head>
 
     <body>
+    <div class="fullscreen-bg">
+    <video loop muted autoplay class="fullscreen-bg__video">
+        <source src="video/bgvideo.mp4" type="video/mp4">
+    </video>
+</div>
+    
         <div ng-controller="bugCtrl">
             <div class="wrapper slide-top" ng-show="state.showGeneral">
                  <div class="bug top slide-top" ng-show="state.showClock">
@@ -24,7 +30,7 @@
                  	<h1 class="locationtext white" ng-show="state.showLocation">{{bug.locationtext}}</h1>
                 </div>
                 <div class="bug top slide-top" ng-show="state.showCountdown">
-                 	<h1 class="locationtext white" ng-show="state.showCountdown"><div id="clockdiv"></div></h1>
+                 	<h1 class="livetext" ng-show="state.showCountdown"><div id="clockdiv"></div></h1>
                 </div>
             </div>
 
