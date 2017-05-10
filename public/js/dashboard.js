@@ -64,7 +64,7 @@ app.controller('AppCtrl', ['$scope', '$location',
  */
 app.config(['$routeProvider', 'localStorageServiceProvider',
     function($routeProvider, localStorageServiceProvider) {
-        localStorageServiceProvider.setPrefix('la1tv');
+        localStorageServiceProvider.setPrefix('nasta');
 
         $routeProvider
             .when("/general", {
@@ -250,8 +250,8 @@ app.controller('recentgridCGController', ['$scope', '$log', '$http', 'localStora
             $log.info("recentgrid.hide()");
         };
           
-          var fetchSeats = function () {
-          var config = {headers:  {
+        var fetchSeats = function () {
+        var config = {headers:  {
               'Accept': 'application/json',
               'Content-Type': 'application/json',
             }
@@ -264,8 +264,7 @@ app.controller('recentgridCGController', ['$scope', '$log', '$http', 'localStora
         };
          
          fetchSeats();
-         $scope.PartyOverview = function() {
-     	    
+         $scope.PartyOverview = function() {    
           	    var liveSeats = {"rows":[
           	    {"left":$scope.recentgrid.liveSeats[0].Party_Name,"right":$scope.recentgrid.liveSeats[0].PreElection_Seats,"color":$scope.recentgrid.liveSeats[0].Color},
           	    {"left":$scope.recentgrid.liveSeats[1].Party_Name,"right":$scope.recentgrid.liveSeats[1].PreElection_Seats,"color":$scope.recentgrid.liveSeats[1].Color},
@@ -286,7 +285,6 @@ app.controller('recentgridCGController', ['$scope', '$log', '$http', 'localStora
         
         $scope.PartyOverviewTopFive = function() {
      	    	var otherScoreTopFive = $scope.recentgrid.liveSeats[5].PreElection_Seats + $scope.recentgrid.liveSeats[6].PreElection_Seats + $scope.recentgrid.liveSeats[7].PreElection_Seats + $scope.recentgrid.liveSeats[8].PreElection_Seats + $scope.recentgrid.liveSeats[9].PreElection_Seats + $scope.recentgrid.liveSeats[10].PreElection_Seats + $scope.recentgrid.liveSeats[11].PreElection_Seats;
-     	    	
           	    var liveSeats = {"rows":[
           	    {"left":$scope.recentgrid.liveSeats[0].Party_Name,"right":$scope.recentgrid.liveSeats[0].PreElection_Seats,"color":$scope.recentgrid.liveSeats[0].Color},
           	    {"left":$scope.recentgrid.liveSeats[1].Party_Name,"right":$scope.recentgrid.liveSeats[1].PreElection_Seats,"color":$scope.recentgrid.liveSeats[1].Color},
@@ -360,12 +358,7 @@ app.controller('constituencyCGController', ['$scope', 'socket',
 
         function getConstituencyData() {
             socket.emit("constituency:get");
-        }
-        
-      $scope.ConstituencyThird = function(Const_ID) {
-          	$scope.constituency.subheading = 'Chosen Constituency: '+ Const_ID;
-          
-      }
-
+        }    
+         
     }
 ]);

@@ -414,76 +414,63 @@ h1, h2, h3, h4 {
 	margin-bottom: 0px !important;
 }
 
-/**************************************************/
-/*              [Football Score]                  */
-/**************************************************/
+.constituencyoverview {
+    min-width: 20%;
+    min-height: 38px;
+    height: 100px;
+    width: 50%;
+    border-radius: 5px;
+    background-clip: padding-box;
+    background-color: #fff;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    }
 
-.football {
-  width: 30%;
-  border-radius: 3px;
-  background-clip: padding-box;
-  font-size: 30px;
-  font-size: 1.8vw;
-  text-align: center;
+.constituencyoverview h1 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #a11a1e;
+    min-height: 38px;
+    padding: 5px 8px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+	border-top-right-radius: 5px;
+	border-left:3px solid white;
 }
 
-.football-score h1 {
-    font-size: 18px;
-    padding: 6px;
-    padding-left: 58px !important;
-    padding-right: 44px !important;
-    text-transform: uppercase;
+.constituencyoverview .majority {
+	padding: 5px 8px;
+}
+
+.constituencyoverview .turnout {
+	padding: 5px 8px;
+}
+
+.constituencyoverview .declaretime {
+	padding: 5px 8px;
+}
+
+.constituencyoverview .euresults {
+	padding: 5px 8px;
+}
+
+.constituencyoverview h2 {
+    color: #111;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 8px;
+	border-left:3px solid white;
+    background-color: #fff;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
 }
 
-.footballtop h1 {
-	color: #000;
-	border-bottom: 3px solid white;
-	background-color: #eee !important;
-}
-
-.footballbottom h1 {
-	color: #fff;
-	border-top: 3px solid white;
-	background-color: #1f1a34 !important;
-}
-
-.football .clock, .football .score.lanc, .football .score.york {
-  padding: 3px;
-  float: left;
-}
-
-.football .clock {
-  background-color: #eee;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
-  width: 24%;
-}
-
-.football .extratime {
-  background-color: #bc204b;;
-  color: #fff;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
-  width: 12%;
-  padding: 3px;
-  margin-left: 23px; 
-}
-
-.football .score.lanc {
-  width: 38%;
-  color: #fff;
-  background-color: #cd1d18;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
-}
-
-.football .score.lanc p {
-    float: right;
-}
-
-.football .score.york {
-  width: 38%;
-  color: #000;
-  background-color: #efbb39;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+#eupiechart {
+	float: right;
+	font-weight: bold;
 }
 
 /*

@@ -64,9 +64,14 @@
         </div>
         
         <div ng-controller="constituencyCtrl">
-        	<div class="lowerthird scale-fade">
+        	<div class="constituencyoverview scale-fade" ng-show="constituency.showConstituencyInfo">
                 <div class="gradient-overlay">
-                    <h1 ng-show="constituency.showheading">head:{{constituency.heading}} sub: {{constituency.subheading}} Rem {{constituency.euremain}} Lea{{constituency.euleave}}</h1>
+                    <h1 style="background-color: {{constituency.conColor}} !important;">{{constituency.conName}}</h1>
+                	<div id="eupiechart"></div>	
+                	<span class="turnout">Turnout: 65,000 (72%)</span>
+                	<span class="majority"></span>
+                	<span class="euresults">Remain: {{constituency.euremain}} Leave: {{constituency.euleave}}</span><br />
+                	<span class="declaretime">01:30AM</span>
                 </div>
             </div>
         </div>
@@ -188,5 +193,40 @@
         <script type="text/javascript" src="/js/libs/angular-animate.min.js"></script>
         <script type="text/javascript" src="/js/ng-socket-io.js"></script>
         <script type="text/javascript" src="/js/cg.js"></script>
+        <script type="text/javascript" src="/js/chartsloader.js"></script>
+        
+        <script>
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['', ''],
+          ['L', 52],
+          ['R', 48]
+        ]);
+
+        var options = {
+          title: '',
+          backgroundColor: { fill:'transparent' },
+          pieSliceText: 'label',
+          slices: {
+            0: { color: '#003399' },
+            1: { color: '#d7001f' }
+          },
+          legend: 'none',
+          chartArea:{right:5,top:0,width:'100%',height:'100%'},
+          height: 125,
+          width: 125,
+          is3D: true,
+          fontName: 'Ubuntu Condensed',
+          fontSize: 24
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('eupiechart'));
+
+        chart.draw(data, options);
+      }</script>
     </body>
 </html>

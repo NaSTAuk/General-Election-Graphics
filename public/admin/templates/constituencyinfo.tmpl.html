@@ -3,6 +3,24 @@
 
 
 <div class="ui form segment">
+<div class="fields sixteen wide column">
+	<div class="field six wide">
+        	<input  type="text" id="conName" placeholder="Constituency Name" ng-model="constituency.conName">
+    </div>
+    <div class="field three wide">
+        	<input  type="text" placeholder="Party" ng-model="constituency.conParty">
+        	<input  type="hidden" ng-model="constituency.conColor">
+    </div>
+    <div class="field three wide">
+        	<input  type="text" placeholder="EU Leave" ng-model="constituency.euleave">
+    </div>
+    <div class="field four wide">	
+        	<checkbox ng-model="constituency.showConstituencyInfo" type="toggle">Show Constituency Info</checkbox>
+	</div>
+</div>
+</div>
+
+<div class="ui form segment">
 <h2>Get Searching</h2>
 <div class="sixteen wide column">
 <form role="form">
@@ -29,9 +47,6 @@
     <div class="field three wide">
         	<input  type="text" placeholder="EU Leave" ng-model="constituency.euleave">
     </div>
-    <div class="field four wide">	
-        	<checkbox ng-model="constituency.showheading" type="toggle">Heading</checkbox>
-	</div>
 </div>
 
 </div>
@@ -45,7 +60,7 @@ $(window).load(function(){
             $.getJSON('/data/data_dump.json', function(data) {
               $.each(data, function(key, val){
                 if ((val.Const_Name.search(regex) != -1)) {
-                  output += '<div class="ten wide field"><h2 style="color:' +val.Color + '">' + val.Const_Name + ' - ' + val.Winner15 +'</h2></div><div class="five wide field"><button class="ui green button" ng-click="ConstituencyThird(\''+ val.Const_ID +'\')">Show Constituency Overview</button></div>';
+                  output += '<div class="ten wide field"><h2 style="color:' +val.Color + '">' + val.Const_Name + ' - ' + val.Winner15 +'</h2></div><div class="five wide field"><button class="ui green button" onclick="getConstituencyData(\''+ val.Const_Name +'\')">Show Constituency Overview</button></div>';
 				  output += val.REGN + ', ' + val.Country;
 				  output += '<strong> ' + val.Elect15 + '</strong> (' + val.Turnout15 +'%)';
                   output += '<p>' + val.Winner15 + ' Majority: ' + val.MAJ + '<br />';
@@ -60,4 +75,10 @@ $(window).load(function(){
             }); 
         });
       });
+</script>
+
+<script>
+	function getConstituencyData(Const_Name) {
+		document.getElementById("conName").value = Const_Name;
+}
 </script>
