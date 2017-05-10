@@ -11,7 +11,7 @@ var score = {};
 var grid = {headingcolor:"#BC204B", leftcolor: "#1f1a34"};
 var seats = {};
 var recentgrid = {};
-var constituency = {};
+var constituency = {dataDump:""};
 
 	io.on('connection', function(socket) {
 	console.log("Client Socket Connected");
@@ -144,7 +144,7 @@ var constituency = {};
 	 * 		Constituency
 	 */
 	socket.on("constituency", function(msg) {
-        seats = msg;
+        constituency = msg;
 		io.sockets.emit("constituency", msg);
 	});
 
