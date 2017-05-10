@@ -45,7 +45,7 @@ $(window).load(function(){
             $.getJSON('/data/data_dump.json', function(data) {
               $.each(data, function(key, val){
                 if ((val.Const_Name.search(regex) != -1)) {
-                  output += '<div class="ten wide field"><h2 style="color:' +val.Color + '">' + val.Const_Name + ' - ' + val.Winner15 + '</h2></div><div class="five wide field"><button class="ui green button" ng-click="ConstituencyThird('+ val.Const_ID +')">Show Constituency Overview</button></div>';
+                  output += '<div class="ten wide field"><h2 style="color:' +val.Color + '">' + val.Const_Name + ' - ' + val.Winner15 +'</h2></div><div class="five wide field"><button class="ui green button" ng-click="ConstituencyThird(\''+ val.Const_ID +'\')">Show Constituency Overview</button></div>';
 				  output += val.REGN + ', ' + val.Country;
 				  output += '<strong> ' + val.Elect15 + '</strong> (' + val.Turnout15 +'%)';
                   output += '<p>' + val.Winner15 + ' Majority: ' + val.MAJ + '<br />';
