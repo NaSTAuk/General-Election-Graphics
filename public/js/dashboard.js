@@ -361,6 +361,11 @@ app.controller('constituencyCGController', ['$scope', 'socket',
         function getConstituencyData() {
             socket.emit("constituency:get");
         }
+        
+      $scope.ConstituencyThird = function(Const_ID) {
+          	$scope.constituency.subheading = 'Chosen Constituency: '+ Const_ID;
+          
+      }
 
     }
 ]);

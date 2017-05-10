@@ -248,11 +248,6 @@ app.controller('constituencyCtrl', ['$scope', '$http', 'socket',
         function getConstituencyData() {
             socket.emit("constituency:get");
         }
-                
-        $scope.ConstituencyThird = function(Const_ID) {
-          	$scope.constituency.heading = Const_ID;
-          
-      }
         
     }
 ]);

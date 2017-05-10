@@ -64,12 +64,9 @@
         </div>
         
         <div ng-controller="constituencyCtrl">
-        	<div class="lowerthird  scale-fade">
+        	<div class="lowerthird scale-fade">
                 <div class="gradient-overlay">
-                    <h1 ng-show="constituency.showheading">{{constituency.heading}}</h1>
-    					<div id="piechart" style="width: 900px; height: 500px;"></div>
-    					<input style="display:none;" id="remainupdate" type="text" placeholder="EU Remain" value="{{constituency.euleave}}">
-    					<input style="display:none;" id="leaveupdate" type="text" placeholder="EU Remain" value="{{constituency.euremain}}">
+                    <h1 ng-show="constituency.showheading">head:{{constituency.heading}} sub: {{constituency.subheading}} Rem {{constituency.euremain}} Lea{{constituency.euleave}}</h1>
                 </div>
             </div>
         </div>
@@ -155,6 +152,7 @@
         </div>
         
         <div ng-controller="gridCtrl">
+        
           <div class="center-page scale-fade" ng-show="show">
             <div class="grid center" style="margin-top: 20px; position: absolute;" >
               <div class="gradient-overlay">
@@ -170,7 +168,7 @@
         </div>  
           
         <div ng-controller="recentgridCtrl">
-          <div class="center-page scale-fade" ng-show="show">
+          <div class="top scale-fade" ng-show="show">
             <div class="grid center" style="margin-top: 20px; position: absolute;" >
               <div class="gradient-overlay">
                 <h1>{{ recentgrid.header }}</h1>
@@ -190,55 +188,5 @@
         <script type="text/javascript" src="/js/libs/angular-animate.min.js"></script>
         <script type="text/javascript" src="/js/ng-socket-io.js"></script>
         <script type="text/javascript" src="/js/cg.js"></script>
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-		<script>
-		      google.charts.load('current', {'packages':['corechart']});
-			  google.charts.setOnLoadCallback(drawChart);
-
-			  function drawChart() {
-				
-				var data = google.visualization.arrayToDataTable([
-				  ['Task', 'Hours per Day'],
-				  ['Remain', 60],
-				  ['Leave',  40]
-				]);
-
-				var options = {
-				  title: '',
-				  is3D: true,
-				  pieSliceText: 'label',
-				  enableInteractivity: true,
-				  backgroundColor: { fill:'transparent' },
-				  legend: {position: 'none', textStyle: {color: 'white', fontSize: 16}}
-				};
-				
-				var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
-				chart.draw(data, options);
-				
-				var bidEl = document.getElementById('remainupdate');
-				var askEl = document.getElementById('leaveupdate');
-
-				function updateChart () {
-					var bid = bidEl.value * 1;
-					var ask = askEl.value * 1;
-					data.setValue(0, 1, ask);
-					data.setValue(1, 1, bid);
-					chart.draw(data, options);
-				}
-
-				// create event handlers for changing the chart's data
-				if (document.addEventListener) {
-					bidEl.addEventListener('change', updateChart);
-					askEl.addEventListener('change', updateChart);
-				}
-				else {
-					bidEl.attachEvent('onchange', updateChart);
-					askEl.attachEvent('onchange', updateChart);
-				}
-				updateChart();
-				
-			  }
-    </script>
     </body>
 </html>
