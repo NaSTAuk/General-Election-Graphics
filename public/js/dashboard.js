@@ -77,7 +77,7 @@ app.config(['$routeProvider', 'localStorageServiceProvider',
             })
             .when("/constituencyinfo", {
                 templateUrl: '/admin/templates/constituencyinfo.tmpl.html',
-                controller: 'lowerThirdsCGController'
+                controller: 'constituencyCGController'
             })
             .when("/roses", {
                 templateUrl: '/admin/templates/roses.tmpl.html',
@@ -339,6 +339,27 @@ app.controller('seatsCGController', ['$scope', 'socket',
 
         function getSeatsData() {
             socket.emit("seats:get");
+        }
+
+    }
+]);
+
+app.controller('constituencyCGController', ['$scope', 'socket',
+    function($scope, socket) {
+        socket.on("constituency", function (msg) {
+            $scope.constituency = msg;
+        });
+
+        $scope.$watch('constituency', function() {
+            if ($scope.constituency) {
+                socket.emit("constituency", $scope.constituency);
+            } else {
+                getConstituencyData();
+            }
+        }, true);
+
+        function getConstituencyData() {
+            socket.emit("constituency:get");
         }
 
     }

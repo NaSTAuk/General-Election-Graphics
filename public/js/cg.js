@@ -230,3 +230,23 @@ app.controller('seatsCtrl', ['$scope', '$http', 'socket',
         }
     }
 ]);
+
+
+app.controller('constituencyCtrl', ['$scope', '$http', 'socket',
+    function($scope, $http, socket){
+
+        socket.on("constituency", function (msg) {
+            $scope.constituency = msg;
+        });
+
+        $scope.$watch('constituency', function() {
+            if (!$scope.constituency) {
+                getConstituencyData();
+            }
+        }, true);
+
+        function getConstituencyData() {
+            socket.emit("constituency:get");
+        }
+    }
+]);

@@ -1,75 +1,10 @@
 <div class="ui form segment">
   <h2>Constituency Information</h2>
-  <form name="lowerThirdsForm" method="post">
-    <div class="two fields">
-      <div class="field">
-        <label for="Heading">Heading</label>
-        <input id="Heading" placeholder="Heading" type="text" ng-trim="true" ng-model="lowerThird.heading"/>
-      </div>
 
-      <div class="field">
-        <label for="SubHeading">Sub-Heading</label>
-        <input id="SubHeading" placeholder="Sub Heading" type="text" ng-trim="true" ng-model="lowerThird.subHeading">
-      </div>
-    </div>
-	<br>
-    <div class="right floated right aligned six wide column">
-      <div class="ui blue button" ng-click="add(lowerThird)" ng-disabled="lowerThirdsForm.$invalid" >Add</div>
-      <div class="ui red button" ng-click="hideall()">Hide All</div>
-    </div>
-  </form>
-</div>
-
-<div class="ui segment" ng-repeat="third in queuedThirds">
-  <div class="ui grid">
-    <div class="six wide column">
-      <h2 class="left aligned ui header">
-          <i class="list layout icon"></i>
-          <div class="content">
-              {{third.heading}}
-              <div class="sub header">{{third.subHeading}}</div>
-          </div>
-        </h2>
-    </div>
-
-    <div class="two wide column">
-      
-    </div>
-
-    <div class="two wide column">
-
-    </div>
-
-    <div class="right aligned six wide column">
-      <div class="ui small buttons">
-        <div class="ui positive button" ng-click="show('left', third)" >Left</div>
-        <div class="or"></div>
-        <div class="ui positive button" ng-click="show('right', third)" >Right</div>
-        <div class="or"></div>
-        <div class="ui positive button" ng-click="show('full', third)" >Full Width</div>
-      </div>
-      <div class="ui icon red small button">
-        <i class="delete icon" ng-click='remove($index)'></i>
-      </div>
-
-      <div class="ui small buttons">
-        <div class="ui negative button" ng-click="hideleft()" >Left</div>
-        <div class="or"></div>
-        <div class="ui negative button" ng-click="hideright()" >Right</div>
-        <div class="or"></div>
-        <div class="ui negative button" ng-click="hidefull()" >Full Width</div>
-      </div>
-
-      <div class="ui icon red small button">
-        <i class="delete icon" ng-click='remove($index)'></i>
-      </div>
-    </div>
-  </div>
-</div>  
 
 <div class="ui form segment">
 <h2>Get Searching</h2>
-<div class="six wide column">
+<div class="sixteen wide column">
 <form role="form">
         <div class="form-group">
           <input type="text" class="form-control input-lg" id="consearch" placeholder="Type constituency name here...">
@@ -81,6 +16,25 @@
 <div class="ui form segment">
 <div id="constituencyresults">Please search using the bar above</div>
 </div>
+
+<div class="ui divider"></div>
+<div class="fields sixteen wide column">
+
+	<div class="field six wide">
+        	<input  type="text" placeholder="Discription" ng-model="constituency.heading">
+    </div>
+    <div class="field six wide">
+        	<input  type="text" placeholder="EU Remain" ng-model="constituency.euremain">
+    </div>
+    <div class="field six wide">
+        	<input  type="text" placeholder="EU Leave" ng-model="constituency.euleave">
+    </div>
+    <div class="field two wide">	
+        	<checkbox ng-model="constituency.showheading" type="toggle">Heading</checkbox>
+	</div>
+</div>
+
+</div>
 <script>
 $(window).load(function(){
         $('#consearch').keyup(function(){
@@ -91,7 +45,7 @@ $(window).load(function(){
             $.getJSON('/data/data_dump.json', function(data) {
               $.each(data, function(key, val){
                 if ((val.Const_Name.search(regex) != -1)) {
-                  output += '<h2 style="color:' +val.Color + '">' + val.Const_Name + ' - ' + val.Winner15 + '</h2>';
+                  output += '<div class="ten wide field"><h2 style="color:' +val.Color + '">' + val.Const_Name + ' - ' + val.Winner15 + '</h2></div><div class="five wide field"><button class="ui green button" ng-click="ConstituencyThird('+ val.Const_ID +')">Show Constituency Overview</button></div>';
 				  output += val.REGN + ', ' + val.Country;
 				  output += '<strong> ' + val.Elect15 + '</strong> (' + val.Turnout15 +'%)';
                   output += '<p>' + val.Winner15 + ' Majority: ' + val.MAJ + '<br />';

@@ -11,6 +11,7 @@ var score = {};
 var grid = {headingcolor:"#BC204B", leftcolor: "#1f1a34"};
 var seats = {};
 var recentgrid = {};
+var constituency = {heading: ""};
 
 	io.on('connection', function(socket) {
 	console.log("Client Socket Connected");
@@ -137,6 +138,18 @@ var recentgrid = {};
 
     socket.on("seats:get", function(msg) {
 		io.sockets.emit("seats", seats);
+	});
+
+	/*
+	 * 		Constituency
+	 */
+	socket.on("constituency", function(msg) {
+        seats = msg;
+		io.sockets.emit("constituency", msg);
+	});
+
+    socket.on("constituency:get", function(msg) {
+		io.sockets.emit("constituency", constituency);
 	});
 
 });

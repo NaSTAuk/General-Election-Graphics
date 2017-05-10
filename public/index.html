@@ -19,7 +19,7 @@
 </div>
     
         <div ng-controller="bugCtrl">
-            <div class="wrapper slide-top" ng-show="state.showGeneral">
+            <div class="wrapper slide-left" ng-show="state.showGeneral">
                  <div class="bug top slide-top" ng-show="state.showClock">
                  	<h1 class="black clock">{{clock | date: "h:mm a"}}</h1>
                  </div>
@@ -62,9 +62,20 @@
                 <h2 ng-show="right.subHeading">{{right.subHeading}}</h2>
             </div>
         </div>
+        
+        <div ng-controller="constituencyCtrl">
+        	<div class="lowerthird  scale-fade">
+                <div class="gradient-overlay">
+                    <h1 ng-show="constituency.showheading">{{constituency.heading}}</h1>
+    					<div id="piechart" style="width: 900px; height: 500px;"></div>
+    					<input style="display:none;" id="remainupdate" type="text" placeholder="EU Remain" value="{{constituency.euleave}}">
+    					<input style="display:none;" id="leaveupdate" type="text" placeholder="EU Remain" value="{{constituency.euremain}}">
+                </div>
+            </div>
+        </div>
 
         <div ng-controller="scoringCtrl">
-        		<div ng-show="showScore" class="total-score scale-fade" >
+        		<div ng-show="showScore" class="total-score slide-left" >
 					<div class="float-left party-score CON" ng-show="showcon">
 					<p class="party-name">CON</p><p class="seats"> {{conScore}}</p><div style="clear: both;"></div>
 					</div>
@@ -104,7 +115,7 @@
         </div>
         
          <div ng-controller="seatsCtrl">
-        		<div ng-show="seats.showSeats" class="total-score {{seats.position}} scale-fade" >
+        		<div ng-show="seats.showSeats" class="total-score {{seats.position}} slide-{{seats.position}}" >
 					<div class="float-left party-score CON" ng-show="seats.showcon">
 					<p><span class="party-name" ng-show="seats.showSeatsNames">CON</span> <span class="seats"> {{seats.conScore}}</span></p>
 					</div>
@@ -137,7 +148,7 @@
 					<p><span class="party-name" ng-show="seats.showSeatsNames">OTH</span> <span class="seats"> {{seats.othScore}}</span></p>
 					</div>
 					<br>
-					<div ng-show="seats.showSubtitle" class="subtitle scale-fade"><h1>{{seats.subtitle}}</h1></div>
+					<div ng-show="seats.showSubtitle" class="subtitle slide-{{seats.position}}"><h1>{{seats.subtitle}}</h1></div>
                 	
                 	<div class="clearfix"></div>
             	</div>
@@ -156,6 +167,7 @@
               </div>
             </div>
           </div>
+        </div>  
           
         <div ng-controller="recentgridCtrl">
           <div class="center-page scale-fade" ng-show="show">
@@ -170,6 +182,7 @@
               </div>
             </div>
           </div>
+        </div>  
 
 
         <script type="text/javascript" src="/js/socket.io.js"></script>
@@ -177,6 +190,55 @@
         <script type="text/javascript" src="/js/libs/angular-animate.min.js"></script>
         <script type="text/javascript" src="/js/ng-socket-io.js"></script>
         <script type="text/javascript" src="/js/cg.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script>
+		      google.charts.load('current', {'packages':['corechart']});
+			  google.charts.setOnLoadCallback(drawChart);
 
+			  function drawChart() {
+				
+				var data = google.visualization.arrayToDataTable([
+				  ['Task', 'Hours per Day'],
+				  ['Remain', 60],
+				  ['Leave',  40]
+				]);
+
+				var options = {
+				  title: '',
+				  is3D: true,
+				  pieSliceText: 'label',
+				  enableInteractivity: true,
+				  backgroundColor: { fill:'transparent' },
+				  legend: {position: 'none', textStyle: {color: 'white', fontSize: 16}}
+				};
+				
+				var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+				chart.draw(data, options);
+				
+				var bidEl = document.getElementById('remainupdate');
+				var askEl = document.getElementById('leaveupdate');
+
+				function updateChart () {
+					var bid = bidEl.value * 1;
+					var ask = askEl.value * 1;
+					data.setValue(0, 1, ask);
+					data.setValue(1, 1, bid);
+					chart.draw(data, options);
+				}
+
+				// create event handlers for changing the chart's data
+				if (document.addEventListener) {
+					bidEl.addEventListener('change', updateChart);
+					askEl.addEventListener('change', updateChart);
+				}
+				else {
+					bidEl.attachEvent('onchange', updateChart);
+					askEl.attachEvent('onchange', updateChart);
+				}
+				updateChart();
+				
+			  }
+    </script>
     </body>
 </html>
