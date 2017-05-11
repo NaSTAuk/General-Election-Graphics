@@ -65,13 +65,72 @@
         
         <div ng-controller="constituencyCtrl">
         	<div class="constituencyoverview scale-fade" ng-show="constituency.showConstituencyInfo">
-                <div class="gradient-overlay">
-                    <h1 style="background-color: {{constituency.conColor}} !important;">{{constituency.conName}}</h1>
+                <div class="gradient-overlay" style="clear: both">
+                    <h1 style="background-color: {{constituency.conColor}} !important;">{{constituency.conName}} </h1>
+                	<div class="eurefinfo"> 
+                	<div class="eupietitle">EU Referendum Result 2016</div>
                 	<div id="eupiechart"></div>	
-                	<span class="turnout">Turnout: 65,000 (72%)</span>
-                	<span class="majority"></span>
-                	<span class="euresults">Remain: {{constituency.euremain}} Leave: {{constituency.euleave}}</span><br />
-                	<span class="declaretime">01:30AM</span>
+                	<input type="hidden" id="euleave" value="{{constituency.euleave}}">
+                	<input type="hidden" id="euremain" value="{{constituency.euremain}}">
+                </div>
+                </div>
+                
+                <div class="gradient-overlay constmpname">
+						<h2>{{constituency.conMPName}} - {{constituency.conDescription}}</h2>
+                </div>
+                
+                <div class="gradient-overlay party-breakdown">
+					<div class="constpartyname">
+						<h2 class="partyname" style="background-color: {{constituency.conColor}} !important;">{{constituency.conPartyOne}}</h2>
+					</div>
+					<div class="constcandidatename">
+						<h2>Candidate Name</h2>
+					</div>
+					<div class="constvotes">
+						<h2 class="partyname" style="background-color: {{constituency.conColor}} !important; text-align:right;">23,369</h2>
+					</div>
+                </div>
+                <div class="gradient-overlay party-breakdown">
+					<div class="constpartyname">
+						<h2 class="partyname" style="background-color: #ED1E0E !important;">{{constituency.conPartyTwo}}</h2>
+					</div>
+					<div class="constcandidatename">
+						<h2>Candidate Name</h2>
+					</div>
+					<div class="constvotes">
+						<h2 class="partyname" style="background-color: #ED1E0E !important; text-align:right;">8,468</h2>
+					</div>
+                </div>
+                <div class="gradient-overlay party-breakdown">
+					<div class="constpartyname">
+						<h2 class="partyname" style="background-color: #712F87 !important;">{{constituency.conPartyThree}}</h2>
+					</div>
+					<div class="constcandidatename">
+						<h2>Candidate Name</h2>
+					</div>
+					<div class="constvotes">
+						<h2 class="partyname" style="background-color: #712F87 !important; text-align:right;">8,253</h2>
+					</div>
+                </div>
+                <div class="gradient-overlay party-breakdown" >
+					<div class="constpartyname">
+						<h2 class="partyname" style="background-color: #FEAE14 !important;">{{constituency.conPartyFour}}</h2>
+					</div>
+					<div class="constcandidatename">
+						<h2>Candidate Name</h2>
+					</div>
+					<div class="constvotes">
+						<h2 class="partyname" style="background-color: #FEAE14 !important; text-align:right;">4,076</h2>
+					</div>
+                </div>
+                
+                <div class="gradient-overlay party-breakdown">
+					<div style="float:left; width:48%;">
+						<h2>Turnout: <span style="float:right">{{constituency.conTurnout}}</span></h2>
+					</div>
+					<div style="float:right; width:48%;">
+						<h2>Majority: <span style="float:right">{{constituency.conMajority}}</span></h2>
+					</div>
                 </div>
             </div>
         </div>
@@ -156,8 +215,7 @@
             	</div>
         </div>
         
-        <div ng-controller="gridCtrl">
-        
+        <div ng-controller="gridCtrl">   
           <div class="center-page scale-fade" ng-show="show">
             <div class="grid center" style="margin-top: 20px; position: absolute;" >
               <div class="gradient-overlay">
@@ -200,15 +258,17 @@
       google.charts.setOnLoadCallback(drawChart);
 
       function drawChart() {
-
+		
+		var leave = document.getElementById('euleave').value;
+		var remain = document.getElementById('euremain').value;
         var data = google.visualization.arrayToDataTable([
           ['', ''],
-          ['L', 52],
-          ['R', 48]
+          ['L', parseFloat(leave)],
+          ['R', parseFloat(remain)]
         ]);
 
         var options = {
-          title: '',
+          title: 'EU Referendum',
           backgroundColor: { fill:'transparent' },
           pieSliceText: 'label',
           slices: {
@@ -216,17 +276,20 @@
             1: { color: '#d7001f' }
           },
           legend: 'none',
-          chartArea:{right:5,top:0,width:'100%',height:'100%'},
-          height: 125,
-          width: 125,
+          chartArea:{right:3,top:0,width:'100%',height:'100%'},
+          height: 120,
+          width: 120,
           is3D: true,
           fontName: 'Ubuntu Condensed',
-          fontSize: 24
+          fontSize: 22
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('eupiechart'));
 
         chart.draw(data, options);
-      }</script>
+      }
+      
+      setInterval(drawChart, 2000); 
+      </script>
     </body>
 </html>

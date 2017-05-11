@@ -352,13 +352,13 @@ app.controller('constituencyCGController', ['$scope', 'socket',
             if ($scope.constituency) {
                 socket.emit("constituency", $scope.constituency);
             } else {
-                getConstituencyData();
+                getconstituencyData();
             }
         }, true);
 
-        function getConstituencyData() {
+        function getconstituencyData() {
             socket.emit("constituency:get");
-        }    
-         
+        }
+
     }
 ]);

@@ -277,17 +277,19 @@ h1, h2, h3, h4 {
     white-space: nowrap;
     clear:none;
     background-clip: padding-box;
+    
 }
 
 .bug h1 {
     color: #fff;
     border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
     font-size: 18px;
     line-height: 22px;
     font-weight: bold;
     float: left;
     padding: 3px 10px;
-    margin-right: 0px;
+    margin-right: 3px;
     border-left:3px solid white;
     background-color: #a11a1e;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
@@ -417,17 +419,15 @@ h1, h2, h3, h4 {
 .constituencyoverview {
     min-width: 20%;
     min-height: 38px;
-    height: 100px;
-    width: 50%;
+    height: 250px;
+    width: 40%;
     border-radius: 5px;
     background-clip: padding-box;
-    background-color: #fff;
     margin: auto;
     position: absolute;
-    top: 0;
     right: 0;
     left: 0;
-    bottom: 0;
+    margin-top: 20px;
     }
 
 .constituencyoverview h1 {
@@ -459,19 +459,74 @@ h1, h2, h3, h4 {
 }
 
 .constituencyoverview h2 {
-    color: #111;
-    font-size: 20px;
-    font-weight: bold;
+    color: #000;
+    font-size: 18px;
     padding: 5px 8px;
 	border-left:3px solid white;
     background-color: #fff;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 5px;
+    margin-right: 3px;
+}
+
+.constituencyoverview .party-breakdown h2.partyname {
+	color: #fff;
+	margin-right: 2px;
+	text-transform: uppercase;
+}
+
+.eurefinfo {
+	width:25%; 
+	float:right;
 }
 
 #eupiechart {
-	float: right;
-	font-weight: bold;
+	float:right;
 }
+
+.eupietitle {
+	color:#FFF; 
+	text-align:center; 
+	margin-top:10px; 
+	margin-bottom:10px;
+}
+
+.constmpname, .party-breakdown {
+	width:75%
+}
+
+.constcandidatename {
+	float:left; 
+	width:65%;
+}
+
+.constpartyname {
+	float:left; 
+	width:15%;
+}
+
+.constvotes {
+	float:right; 
+	width:20%;
+}
+
+.constturnout {
+	float:left; 
+	width:48%;
+{	
+
+.constmajority {
+	float:right;
+	width:48%;
+}
+
+#eupiechart {
+	font-weight: bold;
+	float:right;
+}
+
 
 /*
  *===================================
