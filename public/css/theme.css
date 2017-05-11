@@ -277,7 +277,6 @@ h1, h2, h3, h4 {
     white-space: nowrap;
     clear:none;
     background-clip: padding-box;
-    
 }
 
 .bug h1 {
@@ -425,8 +424,10 @@ h1, h2, h3, h4 {
     background-clip: padding-box;
     margin: auto;
     position: absolute;
+    top: 0;
     right: 0;
     left: 0;
+    bottom: 0;
     margin-top: 20px;
     }
 
@@ -461,11 +462,12 @@ h1, h2, h3, h4 {
 .constituencyoverview h2 {
     color: #000;
     font-size: 18px;
+    font-weight: bold;
     padding: 5px 8px;
-	border-left:3px solid white;
     background-color: #fff;
+	border-left:3px solid white;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
-    border-bottom-left-radius: 5px;
+	border-bottom-left-radius: 5px;
     border-top-right-radius: 5px;
     margin-top: 5px;
     margin-right: 3px;
@@ -479,10 +481,6 @@ h1, h2, h3, h4 {
 
 .eurefinfo {
 	width:25%; 
-	float:right;
-}
-
-#eupiechart {
 	float:right;
 }
 
@@ -515,18 +513,17 @@ h1, h2, h3, h4 {
 .constturnout {
 	float:left; 
 	width:48%;
-{	
+}	
 
 .constmajority {
 	float:right;
 	width:48%;
 }
 
+
 #eupiechart {
-	font-weight: bold;
 	float:right;
 }
-
 
 /*
  *===================================
