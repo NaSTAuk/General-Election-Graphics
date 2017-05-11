@@ -4,19 +4,73 @@
 
 <div class="ui form segment">
 <div class="fields sixteen wide column">
-	<div class="field six wide">
+	<div class="field five wide">
         	<input  type="text" id="conName" placeholder="Constituency Name" ng-model="constituency.conName">
     </div>
-    <div class="field three wide">
-        	<input  type="text" placeholder="Party" ng-model="constituency.conParty">
-        	<input  type="hidden" ng-model="constituency.conColor">
+         <div class="field three wide">
+        	<input  type="text" id="conRegn" placeholder="Region" ng-model="constituency.conRegn">
     </div>
     <div class="field three wide">
-        	<input  type="text" placeholder="EU Leave" ng-model="constituency.euleave">
+        	<input  type="text" id="conParty" placeholder="Party" ng-model="constituency.conParty">
     </div>
-    <div class="field four wide">	
-        	<checkbox ng-model="constituency.showConstituencyInfo" type="toggle">Show Constituency Info</checkbox>
+    <div class="field three wide">
+        	<input  type="text" id="conColor" placeholder="Party Color" ng-model="constituency.conColor">
+    </div>
+    <div class="field two wide">	
+        	<checkbox ng-model="constituency.showConstituencyInfo" type="toggle">Show Info</checkbox>
 	</div>
+</div>
+<br />
+<div class="fields sixteen wide column">
+	<div class="field four wide">
+        	<input  type="text" id="conTurnout" placeholder="Turnout" ng-model="constituency.conTurnout">
+    </div>
+    <div class="field four wide">
+        	<input  type="text" id="conMajority" placeholder="Majority" ng-model="constituency.conMajority">
+    </div>
+    <div class="field four wide">
+        	<input  type="text" id="conMPName" placeholder="MP Name" ng-model="constituency.conMPName">
+    </div>
+    <div class="field four wide">
+        	<input  type="text" id="conDescription" placeholder="Description" ng-model="constituency.conDescription">
+    </div>
+</div>
+<br />
+<div class="fields sixteen wide column">
+	<div class="field four wide">
+        	<input  id="conPartyOne" type="text" placeholder="Party One" ng-model="constituency.conPartyOne">
+        	<input  id="conPartyOneVotes" type="hidden" ng-model="constituency.conPartyOneVotes">
+        	<input  id="conPartyOnePercent" type="hidden" ng-model="constituency.conPartyOnePercent">
+        	<input  id="conPartyOneColor" type="hidden" ng-model="constituency.conPartyOneColor">
+    </div>
+    <div class="field four wide">
+        	<input  id="conPartyTwo" type="text" placeholder="Party Two" ng-model="constituency.conPartyTwo">
+        	<input  id="conPartyTwoVotes" type="hidden" ng-model="constituency.conPartyTwoVotes">
+        	<input  id="conPartyTwoPercent" type="hidden" ng-model="constituency.conPartyTwoPercent">
+        	<input  id="conPartyTwoColor" type="hidden" ng-model="constituency.conPartyTwoColor">
+    </div>
+    <div class="field four wide">
+        	<input  id="conPartyThree" type="text" placeholder="Party Three" ng-model="constituency.conPartyThree">
+        	<input  id="conPartyThreeVotes" type="hidden" ng-model="constituency.conPartyThreeVotes">
+        	<input  id="conPartyThreePercent" type="hidden" ng-model="constituency.conPartyThreePercent">
+        	<input  id="conPartyThreeColor" type="hidden" ng-model="constituency.conPartyThreeColor">
+    </div>
+    <div class="field four wide">
+        	<input  id="conPartyFour" type="text" placeholder="Party Four" ng-model="constituency.conPartyFour">
+        	<input  id="conPartyFourVotes" type="hidden" ng-model="constituency.conPartyFourVotes">
+        	<input  id="conPartyFourPercent" type="hidden" ng-model="constituency.conPartyFourPercent">
+        	<input  id="conPartyFourColor" type="hidden" ng-model="constituency.conPartyFourColor">
+    </div>
+</div>
+<br />
+<div class="fields sixteen wide column">
+	<div class="field four wide">
+        	<input  id="euremain" type="text" placeholder="EU Remain Percentage" ng-model="constituency.euremain">
+    </div>
+    <div class="field four wide">
+        	<input  id="ueleave" type="text" placeholder="EU Leave Percentage" ng-model="constituency.euleave">
+    </div>
+
 </div>
 </div>
 
@@ -35,19 +89,6 @@
 <div id="constituencyresults">Please search using the bar above</div>
 </div>
 
-<div class="ui divider"></div>
-<div class="fields sixteen wide column">
-
-	<div class="field six wide">
-        	<input  type="text" placeholder="Discription" ng-model="constituency.heading">
-    </div>
-    <div class="field three wide">
-        	<input  type="text" placeholder="EU Remain" ng-model="constituency.euremain">
-    </div>
-    <div class="field three wide">
-        	<input  type="text" placeholder="EU Leave" ng-model="constituency.euleave">
-    </div>
-</div>
 
 </div>
 <script>
@@ -60,13 +101,8 @@ $(window).load(function(){
             $.getJSON('/data/data_dump.json', function(data) {
               $.each(data, function(key, val){
                 if ((val.Const_Name.search(regex) != -1)) {
-                  output += '<div class="ten wide field"><h2 style="color:' +val.Color + '">' + val.Const_Name + ' - ' + val.Winner15 +'</h2></div><div class="five wide field"><button class="ui green button" onclick="getConstituencyData(\''+ val.Const_Name +'\')">Show Constituency Overview</button></div>';
-				  output += val.REGN + ', ' + val.Country;
-				  output += '<strong> ' + val.Elect15 + '</strong> (' + val.Turnout15 +'%)';
-                  output += '<p>' + val.Winner15 + ' Majority: ' + val.MAJ + '<br />';
-                  output += (val.EUHANLEAVE * 100).toFixed(2) + '% Leave ';
-                  output += (val.EUHANREM * 100).toFixed(2) + '% Remain</p>';
-				  output += val.MP_Name;
+                  output += '<div class="sixteen wide field" style="clear: both"><h2 style="float:left; color:' +val.Color + '">' + val.Const_Name + ' - ' + val.Winner15 +'&nbsp; </h2>';
+                  output += '<button class="ui green button" onclick="getConstituencyData(\''+ val.Const_Name + '\',\'' + val.REGN + '\',\'' + val.Winner15 + '\',\'' + val.Color + '\',\'' + val.VALID15 + '\',\'' + val.MAJ + '\',\'' + val.MP_Name + '\',\'' + val.Result + '\',\'' + val.Winner + '\',\'' + val.Second + '\',\'' + val.Result + '\')">Get Data</button></div>';
                   count++;
                 }
               });
@@ -78,7 +114,21 @@ $(window).load(function(){
 </script>
 
 <script>
-	function getConstituencyData(Const_Name) {
+	function getConstituencyData(Const_Name,Regn,Winner15,Color,Turnout,Majority,MPName,Description,PartyOne,PartyOneVotes,PartyOnePercent,PartyOneColor) {
+		function numberWithCommas(x) {
+			return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		}
 		document.getElementById("conName").value = Const_Name;
+		document.getElementById("conRegn").value = Regn;
+		document.getElementById("conParty").value = Winner15;
+		document.getElementById("conColor").value = Color;
+		document.getElementById("conTurnout").value = numberWithCommas(Turnout);
+		document.getElementById("conMajority").value = numberWithCommas(Majority);
+		document.getElementById("conMPName").value = MPName;
+		document.getElementById("conDescription").value = Description;
+		document.getElementById("conPartyOne").value = PartyOne;
+		document.getElementById("conPartyOneVotes").value = PartyOneVotes;
+		document.getElementById("conPartyOnePercent").value = PartyOnePercent;
+		document.getElementById("conPartyOneColor").value = PartyOneColor;
 }
 </script>
