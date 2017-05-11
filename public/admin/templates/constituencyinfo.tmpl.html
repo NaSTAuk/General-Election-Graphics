@@ -101,8 +101,9 @@ $(window).load(function(){
             $.getJSON('/data/data_dump.json', function(data) {
               $.each(data, function(key, val){
                 if ((val.Const_Name.search(regex) != -1)) {
-                  output += '<div class="sixteen wide field" style="clear: both"><h2 style="float:left; color:' +val.Color + '">' + val.Const_Name + ' - ' + val.Winner15 +'&nbsp; </h2>';
-                  output += '<button class="ui green button" onclick="getConstituencyData(\''+ val.Const_Name + '\',\'' + val.REGN + '\',\'' + val.Winner15 + '\',\'' + val.Color + '\',\'' + val.VALID15 + '\',\'' + val.MAJ + '\',\'' + val.MP_Name + '\',\'' + val.Result + '\',\'' + val.Winner + '\',\'' + val.Second + '\',\'' + val.Result + '\')">Get Data</button></div>';
+                  output += '<div class="sixteen wide field" style="clear: both">';
+                  output += '<button style="float:left;" style="vertical-align:middle" class="ui green button" onclick="getConstituencyData(\''+ val.Const_Name + '\',\'' + val.REGN + '\',\'' + val.Winner15 + '\',\'' + val.Color + '\',\'' + val.VALID15 + '\',\'' + val.MAJ + '\',\'' + val.MP_Name + '\',\'' + val.Result + '\',\'' + val.Winner + '\',\'' + val.Second + '\',\'' + val.Result + '\')">Get Data</button>';
+                  output += '<h2 style="color:' +val.Color + '">' + val.Const_Name + ' - ' + val.Winner15 +'&nbsp; </h2></div>';
                   count++;
                 }
               });
