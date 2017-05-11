@@ -221,7 +221,6 @@
               <div class="gradient-overlay">
                 <h1 style="background-color: {{grid.headingcolor}} !important;">{{ grid.header }}</h1>
               </div>
-
               <div class="row animate-repeat" ng-repeat="row in grid.rows">
                 <div style="background-color: {{row.color}} !important;" class="gridleft float-left">{{ row.left }}</div>
                 <div style="background-color: {{row.color}} !important;" class="gridright float-right">{{ row.right }}</div>
@@ -231,18 +230,15 @@
         </div>  
           
         <div ng-controller="recentgridCtrl">
-          <div class="top scale-fade" ng-show="show">
-            <div class="grid center" style="margin-top: 20px; position: absolute;" >
+            <div class="party-overview center top scale-fade" ng-show="show" >
               <div class="gradient-overlay">
                 <h1>{{ recentgrid.header }}</h1>
               </div>
-
               <div class="row animate-repeat" ng-repeat="row in recentgrid.rows">
-                <div style="background-color: {{row.color}} !important;" class="gridleft float-left">{{ row.left }}</div>
-                <div style="background-color: {{row.color}} !important;" class="gridright float-right">{{ row.right }}</div>
+                <div style="color: {{row.color}} !important;" class="gridleft"><h2>{{ row.left }}</h2></div>
+                <div style="background-color: {{row.color}} !important;" class="gridright">{{ row.right }}</div>
               </div>
             </div>
-          </div>
         </div>  
 
 

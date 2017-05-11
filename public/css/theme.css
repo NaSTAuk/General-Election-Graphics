@@ -424,10 +424,8 @@ h1, h2, h3, h4 {
     background-clip: padding-box;
     margin: auto;
     position: absolute;
-    top: 0;
     right: 0;
     left: 0;
-    bottom: 0;
     margin-top: 20px;
     }
 
@@ -465,11 +463,11 @@ h1, h2, h3, h4 {
     font-weight: bold;
     padding: 5px 8px;
     background-color: #fff;
-	border-left:3px solid white;
+	border-left: 3px solid white;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
 	border-bottom-left-radius: 5px;
     border-top-right-radius: 5px;
-    margin-top: 5px;
+    margin-top: 3px;
     margin-right: 3px;
 }
 
@@ -574,6 +572,75 @@ h1, h2, h3, h4 {
     }
 
     .grid .row:last-child {
+        margin-bottom: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    
+/*
+ *===================================
+ *         Party Overview
+ *===================================
+ */
+ .party-overview {
+    width: 25%;
+    text-align: left;
+    background-clip: padding-box;
+    clear: both;
+    font-weight: bold;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-top: 40px;
+  }
+    .party-overview h1 {
+        color:  #a11a1e;
+        font-size: 28px;
+        padding: 5px;
+        padding-left: 10px;
+        background-color: #fff;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.04) 51%, rgba(0, 0, 0, 0.02));
+   		border-top-right-radius: 5px;
+    }
+    
+    .party-overview h2 {
+    	margin-right: 3px;
+    }
+
+    .party-overview .gridleft, .party-overview .gridright {
+        float: left;
+        line-height: 28px;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+        font-size: 18px;
+        border-bottom-left-radius: 5px;
+    	border-top-right-radius: 5px;
+    	margin-top: 3px;
+    	margin-right: 3px;
+    }
+
+    .party-overview .gridleft {
+        padding-left: 10px;
+        text-align: left;
+        float: left;
+        background-color: #fff;
+        width: 77%;
+        border-left: 3px solid white;
+    }
+
+    .party-overview .gridright {
+        width: 20%;
+        float: right;
+        border-left: 3px solid #fff;
+        background-color: #a11a1e;
+        color: #fff;
+        text-align: center !important;
+    }
+
+    .party-overview .row {
+        color: #000;
+    }
+
+    .party-overview .row:last-child {
         margin-bottom: 5px;
         border-bottom-left-radius: 5px;
     }
