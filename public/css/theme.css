@@ -349,7 +349,7 @@ h1, h2, h3, h4 {
 }
 
 .party-score {
-	min-width: 50px;
+	min-width: 40px;
 	min-height: 30px;
 	font-size: 24px;
 }
@@ -371,6 +371,18 @@ h1, h2, h3, h4 {
 
 .total-score .subtitle h1 {
 	min-height: 28px;
+}
+
+    
+.total-score h2.subtitle {
+		color: #111;
+		font-size: 20px;
+		font-weight: bold;
+		padding: 5px 8px;
+		line-height: 26px;
+		border-left:3px solid white;
+		background-color: #fff;
+		border-bottom-left-radius: 5px;
 }
 
 .total-score h1 {
@@ -485,7 +497,7 @@ h1, h2, h3, h4 {
 .eupietitle {
 	color:#FFF; 
 	text-align:center; 
-	margin-top:10px; 
+	margin-top:3px; 
 	margin-bottom:10px;
 }
 
@@ -501,6 +513,10 @@ h1, h2, h3, h4 {
 .constpartyname {
 	float:left; 
 	width:15%;
+}
+
+.constpartyname h2 {
+	min-height: 28px;
 }
 
 .constvotes {

@@ -56,6 +56,13 @@ app.controller('AppCtrl', ['$scope', '$location',
             type: 'link',
             icon: 'green forward',
         });
+        
+        $scope.menu.push({
+            name: 'Results Blocks',
+            url: '/resultsblock',
+            type: 'link',
+            icon: 'red cubes',
+        });
     }
 ]);
 
@@ -102,6 +109,10 @@ app.config(['$routeProvider', 'localStorageServiceProvider',
             .when("/recentgrid", {
                 templateUrl: '/admin/templates/recentgrid.tmpl.html',
                 controller: 'recentgridCGController'
+            })
+            .when("/resultsblock", {
+                templateUrl: '/admin/templates/resultsblock.tmpl.html',
+                controller: 'resultsblockCGController'
             })            
             .otherwise({redirectTo: '/general'});
     }
@@ -342,22 +353,81 @@ app.controller('seatsCGController', ['$scope', 'socket',
     }
 ]);
 
-app.controller('constituencyCGController', ['$scope', 'socket',
+app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localStorageService', 'socket',
+    function($scope, $log, $http, localStorageService, socket){
+
+        var stored = localStorageService.get('constituency');
+
+        if(stored === null) {
+            $scope.constituency = {};
+        } else {
+            $scope.constituency = stored;
+        }
+
+        $scope.show = function() {
+            socket.emit('constituency', $scope.constituency);
+            $log.info("constituency.show()");
+            $log.info($scope.constituency);
+        };
+
+        $scope.hide = function() {
+            socket.emit('constituency', 'hide');
+            $log.info("constituency.hide()");
+        };
+         
+        $scope.grabdata = function() {
+            socket.emit('constituency', $scope.constituency);
+           	    var liveSeats = {
+           	    "conName":"Filton and Bradley Stoke",
+           	    "conRegn":"Region",
+           	    "conParty":"Conservative",
+           	    "conColor":"#0575C9",
+           	    "conTurnout":"50000",
+           	    "conMajority":"7500",
+           	    "conMPName":"Gerald Howarth",
+           	    "conDescription":"Con Hold",
+           	    "conPartyOne":"CON",
+           	    "conPartyOneVotes":"32000",
+           	    "conPartyOnePercent":"10000",
+           	    "conPartyOneColor":"#0575C9",
+           	    "conPartyTwo":"LAB",
+           	    "conPartyTwoVotes":"12000",
+           	    "conPartyTwoPercent":"10000",
+           	    "conPartyTwoColor":"#ED1E0E",
+           	    "conPartyThree":"UKIP",
+           	    "conPartyThreeVotes":"12000",
+           	    "conPartyThreePercent":"10000",
+           	    "conPartyThreColor":"#712F87",
+           	    "conPartyFour":"LIB",
+           	    "conPartyVotes":"8468",
+           	    "conPartyPercent":"10000",
+           	    "conPartyColor":"#FEAE14",
+           	    "euleave":"0.64",
+           	    "euremain":"0.36"
+           	    };
+           	    return localStorageService.set('constituency',liveSeats);    
+            $log.info("constituency.show()");
+        };
+     }
+]);
+
+
+app.controller('resultsblockCGController', ['$scope', 'socket',
     function($scope, socket) {
-        socket.on("constituency", function (msg) {
-            $scope.constituency = msg;
+        socket.on("resultsblock", function (msg) {
+            $scope.resultsblock = msg;
         });
 
-        $scope.$watch('constituency', function() {
-            if ($scope.constituency) {
-                socket.emit("constituency", $scope.constituency);
+        $scope.$watch('resultsblock', function() {
+            if ($scope.resultsblock) {
+                socket.emit("resultsblock", $scope.resultsblock);
             } else {
-                getconstituencyData();
+                getresultsblockData();
             }
         }, true);
 
-        function getconstituencyData() {
-            socket.emit("constituency:get");
+        function getresultsblockData() {
+            socket.emit("resultsblock:get");
         }
 
     }

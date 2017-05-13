@@ -232,22 +232,16 @@ app.controller('seatsCtrl', ['$scope', '$http', 'socket',
 ]);
 
 
-app.controller('constituencyCtrl', ['$scope', '$http', 'socket',
-    function($scope, $http, socket){
-
-        socket.on("constituency", function (msg) {
-            $scope.constituency = msg;
-        });
-
-        $scope.$watch('constituency', function() {
-            if (!$scope.constituency) {
-                getConstituencyData();
+app.controller('constituencyCtrl', ['$scope', 'socket',
+    function($scope, socket){
+        socket.on("constituency", function (payload) {
+            if (payload === "hide") {
+                $scope.constituency = {};
+                $scope.show = false;
+            } else {
+                $scope.show = true;
+                $scope.constituency = payload;
             }
-        }, true);
-
-        function getConstituencyData() {
-            socket.emit("constituency:get");
-        }
-        
+        });
     }
 ]);

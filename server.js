@@ -143,19 +143,10 @@ var constituency = {};
 	/*
 	 * 		Constituency
 	 */
-	socket.on("constituency", function(msg) {
-        constituency = msg;
-		io.sockets.emit("constituency", msg);
-	});
-
-    socket.on("constituency:get", function(msg) {
-		io.sockets.emit("constituency", constituency);
-	});
-	
-	socket.on("constituency", function(payload) {
-        constituency = payload;
+    socket.on("constituency", function(payload) {
+        recentgrid = payload;
         io.sockets.emit("constituency", payload);
-        console.log("Updating constituency info graphic");
+        console.log("Updating constituency info");
     });
 
 });
