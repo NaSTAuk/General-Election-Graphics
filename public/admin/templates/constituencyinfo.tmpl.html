@@ -2,13 +2,23 @@
 	 <div style="clear:both"> <h2 style="float: left; padding-right: 10px;">Constituency Information</h2>
 				  <button class="ui green button" ng-click="show()">Show</button>
 				<div class="ui red button" ng-click="hide()">Hide</div>
-				<div class="ui purple button" ng-click="grabdata()" onClick="window.location.reload()">Update Stuff</div>
-	 </div>
+		 </div>
+		 </div>
+<div class="ui form segment">		 		 
+	<div class="fields sixteen wide column">
+			<div class="field eleven wide">			
+				<input  type="text" id="conID" placeholder="Constituency ID" ng-model="constituency.conID">
+			</div>
+			<div class="field five wide">	
+				<div class="ui purple button" ng-click="grabdata(constituency.conID)" onClick="window.location.reload()">Get Latest Data</div>
+			</div>	
+	</div>
+</div>
 
 
 	<div class="ui form segment">
 	<div class="fields sixteen wide column">
-		<div class="field five wide">
+		<div class="field seven wide">
 				<input  type="text" id="conName" placeholder="Constituency Name" ng-model="constituency.conName">
 		</div>
 			 <div class="field three wide">
@@ -40,27 +50,49 @@
 	<div class="fields sixteen wide column">
 		<div class="field four wide">
 				<input  id="conPartyOne" type="text" placeholder="Party One" ng-model="constituency.conPartyOne">
-				<input  id="conPartyOneVotes" type="hidden" ng-model="constituency.conPartyOneVotes">
-				<input  id="conPartyOnePercent" type="hidden" ng-model="constituency.conPartyOnePercent">
 				<input  id="conPartyOneColor" type="hidden" ng-model="constituency.conPartyOneColor">
 		</div>
 		<div class="field four wide">
 				<input  id="conPartyTwo" type="text" placeholder="Party Two" ng-model="constituency.conPartyTwo">
-				<input  id="conPartyTwoVotes" type="hidden" ng-model="constituency.conPartyTwoVotes">
-				<input  id="conPartyTwoPercent" type="hidden" ng-model="constituency.conPartyTwoPercent">
 				<input  id="conPartyTwoColor" type="hidden" ng-model="constituency.conPartyTwoColor">
 		</div>
 		<div class="field four wide">
 				<input  id="conPartyThree" type="text" placeholder="Party Three" ng-model="constituency.conPartyThree">
-				<input  id="conPartyThreeVotes" type="hidden" ng-model="constituency.conPartyThreeVotes">
-				<input  id="conPartyThreePercent" type="hidden" ng-model="constituency.conPartyThreePercent">
 				<input  id="conPartyThreeColor" type="hidden" ng-model="constituency.conPartyThreeColor">
 		</div>
 		<div class="field four wide">
 				<input  id="conPartyFour" type="text" placeholder="Party Four" ng-model="constituency.conPartyFour">
-				<input  id="conPartyFourVotes" type="hidden" ng-model="constituency.conPartyFourVotes">
-				<input  id="conPartyFourPercent" type="hidden" ng-model="constituency.conPartyFourPercent">
 				<input  id="conPartyFourColor" type="hidden" ng-model="constituency.conPartyFourColor">
+		</div>
+	</div>
+	<br />
+	<div class="fields sixteen wide column">
+		<div class="field four wide">
+				<input  id="conPartyOneVotes" type="text" ng-model="constituency.conPartyOneVotes">
+		</div>
+		<div class="field four wide">
+				<input  id="conPartyTwoVotes" type="text" ng-model="constituency.conPartyTwoVotes">
+		</div>
+		<div class="field four wide">
+				<input  id="conPartyThreeVotes" type="text" ng-model="constituency.conPartyThreeVotes">
+		</div>
+		<div class="field four wide">
+				<input  id="conPartyFourVotes" type="text" ng-model="constituency.conPartyFourVotes">
+		</div>
+	</div>
+	<br />
+	<div class="fields sixteen wide column">
+		<div class="field four wide">
+				<input  id="conPartyOneVotes" type="text" placeholder="Candidate" ng-model="constituency.conPartyOneCandidate">
+		</div>
+		<div class="field four wide">
+				<input  id="conPartyTwoVotes" type="text" placeholder="Candidate" ng-model="constituency.conPartyTwoCandidate">
+		</div>
+		<div class="field four wide">
+				<input  id="conPartyThreeVotes" type="text" placeholder="Candidate" ng-model="constituency.conPartyThreeCandidate">
+		</div>
+		<div class="field four wide">
+				<input  id="conPartyFourVotes" type="text" placeholder="Candidate" ng-model="constituency.conPartyFourCandidate">
 		</div>
 	</div>
 	<br />
@@ -103,8 +135,8 @@
 				  $.each(data, function(key, val){
 					if ((val.Const_Name.search(regex) != -1)) {
 					  output += '<div class="sixteen wide field" style="clear: both">';
-					  output += '<button style="float:left;" style="vertical-align:middle" class="ui green button" ng-click="grabdata()">Get Data</button>';
-					  output += '<h2 style="color:' +val.Color + '">' + val.Const_Name + ' - ' + val.Winner15 +'&nbsp; </h2></div>';
+					  output += '<button style="float:left;" style="vertical-align:middle" class="ui purple button" onClick="myFunction(' + val.Constituency_ID + ')">Get Data</button>';
+					  output += '<h2 style="color:' +val.Color + '">' + val.Const_Name + ' - ' + val.Winner15 + ' - ' + val.Constituency_ID + '&nbsp; </h2></div>';
 					  count++;
 					}
 				  });
@@ -113,4 +145,8 @@
 				}); 
 			});
 		  });
+		  
+function myFunction(conID) {
+    document.getElementById("conID").value = conID;
+}	    
 </script>

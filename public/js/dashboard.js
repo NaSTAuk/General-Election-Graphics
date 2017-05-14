@@ -262,7 +262,7 @@ app.controller('recentgridCGController', ['$scope', '$log', '$http', 'localStora
         };
           
         var fetchSeats = function () {
-        var config = {headers:  {
+        	var config = {headers:  {
               'Accept': 'application/json',
               'Content-Type': 'application/json',
             }
@@ -375,37 +375,66 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
             $log.info("constituency.hide()");
         };
          
-        $scope.grabdata = function() {
+        $scope.grabdata = function(conID) {
         		
         		function numberWithCommas(x) {
     				return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 				}
+				
+				
+				var fetchColors = function () {
+       				var config = {headers:  {
+					  'Accept': 'application/json',
+					  'Content-Type': 'application/json',
+					}
+    			};
+
+				$http.get('/data/party_color_codes.json', config).then(function (response) {
+						$scope.constituency.partycolors = response.data;
+					 });    
+				};
+         
+         		fetchColors();
+         		
+         		var fetchData = function () {
+       				var config = {headers:  {
+					  'Accept': 'application/json',
+					  'Content-Type': 'application/json',
+					}
+    			};
+
+				$http.get('/data/data_dump.json', config).then(function (response) {
+						$scope.constituency.datadump = response.data;
+					 });    
+				};
+         
+         		fetchData();		
 
            	    var liveSeats = {
-           	    "conName":"Someplace Wonderful",
+           	    "conName":conID,
            	    "conRegn":"Region",
            	    "conParty":"Conservative",
-           	    "conColor":"#0575C9",
+           	    "conColor": "#0575C9",
            	    "conTurnout":numberWithCommas(50000),
            	    "conMajority":numberWithCommas(7500),
            	    "conMPName":"Gerald Howarth",
            	    "conDescription":"Con Hold",
            	    "conPartyOne":"CON",
            	    "conPartyOneVotes":numberWithCommas(32000),
-           	    "conPartyOnePercent":numberWithCommas(10000),
            	    "conPartyOneColor":"#0575C9",
+           	    "conPartyOneCandidate":"Johnny Cash",
            	    "conPartyTwo":"LAB",
            	    "conPartyTwoVotes":numberWithCommas(12000),
-           	    "conPartyTwoPercent":numberWithCommas(10000),
            	    "conPartyTwoColor":"#ED1E0E",
+           	    "conPartyTwoCandidate":"Willie Nelson",
            	    "conPartyThree":"UKIP",
            	    "conPartyThreeVotes":numberWithCommas(12000),
-           	    "conPartyThreePercent":numberWithCommas(10000),
-           	    "conPartyThreColor":"#712F87",
+           	    "conPartyThreeColor":"#712F87",
+           	    "conPartyThreeCandidate":"Reba McEntire",
            	    "conPartyFour":"LIB",
-           	    "conPartyVotes":numberWithCommas(8468),
-           	    "conPartyPercent":numberWithCommas(10000),
-           	    "conPartyColor":"#FEAE14",
+           	    "conPartyFourVotes":numberWithCommas(8468),
+           	    "conPartyFourColor":"#FEAE14",
+           	    "conPartyFourCandidate":"Dolly Parton",
            	    "euleave":(0.64*100).toFixed(2),
            	    "euremain":(0.36*100).toFixed(2)
            	    };

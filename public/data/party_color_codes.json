@@ -1,5 +1,4 @@
-{
-        /* English */
+[{
         "APNI": "#CDAF2D",
         "BNP": "#9094C8",
         "CPA": "#CC3399",
@@ -34,14 +33,10 @@
         "UUP": "#6AB1E6",
         "YF": "#00B8FD",
         "HUNG": "#646464",
-        /* Welsh */
-        "BNP": "#9094C8",
         "CEID": "#0575C9",
         "GRDd": "#78C31E",
         "ANNI": "#D26FBC",
         "LLAF": "#ED1E0E",
         "DRh": "#FE8300",
-        "Eraill": "#999999",
-        "PC": "#4E9F2F",
-        "UKIP": "#712F87"
-	}
+        "Eraill": "#999999"
+	}]
