@@ -376,33 +376,38 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
         };
          
         $scope.grabdata = function() {
+        		
+        		function numberWithCommas(x) {
+    				return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+				}
+
            	    var liveSeats = {
            	    "conName":"Someplace Wonderful",
            	    "conRegn":"Region",
            	    "conParty":"Conservative",
            	    "conColor":"#0575C9",
-           	    "conTurnout":"50000",
-           	    "conMajority":"7500",
+           	    "conTurnout":numberWithCommas(50000),
+           	    "conMajority":numberWithCommas(7500),
            	    "conMPName":"Gerald Howarth",
            	    "conDescription":"Con Hold",
            	    "conPartyOne":"CON",
-           	    "conPartyOneVotes":"32000",
-           	    "conPartyOnePercent":"10000",
+           	    "conPartyOneVotes":numberWithCommas(32000),
+           	    "conPartyOnePercent":numberWithCommas(10000),
            	    "conPartyOneColor":"#0575C9",
            	    "conPartyTwo":"LAB",
-           	    "conPartyTwoVotes":"12000",
-           	    "conPartyTwoPercent":"10000",
+           	    "conPartyTwoVotes":numberWithCommas(12000),
+           	    "conPartyTwoPercent":numberWithCommas(10000),
            	    "conPartyTwoColor":"#ED1E0E",
            	    "conPartyThree":"UKIP",
-           	    "conPartyThreeVotes":"12000",
-           	    "conPartyThreePercent":"10000",
+           	    "conPartyThreeVotes":numberWithCommas(12000),
+           	    "conPartyThreePercent":numberWithCommas(10000),
            	    "conPartyThreColor":"#712F87",
            	    "conPartyFour":"LIB",
-           	    "conPartyVotes":"8468",
-           	    "conPartyPercent":"10000",
+           	    "conPartyVotes":numberWithCommas(8468),
+           	    "conPartyPercent":numberWithCommas(10000),
            	    "conPartyColor":"#FEAE14",
-           	    "euleave":"0.64",
-           	    "euremain":"0.36"
+           	    "euleave":(0.64*100).toFixed(2),
+           	    "euremain":(0.36*100).toFixed(2)
            	    };
            	    return localStorageService.set('constituency',liveSeats);
            	        
