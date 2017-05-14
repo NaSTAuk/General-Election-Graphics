@@ -376,9 +376,8 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
         };
          
         $scope.grabdata = function() {
-            socket.emit('constituency', $scope.constituency);
            	    var liveSeats = {
-           	    "conName":"Filton and Bradley Stoke",
+           	    "conName":"Someplace Wonderful",
            	    "conRegn":"Region",
            	    "conParty":"Conservative",
            	    "conColor":"#0575C9",
@@ -405,7 +404,8 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
            	    "euleave":"0.64",
            	    "euremain":"0.36"
            	    };
-           	    return localStorageService.set('constituency',liveSeats);    
+           	    return localStorageService.set('constituency',liveSeats);
+           	        
             $log.info("constituency.show()");
         };
      }
