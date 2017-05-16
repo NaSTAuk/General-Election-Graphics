@@ -178,38 +178,38 @@
          <div ng-controller="seatsCtrl">
         		<div ng-show="seats.showSeats" class="total-score {{seats.position}} slide-{{seats.position}}" >
 					<div class="float-left party-score CON" ng-show="seats.showcon">
-					<p><span class="party-name" ng-show="seats.showSeatsNames">CON</span> <span class="seats"> {{seats.conScore}}</span></p>
+					<p><span class="party-name" ng-show="seats.showSeatsNames">CON</span> <span class="seats"> 30{{seats.conScore}}</span></p>
 					</div>
 
 					<div class="float-left party-score LAB" ng-show="seats.showlab">
-					<p><span class="party-name" ng-show="seats.showSeatsNames">LAB</span> <span class="seats"> {{seats.labScore}}</span></p>
+					<p><span class="party-name" ng-show="seats.showSeatsNames">LAB</span> <span class="seats"> 0{{seats.labScore}}</span></p>
 					</div>
 					
 					<div class="float-left party-score LIB" ng-show="seats.showlib">
-					<p><span class="party-name" ng-show="seats.showSeatsNames">LIB </span><span class="seats"> {{seats.libScore}}</span></p>
+					<p><span class="party-name" ng-show="seats.showSeatsNames">LIB </span><span class="seats"> 29{{seats.libScore}}</span></p>
 					</div>
 					
 					<div class="float-left party-score SNP" ng-show="seats.showsnp">
-					<p><span class="party-name" ng-show="seats.showSeatsNames">SNP</span> <span class="seats"> {{seats.snpScore}}</span></p>
+					<p><span class="party-name" ng-show="seats.showSeatsNames">SNP</span> <span class="seats"> 28{{seats.snpScore}}</span></p>
 					</div>
 					
 					<div class="float-left party-score GRN" ng-show="seats.showgrn">
-					<p><span class="party-name" ng-show="seats.showSeatsNames">GRN</span> <span class="seats"> {{seats.grnScore}}</span></p>
+					<p><span class="party-name" ng-show="seats.showSeatsNames">GRN</span> <span class="seats"> 27{{seats.grnScore}}</span></p>
 					</div>
 					
 					<div class="float-left party-score PC" ng-show="seats.showpc">
-					<p><span class="party-name" ng-show="seats.showSeatsNames">PC</span> <span class="seats"> {{seats.pcScore}}</span></p>
+					<p><span class="party-name" ng-show="seats.showSeatsNames">PC</span> <span class="seats"> 26{{seats.pcScore}}</span></p>
 					</div>
 					
 					<div class="float-left party-score DUP" ng-show="seats.showdup">
-					<p><span class="party-name" ng-show="seats.showSeatsNames">DUP</span> <span class="seats"> {{seats.dupScore}}</span></p>
+					<p><span class="party-name" ng-show="seats.showSeatsNames">DUP</span> <span class="seats"> 1{{seats.dupScore}}</span></p>
 					</div>
 					
 					<div class="float-left party-score OTH" ng-show="seats.showoth">
-					<p><span class="party-name" ng-show="seats.showSeatsNames">OTH</span> <span class="seats"> {{seats.othScore}}</span></p>
+					<p><span class="party-name" ng-show="seats.showSeatsNames">OTH</span> <span class="seats"> 0{{seats.othScore}}</span></p>
 					</div>
 					<br>
-					<div ng-show="seats.showSubtitle" class="subtitle slide-{{seats.position}}"><h1>{{seats.subtitle}}</h1></div>
+					<div ng-show="seats.showSubtitle" class="subtitle slide-{{seats.position}}"><h2 class="subtitle">{{seats.subtitle}}</h2></div>
                 	
                 	<div class="clearfix"></div>
             	</div>
