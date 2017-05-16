@@ -31,32 +31,44 @@
 		  </div>
   </div>
   <div class="ui divider"></div>
-      <div class="ui grid aligned">
-        <div class="twelve wide column">
-            <div class="field">
-                <checkbox ng-model="seats.showcon" style="margin-right:10px;" size="large" type="toggle">Show Con</checkbox>
-                <checkbox ng-model="seats.showlab" style="margin-right:10px;" size="large" type="toggle">Show Lab</checkbox>
-                <checkbox ng-model="seats.showlib" style="margin-right:10px;" size="large" type="toggle">Show Lib</checkbox>
-                <checkbox ng-model="seats.showsnp" style="margin-right:10px;" size="large" type="toggle">Show SNP</checkbox>
-             </div>
-		</div>
-		<div class="four wide column">
-            <div class="field">
-                <checkbox ng-model="seats.showtop" style="margin-right:10px;" size="large" type="toggle">Show Top</checkbox>         
+      <div style="margin-top:20px;" class="ui grid aligned">
+			<div class="field four wide">
+						<checkbox ng-model="seats.showcon" size="large" style="margin-bottom:10px;" type="toggle">Conservatives</checkbox>
+						<input  type="text" placeholder="Con Seats" ng-model="seats.conScore">
 			</div>
-		</div>
-		<div class="twelve wide column">
-            <div class="field">   
-                <checkbox ng-model="seats.showgrn" style="margin-right:10px;" size="large" type="toggle">Show Grn</checkbox>
-                <checkbox ng-model="seats.showpc" style="margin-right:10px;" size="large" type="toggle">Show PC</checkbox>
-                <checkbox ng-model="seats.showdup" style="margin-right:10px;" size="large" type="toggle">Show DUP</checkbox>
-                <checkbox ng-model="seats.showoth" style="margin-right:10px;" size="large" type="toggle">Show OTH</checkbox>
-        	</div>
-		</div>
+			<div class="field four wide">
+						<checkbox ng-model="seats.showlab" size="large" style="margin-bottom:10px;" type="toggle">Labour</checkbox>
+						<input  type="text" placeholder="Lab Seats" ng-model="seats.labScore">
+			</div>
+			<div class="field four wide">
+						<checkbox ng-model="seats.showsnp" size="large" style="margin-bottom:10px;" type="toggle">SNP</checkbox>
+						<input  type="text" placeholder="SNP Seats" ng-model="seats.snpScore">
+			</div>
+			<div class="field four wide">
+						<checkbox ng-model="seats.showlib" size="large" style="margin-bottom:10px;" type="toggle">Lib Dems</checkbox>
+						<input  type="text" placeholder="Lib Seats" ng-model="seats.libScore">
+			</div> 
+			
+	 <div style="margin-top:20px;" class="ui grid aligned">
+			<div class="field four wide">
+						<checkbox ng-model="seats.showgrn" size="large" style="margin-bottom:10px;" type="toggle">Greens</checkbox>
+						<input  type="text" placeholder="Con Seats" ng-model="seats.grnScore">
+			</div>
+			<div class="field four wide">
+						<checkbox ng-model="seats.showpc" size="large" style="margin-bottom:10px;" type="toggle">Plaid Cymru</checkbox>
+						<input  type="text" placeholder="Lab Seats" ng-model="seats.pcScore">
+			</div>
+			<div class="field four wide">
+						<checkbox ng-model="seats.showdup" size="large" style="margin-bottom:10px;" type="toggle">DUP</checkbox>
+						<input  type="text" placeholder="SNP Seats" ng-model="seats.dupScore">
+			</div>
+			<div class="field four wide">
+						<checkbox ng-model="seats.showoth" size="large" style="margin-bottom:10px;" type="toggle">Others</checkbox>
+						<input  type="text" placeholder="Lib Seats" ng-model="seats.othScore">
+			</div>       		      
+
 		<div class="four wide column">
-            <div class="field">        
-                <checkbox ng-model="seats.showall" style="margin-right:10px;" size="large" type="toggle">Show All</checkbox>
-            </div>
+
         </div>
     </div>   
   
