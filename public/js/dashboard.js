@@ -329,13 +329,44 @@ app.controller('rosesCGController', ['$scope', 'socket',
         function getScoreData() {
             socket.emit("score:get");
         }
+        
+        $scope.showallseats = function() {         		
+         		$scope.roses.showcon = true;
+				$scope.roses.showlab = true;
+				$scope.roses.showlib = true;
+				$scope.roses.showsnp = true;
+				$scope.roses.showgrn = true;
+				$scope.roses.showpc = true;
+				$scope.roses.showdup = true;
+				$scope.roses.showoth = true;
+        };
+        
+        $scope.showtopseats = function() {         		
+         		$scope.roses.showcon = true;
+				$scope.roses.showlab = true;
+				$scope.roses.showlib = true;
+				$scope.roses.showsnp = true;
+				$scope.roses.showgrn = false;
+				$scope.roses.showpc = false;
+				$scope.roses.showdup = false;
+				$scope.roses.showoth = true;
+        };
     }
 ]);
 
-app.controller('seatsCGController', ['$scope', 'socket',
-    function($scope, socket) {
+app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageService',
+    function($scope, socket, $http, localStorageService) {
+    
         socket.on("seats", function (msg) {
             $scope.seats = msg;
+            	$scope.seats.conChange = $scope.seats.conScore - 330;
+				$scope.seats.labChange = $scope.seats.labScore - 229;
+				$scope.seats.snpChange = $scope.seats.snpScore - 54;
+				$scope.seats.libChange = $scope.seats.libScore - 9;
+				$scope.seats.dupChange = $scope.seats.dupScore - 8;
+				$scope.seats.pcChange = $scope.seats.pcScore - 3;
+				$scope.seats.grnChange = $scope.seats.grnScore - 1;
+				$scope.seats.othChange = 15;
         });
 
         $scope.$watch('seats', function() {
@@ -349,7 +380,45 @@ app.controller('seatsCGController', ['$scope', 'socket',
         function getSeatsData() {
             socket.emit("seats:get");
         }
+        
+        $scope.updateseats = function() {
+         		
+         		var fetchData = function () {
+       				var config = {headers:  {
+					  'Accept': 'application/json',
+					  'Content-Type': 'application/json',
+					}
+    			};
 
+				$http.get('/data/live-seats.json', config).then(function (response) {
+						$scope.seats.datadump = response.data;
+					 });    
+				};         		     		
+         		fetchData();	
+           	    
+				$scope.seats.conScore = $scope.seats.datadump[0].Live_Seats;
+                $scope.seats.labScore = $scope.seats.datadump[1].Live_Seats;
+				$scope.seats.snpScore = $scope.seats.datadump[2].Live_Seats;
+				$scope.seats.libScore = $scope.seats.datadump[3].Live_Seats;
+				$scope.seats.dupScore = $scope.seats.datadump[4].Live_Seats;
+				$scope.seats.pcScore = $scope.seats.datadump[8].Live_Seats;
+				$scope.seats.grnScore = $scope.seats.datadump[11].Live_Seats;
+				$scope.seats.othScore = 0;
+
+        };
+		
+		$scope.showallseats = function() {         		
+         		$scope.seats.showcon = true;
+				$scope.seats.showlab = true;
+				$scope.seats.showlib = true;
+				$scope.seats.showsnp = true;
+				$scope.seats.showgrn = true;
+				$scope.seats.showpc = true;
+				$scope.seats.showdup = true;
+				$scope.seats.showoth = true;
+        };
+
+		
     }
 ]);
 
@@ -410,12 +479,18 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
          
          		fetchData();		
 
-           	    var liveSeats = {
-           	    "conName":conID,
-           	    "conRegn":"Region",
-           	    "conParty":"Conservative",
-           	    "conColor": "#0575C9",
-           	    "conTurnout":numberWithCommas(50000),
+				$scope.constituency.conScore = $scope.constituency.datadump[0].Const_Name;
+           	   	$scope.constituency.conRegn = $scope.constituency.datadump[0].REGID;
+           	   	$scope.constituency.conParty = $scope.constituency.datadump[0].Winner15;
+           	   	$scope.constituency.conColor = $scope.constituency.datadump[0].Color;
+           	   	$scope.constituency.conTurnout = $scope.constituency.datadump[0].VALID15;  	   
+
+           	    var liveSeats = {      	     
+           	    "conName":conName,
+           	    "conRegn":conRegn,
+           	    "conParty":conParty,
+           	    "conColor": conColor,
+           	    "conTurnout":numberWithCommas(conTurnout),
            	    "conMajority":numberWithCommas(7500),
            	    "conMPName":"Gerald Howarth",
            	    "conDescription":"Con Hold",

@@ -3,6 +3,7 @@
 	   "Party_Code": "Con",
 	   "Party_Name": "Conservative",
 	   "Live_Seats": 30,
+	   "Live_Change": 0,
 	   "PreElection_Seats": 330,
 	   "Color": "#0575C9"
 	 },
@@ -10,6 +11,7 @@
 	   "Party_Code": "Lab",
 	   "Party_Name": "Labour",
 	   "Live_Seats": 31,
+	   "Live_Change": 0,
 	   "PreElection_Seats": 229,
 	   "Color": "#ED1E0E"
 	 },
@@ -17,6 +19,7 @@
 	   "Party_Code": "SNP",
 	   "Party_Name": "Scottish National Party",
 	   "Live_Seats": 12,
+	   "Live_Change": 0,
 	   "PreElection_Seats": 54,
 	   "Color": "#EBC31C"
 	 },
@@ -24,6 +27,7 @@
 	   "Party_Code": "LD",
 	   "Party_Name": "Liberal Democrat",
 	   "Live_Seats": 9,
+	   "Live_Change": 0,
 	   "PreElection_Seats": 9,
 	   "Color": "#FEAE14"
 	 },
@@ -31,6 +35,7 @@
 	   "Party_Code": "DUP",
 	   "Party_Name": "Democratic Unionist Party",
 	   "Live_Seats": 8,
+	   "Live_Change": 0,
 	   "PreElection_Seats": 8,
 	   "Color": "#C0153D"
 	 },
@@ -38,6 +43,7 @@
 	   "Party_Code": "SF",
 	   "Party_Name": "Sinn Fein",
 	   "Live_Seats": 4,
+	   "Live_Change": 0,
 	   "PreElection_Seats": 4,
 	   "Color": "#00623F"
 	 },
@@ -45,6 +51,7 @@
 	   "Party_Code": "Ind",
 	   "Party_Name": "Independent",
 	   "Live_Seats": 4,
+	   "Live_Change": 0,
 	   "PreElection_Seats": 4,
 	   "Color": "#D26FBC"
 	 },
@@ -52,6 +59,7 @@
 	   "Party_Code": "PC",
 	   "Party_Name": "Plaid Cymru",
 	   "Live_Seats": 3,
+	   "Live_Change": 0,
 	   "PreElection_Seats": 3,
 	   "Color": "#4E9F2F"
 	 },
@@ -59,6 +67,7 @@
 	   "Party_Code": "SDLP",
 	   "Party_Name": "Social Democratic & Labour Party",
 	   "Live_Seats": 3,
+	   "Live_Change": 0,
 	   "PreElection_Seats": 3,
 	   "Color": "#65A966"
 	 },
@@ -66,6 +75,7 @@
 	   "Party_Code": "UUP",
 	   "Party_Name": "Ulster Unionist Party",
 	   "Live_Seats": 2,
+	   "Live_Change": 0,
 	   "PreElection_Seats": 2,
 	   "Color": "#6AB1E6"
 	 },
@@ -73,6 +83,7 @@
 	   "Party_Code": "Green",
 	   "Party_Name": "Green Party",
 	   "Live_Seats": 1,
+	   "Live_Change": 0,
 	   "PreElection_Seats": 1,
 	   "Color": "#78C31E"
 	 },
@@ -80,6 +91,7 @@
 	   "Party_Code": "Spk",
 	   "Party_Name": "Speaker",
 	   "Live_Seats": 1,
+	   "Live_Change": 0,
 	   "PreElection_Seats": 1,
 	   "Color": "#999999"
 	 },
@@ -87,6 +99,7 @@
 	   "Party_Code": "UKIP",
 	   "Party_Name": "UK Independence Party",
 	   "Live_Seats": 1,
+	   "Live_Change": 0,
 	   "PreElection_Seats": 1,
 	   "Color": "#712F87"
 	 }

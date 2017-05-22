@@ -22,49 +22,70 @@
 				  </dropdown>
 		   </div>
  	</div>		  
- <div class="fields sixteen wide column">		  
+ <div class="fields sixteen wide column" style="margin-top:10px;">		  
 		  <div class="field six wide">
 				<input  type="text" placeholder="Subtitle" ng-model="seats.subtitle">
 		  </div>
 		  <div class="field three wide">		
-				<checkbox size="large" ng-model="seats.showSubtitle" type="toggle">Show Subtitle</checkbox>
+				<checkbox size="large" ng-model="seats.showSubtitle" type="toggle">Show</checkbox>
 		  </div>
+		  
+		  	<div class="field four wide">	
+				<div class="ui purple button" ng-click="updateseats()">Get Latest Data</div>
+			</div>
+			<div class="field four wide">	
+				<div class="ui purple button" onClick="window.location.reload()" ng-click="showallseats()">Show All Seats</div>
+			</div>		
   </div>
   <div class="ui divider"></div>
       <div style="margin-top:20px;" class="ui grid aligned">
 			<div class="field four wide">
-						<checkbox ng-model="seats.showcon" size="large" style="margin-bottom:10px;" type="toggle">Conservatives</checkbox>
+						Tories {{seats.conChange}} <checkbox ng-model="seats.showcon" size="large" style="margin-bottom:10px; float: right;" type="toggle"></checkbox>
 						<input  type="text" placeholder="Con Seats" ng-model="seats.conScore">
 			</div>
 			<div class="field four wide">
-						<checkbox ng-model="seats.showlab" size="large" style="margin-bottom:10px;" type="toggle">Labour</checkbox>
+						Labour {{seats.labChange}}<checkbox ng-model="seats.showlab" size="large" style="margin-bottom:10px; float: right;" type="toggle"></checkbox>
 						<input  type="text" placeholder="Lab Seats" ng-model="seats.labScore">
 			</div>
 			<div class="field four wide">
-						<checkbox ng-model="seats.showsnp" size="large" style="margin-bottom:10px;" type="toggle">SNP</checkbox>
+						SNP {{seats.snpChange}}<checkbox ng-model="seats.showsnp" size="large" style="margin-bottom:10px; float: right;" type="toggle"></checkbox>
 						<input  type="text" placeholder="SNP Seats" ng-model="seats.snpScore">
 			</div>
 			<div class="field four wide">
-						<checkbox ng-model="seats.showlib" size="large" style="margin-bottom:10px;" type="toggle">Lib Dems</checkbox>
+						Lib Dems {{seats.libChange}}<checkbox ng-model="seats.showlib" size="large" style="margin-bottom:10px; float: right;" type="toggle"></checkbox>
 						<input  type="text" placeholder="Lib Seats" ng-model="seats.libScore">
-			</div> 
-			
-	 <div style="margin-top:20px;" class="ui grid aligned">
+			</div>
+	</div>		
+	<div style="margin-top:20px;" class="ui grid aligned">
 			<div class="field four wide">
-						<checkbox ng-model="seats.showgrn" size="large" style="margin-bottom:10px;" type="toggle">Greens</checkbox>
-						<input  type="text" placeholder="Con Seats" ng-model="seats.grnScore">
+						Change<input  type="text" placeholder="Con Change" ng-model="seats.conLiveChange">
 			</div>
 			<div class="field four wide">
-						<checkbox ng-model="seats.showpc" size="large" style="margin-bottom:10px;" type="toggle">Plaid Cymru</checkbox>
-						<input  type="text" placeholder="Lab Seats" ng-model="seats.pcScore">
+						Change<input  type="text" placeholder="Lab Change" ng-model="seats.labLiveChange">
 			</div>
 			<div class="field four wide">
-						<checkbox ng-model="seats.showdup" size="large" style="margin-bottom:10px;" type="toggle">DUP</checkbox>
-						<input  type="text" placeholder="SNP Seats" ng-model="seats.dupScore">
+						Change<input  type="text" placeholder="SNP Change" ng-model="seats.snpLiveChange">
 			</div>
 			<div class="field four wide">
-						<checkbox ng-model="seats.showoth" size="large" style="margin-bottom:10px;" type="toggle">Others</checkbox>
-						<input  type="text" placeholder="Lib Seats" ng-model="seats.othScore">
+						Change<input  type="text" placeholder="Lib Change" ng-model="seats.libLiveChange">
+			</div>  
+	</div>		
+	 <div style="margin-top:40px;" class="ui grid aligned">
+			<div class="field four wide">
+						<checkbox ng-model="seats.showgrn" size="large" style="margin-bottom:10px;" type="toggle">Green {{seats.grnChange}}</checkbox>
+						<input  type="text" placeholder="Green Seats" ng-model="seats.grnScore">
+			</div>
+			<div class="field four wide">
+						<checkbox ng-model="seats.showpc" size="large" style="margin-bottom:10px;" type="toggle">Plaid Cymru {{seats.pcChange}}</checkbox>
+						<input  type="text" placeholder="Plaid Seats" ng-model="seats.pcScore">
+			</div>
+			<div class="field four wide">
+						<checkbox ng-model="seats.showdup" size="large" style="margin-bottom:10px;" type="toggle">DUP {{seats.dupChange}}</checkbox>
+						<input  type="text" placeholder="DUP Seats" ng-model="seats.dupScore">
+			</div>
+			<div class="field four wide">
+						<checkbox ng-model="seats.showoth" size="large" style="margin-bottom:10px;" type="toggle">Others {{seats.othChange}}</checkbox>
+						<input  type="text" placeholder="Others Seats" ng-model="seats.othScore">
 			</div>       		      
 
 		<div class="four wide column">

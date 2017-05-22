@@ -80,16 +80,16 @@
 	<br />
 	<div class="fields sixteen wide column">
 		<div class="field four wide">
-				<input  id="conPartyOneVotes" type="text" ng-model="constituency.conPartyOneVotes">
+				<input  id="conPartyOneVotes" type="text" placeholder="Party one vote count" ng-model="constituency.conPartyOneVotes">
 		</div>
 		<div class="field four wide">
-				<input  id="conPartyTwoVotes" type="text" ng-model="constituency.conPartyTwoVotes">
+				<input  id="conPartyTwoVotes" type="text" placeholder="Party two vote count" ng-model="constituency.conPartyTwoVotes">
 		</div>
 		<div class="field four wide">
-				<input  id="conPartyThreeVotes" type="text" ng-model="constituency.conPartyThreeVotes">
+				<input  id="conPartyThreeVotes" type="text" placeholder="Party three vote count" ng-model="constituency.conPartyThreeVotes">
 		</div>
 		<div class="field four wide">
-				<input  id="conPartyFourVotes" type="text" ng-model="constituency.conPartyFourVotes">
+				<input  id="conPartyFourVotes" type="text" placeholder="Party one four count" ng-model="constituency.conPartyFourVotes">
 		</div>
 	</div>
 	<br />
@@ -116,6 +116,10 @@
 		<div class="field four wide">
 			<label>EU Ref Remain %</label>
 				<input  id="conEURemain" type="text" placeholder="EU Leave Percentage" ng-model="constituency.euleave">
+		</div>
+		<div class="field four wide">
+			<label>Show EU Pie Chart</label>
+				<checkbox ng-model="constituency.showEURef" size="large" style="margin-bottom:10px;" type="toggle">Show EU Ref</checkbox>
 		</div>
 
 	</div>
