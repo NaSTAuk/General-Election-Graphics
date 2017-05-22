@@ -97,7 +97,12 @@ app.controller('bugCtrl', ['$scope', '$timeout', 'socket',
 		  var clock = document.getElementById(id);
 		  var timeinterval = setInterval(function(){
 			var t = getTimeRemaining(endtime);
-			clock.innerHTML = 'Polls Close ' + ('0' + t.hours).slice(-2) + ':' + ('0' + t.minutes).slice(-2) + ':' + ('0' + t.seconds).slice(-2);
+			if (t.total < 0) {
+				clock.innerHTML = 'Polls Closed';
+			}
+			else {
+				clock.innerHTML = 'Polls Close ' + ('0' + t.hours).slice(-2) + ':' + ('0' + t.minutes).slice(-2) + ':' + ('0' + t.seconds).slice(-2);
+			}	  
 		  },1000);
 		}
 		
