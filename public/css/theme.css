@@ -7,7 +7,7 @@
 
 body {
     padding: 36px 64px 36px 64px; /* Safe area */
-    font-family: 'Ubuntu Condensed', sans-serif;
+    font-family: 'MrEavesXLModOT', sans-serif;
     background:transparent;                          /* The HTML consumer actually makes your background transparent by default, unless a color or image is specified - but this might be usefull when debugging in browsers */
     overflow:hidden;                                 /* Hide any overflowing elements - to disable scollbars */
     -webkit-font-smoothing:antialiased !important;
