@@ -56,13 +56,6 @@ app.controller('AppCtrl', ['$scope', '$location',
             type: 'link',
             icon: 'green forward',
         });
-        
-        $scope.menu.push({
-            name: 'Results Blocks',
-            url: '/resultsblock',
-            type: 'link',
-            icon: 'red cubes',
-        });
     }
 ]);
 
@@ -109,11 +102,7 @@ app.config(['$routeProvider', 'localStorageServiceProvider',
             .when("/recentgrid", {
                 templateUrl: '/admin/templates/recentgrid.tmpl.html',
                 controller: 'recentgridCGController'
-            })
-            .when("/resultsblock", {
-                templateUrl: '/admin/templates/resultsblock.tmpl.html',
-                controller: 'resultsblockCGController'
-            })            
+            })         
             .otherwise({redirectTo: '/general'});
     }
 ]);
@@ -518,26 +507,4 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
             $log.info("constituency.show()");
         };
      }
-]);
-
-
-app.controller('resultsblockCGController', ['$scope', 'socket',
-    function($scope, socket) {
-        socket.on("resultsblock", function (msg) {
-            $scope.resultsblock = msg;
-        });
-
-        $scope.$watch('resultsblock', function() {
-            if ($scope.resultsblock) {
-                socket.emit("resultsblock", $scope.resultsblock);
-            } else {
-                getresultsblockData();
-            }
-        }, true);
-
-        function getresultsblockData() {
-            socket.emit("resultsblock:get");
-        }
-
-    }
 ]);
