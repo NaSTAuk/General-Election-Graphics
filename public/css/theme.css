@@ -249,9 +249,19 @@ h1, h2, h3, h4 {
     font-weight: bold;
     padding: 5px 8px;
     background-color: #a11a1e;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
-	border-top-right-radius: 5px;
 	border-left:3px solid white;
+}
+
+.lowerthird:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  border-top: 20px solid transparent;
+  border-left: 16.16px solid #a11a1e;
+  border-bottom: 20px solid transparent;
 }
 
 .lowerthird h2 {
