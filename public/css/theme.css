@@ -373,6 +373,8 @@ h1, h2, h3, h4 {
 .party-score .seats {
 	font-weight: 600;
 	float: right;	
+	min-width: 40px;
+	text-align: center;
 }
 
 .party-score .seatschange {
