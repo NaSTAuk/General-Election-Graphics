@@ -4,7 +4,8 @@
 	<div class="ui visible info message">
 		<i class="close icon"></i>
 		<div class="header">2017 Live Seats Overview</div>
-		<p>This section is for showing live results during the 2017 Election. The scores should update live, but if they don't there's the option to override.</p>
+		<p>The scores should update live upon request below, but if the results are beind there's the option to override.</p> 
+		<p>Currently {{seats.announced}} seats have been announced.</p>
 	</div>
 
   <div class="fields sixteen wide column">
@@ -27,7 +28,7 @@
 				<input  type="text" placeholder="Subtitle" ng-model="seats.subtitle">
 		  </div>
 		  <div class="field three wide">		
-				<checkbox size="large" ng-model="seats.showSubtitle" type="toggle">Show</checkbox>
+				<checkbox size="large" ng-model="seats.showSubtitle" type="toggle">Show ({{seats.announced}})</checkbox>
 		  </div>
 		  
 		  	<div class="field four wide">	
@@ -72,22 +73,35 @@
 	</div>		
 	 <div style="margin-top:40px;" class="ui grid aligned">
 			<div class="field four wide">
-						<checkbox ng-model="seats.showgrn" size="large" style="margin-bottom:10px;" type="toggle">Green {{seats.grnChange}}</checkbox>
+						Green {{seats.grnChange}}<checkbox ng-model="seats.showgrn" size="large" style="margin-bottom:10px; float:right;" type="toggle"></checkbox>
 						<input  type="text" placeholder="Green Seats" ng-model="seats.grnScore">
 			</div>
 			<div class="field four wide">
-						<checkbox ng-model="seats.showpc" size="large" style="margin-bottom:10px;" type="toggle">Plaid Cymru {{seats.pcChange}}</checkbox>
+						Plaid Cymru {{seats.pcChange}}<checkbox ng-model="seats.showpc" size="large" style="margin-bottom:10px; float:right;" type="toggle"></checkbox>
 						<input  type="text" placeholder="Plaid Seats" ng-model="seats.pcScore">
 			</div>
 			<div class="field four wide">
-						<checkbox ng-model="seats.showdup" size="large" style="margin-bottom:10px;" type="toggle">DUP {{seats.dupChange}}</checkbox>
+						DUP {{seats.dupChange}}<checkbox ng-model="seats.showdup" size="large" style="margin-bottom:10px; float:right;" type="toggle"></checkbox>
 						<input  type="text" placeholder="DUP Seats" ng-model="seats.dupScore">
 			</div>
 			<div class="field four wide">
-						<checkbox ng-model="seats.showoth" size="large" style="margin-bottom:10px;" type="toggle">Others {{seats.othChange}}</checkbox>
+						Others {{seats.othChange}}<checkbox ng-model="seats.showoth" size="large" style="margin-bottom:10px; float:right;" type="toggle"></checkbox>
 						<input  type="text" placeholder="Others Seats" ng-model="seats.othScore">
 			</div>       		      
-
+	<div style="margin-top:20px;" class="ui grid aligned">
+			<div class="field four wide">
+						Change<input  type="text" placeholder="Grn Change" ng-model="seats.grnLiveChange">
+			</div>
+			<div class="field four wide">
+						Change<input  type="text" placeholder="PC Change" ng-model="seats.pcLiveChange">
+			</div>
+			<div class="field four wide">
+						Change<input  type="text" placeholder="DUP Change" ng-model="seats.dupLiveChange">
+			</div>
+			<div class="field four wide">
+						Change<input  type="text" placeholder="OTH Change" ng-model="seats.othLiveChange">
+			</div>  
+	</div>		
 		<div class="four wide column">
 
         </div>

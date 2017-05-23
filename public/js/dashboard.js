@@ -356,6 +356,7 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
 				$scope.seats.pcChange = $scope.seats.pcScore - 3;
 				$scope.seats.grnChange = $scope.seats.grnScore - 1;
 				$scope.seats.othChange = 15;
+				$scope.seats.announced = Number($scope.seats.conScore) +  Number($scope.seats.labScore) +  Number($scope.seats.snpScore) +  Number($scope.seats.libScore) +  Number($scope.seats.dupScore) +  Number($scope.seats.pcScore) +  Number($scope.seats.grnScore) +  Number($scope.seats.othScore);
         });
 
         $scope.$watch('seats', function() {
@@ -393,7 +394,6 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
 				$scope.seats.pcScore = $scope.seats.datadump[8].Live_Seats;
 				$scope.seats.grnScore = $scope.seats.datadump[11].Live_Seats;
 				$scope.seats.othScore = 0;
-
         };
 		
 		$scope.showallseats = function() {         		
