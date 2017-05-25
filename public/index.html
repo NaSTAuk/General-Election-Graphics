@@ -237,6 +237,7 @@
               </div>
               <div class="row animate-repeat" ng-repeat="row in recentgrid.rows">
                 <div style="color: {{row.color}} !important;" class="gridleft"><h2>{{ row.left }}</h2></div>
+            	<div style="background-color: {{row.color}} !important;" class="gridright change">{{ row.change }}</div>
                 <div style="background-color: {{row.color}} !important;" class="gridright">{{ row.right }}</div>
               </div>
             </div>
@@ -277,7 +278,7 @@
 			  height: 120,
 			  width: 120,
 			  is3D: true,
-			  fontName: 'Ubuntu Condensed',
+			  fontName: 'MrEavesXLModOT',
 			  fontSize: 22
 			};
 

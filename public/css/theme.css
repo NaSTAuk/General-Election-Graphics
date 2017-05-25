@@ -617,7 +617,7 @@ h1, h2, h3, h4 {
  *===================================
  */
  .party-overview {
-    width: 30%;
+    width: 40%;
     text-align: left;
     background-clip: padding-box;
     clear: both;
@@ -629,7 +629,7 @@ h1, h2, h3, h4 {
     margin-top: 40px;
   }
     .party-overview h1 {
-        color:  #a11a1e;
+        color:  #000;
         font-size: 28px;
         font-weight: bold;
         padding: 5px;
@@ -658,7 +658,7 @@ h1, h2, h3, h4 {
         text-align: left;
         float: left;
         background-color: #fff;
-        width: 77%;
+        width: 67%;
         border-left: 3px solid white;
     }
 
@@ -669,6 +669,9 @@ h1, h2, h3, h4 {
         background-color: #a11a1e;
         color: #fff;
         text-align: center !important;
+    }
+.change {
+        width: 10% !important;
     }
 
     .party-overview .row {
