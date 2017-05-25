@@ -29,8 +29,8 @@ For the [admin](http://127.0.0.1:3000/admin) page, navigate to http://127.0.0.1:
 
 For the [graphics](http://127.0.0.1:3000) output, navigate to http://127.0.0.1:3000
 
-## Live Data Files
-### live-seats.json
+## Data Files 
+### live-seats.json - LIVE
 
 Key  | Value Description | Example
 ------------- | ------------- | -------------
@@ -43,7 +43,7 @@ PreElection_Seats | Number of seats prior to the election | 229
 PreElection_Percent | Percentage of votes in 2015 | 7.9%
 Color | HEX color for party | #FEAE14
 
-### 2017_candidates.json
+### 2017_candidates.json - LIVE
 
 Key  | Value Description | Example
 ------------- | ------------- | -------------
@@ -57,7 +57,7 @@ gss_code | Standard code for constituency | W07000049
 color | HEX color for party | #70147a
 votes | number of votes that candidate received | 10
 
-### data_dump.json
+### data_dump.json - Not Live
 
 Not all keys are presented
 
