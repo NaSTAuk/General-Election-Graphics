@@ -3,7 +3,7 @@
 		"Party_Name": "Conservative",
 		"Live_Seats": 30,
 		"Exit_Poll": 350,
-		"Live_Change": 0,
+		"Live_Change": 1,
 		"PreElection_Seats": 330,
 		"PreElection_Percent": "36.8%",
 		"Color": "#0575C9"
@@ -13,7 +13,7 @@
 		"Party_Name": "Labour",
 		"Live_Seats": 31,
 		"Exit_Poll": 120,
-		"Live_Change": 0,
+		"Live_Change": -2,
 		"PreElection_Seats": 229,
 		"PreElection_Percent": "30.5%",
 		"Color": "#ED1E0E"

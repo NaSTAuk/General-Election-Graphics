@@ -437,24 +437,63 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
 					 });    
 				};         		     		
          		fetchData();	
-           	    
-				$scope.seats.conScore = $scope.seats.datadump[0].Live_Seats;
-                $scope.seats.labScore = $scope.seats.datadump[1].Live_Seats;
-				$scope.seats.snpScore = $scope.seats.datadump[2].Live_Seats;
-				$scope.seats.libScore = $scope.seats.datadump[3].Live_Seats;
-				$scope.seats.dupScore = $scope.seats.datadump[4].Live_Seats;
-				$scope.seats.pcScore = $scope.seats.datadump[8].Live_Seats;
-				$scope.seats.grnScore = $scope.seats.datadump[11].Live_Seats;
-				$scope.seats.othScore = 0;			
-				$scope.seats.conLiveChange = $scope.seats.datadump[0].Live_Change;
-                $scope.seats.labLiveChange = $scope.seats.datadump[1].Live_Change;
-				$scope.seats.snpLiveChange = $scope.seats.datadump[2].Live_Change;
-				$scope.seats.libLiveChange = $scope.seats.datadump[3].Live_Change;
-				$scope.seats.dupLiveChange = $scope.seats.datadump[4].Live_Change;
-				$scope.seats.pcLiveChange = $scope.seats.datadump[8].Live_Change;
-				$scope.seats.grnLiveChange = $scope.seats.datadump[11].Live_Change;
-				$scope.seats.othLiveChange = 0;
-				
+
+				for (var i = 0; i < $scope.seats.datadump.length; i++){
+					$scope.seats.othScore = 0;
+					
+				  if ($scope.seats.datadump[i].Party_Code == "Con"){
+					$scope.seats.conScore = $scope.seats.datadump[i].Live_Seats;
+					$scope.seats.conLiveChange = $scope.seats.datadump[i].Live_Change;
+				  }
+				  if ($scope.seats.datadump[i].Party_Code == "Lab"){
+					$scope.seats.labScore = $scope.seats.datadump[i].Live_Seats;
+					$scope.seats.labLiveChange = $scope.seats.datadump[i].Live_Change;
+				  }
+				  if ($scope.seats.datadump[i].Party_Code == "SNP"){
+					$scope.seats.snpScore = $scope.seats.datadump[i].Live_Seats;
+					$scope.seats.snpLiveChange = $scope.seats.datadump[i].Live_Change;
+				  }
+				  if ($scope.seats.datadump[i].Party_Code == "LD"){
+					$scope.seats.libScore = $scope.seats.datadump[i].Live_Seats;
+					$scope.seats.libLiveChange = $scope.seats.datadump[i].Live_Change;
+				  }
+				  if ($scope.seats.datadump[i].Party_Code == "DUP"){
+					$scope.seats.dupScore = $scope.seats.datadump[i].Live_Seats;
+					$scope.seats.dupLiveChange = $scope.seats.datadump[i].Live_Change;
+				  }
+				  if ($scope.seats.datadump[i].Party_Code == "SF"){
+					$scope.seats.othScore = $scope.seats.othScore + $scope.seats.datadump[i].Live_Seats;
+					$scope.seats.othLiveChange = $scope.seats.othLiveChange + $scope.seats.datadump[i].Live_Change;
+				  }
+				  if ($scope.seats.datadump[i].Party_Code == "Ind"){
+					$scope.seats.othScore = $scope.seats.othScore + $scope.seats.datadump[i].Live_Seats;
+					$scope.seats.othLiveChange = $scope.seats.othLiveChange + $scope.seats.datadump[i].Live_Change;
+				  }
+				  if ($scope.seats.datadump[i].Party_Code == "PC"){
+					$scope.seats.pcScore = $scope.seats.datadump[i].Live_Seats;
+					$scope.seats.pcLiveChange = $scope.seats.datadump[i].Live_Change;
+				  }
+				  if ($scope.seats.datadump[i].Party_Code == "SDLP"){
+					$scope.seats.othScore = $scope.seats.othScore + $scope.seats.datadump[i].Live_Seats;
+					$scope.seats.othLiveChange = $scope.seats.othLiveChange + $scope.seats.datadump[i].Live_Change;
+				  }
+				  if ($scope.seats.datadump[i].Party_Code == "UUP"){
+					$scope.seats.othScore = $scope.seats.othScore + $scope.seats.datadump[i].Live_Seats;
+					$scope.seats.othLiveChange = $scope.seats.othLiveChange + $scope.seats.datadump[i].Live_Change;
+				  }
+				  if ($scope.seats.datadump[i].Party_Code == "Green"){
+					$scope.seats.grnScore = $scope.seats.datadump[i].Live_Seats;
+					$scope.seats.grnLiveChange = $scope.seats.datadump[i].Live_Change;
+				  }
+				   if ($scope.seats.datadump[i].Party_Code == "Spk"){
+					$scope.seats.othScore = $scope.seats.othScore + $scope.seats.datadump[i].Live_Seats;
+					$scope.seats.othLiveChange = $scope.seats.othLiveChange + $scope.seats.datadump[i].Live_Change;
+				  }
+				   if ($scope.seats.datadump[i].Party_Code == "UKIP"){
+					$scope.seats.othScore = $scope.seats.othScore + $scope.seats.datadump[i].Live_Seats;
+					$scope.seats.othLiveChange = $scope.seats.othLiveChange + $scope.seats.datadump[i].Live_Change;
+				  }
+				}				
         };
 		
 		$scope.showallseats = function() {         		
