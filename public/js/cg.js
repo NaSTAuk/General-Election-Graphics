@@ -112,65 +112,11 @@ app.controller('bugCtrl', ['$scope', '$timeout', 'socket',
 ]);
 
 app.controller('scoringCtrl', ['$scope', '$interval', '$http', 'socket',
-    function($scope, $interval, $http, socket){
-        $scope.tickInterval = 60000; 
-        
+    function($scope, $interval, $http, socket){        
         socket.on("score", function (msg) {
 				$scope.score = msg;
 			});
         
-        var fetchScore = function () {
-          var config = {headers:  {
-              'Accept': 'application/json',
-              'Content-Type': 'application/json',
-            }
-          };
-
-          $http.get('data/score.json', config)
-            .success(function(data) {
-              if(isNaN(data.Con)){
-                console.log("Live data is giving us nonsense");
-                return;
-              };
-              if(!$scope.manualScore){
-                $scope.conScore = data.Con;
-                $scope.labScore = data.Lab;
-                $scope.libScore = data.LD;
-                $scope.snpScore = data.SNP;
-                $scope.othScore = data.Oth;
-                $scope.grnScore = data.Green;
-                $scope.pcScore = data.PC;
-                $scope.dupScore = data.DUP;
-              };
-                socket.emit('conScore', data.Con);
-                socket.emit('labScore', data.Lab);
-                socket.emit('libScore', data.LD);
-                socket.emit('snpScore', data.SNP);
-                socket.emit('othScore', data.Oth);
-                socket.emit('grnScore', data.Green);
-                socket.emit('pcScore', data.PC);
-                socket.emit('dupScore', data.DUP);
-              }
-          );
-        };
-    
-        socket.on("score", function (state) {
-            $scope.showScore = state.showScore;
-            $scope.showSubtitle = state.showSubtitle;
-            $scope.showcon = state.showcon;
-            $scope.showlab = state.showlab;
-            $scope.showlib = state.showlib;
-            $scope.showsnp = state.showsnp;
-            $scope.showtop = state.showtop;
-            $scope.showgrn = state.showgrn;
-            $scope.showpc = state.showpc;
-            $scope.showdup = state.showdup;
-            $scope.showoth = state.showoth;
-            $scope.showall = state.showall;
-            $scope.manualScore = state.manualScore;
-            $scope.subtitle = state.subtitle;
-         });
-
         $scope.$watch('score', function() {
             if (!$scope.score) {
                 getScoreData();
@@ -180,11 +126,6 @@ app.controller('scoringCtrl', ['$scope', '$interval', '$http', 'socket',
         function getScoreData() {
             socket.emit("score:get");
         }
-                
-        //Intial fetch
-        fetchScore();
-        // Start the timer
-        $interval(fetchScore, $scope.tickInterval);
     }
 
 ]);

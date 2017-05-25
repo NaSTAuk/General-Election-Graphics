@@ -42,13 +42,6 @@ app.controller('AppCtrl', ['$scope', '$location',
             type: 'link',
             icon: 'purple grid layout',
         });
-      
-        $scope.menu.push({
-            name: '2015 Results',
-            url: '/2015results',
-            type: 'link',
-            icon: 'history',
-        });
         
         $scope.menu.push({
             name: '2017 Live Results',
@@ -81,10 +74,6 @@ app.config(['$routeProvider', 'localStorageServiceProvider',
             })
             .when("/roses", {
                 templateUrl: '/admin/templates/roses.tmpl.html',
-                controller: 'rosesCGController'
-            })
-            .when("/2015results", {
-                templateUrl: '/admin/templates/2015results.tmpl.html',
                 controller: 'rosesCGController'
             })
             .when("/2017results", {
@@ -353,48 +342,6 @@ app.controller('recentgridCGController', ['$scope', '$log', '$http', 'localStora
         });
 }]);
 
-app.controller('rosesCGController', ['$scope', 'socket',
-    function($scope, socket){
-        socket.on("score", function (msg) {
-            $scope.roses = msg;
-        });
-        
-        $scope.$watch('roses', function() {
-            if ($scope.roses) {
-                socket.emit("score", $scope.roses);
-            } else {
-                getScoreData();
-            }
-        }, true);
-
-        function getScoreData() {
-            socket.emit("score:get");
-        }
-        
-        $scope.showallseats = function() {         		
-         		$scope.roses.showcon = true;
-				$scope.roses.showlab = true;
-				$scope.roses.showlib = true;
-				$scope.roses.showsnp = true;
-				$scope.roses.showgrn = true;
-				$scope.roses.showpc = true;
-				$scope.roses.showdup = true;
-				$scope.roses.showoth = true;
-        };
-        
-        $scope.showtopseats = function() {         		
-         		$scope.roses.showcon = true;
-				$scope.roses.showlab = true;
-				$scope.roses.showlib = true;
-				$scope.roses.showsnp = true;
-				$scope.roses.showgrn = false;
-				$scope.roses.showpc = false;
-				$scope.roses.showdup = false;
-				$scope.roses.showoth = true;
-        };
-    }
-]);
-
 app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageService',
     function($scope, socket, $http, localStorageService) {
     
@@ -463,11 +410,11 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
 				  }
 				  if ($scope.seats.datadump[i].Party_Code == "SF"){
 					$scope.seats.othScore = $scope.seats.othScore + $scope.seats.datadump[i].Live_Seats;
-					$scope.seats.othLiveChange = $scope.seats.othLiveChange + $scope.seats.datadump[i].Live_Change;
+					$scope.seats.othLiveChange = Number($scope.seats.othLiveChange) + Number($scope.seats.datadump[i].Live_Change);
 				  }
 				  if ($scope.seats.datadump[i].Party_Code == "Ind"){
 					$scope.seats.othScore = $scope.seats.othScore + $scope.seats.datadump[i].Live_Seats;
-					$scope.seats.othLiveChange = $scope.seats.othLiveChange + $scope.seats.datadump[i].Live_Change;
+					$scope.seats.othLiveChange = Number($scope.seats.othLiveChange) + Number($scope.seats.datadump[i].Live_Change);
 				  }
 				  if ($scope.seats.datadump[i].Party_Code == "PC"){
 					$scope.seats.pcScore = $scope.seats.datadump[i].Live_Seats;
@@ -475,11 +422,11 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
 				  }
 				  if ($scope.seats.datadump[i].Party_Code == "SDLP"){
 					$scope.seats.othScore = $scope.seats.othScore + $scope.seats.datadump[i].Live_Seats;
-					$scope.seats.othLiveChange = $scope.seats.othLiveChange + $scope.seats.datadump[i].Live_Change;
+					$scope.seats.othLiveChange = Number($scope.seats.othLiveChange) + Number($scope.seats.datadump[i].Live_Change);
 				  }
 				  if ($scope.seats.datadump[i].Party_Code == "UUP"){
 					$scope.seats.othScore = $scope.seats.othScore + $scope.seats.datadump[i].Live_Seats;
-					$scope.seats.othLiveChange = $scope.seats.othLiveChange + $scope.seats.datadump[i].Live_Change;
+					$scope.seats.othLiveChange = Number($scope.seats.othLiveChange) + Number($scope.seats.datadump[i].Live_Change);
 				  }
 				  if ($scope.seats.datadump[i].Party_Code == "Green"){
 					$scope.seats.grnScore = $scope.seats.datadump[i].Live_Seats;
@@ -487,11 +434,11 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
 				  }
 				   if ($scope.seats.datadump[i].Party_Code == "Spk"){
 					$scope.seats.othScore = $scope.seats.othScore + $scope.seats.datadump[i].Live_Seats;
-					$scope.seats.othLiveChange = $scope.seats.othLiveChange + $scope.seats.datadump[i].Live_Change;
+					$scope.seats.othLiveChange = Number($scope.seats.othLiveChange) + Number($scope.seats.datadump[i].Live_Change);
 				  }
 				   if ($scope.seats.datadump[i].Party_Code == "UKIP"){
 					$scope.seats.othScore = $scope.seats.othScore + $scope.seats.datadump[i].Live_Seats;
-					$scope.seats.othLiveChange = $scope.seats.othLiveChange + $scope.seats.datadump[i].Live_Change;
+					$scope.seats.othLiveChange = Number($scope.seats.othLiveChange) + Number($scope.seats.datadump[i].Live_Change);
 				  }
 				}				
         };
@@ -505,9 +452,7 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
 				$scope.seats.showpc = true;
 				$scope.seats.showdup = true;
 				$scope.seats.showoth = true;
-        };
-
-		
+        };	
     }
 ]);
 
