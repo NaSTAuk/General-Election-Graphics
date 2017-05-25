@@ -77,3 +77,14 @@ DateTime | Announcement time in 2015 | 08/05/2015 04:39:00
 EUHANLEAVE | Proportion of leave votes | 0.578978 
 EUHANREM | Proportion of remain votes | 0.421022
 Color | HEX color for party | #0575c9
+
+### 2017_party_color_codes.json - Not Live
+
+Not all keys are presented
+
+Key  | Value Description | Example
+------------- | ------------- | -------------
+party_id    | party id as used in 2017_candidates.json | party:103
+party_name    | Party Name | Alliance For Green Socialism
+party_code | Acronym for party. Many register OTH | OTH
+party_color | HEX color for party | #00a86b
