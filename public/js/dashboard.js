@@ -445,7 +445,16 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
 				$scope.seats.dupScore = $scope.seats.datadump[4].Live_Seats;
 				$scope.seats.pcScore = $scope.seats.datadump[8].Live_Seats;
 				$scope.seats.grnScore = $scope.seats.datadump[11].Live_Seats;
-				$scope.seats.othScore = 0;
+				$scope.seats.othScore = 0;			
+				$scope.seats.conLiveChange = $scope.seats.datadump[0].Live_Change;
+                $scope.seats.labLiveChange = $scope.seats.datadump[1].Live_Change;
+				$scope.seats.snpLiveChange = $scope.seats.datadump[2].Live_Change;
+				$scope.seats.libLiveChange = $scope.seats.datadump[3].Live_Change;
+				$scope.seats.dupLiveChange = $scope.seats.datadump[4].Live_Change;
+				$scope.seats.pcLiveChange = $scope.seats.datadump[8].Live_Change;
+				$scope.seats.grnLiveChange = $scope.seats.datadump[11].Live_Change;
+				$scope.seats.othLiveChange = 0;
+				
         };
 		
 		$scope.showallseats = function() {         		
