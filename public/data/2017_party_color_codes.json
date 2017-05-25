@@ -1,0 +1,458 @@
+[
+  {
+    "party_id": "party:103",
+    "party_name": "Alliance - Alliance Party of Northern Ireland",
+    "party_code": "APNI",
+    "party_color": "#f6cb2f"
+  },
+  {
+    "party_id": "party:67",
+    "party_name": "Alliance For Green Socialism",
+    "party_code": "OTH",
+    "party_color": "#00a86b"
+  },
+  {
+    "party_id": "party:616",
+    "party_name": "Animal Welfare Party",
+    "party_code": "OTH",
+    "party_color": "#ee3263"
+  },
+  {
+    "party_id": "party:845",
+    "party_name": "Apolitical Democrats",
+    "party_code": "OTH",
+    "party_color": "#c0fd02"
+  },
+  {
+    "party_id": "party:3902",
+    "party_name": "Ashfield Independents",
+    "party_code": "OTH",
+    "party_color": "#dddddd"
+  },
+  {
+    "party_id": "party:4230",
+    "party_name": "Better for Bradford",
+    "party_code": "OTH",
+    "party_color": "#dddddd"
+  },
+  {
+    "party_id": "party:6342",
+    "party_name": "Blue Revolution",
+    "party_code": "OTH",
+    "party_color": "#0000ff"
+  },
+  {
+    "party_id": "party:3960",
+    "party_name": "British National Party",
+    "party_code": "BNP",
+    "party_color": "#2e3b74"
+  },
+  {
+    "party_id": "party:2893",
+    "party_name": "Christian Party \"Proclaiming Christ's Lordship",
+    "party_code": "OTH",
+    "party_color": "#3a0b71"
+  },
+  {
+    "party_id": "party:79",
+    "party_name": "Christian Peoples Alliance",
+    "party_code": "CPA",
+    "party_color": "#813887"
+  },
+  {
+    "party_id": "party:843",
+    "party_name": "Church of the Militant Elvis",
+    "party_code": "OTH",
+    "party_color": "#d3d3d3"
+  },
+  {
+    "party_id": "party:6335",
+    "party_name": "Citizens Independent Social Thought Alliance",
+    "party_code": "OTH",
+    "party_color": "#d2b48c"
+  },
+  {
+    "party_id": "party:375",
+    "party_name": "Common Good",
+    "party_code": "OTH",
+    "party_color": "#000000"
+  },
+  {
+    "party_id": "party:823",
+    "party_name": "Communist League Election Campaign",
+    "party_code": "OTH",
+    "party_color": "#dc241f"
+  },
+  {
+    "party_id": "party:4089",
+    "party_name": "Compass Party",
+    "party_code": "OTH",
+    "party_color": "#dc241f"
+  },
+  {
+    "party_id": "party:3983",
+    "party_name": "Concordia",
+    "party_code": "OTH",
+    "party_color": "#dddddd"
+  },
+  {
+    "party_id": "party:51",
+    "party_name": "Conservative Party",
+    "party_code": "OTH",
+    "party_color": "#0087dc"
+  },
+  {
+    "party_id": "party:52",
+    "party_name": "Conservative and Unionist Party",
+    "party_code": "OTH",
+    "party_color": "#0087dc"
+  },
+  {
+    "party_id": "party:70",
+    "party_name": "Democratic Unionist Party - D.U.P.",
+    "party_code": "DUP",
+    "party_color": "#d46a4c"
+  },
+  {
+    "party_id": "party:6318",
+    "party_name": "Demos Direct Initiative Party",
+    "party_code": "OTH",
+    "party_color": "#ff9019"
+  },
+  {
+    "party_id": "party:17",
+    "party_name": "English Democrats",
+    "party_code": "ED",
+    "party_color": "#915f6d"
+  },
+  {
+    "party_id": "party:6372",
+    "party_name": "Friends Party",
+    "party_code": "OTH",
+    "party_color": "#dddddd"
+  },
+  {
+    "party_id": "party:6409",
+    "party_name": "Greater Manchester Homeless Voice",
+    "party_code": "OTH",
+    "party_color": "#dddddd"
+  },
+  {
+    "party_id": "party:305",
+    "party_name": "Green Party",
+    "party_code": "GRN",
+    "party_color": "#6ab023"
+  },
+  {
+    "party_id": "party:63",
+    "party_name": "Green Party",
+    "party_code": "GRN",
+    "party_color": "#6ab023"
+  },
+  {
+    "party_id": "party:834",
+    "party_name": "Humanity",
+    "party_code": "OTH",
+    "party_color": "#dddddd"
+  },
+  {
+    "party_id": "ynmp-party:2",
+    "party_name": "Independent",
+    "party_code": "IND",
+    "party_color": "#dddddd"
+  },
+  {
+    "party_id": "party:2648",
+    "party_name": "Independent Save Withybush Save Lives",
+    "party_code": "OTH",
+    "party_color": "#dddddd"
+  },
+  {
+    "party_id": "party:2575",
+    "party_name": "Independent Sovereign Democratic Britain",
+    "party_code": "OTH",
+    "party_color": "#dddddd"
+  },
+  {
+    "party_id": "joint-party:53-119",
+    "party_name": "Labour and Co-operative Party",
+    "party_code": "LAB",
+    "party_color": "#dc241f"
+  },
+  {
+    "party_id": "party:53",
+    "party_name": "Labour Party",
+    "party_code": "LAB",
+    "party_color": "#dc241f"
+  },
+  {
+    "party_id": "party:90",
+    "party_name": "Liberal Democrats",
+    "party_code": "LD",
+    "party_color": "#faa61a"
+  },
+  {
+    "party_id": "party:684",
+    "party_name": "Libertarian Party",
+    "party_code": "OTH",
+    "party_color": "#f0a705"
+  },
+  {
+    "party_id": "party:6387",
+    "party_name": "Money Free Party",
+    "party_code": "OTH",
+    "party_color": "#3a4e64"
+  },
+  {
+    "party_id": "party:481",
+    "party_name": "Movement for Active Democracy (M.A.D.)",
+    "party_code": "OTH",
+    "party_color": "#008AC1"
+  },
+  {
+    "party_id": "party:1931",
+    "party_name": "National Health Action Party",
+    "party_code": "NHA",
+    "party_color": "#176ca6"
+  },
+  {
+    "party_id": "party:5297",
+    "party_name": "North of England Community Alliance",
+    "party_code": "OTH",
+    "party_color": "#004d00"
+  },
+  {
+    "party_id": "party:66",
+    "party_name": "Official Monster Raving Loony Party",
+    "party_code": "MRL",
+    "party_color": "#ffff00"
+  },
+  {
+    "party_id": "party:2803",
+    "party_name": "Open Borders Party",
+    "party_code": "OTH",
+    "party_color": "#000000"
+  },
+  {
+    "party_id": "party:1969",
+    "party_name": "Patria",
+    "party_code": "OTH",
+    "party_color": "#003e6d"
+  },
+  {
+    "party_id": "party:773",
+    "party_name": "People Before Profit Alliance",
+    "party_code": "PBP",
+    "party_color": "#67070b"
+  },
+  {
+    "party_id": "party:770",
+    "party_name": "Pirate Party UK",
+    "party_code": "OTH",
+    "party_color": "#990099"
+  },
+  {
+    "party_id": "party:77",
+    "party_name": "Plaid Cymru - The Party of Wales",
+    "party_code": "PC",
+    "party_color": "#008142"
+  },
+  {
+    "party_id": "party:3914",
+    "party_name": "Populist Party",
+    "party_code": "OTH",
+    "party_color": "#DE7008"
+  },
+  {
+    "party_id": "party:2674",
+    "party_name": "Rebooting Democracy",
+    "party_code": "OTH",
+    "party_color": "#81d742"
+  },
+  {
+    "party_id": "party:6356",
+    "party_name": "Scotland's Independence Referendum Party",
+    "party_code": "OTH",
+    "party_color": "#dddddd"
+  },
+  {
+    "party_id": "party:130",
+    "party_name": "Scottish Green Party",
+    "party_code": "OTH",
+    "party_color": "#43b02a"
+  },
+  {
+    "party_id": "party:102",
+    "party_name": "Scottish National Party (SNP)",
+    "party_code": "SNP",
+    "party_color": "#ffff00"
+  },
+  {
+    "party_id": "party:55",
+    "party_name": "SDLP (Social Democratic & Labour Party)",
+    "party_code": "SDLP",
+    "party_color": "#99ff66"
+  },
+  {
+    "party_id": "party:39",
+    "party_name": "Sinn F�in",
+    "party_code": "SF",
+    "party_color": "#008800"
+  },
+  {
+    "party_id": "party:243",
+    "party_name": "Social Democratic Party",
+    "party_code": "OTH",
+    "party_color": "#ff0000"
+  },
+  {
+    "party_id": "party:73",
+    "party_name": "Socialist Labour Party",
+    "party_code": "SLP",
+    "party_color": "#e40613"
+  },
+  {
+    "party_id": "party:2486",
+    "party_name": "Something New",
+    "party_code": "OTH",
+    "party_color": "#222222"
+  },
+  {
+    "party_id": "party:6364",
+    "party_name": "Southampton Independents",
+    "party_code": "OTH",
+    "party_color": "#dddddd"
+  },
+  {
+    "party_id": "party:6317",
+    "party_name": "Southend Independent Association",
+    "party_code": "OTH",
+    "party_color": "#dddddd"
+  },
+  {
+    "party_id": "party:549",
+    "party_name": "Space Navies Party",
+    "party_code": "OTH",
+    "party_color": "#2e3440"
+  },
+  {
+    "party_id": "ynmp-party:12522",
+    "party_name": "Speaker seeking re-election",
+    "party_code": "SPK",
+    "party_color": "#dddddd"
+  },
+  {
+    "party_id": "party:2520",
+    "party_name": "The Just Political Party",
+    "party_code": "OTH",
+    "party_color": "#11d2d2"
+  },
+  {
+    "party_id": "party:865",
+    "party_name": "The Justice & Anti-Corruption Party",
+    "party_code": "OTH",
+    "party_color": "#9c0031"
+  },
+  {
+    "party_id": "party:54",
+    "party_name": "The Liberal Party",
+    "party_code": "LIB",
+    "party_color": "#ff7300"
+  },
+  {
+    "party_id": "party:2714",
+    "party_name": "The New Society of Worth",
+    "party_code": "OTH",
+    "party_color": "#1b1d2a"
+  },
+  {
+    "party_id": "party:2303",
+    "party_name": "The North East Party",
+    "party_code": "OTH",
+    "party_color": "#800001"
+  },
+  {
+    "party_id": "party:133",
+    "party_name": "The Peace Party - Non-violence, Justice, Environment",
+    "party_code": "OTH",
+    "party_color": "#ff8a00"
+  },
+  {
+    "party_id": "party:2652",
+    "party_name": "The Radical Party",
+    "party_code": "OTH",
+    "party_color": "#dddddd"
+  },
+  {
+    "party_id": "party:1871",
+    "party_name": "The Realists' Party",
+    "party_code": "OTH",
+    "party_color": "#990100"
+  },
+  {
+    "party_id": "party:110",
+    "party_name": "The Socialist Party of Great Britain",
+    "party_code": "SOC",
+    "party_color": "#e71615"
+  },
+  {
+    "party_id": "party:127",
+    "party_name": "The Workers Party",
+    "party_code": "OTH",
+    "party_color": "#a60002"
+  },
+  {
+    "party_id": "party:2055",
+    "party_name": "The Yorkshire Party",
+    "party_code": "YF",
+    "party_color": "#00aeef"
+  },
+  {
+    "party_id": "party:680",
+    "party_name": "Traditional Unionist Voice - TUV",
+    "party_code": "TUV",
+    "party_color": "#0095b6"
+  },
+  {
+    "party_id": "party:85",
+    "party_name": "UK Independence Party (UKIP)",
+    "party_code": "UKIP",
+    "party_color": "#70147a"
+  },
+  {
+    "party_id": "party:83",
+    "party_name": "Ulster Unionist Party",
+    "party_code": "UUP",
+    "party_color": "#9999ff"
+  },
+  {
+    "party_id": "party:488",
+    "party_name": "War Veteran's Pro-Traditional Family Party",
+    "party_code": "OTH",
+    "party_color": "#dddddd"
+  },
+  {
+    "party_id": "party:95",
+    "party_name": "Wessex Regionalists",
+    "party_code": "OTH",
+    "party_color": "#129c2f"
+  },
+  {
+    "party_id": "party:2755",
+    "party_name": "Women's Equality Party",
+    "party_code": "OTH",
+    "party_color": "#6e2d91"
+  },
+  {
+    "party_id": "party:184",
+    "party_name": "Workers Revolutionary Party",
+    "party_code": "OTH",
+    "party_color": "#aa0000"
+  },
+  {
+    "party_id": "party:1912",
+    "party_name": "Young People's Party YPP",
+    "party_code": "YYP",
+    "party_color": "#fff644"
+  }
+]

@@ -1,0 +1,17 @@
+@font-face {
+    font-family: MrEavesXLModOT;
+    font-weight: lighter;
+    src: url("mreavesxl/28428.woff") format("woff"), url("mreavesxl/28428.woff2") format("woff2"), url("mreavesxl/28428.otf")  format("opentype");
+}
+
+@font-face {
+    font-family: MrEavesXLModOT;
+    font-weight: bold;
+    src: url("mreavesxl/28431.woff") format("woff"), url("mreavesxl/28431.woff2") format("woff2"), url("mreavesxl/28431.otf")  format("opentype");
+}
+
+@font-face {
+    font-family: MrEavesXLModOT;
+    font-weight: normal;
+    src: url("mreavesxl/28433.woff") format("woff"), url("mreavesxl/28433.woff2") format("woff2"), url("mreavesxl/28433.otf")  format("opentype");
+}

@@ -10,13 +10,13 @@
 
   
   <div class="fields sixteen wide column">
-  		  <div class="field six wide">
-				<checkbox size="large" ng-model="roses.showScore" type="toggle">Show Current Seats</checkbox>
+  		  <div class="field five wide">
+				<checkbox size="large" ng-model="roses.showScore" type="toggle">Go Live</checkbox>
 		  </div>
 		  <div class="field six wide">
 				<input  type="text" placeholder="Subtitle" ng-model="roses.subtitle">
 		  </div>
-		  <div class="field four wide">		
+		  <div class="field three wide">		
 				<checkbox size="large" ng-model="roses.showSubtitle" type="toggle">Show</checkbox>
 		  </div>
   </div>
@@ -32,7 +32,7 @@
 		</div>
 		<div class="four wide column">
             <div class="field">
-                <checkbox ng-model="roses.showtop" style="margin-right:10px;" size="large" type="toggle">Show Top</checkbox>         
+                <div class="ui purple button" onClick="window.location.reload()" ng-click="showtopseats()">Show Top</div>         
 			</div>
 		</div>
 		<div class="twelve wide column">
@@ -45,7 +45,7 @@
 		</div>
 		<div class="four wide column">
             <div class="field">        
-                <checkbox ng-model="roses.showall" style="margin-right:10px;" size="large" type="toggle">Show All</checkbox>
+                <div class="ui purple button" onClick="window.location.reload()" ng-click="showallseats()">Show All Seats</div>
             </div>
         </div>
     </div>   

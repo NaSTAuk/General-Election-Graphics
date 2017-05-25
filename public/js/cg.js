@@ -97,7 +97,12 @@ app.controller('bugCtrl', ['$scope', '$timeout', 'socket',
 		  var clock = document.getElementById(id);
 		  var timeinterval = setInterval(function(){
 			var t = getTimeRemaining(endtime);
-			clock.innerHTML = 'Polls Close ' + ('0' + t.hours).slice(-2) + ':' + ('0' + t.minutes).slice(-2) + ':' + ('0' + t.seconds).slice(-2);
+			if (t.total < 0) {
+				clock.innerHTML = 'Polls Closed';
+			}
+			else {
+				clock.innerHTML = 'Polls Close ' + ('0' + t.hours).slice(-2) + ':' + ('0' + t.minutes).slice(-2) + ':' + ('0' + t.seconds).slice(-2);
+			}	  
 		  },1000);
 		}
 		
@@ -123,7 +128,7 @@ app.controller('scoringCtrl', ['$scope', '$interval', '$http', 'socket',
 
           $http.get('data/score.json', config)
             .success(function(data) {
-              if(isNaN(data.Con) || isNaN(data.Lab) || isNaN(data.LD)){
+              if(isNaN(data.Con)){
                 console.log("Live data is giving us nonsense");
                 return;
               };
@@ -188,8 +193,7 @@ app.controller('gridCtrl', ['$scope', 'socket',
     function($scope, socket){
         socket.on("grid", function (payload) {
             if (payload === "hide") {
-                //We first remove every element with a delay
-                setTimeout(function(){$scope.grid = {};}, 1000);
+                $scope.grid = {};
                 $scope.show = false;
             } else {
                 $scope.show = true;
@@ -199,8 +203,22 @@ app.controller('gridCtrl', ['$scope', 'socket',
     }
 ]);
 
-app.controller('seatsCtrl', ['$scope', 'socket',
+app.controller('recentgridCtrl', ['$scope', 'socket',
     function($scope, socket){
+        socket.on("recentgrid", function (payload) {
+            if (payload === "hide") {
+                $scope.recentgrid = {};
+                $scope.show = false;
+            } else {
+                $scope.show = true;
+                $scope.recentgrid = payload;
+            }
+        });
+    }
+]);
+
+app.controller('seatsCtrl', ['$scope', '$http', 'socket',
+    function($scope, $http, socket){
 
         socket.on("seats", function (msg) {
             $scope.seats = msg;
@@ -215,5 +233,20 @@ app.controller('seatsCtrl', ['$scope', 'socket',
         function getSeatsData() {
             socket.emit("seats:get");
         }
+    }
+]);
+
+
+app.controller('constituencyCtrl', ['$scope', 'socket',
+    function($scope, socket){
+        socket.on("constituency", function (payload) {
+            if (payload === "hide") {
+                $scope.constituency = {};
+                $scope.show = false;
+            } else {
+                $scope.show = true;
+                $scope.constituency = payload;
+            }
+        });
     }
 ]);

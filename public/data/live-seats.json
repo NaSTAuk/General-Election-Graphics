@@ -1,92 +1,131 @@
-[
-  {
-    "Party_Code": "Con",
-    "Party_Name": "Conservative",
-    "PreElection_Seats": 30
-  },
-  {
-    "Party_Code": "Lab",
-    "Party_Name": "Labour",
-    "PreElection_Seats": 31
-  },
-  {
-    "Party_Code": "SNP",
-    "Party_Name": "Scottish National Party",
-    "PreElection_Seats": 12
-  },
-  {
-    "Party_Code": "LD",
-    "Party_Name": "Liberal Democrat",
-    "PreElection_Seats": 9
-  },
-  {
-    "Party_Code": "DUP",
-    "Party_Name": "Democratic Unionist Party",
-    "PreElection_Seats": 8
-  },
-  {
-    "Party_Code": "SF",
-    "Party_Name": "Sinn Fein",
-    "PreElection_Seats": 4
-  },
-  {
-    "Party_Code": "Ind",
-    "Party_Name": "Independent",
-    "PreElection_Seats": 4
-  },
-  {
-    "Party_Code": "PC",
-    "Party_Name": "Plaid Cymru",
-    "PreElection_Seats": 3
-  },
-  {
-    "Party_Code": "SDLP",
-    "Party_Name": "Social Democratic & Labour Party",
-    "PreElection_Seats": 3
-  },
-  {
-    "Party_Code": "UUP",
-    "Party_Name": "Ulster Unionist Party",
-    "PreElection_Seats": 2
-  },
-  {
-    "Party_Code": "Green",
-    "Party_Name": "Green Party",
-    "PreElection_Seats": 1
-  },
-  {
-    "Party_Code": "Spk",
-    "Party_Name": "Speaker",
-    "PreElection_Seats": 1
-  },
-  {
-    "Party_Code": "UKIP",
-    "Party_Name": "UK Independence Party",
-    "PreElection_Seats": 1
-  },
-  {
-    "Party_Code": "Vac",
-    "Party_Name": "Vacant",
-    "PreElection_Seats": 1
-  },
-  {
-    "Party_Code": "Alliance",
-    "Party_Name": "Alliance",
-    "PreElection_Seats": 0
-  },
-  {
-    "Party_Code": "PBPA",
-    "Party_Name": "People Before Profit Alliance",
-    "PreElection_Seats": 0
-  },
-  {
-    "Party_Code": "Respect",
-    "Party_Name": "Respect",
-    "PreElection_Seats": 0
-  },
-  {
-    "Party_Code": "TUV",
-    "Party_Name": "Traditional Unionist Voice",
-    "PreElection_Seats": 0
-  }
+[{
+		"Party_Code": "Con",
+		"Party_Name": "Conservative",
+		"Live_Seats": 30,
+		"Exit_Poll": 350,
+		"Live_Change": 0,
+		"PreElection_Seats": 330,
+		"PreElection_Percent": "36.8%",
+		"Color": "#0575C9"
+	},
+	{
+		"Party_Code": "Lab",
+		"Party_Name": "Labour",
+		"Live_Seats": 31,
+		"Exit_Poll": 120,
+		"Live_Change": 0,
+		"PreElection_Seats": 229,
+		"PreElection_Percent": "30.5%",
+		"Color": "#ED1E0E"
+	},
+	{
+		"Party_Code": "SNP",
+		"Party_Name": "Scottish National Party",
+		"Live_Seats": 12,
+		"Exit_Poll": 45,
+		"Live_Change": 0,
+		"PreElection_Seats": 54,
+		"PreElection_Percent": "4.7%",
+		"Color": "#EBC31C"
+	},
+	{
+		"Party_Code": "LD",
+		"Party_Name": "Liberal Democrat",
+		"Live_Seats": 9,
+		"Exit_Poll": 7,
+		"Live_Change": 0,
+		"PreElection_Seats": 9,
+		"PreElection_Percent": "7.9% ",
+		"Color": "#FEAE14"
+	},
+	{
+		"Party_Code": "DUP",
+		"Party_Name": "Democratic Unionist Party",
+		"Live_Seats": 8,
+		"Exit_Poll": 8,
+		"Live_Change": 0,
+		"PreElection_Seats": 8,
+		"PreElection_Percent": "0.6% ",
+		"Color": "#C0153D"
+	},
+	{
+		"Party_Code": "SF",
+		"Party_Name": "Sinn Fein",
+		"Live_Seats": 4,
+		"Exit_Poll": 4,
+		"Live_Change": 0,
+		"PreElection_Seats": 4,
+		"PreElection_Percent": "0.6% ",
+		"Color": "#00623F"
+	},
+	{
+		"Party_Code": "Ind",
+		"Party_Name": "Independent",
+		"Live_Seats": 4,
+		"Exit_Poll": 1,
+		"Live_Change": 0,
+		"PreElection_Seats": 4,
+		"PreElection_Percent": "-",
+		"Color": "#D26FBC"
+	},
+	{
+		"Party_Code": "PC",
+		"Party_Name": "Plaid Cymru",
+		"Live_Seats": 3,
+		"Exit_Poll": 2,
+		"Live_Change": 0,
+		"PreElection_Seats": 3,
+		"PreElection_Percent": "0.6% ",
+		"Color": "#4E9F2F"
+	},
+	{
+		"Party_Code": "SDLP",
+		"Party_Name": "Social Democratic & Labour Party",
+		"Live_Seats": 3,
+		"Exit_Poll": 4,
+		"Live_Change": 0,
+		"PreElection_Seats": 3,
+		"PreElection_Percent": "0.3% ",
+		"Color": "#65A966"
+	},
+	{
+		"Party_Code": "UUP",
+		"Party_Name": "Ulster Unionist Party",
+		"Live_Seats": 2,
+		"Exit_Poll": 2,
+		"Live_Change": 0,
+		"PreElection_Seats": 2,
+		"PreElection_Percent": "0.4% ",
+		"Color": "#6AB1E6"
+	},
+	{
+		"Party_Code": "Green",
+		"Party_Name": "Green Party",
+		"Live_Seats": 1,
+		"Exit_Poll": 1,
+		"Live_Change": 0,
+		"PreElection_Seats": 1,
+		"PreElection_Percent": "3.8% ",
+		"Color": "#78C31E"
+	},
+	{
+		"Party_Code": "Spk",
+		"Party_Name": "Speaker",
+		"Live_Seats": 1,
+		"Exit_Poll": 1,
+		"Live_Change": 0,
+		"PreElection_Seats": 1,
+		"PreElection_Percent": "-",
+		"Color": "#999999"
+	},
+	{
+		"Party_Code": "UKIP",
+		"Party_Name": "UK Independence Party",
+		"Live_Seats": 1,
+		"Exit_Poll": 0,
+		"Live_Change": 0,
+		"PreElection_Seats": 1,
+		"PreElection_Percent": "12.7% ",
+		"Color": "#712F87"
+	}
 ]

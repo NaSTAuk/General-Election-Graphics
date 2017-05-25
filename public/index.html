@@ -6,14 +6,21 @@
         <link rel="stylesheet" href="/css/reset.css" />
         <link href="/css/fonts/montserrat.css" rel="stylesheet" type="text/css">
         <link href="/css/fonts/ubuntu_condensed.css" rel="stylesheet" type="text/css">
+        <link href="/css/fonts/mreavesxl.css" rel="stylesheet" type="text/css">
         <link href="/css/theme.css" rel="stylesheet" type="text/css">
         <link href="/css/animation.css" rel="stylesheet" type="text/css">
 		<link href="/css/animate.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
+    <div class="fullscreen-bg">
+    <video loop muted autoplay class="fullscreen-bg__video">
+        <source src="video/bgvideo.mp4" type="video/mp4">
+    </video>
+</div>
+    
         <div ng-controller="bugCtrl">
-            <div class="wrapper slide-top" ng-show="state.showGeneral">
+            <div class="wrapper slide-left" ng-show="state.showGeneral">
                  <div class="bug top slide-top" ng-show="state.showClock">
                  	<h1 class="black clock">{{clock | date: "h:mm a"}}</h1>
                  </div>
@@ -24,7 +31,7 @@
                  	<h1 class="locationtext white" ng-show="state.showLocation">{{bug.locationtext}}</h1>
                 </div>
                 <div class="bug top slide-top" ng-show="state.showCountdown">
-                 	<h1 class="locationtext white" ng-show="state.showCountdown"><div id="clockdiv"></div></h1>
+                 	<h1 class="livetext" ng-show="state.showCountdown"><div id="clockdiv"></div></h1>
                 </div>
             </div>
 
@@ -56,9 +63,81 @@
                 <h2 ng-show="right.subHeading">{{right.subHeading}}</h2>
             </div>
         </div>
+        
+        <div ng-controller="constituencyCtrl">
+        	<div class="constituencyoverview" ng-show="show">
+                <div class="gradient-overlay" style="clear: both">
+                    <h1 style="background-color: {{constituency.conColor}} !important;">{{constituency.conName}} </h1>
+                	<div class="eurefinfo"> 
+                	<div class="eupietitle"><h2>EU Ref 2016</h2></div>
+                	<div id="eupiechart"></div>	
+                	<input type="hidden" id="euleave" value="{{constituency.euleave}}">
+                	<input type="hidden" id="euremain" value="{{constituency.euremain}}">
+                </div>
+                </div>
+                
+                <div class="gradient-overlay constmpname">
+						<h2>{{constituency.conMPName}} - {{constituency.conDescription}}</h2>
+                </div>
+                
+                <div class="gradient-overlay party-breakdown">
+					<div class="constpartyname">
+						<h2 class="partyname" style="background-color: {{constituency.conColor}} !important;">{{constituency.conPartyOne}}</h2>
+					</div>
+					<div class="constcandidatename">
+						<h2>{{constituency.conPartyOneCandidate}}</h2>
+					</div>
+					<div class="constvotes">
+						<h2 class="partyname" style="background-color: {{constituency.conColor}} !important; text-align:right;">{{constituency.conPartyOneVotes}}</h2>
+					</div>
+                </div>
+                <div class="gradient-overlay party-breakdown">
+					<div class="constpartyname">
+						<h2 class="partyname" style="background-color: #ED1E0E !important;">{{constituency.conPartyTwo}}</h2>
+					</div>
+					<div class="constcandidatename">
+						<h2>{{constituency.conPartyTwoCandidate}}</h2>
+					</div>
+					<div class="constvotes">
+						<h2 class="partyname" style="background-color: #ED1E0E !important; text-align:right;">{{constituency.conPartyTwoVotes}}</h2>
+					</div>
+                </div>
+                <div class="gradient-overlay party-breakdown">
+					<div class="constpartyname">
+						<h2 class="partyname" style="background-color: #712F87 !important;">{{constituency.conPartyThree}}</h2>
+					</div>
+					<div class="constcandidatename">
+						<h2>{{constituency.conPartyThreeCandidate}}</h2>
+					</div>
+					<div class="constvotes">
+						<h2 class="partyname" style="background-color: #712F87 !important; text-align:right;">{{constituency.conPartyThreeVotes}}</h2>
+					</div>
+                </div>
+                <div class="gradient-overlay party-breakdown" >
+					<div class="constpartyname">
+						<h2 class="partyname" style="background-color: #FEAE14 !important;">{{constituency.conPartyFour}}</h2>
+					</div>
+					<div class="constcandidatename">
+						<h2>{{constituency.conPartyFourCandidate}}</h2>
+					</div>
+					<div class="constvotes">
+						<h2 class="partyname" style="background-color: #FEAE14 !important; text-align:right;">{{constituency.conPartyFourVotes}}</h2>
+					</div>
+                </div>
+                
+                <div class="gradient-overlay party-breakdown">
+					<div style="float:left; width:48%;">
+						<h2>Turnout: <span style="float:right">{{constituency.conTurnout}}</span></h2>
+					</div>
+					<div style="float:right; width:48%;">
+						<h2>Majority: <span style="float:right">{{constituency.conMajority}}</span></h2>
+					</div>
+                </div>
+            </div>
+        </div>
 
         <div ng-controller="scoringCtrl">
-        		<div ng-show="showScore" class="total-score scale-fade" >
+        		<div ng-show="showScore" class="total-score slide-left" >
 					<div class="float-left party-score CON" ng-show="showcon">
 					<p class="party-name">CON</p><p class="seats"> {{conScore}}</p><div style="clear: both;"></div>
 					</div>
@@ -91,65 +170,78 @@
 					<p><span class="party-name">OTH</span><span class="seats"> {{othScore}}</span></p>
 					</div>
 					<br>
-					<div ng-show="showSubtitle" class="subtitle scale-fade"><h1>{{subtitle}}</h1></div>
+					<div ng-show="showSubtitle" scale-fade"><h2 class="subtitle">{{subtitle}}</h2></div>
                 	
                 	<div class="clearfix"></div>
             	</div>
         </div>
         
          <div ng-controller="seatsCtrl">
-        		<div ng-show="seats.showSeats" class="total-score {{seats.position}} scale-fade" >
+        		<div ng-show="seats.showSeats" class="total-score {{seats.position}} slide-{{seats.position}}" >
 					<div class="float-left party-score CON" ng-show="seats.showcon">
-					<p><span class="party-name" ng-show="seats.showSeatsNames">CON</span> <span class="seats"> {{seats.conScore}}</span></p>
+					<p><span class="party-name" ng-show="seats.showSeatsNames">CON</span> <span id="conScore" class="seats"> {{seats.conScore}}</span><span id="conChange" class="seats" style="display:none;"> ({{seats.conLiveChange}})</span></p>
 					</div>
 
 					<div class="float-left party-score LAB" ng-show="seats.showlab">
-					<p><span class="party-name" ng-show="seats.showSeatsNames">LAB</span> <span class="seats"> {{seats.labScore}}</span></p>
+					<p><span class="party-name" ng-show="seats.showSeatsNames">LAB</span> <span id="labScore" class="seats">{{seats.labScore}}</span><span id="labChange" class="seats" style="display:none;"> ({{seats.labLiveChange}})</span></p>
 					</div>
 					
-					<div class="float-left party-score LIB" ng-show="seats.showlib">
-					<p><span class="party-name" ng-show="seats.showSeatsNames">LIB </span><span class="seats"> {{seats.libScore}}</span></p>
+					 <div class="float-left party-score LIB" ng-show="seats.showlib">
+					<p><span class="party-name" ng-show="seats.showSeatsNames">LIB </span><span id="libScore" class="seats"> {{seats.libScore}}</span><span id="libChange" class="seats" style="display:none;"> ({{seats.libLiveChange}})</span></p>
 					</div>
 					
 					<div class="float-left party-score SNP" ng-show="seats.showsnp">
-					<p><span class="party-name" ng-show="seats.showSeatsNames">SNP</span> <span class="seats"> {{seats.snpScore}}</span></p>
+					<p><span class="party-name" ng-show="seats.showSeatsNames">SNP</span> <span id="snpScore" class="seats"> {{seats.snpScore}}</span><span id="snpChange" class="seats" style="display:none;"> ({{seats.snpLiveChange}})</span></p>
 					</div>
 					
 					<div class="float-left party-score GRN" ng-show="seats.showgrn">
-					<p><span class="party-name" ng-show="seats.showSeatsNames">GRN</span> <span class="seats"> {{seats.grnScore}}</span></p>
+					<p><span class="party-name" ng-show="seats.showSeatsNames">GRN</span> <span id="grnScore" class="seats"> {{seats.grnScore}}</span><span id="grnChange" class="seats" style="display:none;"> ({{seats.grnLiveChange}})</span></p>
 					</div>
 					
 					<div class="float-left party-score PC" ng-show="seats.showpc">
-					<p><span class="party-name" ng-show="seats.showSeatsNames">PC</span> <span class="seats"> {{seats.pcScore}}</span></p>
+					<p><span class="party-name" ng-show="seats.showSeatsNames">PC</span> <span id="pcScore" class="seats"> {{seats.pcScore}}</span><span id="pcChange" class="seats" style="display:none;"> ({{seats.pcLiveChange}})</span></p>
 					</div>
 					
 					<div class="float-left party-score DUP" ng-show="seats.showdup">
-					<p><span class="party-name" ng-show="seats.showSeatsNames">DUP</span> <span class="seats"> {{seats.dupScore}}</span></p>
+					<p><span class="party-name" ng-show="seats.showSeatsNames">DUP</span> <span id="dupScore" class="seats"> {{seats.dupScore}}</span><span id="dupChange" class="seats" style="display:none;"> ({{seats.dupLiveChange}})</span></p>
 					</div>
 					
 					<div class="float-left party-score OTH" ng-show="seats.showoth">
-					<p><span class="party-name" ng-show="seats.showSeatsNames">OTH</span> <span class="seats"> {{seats.othScore}}</span></p>
+					<p><span class="party-name" ng-show="seats.showSeatsNames">OTH</span> <span id="othScore" class="seats"> {{seats.othScore}}</span><span id="othChange" class="seats" style="display:none;"> ({{seats.othLiveChange}})</span></p>
 					</div>
 					<br>
-					<div ng-show="seats.showSubtitle" class="subtitle scale-fade"><h1>{{seats.subtitle}}</h1></div>
+					<div ng-show="seats.showSubtitle" class="subtitle slide-{{seats.position}}"><h2 class="subtitle">{{seats.subtitle}}<span class="announced">{{seats.announced}}/650 Announced</span></h2></div>
                 	
                 	<div class="clearfix"></div>
             	</div>
         </div>
         
-        <div ng-controller="gridCtrl">
+        <div ng-controller="gridCtrl">   
           <div class="center-page scale-fade" ng-show="show">
             <div class="grid center" style="margin-top: 20px; position: absolute;" >
               <div class="gradient-overlay">
                 <h1 style="background-color: {{grid.headingcolor}} !important;">{{ grid.header }}</h1>
               </div>
-
               <div class="row animate-repeat" ng-repeat="row in grid.rows">
                 <div style="background-color: {{row.color}} !important;" class="gridleft float-left">{{ row.left }}</div>
                 <div style="background-color: {{row.color}} !important;" class="gridright float-right">{{ row.right }}</div>
               </div>
             </div>
           </div>
+        </div>  
+          
+        <div ng-controller="recentgridCtrl">
+            <div class="party-overview center top scale-fade" ng-show="show" >
+              <div class="gradient-overlay">
+                <h1>{{ recentgrid.header }}</h1>
+              </div>
+              <div class="row animate-repeat" ng-repeat="row in recentgrid.rows">
+                <div style="color: {{row.color}} !important;" class="gridleft"><h2>{{ row.left }}</h2></div>
+            	<div style="background-color: {{row.color}} !important;" class="gridright change">{{ row.change }}</div>
+                <div style="background-color: {{row.color}} !important;" class="gridright">{{ row.right }}</div>
+              </div>
+            </div>
+        </div>  
 
 
         <script type="text/javascript" src="/js/socket.io.js"></script>
@@ -157,6 +249,74 @@
         <script type="text/javascript" src="/js/libs/angular-animate.min.js"></script>
         <script type="text/javascript" src="/js/ng-socket-io.js"></script>
         <script type="text/javascript" src="/js/cg.js"></script>
+        <script type="text/javascript" src="/js/chartsloader.js"></script>
+        
+        <script>
+		  google.charts.load('current', {'packages':['corechart']});
+		  google.charts.setOnLoadCallback(drawChart);
 
+		  function drawChart() {
+		
+			var leave = document.getElementById('euleave').value;
+			var remain = document.getElementById('euremain').value;
+			var data = google.visualization.arrayToDataTable([
+			  ['', ''],
+			  ['L', parseFloat(leave)],
+			  ['R', parseFloat(remain)]
+			]);
+
+			var options = {
+			  title: 'EU Referendum',
+			  backgroundColor: { fill:'transparent' },
+			  pieSliceText: 'label',
+			  slices: {
+				0: { color: '#003399' },
+				1: { color: '#d7001f' }
+			  },
+			  legend: 'none',
+			  chartArea:{right:3,top:0,width:'100%',height:'100%'},
+			  height: 120,
+			  width: 120,
+			  is3D: true,
+			  fontName: 'MrEavesXLModOT',
+			  fontSize: 22
+			};
+
+			var chart = new google.visualization.PieChart(document.getElementById('eupiechart'));
+
+			chart.draw(data, options);
+		  }
+	  
+		  setInterval(drawChart, 2000); 
+      </script>
+      
+		<script>
+			var text = ["none", "block"];
+			var counter = 0;
+			var oppositecounter = 1;
+			setInterval(change, 5000);
+			function change() {
+				counter++;
+				if(counter >= text.length) { counter = 0; }
+				if (counter == 0) { oppositecounter = 1; }
+				else { oppositecounter = 0; }
+				document.getElementById('conScore').style.display = text[counter];
+				document.getElementById('conChange').style.display = text[oppositecounter];
+				document.getElementById('labScore').style.display = text[counter];
+				document.getElementById('labChange').style.display = text[oppositecounter];
+				document.getElementById('snpScore').style.display = text[counter];
+				document.getElementById('snpChange').style.display = text[oppositecounter];
+				document.getElementById('libScore').style.display = text[counter];
+				document.getElementById('libChange').style.display = text[oppositecounter];
+				document.getElementById('grnScore').style.display = text[counter];
+				document.getElementById('grnChange').style.display = text[oppositecounter];
+				document.getElementById('pcScore').style.display = text[counter];
+				document.getElementById('pcChange').style.display = text[oppositecounter];
+				document.getElementById('dupScore').style.display = text[counter];
+				document.getElementById('dupChange').style.display = text[oppositecounter];
+				document.getElementById('othScore').style.display = text[counter];
+				document.getElementById('othChange').style.display = text[oppositecounter];
+			}
+    </script>
     </body>
 </html>

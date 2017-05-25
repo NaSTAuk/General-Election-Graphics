@@ -10,6 +10,8 @@ var bug = {livetext: "Live", locationtext: ''};
 var score = {};
 var grid = {headingcolor:"#BC204B", leftcolor: "#1f1a34"};
 var seats = {};
+var recentgrid = {};
+var constituency = {};
 
 	io.on('connection', function(socket) {
 	console.log("Client Socket Connected");
@@ -68,6 +70,12 @@ var seats = {};
         grid = payload;
         io.sockets.emit("grid", payload);
         console.log("Updating: grid");
+    });
+    
+    socket.on("recentgrid", function(payload) {
+        recentgrid = payload;
+        io.sockets.emit("recentgrid", payload);
+        console.log("Updating recent results grid");
     });
 
 	/*
@@ -131,6 +139,15 @@ var seats = {};
     socket.on("seats:get", function(msg) {
 		io.sockets.emit("seats", seats);
 	});
+
+	/*
+	 * 		Constituency
+	 */
+    socket.on("constituency", function(payload) {
+        recentgrid = payload;
+        io.sockets.emit("constituency", payload);
+        console.log("Updating constituency info");
+    });
 
 });
 

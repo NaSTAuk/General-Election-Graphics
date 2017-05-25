@@ -6,13 +6,30 @@
 }
 
 body {
-    padding: 50px; /* Safe area */
-    font-family: 'Ubuntu Condensed', sans-serif;
+    padding: 36px 64px 36px 64px; /* Safe area */
+    font-family: 'MrEavesXLModOT', sans-serif;
     background:transparent;                          /* The HTML consumer actually makes your background transparent by default, unless a color or image is specified - but this might be usefull when debugging in browsers */
     overflow:hidden;                                 /* Hide any overflowing elements - to disable scollbars */
     -webkit-font-smoothing:antialiased !important;
 }
 
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1280px;
+    height: 720px;
+}
 
 @-webkit-keyframes moving-gradient {
     0% { background-position: left bottom; }
@@ -161,25 +178,24 @@ h1, h2, h3, h4 {
 /**************************************************/
 .left{
     position: absolute;
-    left: 50px;
+    left: 64px;
 }
 
 .right {
     position: absolute;
-    right: 50px;
-    text-align: right;
+    right: 64px;
 }
 
 .bottom {
-    bottom: 50px;
+    bottom: 36px;
 }
 
 .fullwidth {
-	width: 1180px;
+	width: 1152px;
 	}
 
 .top {
-    top: 50px;
+    top: 36px;
 }
 
 .center {
@@ -232,24 +248,36 @@ h1, h2, h3, h4 {
     font-weight: bold;
     padding: 5px 8px;
     background-color: #a11a1e;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
-	border-top-right-radius: 5px;
 	border-left:3px solid white;
+}
+
+.lowerthird:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 0px;
+  width: 0px;
+  height: 0px;
+  border-top: 20px solid transparent;
+  border-left: 16.16px solid #a11a1e;
+  border-bottom: 20px solid transparent;
 }
 
 .lowerthird h2 {
     color: #111;
     font-size: 20px;
     font-weight: bold;
+    text-align: left !important;
     padding: 5px 8px;
 	border-left:3px solid white;
     background-color: #fff;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+	border-bottom-left-radius: 5px;
 }
 
 .lowerthird.bottom.fullwidth {
     position: absolute;
-    left: 50px;
+    left:64px;
 } 
 
 /**************************************************/
@@ -265,12 +293,13 @@ h1, h2, h3, h4 {
 .bug h1 {
     color: #fff;
     border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
     font-size: 18px;
     line-height: 22px;
     font-weight: bold;
     float: left;
     padding: 3px 10px;
-    margin-right: 0px;
+    margin-right: 3px;
     border-left:3px solid white;
     background-color: #a11a1e;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
@@ -292,7 +321,7 @@ h1, h2, h3, h4 {
 
 .logo {
     opacity: 0.5;
-    top: 40px;
+    top: 25px;
 }
 
 .logo.toggle.ng-leave,
@@ -307,7 +336,7 @@ h1, h2, h3, h4 {
 
 .total-score {
     color: #fff;
-    bottom: 50px;
+    bottom: 36px;
     position: absolute;
     margin: 0 auto;
 }
@@ -326,12 +355,13 @@ h1, h2, h3, h4 {
 	width: 70px;
 	display: block;
 	font-size: 24px;
+	font-weight: bold;
 	text-align: left !important;
 	float: left;
 }
 
 .party-score {
-	min-width: 50px;
+	min-width: 40px;
 	min-height: 30px;
 	font-size: 24px;
 }
@@ -343,6 +373,8 @@ h1, h2, h3, h4 {
 .party-score .seats {
 	font-weight: 600;
 	float: right;	
+	min-width: 45px;
+	text-align: center;
 }
 
 .party-score .seatschange {
@@ -355,6 +387,23 @@ h1, h2, h3, h4 {
 	min-height: 28px;
 }
 
+    
+.total-score h2.subtitle {
+		color: #111;
+		font-size: 20px;
+		font-weight: bold;
+		padding: 5px 8px;
+		line-height: 22px;
+		min-width: 10px;
+		border-left:3px solid white;
+		background-color: #fff;
+		border-bottom-left-radius: 5px;
+}
+
+.total-score .announced {
+		float:right;
+}
+
 .total-score h1 {
  	padding-left: 6px;
  	padding-top: 3px;
@@ -364,7 +413,7 @@ h1, h2, h3, h4 {
     font-size: 16px;
     line-height: 22px;
     border-left:3px solid white;
-	background-color: #eee !important;
+	background-color: #fff !important;
 	color: #1f1a34 !important;
 	width: 100%;
 	border-bottom-left-radius: 5px;
@@ -397,76 +446,116 @@ h1, h2, h3, h4 {
 	margin-bottom: 0px !important;
 }
 
-/**************************************************/
-/*              [Football Score]                  */
-/**************************************************/
+.constituencyoverview {
+    min-width: 20%;
+    min-height: 38px;
+    height: 250px;
+    width: 40%;
+    border-radius: 5px;
+    background-clip: padding-box;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-top: 20px;
+    }
 
-.football {
-  width: 30%;
-  border-radius: 3px;
-  background-clip: padding-box;
-  font-size: 30px;
-  font-size: 1.8vw;
-  text-align: center;
-}
-
-.football-score h1 {
-    font-size: 18px;
-    padding: 6px;
-    padding-left: 58px !important;
-    padding-right: 44px !important;
-    text-transform: uppercase;
+.constituencyoverview h1 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #a11a1e;
+    min-height: 38px;
+    padding: 5px 8px;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+	border-top-right-radius: 5px;
+	border-left:3px solid white;
 }
 
-.footballtop h1 {
-	color: #000;
-	border-bottom: 3px solid white;
-	background-color: #eee !important;
+.constituencyoverview .majority {
+	padding: 5px 8px;
 }
 
-.footballbottom h1 {
+.constituencyoverview .turnout {
+	padding: 5px 8px;
+}
+
+.constituencyoverview .declaretime {
+	padding: 5px 8px;
+}
+
+.constituencyoverview .euresults {
+	padding: 5px 8px;
+}
+
+.constituencyoverview h2 {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 8px;
+    background-color: #fff;
+	border-left: 3px solid white;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+	border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+.constituencyoverview .party-breakdown h2.partyname {
 	color: #fff;
-	border-top: 3px solid white;
-	background-color: #1f1a34 !important;
+	margin-right: 2px;
+	text-transform: uppercase;
 }
 
-.football .clock, .football .score.lanc, .football .score.york {
-  padding: 3px;
-  float: left;
+.eurefinfo {
+	width:25%; 
+	float:right;
 }
 
-.football .clock {
-  background-color: #eee;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
-  width: 24%;
+.eupietitle {
+	color:#FFF; 
+	text-align:center; 
+	margin-top:3px; 
+	margin-bottom:10px;
 }
 
-.football .extratime {
-  background-color: #bc204b;;
-  color: #fff;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
-  width: 12%;
-  padding: 3px;
-  margin-left: 23px; 
+.constmpname, .party-breakdown {
+	width:75%
 }
 
-.football .score.lanc {
-  width: 38%;
-  color: #fff;
-  background-color: #cd1d18;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+.constcandidatename {
+	float:left; 
+	width:65%;
 }
 
-.football .score.lanc p {
-    float: right;
+.constpartyname {
+	float:left; 
+	width:15%;
 }
 
-.football .score.york {
-  width: 38%;
-  color: #000;
-  background-color: #efbb39;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+.constpartyname h2 {
+	min-height: 28px;
+}
+
+.constvotes {
+	float:right; 
+	width:20%;
+}
+
+.constturnout {
+	float:left; 
+	width:48%;
+}	
+
+.constmajority {
+	float:right;
+	width:48%;
+}
+
+
+#eupiechart {
+	float:right;
 }
 
 /*
@@ -502,6 +591,7 @@ h1, h2, h3, h4 {
         background-color: #a11a1e;
         color: #fff;
         width: 80%;
+        border-left: 3px solid white;
     }
 
     .grid .gridright {
@@ -517,6 +607,78 @@ h1, h2, h3, h4 {
     }
 
     .grid .row:last-child {
+        margin-bottom: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    
+/*
+ *===================================
+ *         Party Overview
+ *===================================
+ */
+ .party-overview {
+    width: 40%;
+    text-align: left;
+    background-clip: padding-box;
+    clear: both;
+    font-weight: bold;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-top: 40px;
+  }
+    .party-overview h1 {
+        color:  #000;
+        font-size: 28px;
+        font-weight: bold;
+        padding: 5px;
+        padding-left: 10px;
+        background-color: #fff;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.04) 51%, rgba(0, 0, 0, 0.02));
+   		border-top-right-radius: 5px;
+    }
+    
+    .party-overview h2 {
+    	margin-right: 3px;
+    }
+
+    .party-overview .gridleft, .party-overview .gridright {
+        float: left;
+        line-height: 28px;
+        font-size: 18px;
+        border-bottom-left-radius: 5px;
+    	border-top-right-radius: 5px;
+    	margin-top: 3px;
+    	margin-right: 3px;
+    }
+
+    .party-overview .gridleft {
+        padding-left: 10px;
+        text-align: left;
+        float: left;
+        background-color: #fff;
+        width: 67%;
+        border-left: 3px solid white;
+    }
+
+    .party-overview .gridright {
+        width: 20%;
+        float: right;
+        border-left: 3px solid #fff;
+        background-color: #a11a1e;
+        color: #fff;
+        text-align: center !important;
+    }
+.change {
+        width: 10% !important;
+    }
+
+    .party-overview .row {
+        color: #000;
+    }
+
+    .party-overview .row:last-child {
         margin-bottom: 5px;
         border-bottom-left-radius: 5px;
     }
