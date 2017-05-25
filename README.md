@@ -29,8 +29,8 @@ For the [admin](http://127.0.0.1:3000/admin) page, navigate to http://127.0.0.1:
 
 For the [graphics](http://127.0.0.1:3000) output, navigate to http://127.0.0.1:3000
 
-## Live Data
-live-seats.json
+## Live Data Files
+### live-seats.json
 
 Key  | Value Description
 ------------- | -------------
@@ -42,3 +42,36 @@ Live_Change   | Number of current seats that have been won / lost
 PreElection_Seats | Number of seats prior to the election
 PreElection_Percent | Percentage of votes in 2015
 Color | HEX color for party
+
+### 2017_candidates.json
+
+Key  | Value Description
+------------- | -------------
+id    | Candidate unique ID
+name    | Candidate Name
+party_id    | Number of current seats: 70
+party_name    | Number of seats in exit poll: 90
+constituency   | Number of current seats that have been won / lost
+image_url | png image. Not all candidates have images
+gss_code | Standard code for constituency: W07000049
+color | HEX color for party
+votes | number of votes that candidate received
+
+### data_dump.json
+
+Not all keys are presented
+
+Key  | Value Description | Example
+------------- | ------------- | -------------
+Const_ID    | Standard code for constituency | W07000049
+Const_Name    | Constituency Name | Aldershot
+Result    | Number of current seats | Con Hold
+Winner    | 2015 winning party | Con
+VALID15   |Number of votes in 2015 | 60000
+MAJ | 2015 Majority | 20000
+Turnout15 | Percent turnout in 2015 | 63.8
+Elect15 | size of electorate in 2015 | 72434
+DateTime | Announcement time in 2015 | 08/05/2015 04:39:00
+EUHANLEAVE | Proportion of leave votes | 0.578978 
+EUHANREM | Proportion of remain votes | 0.421022
+Color | HEX color for party | #0575c9
