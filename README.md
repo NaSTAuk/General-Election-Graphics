@@ -30,6 +30,8 @@ For the [admin](http://127.0.0.1:3000/admin) page, navigate to http://127.0.0.1:
 For the [graphics](http://127.0.0.1:3000) output, navigate to http://127.0.0.1:3000
 
 ## Data Files 
+Data files are stored in /public/data and are stored in json format. CSV versions are also kept in data-csv to allow for easier editing.
+
 ### live-seats.json - LIVE
 
 Key  | Value Description | Example
