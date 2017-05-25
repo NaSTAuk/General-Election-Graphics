@@ -32,30 +32,30 @@ For the [graphics](http://127.0.0.1:3000) output, navigate to http://127.0.0.1:3
 ## Live Data Files
 ### live-seats.json
 
-Key  | Value Description
-------------- | -------------
-Party_Code    | Party Acronym: LAB, CON, LD etc.
-Party_Name    | Full Name of party: Conservative
-Live_Seats    | Number of current seats: 70
-Exit_Poll     | Number of seats in exit poll: 90
-Live_Change   | Number of current seats that have been won / lost
-PreElection_Seats | Number of seats prior to the election
-PreElection_Percent | Percentage of votes in 2015
-Color | HEX color for party
+Key  | Value Description | Example
+------------- | ------------- | -------------
+Party_Code    | Party Acronym | LAB
+Party_Name    | Full Name of party | Conservative
+Live_Seats    | Number of current seats | 70
+Exit_Poll     | Number of seats in exit poll | 90
+Live_Change   | Number of current seats that have been won - lost | 10
+PreElection_Seats | Number of seats prior to the election | 229
+PreElection_Percent | Percentage of votes in 2015 | 7.9%
+Color | HEX color for party | #FEAE14
 
 ### 2017_candidates.json
 
-Key  | Value Description
-------------- | -------------
-id    | Candidate unique ID
-name    | Candidate Name
-party_id    | Number of current seats: 70
-party_name    | Number of seats in exit poll: 90
-constituency   | Number of current seats that have been won / lost
-image_url | png image. Not all candidates have images
-gss_code | Standard code for constituency: W07000049
-color | HEX color for party
-votes | number of votes that candidate received
+Key  | Value Description | Example
+------------- | ------------- | -------------
+id    | Candidate unique ID | 5570
+name    | Candidate Name | Caroline Jones
+party_id    | party_id used by various databases | party:85
+party_name    | Full name of party | UK Independence Party (UKIP) 
+constituency   | Consituency name | Aberavon
+image_url | png image. Not all candidates have images | https://candidates.democracyclub.org.uk/media/images/images/5570.png
+gss_code | Standard code for constituency | W07000049
+color | HEX color for party | #70147a
+votes | number of votes that candidate received | 10
 
 ### data_dump.json
 
