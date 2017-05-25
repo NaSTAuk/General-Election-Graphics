@@ -28,3 +28,17 @@ node server.js
 For the [admin](http://127.0.0.1:3000/admin) page, navigate to http://127.0.0.1:3000/admin
 
 For the [graphics](http://127.0.0.1:3000) output, navigate to http://127.0.0.1:3000
+
+## Live Data
+live-seats.json
+
+Key  | Value Description
+------------- | -------------
+Party_Code    | Party Acronym: LAB, CON, LD etc.
+Party_Name    | Full Name of party: Conservative
+Live_Seats    | Number of current seats: 70
+Exit_Poll     | Number of seats in exit poll: 90
+Live_Change   | Number of current seats that have been won / lost
+PreElection_Seats | Number of seats prior to the election
+PreElection_Percent | Percentage of votes in 2015
+Color | HEX color for party
