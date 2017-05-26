@@ -253,36 +253,21 @@ app.controller('recentgridCGController', ['$scope', '$log', '$http', 'localStora
         };
          
          fetchSeats();
+        
         $scope.ExitPoll = function() {    
-        		var changezero = $scope.recentgrid.liveSeats[0].Exit_Poll - $scope.recentgrid.liveSeats[0].PreElection_Seats;
-        		var changeone = $scope.recentgrid.liveSeats[1].Exit_Poll - $scope.recentgrid.liveSeats[1].PreElection_Seats;
-        		var changetwo = $scope.recentgrid.liveSeats[2].Exit_Poll - $scope.recentgrid.liveSeats[2].PreElection_Seats;
-        		var changethree = $scope.recentgrid.liveSeats[3].Exit_Poll - $scope.recentgrid.liveSeats[3].PreElection_Seats;
-        		var changefour = $scope.recentgrid.liveSeats[4].Exit_Poll - $scope.recentgrid.liveSeats[4].PreElection_Seats;
-        		var changefive = $scope.recentgrid.liveSeats[5].Exit_Poll - $scope.recentgrid.liveSeats[5].PreElection_Seats;
-        		var changesix = $scope.recentgrid.liveSeats[6].Exit_Poll - $scope.recentgrid.liveSeats[6].PreElection_Seats;
-        		var changeseven = $scope.recentgrid.liveSeats[7].Exit_Poll - $scope.recentgrid.liveSeats[7].PreElection_Seats;
-        		var changeeight = $scope.recentgrid.liveSeats[8].Exit_Poll - $scope.recentgrid.liveSeats[8].PreElection_Seats;
-        		var changenine = $scope.recentgrid.liveSeats[9].Exit_Poll - $scope.recentgrid.liveSeats[9].PreElection_Seats;
-        		var changeten = $scope.recentgrid.liveSeats[10].Exit_Poll - $scope.recentgrid.liveSeats[10].PreElection_Seats;
-        		var changeeleven = $scope.recentgrid.liveSeats[11].Exit_Poll - $scope.recentgrid.liveSeats[11].PreElection_Seats;
-        		var changetwelve = $scope.recentgrid.liveSeats[12].Exit_Poll - $scope.recentgrid.liveSeats[12].PreElection_Seats;
-          	    var liveSeats = {"rows":[
-          	    {"left":$scope.recentgrid.liveSeats[0].Party_Name,"right":$scope.recentgrid.liveSeats[0].Exit_Poll,"change":(changezero<=0?'':'+') + changezero,"color":$scope.recentgrid.liveSeats[0].Color},
-          	    {"left":$scope.recentgrid.liveSeats[1].Party_Name,"right":$scope.recentgrid.liveSeats[1].Exit_Poll,"change":(changeone<=0?'':'+') + changeone,"color":$scope.recentgrid.liveSeats[1].Color},
-          	    {"left":$scope.recentgrid.liveSeats[2].Party_Name,"right":$scope.recentgrid.liveSeats[2].Exit_Poll,"change":(changetwo<=0?'':'+') + changetwo,"color":$scope.recentgrid.liveSeats[2].Color},
-          	    {"left":$scope.recentgrid.liveSeats[3].Party_Name,"right":$scope.recentgrid.liveSeats[3].Exit_Poll,"change":(changethree<=0?'':'+') + changethree,"color":$scope.recentgrid.liveSeats[3].Color},
-          	    {"left":$scope.recentgrid.liveSeats[4].Party_Name,"right":$scope.recentgrid.liveSeats[4].Exit_Poll,"change":(changefour<=0?'':'+') + changefour,"color":$scope.recentgrid.liveSeats[4].Color},
-          	    {"left":$scope.recentgrid.liveSeats[5].Party_Name,"right":$scope.recentgrid.liveSeats[5].Exit_Poll,"change":(changefive<=0?'':'+') + changefive,"color":$scope.recentgrid.liveSeats[5].Color},
-          	    {"left":$scope.recentgrid.liveSeats[6].Party_Name,"right":$scope.recentgrid.liveSeats[6].Exit_Poll,"change":(changesix<=0?'':'+') + changesix,"color":$scope.recentgrid.liveSeats[6].Color},
-          	    {"left":$scope.recentgrid.liveSeats[7].Party_Name,"right":$scope.recentgrid.liveSeats[7].Exit_Poll,"change":(changeseven<=0?'':'+') + changeseven,"color":$scope.recentgrid.liveSeats[7].Color},
-          	    {"left":$scope.recentgrid.liveSeats[8].Party_Name,"right":$scope.recentgrid.liveSeats[8].Exit_Poll,"change":(changeeight<=0?'':'+') + changeeight,"color":$scope.recentgrid.liveSeats[8].Color},
-          	    {"left":$scope.recentgrid.liveSeats[9].Party_Name,"right":$scope.recentgrid.liveSeats[9].Exit_Poll,"change":(changenine<=0?'':'+') + changenine,"color":$scope.recentgrid.liveSeats[9].Color},
-          	    {"left":$scope.recentgrid.liveSeats[10].Party_Name,"right":$scope.recentgrid.liveSeats[10].Exit_Poll,"change":(changeten<=0?'':'+') + changeten,"color":$scope.recentgrid.liveSeats[10].Color},
-          	    {"left":$scope.recentgrid.liveSeats[11].Party_Name,"right":$scope.recentgrid.liveSeats[11].Exit_Poll,"change":(changeeleven<=0?'':'+') + changeeleven,"color":$scope.recentgrid.liveSeats[11].Color},
-          	    {"left":$scope.recentgrid.liveSeats[12].Party_Name,"right":$scope.recentgrid.liveSeats[12].Exit_Poll,"change":(changetwelve<=0?'':'+') + changetwelve,"color":$scope.recentgrid.liveSeats[12].Color}
-				],"header":"2017 Exit Poll"};    
-          	    return localStorageService.set('recentgrid',liveSeats);
+        		var newLiveSeats = {"header":"2017 Exit Poll", "rows": []};
+				for(var i = 0; i < $scope.recentgrid.liveSeats.length; i++){
+					var buildArray = {};
+					for(var j = 0; j < $scope.recentgrid.liveSeats.length; j++){
+						change = Number($scope.recentgrid.liveSeats[i].Exit_Poll) - Number($scope.recentgrid.liveSeats[i].PreElection_Seats);
+						buildArray["left"] = $scope.recentgrid.liveSeats[i].Party_Name;
+						buildArray["right"] = $scope.recentgrid.liveSeats[i].Exit_Poll;
+						buildArray["change"] = (change<=0?'':'+') + change;
+						buildArray["color"] = $scope.recentgrid.liveSeats[i].Color;
+					}
+					newLiveSeats["rows"].push(buildArray);
+				}
+           	    return localStorageService.set('recentgrid',newLiveSeats);
         };
         $scope.LiveSeatsOverview = function() {    
           	    var liveSeats = {"rows":[
