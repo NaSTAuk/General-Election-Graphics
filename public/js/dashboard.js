@@ -304,23 +304,19 @@ app.controller('recentgridCGController', ['$scope', '$log', '$http', 'localStora
         };
         
         
-        $scope.PartyOverview = function() {    
-          	    var liveSeats = {"rows":[
-          	    {"left":$scope.recentgrid.liveSeats[0].Party_Name,"right":$scope.recentgrid.liveSeats[0].PreElection_Seats,"change":$scope.recentgrid.liveSeats[0].PreElection_Percent,"color":$scope.recentgrid.liveSeats[0].Color},
-          	    {"left":$scope.recentgrid.liveSeats[1].Party_Name,"right":$scope.recentgrid.liveSeats[1].PreElection_Seats,"change":$scope.recentgrid.liveSeats[1].PreElection_Percent,"color":$scope.recentgrid.liveSeats[1].Color},
-          	    {"left":$scope.recentgrid.liveSeats[2].Party_Name,"right":$scope.recentgrid.liveSeats[2].PreElection_Seats,"change":$scope.recentgrid.liveSeats[2].PreElection_Percent,"color":$scope.recentgrid.liveSeats[2].Color},
-          	    {"left":$scope.recentgrid.liveSeats[3].Party_Name,"right":$scope.recentgrid.liveSeats[3].PreElection_Seats,"change":$scope.recentgrid.liveSeats[3].PreElection_Percent,"color":$scope.recentgrid.liveSeats[3].Color},
-          	    {"left":$scope.recentgrid.liveSeats[4].Party_Name,"right":$scope.recentgrid.liveSeats[4].PreElection_Seats,"change":$scope.recentgrid.liveSeats[4].PreElection_Percent,"color":$scope.recentgrid.liveSeats[4].Color},
-          	    {"left":$scope.recentgrid.liveSeats[5].Party_Name,"right":$scope.recentgrid.liveSeats[5].PreElection_Seats,"change":$scope.recentgrid.liveSeats[5].PreElection_Percent,"color":$scope.recentgrid.liveSeats[5].Color},
-          	    {"left":$scope.recentgrid.liveSeats[6].Party_Name,"right":$scope.recentgrid.liveSeats[6].PreElection_Seats,"change":$scope.recentgrid.liveSeats[6].PreElection_Percent,"color":$scope.recentgrid.liveSeats[6].Color},
-          	    {"left":$scope.recentgrid.liveSeats[7].Party_Name,"right":$scope.recentgrid.liveSeats[7].PreElection_Seats,"change":$scope.recentgrid.liveSeats[7].PreElection_Percent,"color":$scope.recentgrid.liveSeats[7].Color},
-          	    {"left":$scope.recentgrid.liveSeats[8].Party_Name,"right":$scope.recentgrid.liveSeats[8].PreElection_Seats,"change":$scope.recentgrid.liveSeats[8].PreElection_Percent,"color":$scope.recentgrid.liveSeats[8].Color},
-          	    {"left":$scope.recentgrid.liveSeats[9].Party_Name,"right":$scope.recentgrid.liveSeats[9].PreElection_Seats,"change":$scope.recentgrid.liveSeats[9].PreElection_Percent,"color":$scope.recentgrid.liveSeats[9].Color},
-          	    {"left":$scope.recentgrid.liveSeats[10].Party_Name,"right":$scope.recentgrid.liveSeats[10].PreElection_Seats,"change":$scope.recentgrid.liveSeats[10].PreElection_Percent,"color":$scope.recentgrid.liveSeats[10].Color},
-          	    {"left":$scope.recentgrid.liveSeats[11].Party_Name,"right":$scope.recentgrid.liveSeats[11].PreElection_Seats,"change":$scope.recentgrid.liveSeats[11].PreElection_Percent,"color":$scope.recentgrid.liveSeats[11].Color},
-          	    {"left":$scope.recentgrid.liveSeats[12].Party_Name,"right":$scope.recentgrid.liveSeats[12].PreElection_Seats,"change":$scope.recentgrid.liveSeats[12].PreElection_Percent,"color":$scope.recentgrid.liveSeats[12].Color}
-				],"header":"Pre-Election Party Standings"};    
-          	    return localStorageService.set('recentgrid',liveSeats);
+        $scope.PartyOverview = function() {         		
+        		var newLiveSeats = {"header":"Pre-Election Party Standings", "rows": []};
+				for(var i = 0; i < $scope.recentgrid.liveSeats.length; i++){
+					var buildArray = {};
+					for(var j = 0; j < $scope.recentgrid.liveSeats.length; j++){
+						buildArray["left"] = $scope.recentgrid.liveSeats[i].Party_Name;
+						buildArray["right"] = $scope.recentgrid.liveSeats[i].PreElection_Seats;
+						buildArray["change"] = $scope.recentgrid.liveSeats[i].PreElection_Percent;
+						buildArray["color"] = $scope.recentgrid.liveSeats[i].Color;
+					}
+					newLiveSeats["rows"].push(buildArray);
+				}
+           	    return localStorageService.set('recentgrid',newLiveSeats);
         };
         
         $scope.PartyOverviewTopFive = function() {
@@ -384,63 +380,15 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
 					 });    
 				};         		     		
          		fetchData();	
-
-				for (var i = 0; i < $scope.seats.datadump.length; i++){
-					$scope.seats.othScore = 0;
-					
-				  if ($scope.seats.datadump[i].Party_Code == "Con"){
-					$scope.seats.conScore = $scope.seats.datadump[i].Live_Seats;
-					$scope.seats.conLiveChange = $scope.seats.datadump[i].Live_Change;
-				  }
-				  if ($scope.seats.datadump[i].Party_Code == "Lab"){
-					$scope.seats.labScore = $scope.seats.datadump[i].Live_Seats;
-					$scope.seats.labLiveChange = $scope.seats.datadump[i].Live_Change;
-				  }
-				  if ($scope.seats.datadump[i].Party_Code == "SNP"){
-					$scope.seats.snpScore = $scope.seats.datadump[i].Live_Seats;
-					$scope.seats.snpLiveChange = $scope.seats.datadump[i].Live_Change;
-				  }
-				  if ($scope.seats.datadump[i].Party_Code == "LD"){
-					$scope.seats.libScore = $scope.seats.datadump[i].Live_Seats;
-					$scope.seats.libLiveChange = $scope.seats.datadump[i].Live_Change;
-				  }
-				  if ($scope.seats.datadump[i].Party_Code == "DUP"){
-					$scope.seats.dupScore = $scope.seats.datadump[i].Live_Seats;
-					$scope.seats.dupLiveChange = $scope.seats.datadump[i].Live_Change;
-				  }
-				  if ($scope.seats.datadump[i].Party_Code == "SF"){
-					$scope.seats.othScore = $scope.seats.othScore + $scope.seats.datadump[i].Live_Seats;
-					$scope.seats.othLiveChange = Number($scope.seats.othLiveChange) + Number($scope.seats.datadump[i].Live_Change);
-				  }
-				  if ($scope.seats.datadump[i].Party_Code == "Ind"){
-					$scope.seats.othScore = $scope.seats.othScore + $scope.seats.datadump[i].Live_Seats;
-					$scope.seats.othLiveChange = Number($scope.seats.othLiveChange) + Number($scope.seats.datadump[i].Live_Change);
-				  }
-				  if ($scope.seats.datadump[i].Party_Code == "PC"){
-					$scope.seats.pcScore = $scope.seats.datadump[i].Live_Seats;
-					$scope.seats.pcLiveChange = $scope.seats.datadump[i].Live_Change;
-				  }
-				  if ($scope.seats.datadump[i].Party_Code == "SDLP"){
-					$scope.seats.othScore = $scope.seats.othScore + $scope.seats.datadump[i].Live_Seats;
-					$scope.seats.othLiveChange = Number($scope.seats.othLiveChange) + Number($scope.seats.datadump[i].Live_Change);
-				  }
-				  if ($scope.seats.datadump[i].Party_Code == "UUP"){
-					$scope.seats.othScore = $scope.seats.othScore + $scope.seats.datadump[i].Live_Seats;
-					$scope.seats.othLiveChange = Number($scope.seats.othLiveChange) + Number($scope.seats.datadump[i].Live_Change);
-				  }
-				  if ($scope.seats.datadump[i].Party_Code == "Green"){
-					$scope.seats.grnScore = $scope.seats.datadump[i].Live_Seats;
-					$scope.seats.grnLiveChange = $scope.seats.datadump[i].Live_Change;
-				  }
-				   if ($scope.seats.datadump[i].Party_Code == "Spk"){
-					$scope.seats.othScore = $scope.seats.othScore + $scope.seats.datadump[i].Live_Seats;
-					$scope.seats.othLiveChange = Number($scope.seats.othLiveChange) + Number($scope.seats.datadump[i].Live_Change);
-				  }
-				   if ($scope.seats.datadump[i].Party_Code == "UKIP"){
-					$scope.seats.othScore = $scope.seats.othScore + $scope.seats.datadump[i].Live_Seats;
-					$scope.seats.othLiveChange = Number($scope.seats.othLiveChange) + Number($scope.seats.datadump[i].Live_Change);
-				  }
-				}				
+           	    
+				$scope.seats.conScore = $scope.seats.datadump[0].Live_Seats;
+                $scope.seats.labScore = $scope.seats.datadump[1].Live_Seats;
+				$scope.seats.snpScore = $scope.seats.datadump[2].Live_Seats;
+				$scope.seats.libScore = $scope.seats.datadump[3].Live_Seats;
+				$scope.seats.dupScore = $scope.seats.datadump[4].Live_Seats;
+				$scope.seats.pcScore = $scope.seats.datadump[8].Live_Seats;
+				$scope.seats.grnScore = $scope.seats.datadump[11].Live_Seats;
+				$scope.seats.othScore = 0;
         };
 		
 		$scope.showallseats = function() {         		
@@ -452,7 +400,9 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
 				$scope.seats.showpc = true;
 				$scope.seats.showdup = true;
 				$scope.seats.showoth = true;
-        };	
+        };
+
+		
     }
 ]);
 
