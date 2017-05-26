@@ -269,23 +269,19 @@ app.controller('recentgridCGController', ['$scope', '$log', '$http', 'localStora
 				}
            	    return localStorageService.set('recentgrid',newLiveSeats);
         };
-        $scope.LiveSeatsOverview = function() {    
-          	    var liveSeats = {"rows":[
-          	    {"left":$scope.recentgrid.liveSeats[0].Party_Name,"right":$scope.recentgrid.liveSeats[0].Live_Seats,"change":$scope.recentgrid.liveSeats[0].Live_Change,"color":$scope.recentgrid.liveSeats[0].Color},
-          	    {"left":$scope.recentgrid.liveSeats[1].Party_Name,"right":$scope.recentgrid.liveSeats[1].Live_Seats,"change":$scope.recentgrid.liveSeats[1].Live_Change,"color":$scope.recentgrid.liveSeats[1].Color},
-          	    {"left":$scope.recentgrid.liveSeats[2].Party_Name,"right":$scope.recentgrid.liveSeats[2].Live_Seats,"change":$scope.recentgrid.liveSeats[2].Live_Change,"color":$scope.recentgrid.liveSeats[2].Color},
-          	    {"left":$scope.recentgrid.liveSeats[3].Party_Name,"right":$scope.recentgrid.liveSeats[3].Live_Seats,"change":$scope.recentgrid.liveSeats[3].Live_Change,"color":$scope.recentgrid.liveSeats[3].Color},
-          	    {"left":$scope.recentgrid.liveSeats[4].Party_Name,"right":$scope.recentgrid.liveSeats[4].Live_Seats,"change":$scope.recentgrid.liveSeats[4].Live_Change,"color":$scope.recentgrid.liveSeats[4].Color},
-          	    {"left":$scope.recentgrid.liveSeats[5].Party_Name,"right":$scope.recentgrid.liveSeats[5].Live_Seats,"change":$scope.recentgrid.liveSeats[5].Live_Change,"color":$scope.recentgrid.liveSeats[5].Color},
-          	    {"left":$scope.recentgrid.liveSeats[6].Party_Name,"right":$scope.recentgrid.liveSeats[6].Live_Seats,"change":$scope.recentgrid.liveSeats[6].Live_Change,"color":$scope.recentgrid.liveSeats[6].Color},
-          	    {"left":$scope.recentgrid.liveSeats[7].Party_Name,"right":$scope.recentgrid.liveSeats[7].Live_Seats,"change":$scope.recentgrid.liveSeats[7].Live_Change,"color":$scope.recentgrid.liveSeats[7].Color},
-          	    {"left":$scope.recentgrid.liveSeats[8].Party_Name,"right":$scope.recentgrid.liveSeats[8].Live_Seats,"change":$scope.recentgrid.liveSeats[8].Live_Change,"color":$scope.recentgrid.liveSeats[8].Color},
-          	    {"left":$scope.recentgrid.liveSeats[9].Party_Name,"right":$scope.recentgrid.liveSeats[9].Live_Seats,"change":$scope.recentgrid.liveSeats[9].Live_Change,"color":$scope.recentgrid.liveSeats[9].Color},
-          	    {"left":$scope.recentgrid.liveSeats[10].Party_Name,"right":$scope.recentgrid.liveSeats[10].Live_Seats,"change":$scope.recentgrid.liveSeats[10].Live_Change,"color":$scope.recentgrid.liveSeats[10].Color},
-          	    {"left":$scope.recentgrid.liveSeats[11].Party_Name,"right":$scope.recentgrid.liveSeats[11].Live_Seats,"change":$scope.recentgrid.liveSeats[11].Live_Change,"color":$scope.recentgrid.liveSeats[11].Color},
-          	    {"left":$scope.recentgrid.liveSeats[12].Party_Name,"right":$scope.recentgrid.liveSeats[12].Live_Seats,"change":$scope.recentgrid.liveSeats[12].Live_Change,"color":$scope.recentgrid.liveSeats[12].Color}
-				],"header":"Live Party Standings"};    
-          	    return localStorageService.set('recentgrid',liveSeats);
+        $scope.LiveSeatsOverview = function() {         
+        		var newLiveSeats = {"header":"Live Party Standings", "rows": []};
+				for(var i = 0; i < $scope.recentgrid.liveSeats.length; i++){
+					var buildArray = {};
+					for(var j = 0; j < $scope.recentgrid.liveSeats.length; j++){
+						buildArray["left"] = $scope.recentgrid.liveSeats[i].Party_Name;
+						buildArray["right"] = $scope.recentgrid.liveSeats[i].Live_Seats;
+						buildArray["change"] = $scope.recentgrid.liveSeats[i].Live_Change;
+						buildArray["color"] = $scope.recentgrid.liveSeats[i].Color;
+					}
+					newLiveSeats["rows"].push(buildArray);
+				}
+				return localStorageService.set('recentgrid',newLiveSeats);
         };
         
         
