@@ -361,6 +361,18 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
 					 });    
 				};         		     		
          		fetchData();	
+				var newLiveSeats = {"rows": []};        	    
+           	    for(var i = 0; i < $scope.seats.datadump.length; i++){
+           	    	var buildArray = {};   
+					for(var j = 0; j < $scope.seats.datadump.length; j++){
+						buildArray["Party_Code"] = $scope.seats.datadump[i].Party_Code;
+						buildArray["Live_Seats"] = $scope.seats.datadump[i].PreElection_Seats;
+						buildArray["Live_Change"] = $scope.seats.datadump[i].Live_Change;
+						buildArray["Color"] = $scope.seats.datadump[i].Color;
+					}
+					newLiveSeats["rows"].push(buildArray);
+				}
+           	    return localStorageService.set('seats',newLiveSeats);
            	    
 				$scope.seats.conScore = $scope.seats.datadump[0].Live_Seats;
                 $scope.seats.labScore = $scope.seats.datadump[1].Live_Seats;
@@ -370,6 +382,14 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
 				$scope.seats.pcScore = $scope.seats.datadump[8].Live_Seats;
 				$scope.seats.grnScore = $scope.seats.datadump[11].Live_Seats;
 				$scope.seats.othScore = 0;
+				$scope.seats.conLiveChange = $scope.seats.datadump[0].Live_Change;
+                $scope.seats.labLiveChange = $scope.seats.datadump[1].Live_Change;
+				$scope.seats.snpLiveChange = $scope.seats.datadump[2].Live_Change;
+				$scope.seats.libLiveChange = $scope.seats.datadump[3].Live_Change;
+				$scope.seats.dupLiveChange = $scope.seats.datadump[4].Live_Change;
+				$scope.seats.pcLiveChange = $scope.seats.datadump[8].Live_Change;
+				$scope.seats.grnLiveChange = $scope.seats.datadump[11].Live_Change;
+				$scope.seats.othLiveChange = 0;
         };
 		
 		$scope.showallseats = function() {         		
