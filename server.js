@@ -11,7 +11,7 @@ var score = {};
 var grid = {headingcolor:"#BC204B", leftcolor: "#1f1a34"};
 var seats = {};
 var recentgrid = {};
-var constituency = {};
+var constituency = {euleave:"50", euremain:"50"};
 
 	io.on('connection', function(socket) {
 	console.log("Client Socket Connected");
