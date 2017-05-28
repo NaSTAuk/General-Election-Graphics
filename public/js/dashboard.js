@@ -372,7 +372,6 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
 					}
 					newLiveSeats["rows"].push(buildArray);
 				}
-           	    return localStorageService.set('seats',newLiveSeats);
            	    
 				$scope.seats.conScore = $scope.seats.datadump[0].Live_Seats;
                 $scope.seats.labScore = $scope.seats.datadump[1].Live_Seats;
@@ -390,6 +389,8 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
 				$scope.seats.pcLiveChange = $scope.seats.datadump[8].Live_Change;
 				$scope.seats.grnLiveChange = $scope.seats.datadump[11].Live_Change;
 				$scope.seats.othLiveChange = 0;
+				
+				return localStorageService.set('seats',newLiveSeats);
         };
 		
 		$scope.showallseats = function() {         		
