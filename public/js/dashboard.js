@@ -380,7 +380,7 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
 				$scope.seats.dupScore = $scope.seats.datadump[4].Live_Seats;
 				$scope.seats.pcScore = $scope.seats.datadump[8].Live_Seats;
 				$scope.seats.grnScore = $scope.seats.datadump[11].Live_Seats;
-				$scope.seats.othScore = 0;
+				$scope.seats.othScore = Number($scope.seats.datadump[5].Live_Seats) + Number($scope.seats.datadump[6].Live_Seats) + Number($scope.seats.datadump[7].Live_Seats) + Number($scope.seats.datadump[9].Live_Seats) + Number($scope.seats.datadump[10].Live_Seats);
 				$scope.seats.conLiveChange = $scope.seats.datadump[0].Live_Change;
                 $scope.seats.labLiveChange = $scope.seats.datadump[1].Live_Change;
 				$scope.seats.snpLiveChange = $scope.seats.datadump[2].Live_Change;
@@ -388,7 +388,7 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
 				$scope.seats.dupLiveChange = $scope.seats.datadump[4].Live_Change;
 				$scope.seats.pcLiveChange = $scope.seats.datadump[8].Live_Change;
 				$scope.seats.grnLiveChange = $scope.seats.datadump[11].Live_Change;
-				$scope.seats.othLiveChange = 0;
+				$scope.seats.othLiveChange = Number($scope.seats.datadump[5].Live_Change) + Number($scope.seats.datadump[6].Live_Change) + Number($scope.seats.datadump[7].Live_Change) + Number($scope.seats.datadump[9].Live_Change) + Number($scope.seats.datadump[10].Live_Change);
 				
 				return localStorageService.set('seats',newLiveSeats);
         };
@@ -433,21 +433,6 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
         		function numberWithCommas(x) {
     				return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 				}
-				
-				
-				var fetchColors = function () {
-       				var config = {headers:  {
-					  'Accept': 'application/json',
-					  'Content-Type': 'application/json',
-					}
-    			};
-
-				$http.get('/data/party_color_codes.json', config).then(function (response) {
-						$scope.constituency.partycolors = response.data;
-					 });    
-				};
-         
-         		fetchColors();
          		
          		var fetchData = function () {
        				var config = {headers:  {
@@ -462,12 +447,17 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
 				};
          
          		fetchData();		
-
-				$scope.constituency.conScore = $scope.constituency.datadump[0].Const_Name;
-           	   	$scope.constituency.conRegn = $scope.constituency.datadump[0].REGID;
-           	   	$scope.constituency.conParty = $scope.constituency.datadump[0].Winner15;
-           	   	$scope.constituency.conColor = $scope.constituency.datadump[0].Color;
-           	   	$scope.constituency.conTurnout = $scope.constituency.datadump[0].VALID15;  	   
+				
+				var currentConst = $scope.constituency.conID;
+				if (currentConst == null) {
+					var currentConst = 247;
+				}
+				
+				var conName = $scope.constituency.datadump[0].Const_Name;
+           	    var conRegn = $scope.constituency.datadump[0].REGID;
+           	   	var conParty = $scope.constituency.datadump[0].Winner15;
+           	    var conColor = $scope.constituency.datadump[0].Color;
+           	   	var conTurnout = $scope.constituency.datadump[0].VALID15;  	   
 
            	    var liveSeats = {      	     
            	    "conName":conName,
