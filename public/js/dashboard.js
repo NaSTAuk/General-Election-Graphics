@@ -366,13 +366,12 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
            	    	var buildArray = {};   
 					for(var j = 0; j < $scope.seats.datadump.length; j++){
 						buildArray["Party_Code"] = $scope.seats.datadump[i].Party_Code;
-						buildArray["Live_Seats"] = $scope.seats.datadump[i].PreElection_Seats;
+						buildArray["Live_Seats"] = $scope.seats.datadump[i].Live_Seats;
 						buildArray["Live_Change"] = $scope.seats.datadump[i].Live_Change;
 						buildArray["Color"] = $scope.seats.datadump[i].Color;
 					}
 					newLiveSeats["rows"].push(buildArray);
-				}
-           	    return localStorageService.set('seats',newLiveSeats);
+				}       	    
            	    
 				$scope.seats.conScore = $scope.seats.datadump[0].Live_Seats;
                 $scope.seats.labScore = $scope.seats.datadump[1].Live_Seats;
@@ -390,6 +389,8 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
 				$scope.seats.pcLiveChange = $scope.seats.datadump[8].Live_Change;
 				$scope.seats.grnLiveChange = $scope.seats.datadump[11].Live_Change;
 				$scope.seats.othLiveChange = 0;
+				
+				return localStorageService.set('seats',newLiveSeats);
         };
 		
 		$scope.showallseats = function() {         		
@@ -401,9 +402,7 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
 				$scope.seats.showpc = true;
 				$scope.seats.showdup = true;
 				$scope.seats.showoth = true;
-        };
-
-		
+        };		
     }
 ]);
 

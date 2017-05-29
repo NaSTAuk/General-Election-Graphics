@@ -28,7 +28,7 @@
 				<input  type="text" placeholder="Subtitle" ng-model="seats.subtitle">
 		  </div>
 		  <div class="field three wide">		
-				<checkbox size="large" ng-model="seats.showSubtitle" type="toggle">Show ({{seats.announced}})</checkbox>
+				<checkbox size="large" ng-model="seats.showSubtitle" type="toggle">Show sub ({{seats.announced}})</checkbox>
 		  </div>
 		  
 		  	<div class="field four wide">	
@@ -87,8 +87,9 @@
 			<div class="field four wide">
 						Others {{seats.othChange}}<checkbox ng-model="seats.showoth" size="large" style="margin-bottom:10px; float:right;" type="toggle"></checkbox>
 						<input  type="text" placeholder="Others Seats" ng-model="seats.othScore">
-			</div>       		      
-	<div style="margin-top:20px;" class="ui grid aligned">
+			</div>
+	</div>			       		      
+	<div style="margin-top:20px; margin-bottom:20px;" class="ui grid aligned">
 			<div class="field four wide">
 						Change<input  type="text" placeholder="Grn Change" ng-model="seats.grnLiveChange">
 			</div>
@@ -101,10 +102,35 @@
 			<div class="field four wide">
 						Change<input  type="text" placeholder="OTH Change" ng-model="seats.othLiveChange">
 			</div>  
-	</div>		
-		<div class="four wide column">
 
-        </div>
-    </div>   
-  
+    </div> 
+      <div class="ui divider"></div>
+            <div style="margin-top:20px;" class="ui grid aligned">
+			<div class="field four wide">
+						<span style="color:{{seats.partyOneColor}}">1st - {{seats.partyOneName}} - {{seats.partyOneSeats}}</span>
+			</div>
+			<div class="field four wide">
+						2nd - {{seats.partyTwoName}} - {{seats.partyTwoSeats}}
+			</div>
+			<div class="field four wide">
+						3rd - {{seats.partyThreeName}} - {{seats.partyThreeSeats}}
+			</div>
+			<div class="field four wide">
+						4th - {{seats.partyFourName}} - {{seats.partyFourSeats}}
+			</div>
+	</div>		
+	<div style="margin-top:20px;margin-bottom:20px;" class="ui grid aligned">
+			<div class="field four wide">
+						5th - {{seats.partyFiveName}} - {{seats.partyFiveSeats}}
+			</div>
+			<div class="field four wide">
+						6th - {{seats.partySixName}} - {{seats.partySixSeats}}
+			</div>
+			<div class="field four wide">
+						7th - {{seats.partySevenName}} - {{seats.partySevenSeats}}
+			</div>
+			<div class="field four wide">
+						8th - {{seats.partyEightName}} - {{seats.partyEightSeats}}
+			</div>  
+	</div>		    
 </div>
