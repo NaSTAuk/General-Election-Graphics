@@ -411,7 +411,7 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
 					}
 					newLiveSeats["rows"].push(buildArray);
 				}
-          	    
+          
 				$scope.seats.conScore = $scope.seats.liveseats[0].Live_Seats;
                 $scope.seats.labScore = $scope.seats.liveseats[1].Live_Seats;
 				$scope.seats.snpScore = $scope.seats.liveseats[2].Live_Seats;
@@ -428,6 +428,7 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
 				$scope.seats.pcLiveChange = $scope.seats.liveseats[8].Live_Change;
 				$scope.seats.grnLiveChange = $scope.seats.liveseats[11].Live_Change;
 				$scope.seats.othLiveChange = Number($scope.seats.liveseats[5].Live_Change) + Number($scope.seats.liveseats[6].Live_Change) + Number($scope.seats.liveseats[7].Live_Change) + Number($scope.seats.liveseats[9].Live_Change) + Number($scope.seats.liveseats[10].Live_Change);
+
 				
 				return localStorageService.set('seats',newLiveSeats);
         };
