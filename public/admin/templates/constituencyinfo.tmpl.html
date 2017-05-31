@@ -10,7 +10,7 @@
 				<input  type="text" id="conID" placeholder="Constituency ID" ng-model="constituency.conID">
 			</div>
 			<div class="field five wide">	
-				<div class="ui purple button" ng-click="grabdata(constituency.conID)" onClick="window.location.reload()">Get Latest Data</div>
+				<div class="ui purple button" ng-click="grabdata()" onClick="window.location.reload()">Get Latest Data</div>
 			</div>	
 	</div>
 </div>
@@ -22,36 +22,17 @@
 		<label>Constituency Name</label>
 				<input  type="text" id="conName" placeholder="Constituency Name" ng-model="constituency.conName">
 		</div>
-		<div class="field three wide">
-			 <label>Region</label>
-				<input  type="text" id="conRegn" placeholder="Region" ng-model="constituency.conRegn">
-		</div>
-		<div class="field three wide">
-			<label>Winning Party</label>
-				<input  type="text" id="conParty" placeholder="Party" ng-model="constituency.conParty">
-		</div>
-		<div class="field three wide">
-			<label>Winning Party Color</label>
-				<input  type="text" id="conColor" placeholder="Party Color" ng-model="constituency.conColor">
-		</div>
-	</div>
-	<br />
-	<div class="fields sixteen wide column">
-		<div class="field four wide">
-			<label>Turn out</label>
-				<input  type="text" id="conTurnout" placeholder="Turnout" ng-model="constituency.conTurnout">
-		</div>
-		<div class="field four wide">
-			<label>Majority</label>
-				<input  type="text" id="conMajority" placeholder="Majority" ng-model="constituency.conMajority">
-		</div>
-		<div class="field four wide">
-		<label>Incumbent MP Name</label>
-				<input  type="text" id="conMPName" placeholder="MP Name" ng-model="constituency.conMPName">
-		</div>
 		<div class="field four wide">
 			<label>Result Description</label>
 				<input  type="text" id="conDescription" placeholder="Description" ng-model="constituency.conDescription">
+		</div>
+		<div class="field two wide">
+			<label>Turnout</label>
+				<input  type="text" id="conTurnout" placeholder="Turnout" ng-model="constituency.conTurnout">
+		</div>
+		<div class="field two wide">
+			<label>Majority</label>
+				<input  type="text" id="conMajority" placeholder="Majority" ng-model="constituency.conMajority">
 		</div>
 	</div>
 	<br />

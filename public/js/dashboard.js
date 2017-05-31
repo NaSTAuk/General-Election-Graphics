@@ -477,54 +477,34 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
             socket.emit('constituency', 'hide');
             $log.info("constituency.hide()");
         };
+		
+		var fetchData = function () {
+       				var config = {headers:  {
+					  'Accept': 'application/json',
+					  'Content-Type': 'application/json',
+					}
+    			};
+
+		$http.get('/data/data_dump.json', config).then(function (response) {
+						conData = response.data;
+					 });    
+				};
+				
+        fetchData();
          
-        $scope.grabdata = function(conID) {
+        $scope.grabdata = function() {
         		
         		function numberWithCommas(x) {
     				return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-				}
+				}		
 				
+				var conName = conData[0].Const_Name;
 				
-				var fetchColors = function () {
-       				var config = {headers:  {
-					  'Accept': 'application/json',
-					  'Content-Type': 'application/json',
-					}
-    			};
-
-				$http.get('/data/party_color_codes.json', config).then(function (response) {
-						$scope.constituency.partycolors = response.data;
-					 });    
-				};
-         
-         		fetchColors();
-         		
-         		var fetchData = function () {
-       				var config = {headers:  {
-					  'Accept': 'application/json',
-					  'Content-Type': 'application/json',
-					}
-    			};
-
-				$http.get('/data/data_dump.json', config).then(function (response) {
-						$scope.constituency.datadump = response.data;
-					 });    
-				};
-         
-         		fetchData();		
-
-				$scope.constituency.conScore = $scope.constituency.datadump[0].Const_Name;
-           	   	$scope.constituency.conRegn = $scope.constituency.datadump[0].REGID;
-           	   	$scope.constituency.conParty = $scope.constituency.datadump[0].Winner15;
-           	   	$scope.constituency.conColor = $scope.constituency.datadump[0].Color;
-           	   	$scope.constituency.conTurnout = $scope.constituency.datadump[0].VALID15;  	   
-
            	    var liveSeats = {      	     
            	    "conName":conName,
-           	    "conRegn":conRegn,
-           	    "conParty":conParty,
-           	    "conColor": conColor,
-           	    "conTurnout":numberWithCommas(conTurnout),
+           	    "conParty":"Party",
+           	    "conColor": "#00fff0",
+           	    "conTurnout":numberWithCommas(500000),
            	    "conMajority":numberWithCommas(7500),
            	    "conMPName":"Gerald Howarth",
            	    "conDescription":"Con Hold",
