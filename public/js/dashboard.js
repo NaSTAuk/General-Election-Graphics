@@ -517,9 +517,7 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
 			}	
 			
 			$scope.constituency.winnerGrin = candidates[0].Image;
-			if ($scope.constituency.winnerGrin === null ) {
-					$scope.constituency.winnerGrin = "/images/blankface.png";
-			}
+
 	
 		};
          
