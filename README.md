@@ -51,7 +51,7 @@ Key  | Value Description | Example
 ------------- | ------------- | -------------
 id    | Candidate unique ID | 5570
 name    | Candidate Name | Caroline Jones
-party_id    | party_id used by various databases | party:85
+party_id    | Party Acronmy | LAB
 party_name    | Full name of party | UK Independence Party (UKIP) 
 constituency   | Consituency name | Aberavon
 image_url | png image. Not all candidates have images | https://candidates.democracyclub.org.uk/media/images/images/5570.png
