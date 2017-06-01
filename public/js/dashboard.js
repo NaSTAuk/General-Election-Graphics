@@ -463,19 +463,6 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
             $scope.constituency = msg;
         });
         
-        $scope.$watch('constituency', function() {
-          if ($scope.constituency) {
-              socket.emit("constituency", $scope.constituency);
-          } else {
-              getConstituencyData();
-          }
-      }, true);
-
-
-      function getConstituencyData() {
-          socket.emit("constituency:get");
-      }
-
         var stored = localStorageService.get('constituency');
 
         if(stored === null) {
@@ -518,12 +505,14 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
         fetchData();
         
         $scope.calculate = function() {
-        
-        
-			$scope.constituency.conMajority = 100;
+         	
+         	candidates = $scope.constituency.rows;
+         	candidates.sort(function(a,b){return b.Votes - a.Votes});
+         	
+			$scope.constituency.conMajority = candidates[0].Votes - candidates[1].Votes;
 			$scope.constituency.conTurnout = 0;
-			for (var i = 0; i < $scope.constituency.rows.length; i ++) {
-			$scope.constituency.conTurnout = Number($scope.constituency.conTurnout) + Number($scope.constituency.rows[i].Votes);
+			for (var i = 0; i < candidates.length; i ++) {
+				$scope.constituency.conTurnout = Number($scope.constituency.conTurnout) + Number(candidates[i].Votes);
 			}	
 			
 			};
