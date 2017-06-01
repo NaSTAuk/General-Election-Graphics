@@ -458,6 +458,23 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
 
 app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localStorageService', 'socket',
     function($scope, $log, $http, localStorageService, socket){
+    
+    	socket.on("constituency", function (msg) {
+            $scope.constituency = msg;
+        });
+        
+        $scope.$watch('constituency', function() {
+          if ($scope.constituency) {
+              socket.emit("constituency", $scope.constituency);
+          } else {
+              getConstituencyData();
+          }
+      }, true);
+
+
+      function getConstituencyData() {
+          socket.emit("constituency:get");
+      }
 
         var stored = localStorageService.get('constituency');
 
@@ -492,9 +509,24 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
 		$http.get('/data/2017_candidates.json', config).then(function (response) {
 						candData = response.data;
 					 });    
-				};		
+				
+		$http.get('/data/2015-mps-eu-voting.json', config).then(function (response) {
+						euData = response.data;
+					 });    
+				};					
 				
         fetchData();
+        
+        $scope.calculate = function() {
+        
+        
+			$scope.constituency.conMajority = 100;
+			$scope.constituency.conTurnout = 0;
+			for (var i = 0; i < $scope.constituency.rows.length; i ++) {
+			$scope.constituency.conTurnout = Number($scope.constituency.conTurnout) + Number($scope.constituency.rows[i].Votes);
+			}	
+			
+			};
          
         $scope.grabdata = function() {
         		
@@ -514,54 +546,49 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
 				var euleave = conData[conDataID].EUHANLEAVE;
 				var euremain = conData[conDataID].EUHANREM;
 				
+					for(var i = 0; i < euData.length; i++){
+						if(euData[i].gss_code == conCode){
+							var euMPVote = euData[i].EU_Position;
+							var euMPName = euData[i].Name;
+						}
+					}
+					
 				var candidates = [];  
 					for(var j = 0; j < candData.length; j++){
-						var buildArray = {};  
+						var buildArray = {}; 
+						var totalVotes = 0; 
 						if(candData[j].gss_code == conCode){
 							buildArray["Name"] = candData[j].name;
 							buildArray["conCode"] = candData[j].gss_code;
 							buildArray["partyCode"] = candData[j].party_id;
+							buildArray["partyName"] = candData[j].party_name;
 							buildArray["Color"] = candData[j].color;
-							candidates.push(buildArray);
+							buildArray["Votes"] = candData[j].votes;
+							buildArray["Image"] = candData[j].image_url;
+						    candidates.push(buildArray);
 						}
 				}
-				
-				var conPartyOneCandidate = candidates[0].Name;
-				var conPartyOneCandidate = candidates[0].Name;
-				var conPartyTwoCandidate = candidates[1].Name;
-				var conPartyThreeCandidate = candidates[2].Name;
-				var conPartyFourCandidate = candidates[3].Name;
-				
-				var noCandidates = candidates.length;			
+						
+				var noCandidates = candidates.length;
 								
            	    var liveSeats = {
+           	    "rows": candidates,
            	    "conID": conID,      	     
            	    "conName":conName,
            	    "conParty":conParty,
            	    "conColor": conColor,
-           	    "conTurnout":numberWithCommas(conTurnout),
-           	    "conMajority":numberWithCommas(conMajority),
            	    "conDescription":conResult,
-           	    "conPartyOne":"CON",
-           	    "conPartyOneVotes":numberWithCommas(32000),
-           	    "conPartyOneColor":"#0575C9",
-           	    "conPartyOneCandidate":conPartyOneCandidate,
-           	    "conPartyTwo":"LAB",
-           	    "conPartyTwoVotes":numberWithCommas(12000),
-           	    "conPartyTwoColor":"#ED1E0E",
-           	    "conPartyTwoCandidate":conPartyTwoCandidate,
-           	    "conPartyThree":"UKIP",
-           	    "conPartyThreeVotes":numberWithCommas(12000),
-           	    "conPartyThreeColor":"#712F87",
-           	    "conPartyThreeCandidate":conPartyThreeCandidate,
-           	    "conPartyFour":"LIB",
-           	    "conPartyFourVotes":numberWithCommas(8468),
-           	    "conPartyFourColor":"#FEAE14",
-           	    "conPartyFourCandidate":conPartyFourCandidate,
+           	    "conNoCandidates": noCandidates,
            	    "euleave":(euleave*100).toFixed(2),
-           	    "euremain":(euremain*100).toFixed(2)
+           	    "euremain":(euremain*100).toFixed(2),
+           	    "euMPName": euMPName,
+           	    "euMPVote": euMPVote
            	    };
+				
            	    return localStorageService.set('constituency',liveSeats);
+
+				$scope.constituency.conTurnout = 100;
+	
            	        
             $log.info("constituency.show()");
         };

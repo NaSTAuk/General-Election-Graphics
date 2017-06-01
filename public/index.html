@@ -73,51 +73,19 @@
                 <div class="gradient-overlay constmpname">
 						<h2>&nbsp;{{constituency.conDescription}}</h2>
                 </div>
-                
                 <div class="gradient-overlay party-breakdown">
-					<div class="constpartyname">
-						<h2 class="partyname" style="background-color: {{constituency.conColor}} !important;">&nbsp;{{constituency.conPartyOne}}</h2>
-					</div>
-					<div class="constcandidatename">
-						<h2>&nbsp;{{constituency.conPartyOneCandidate}}</h2>
-					</div>
+                <div class="animate-repeat" ng-repeat="row in constituency.rows">
+                	<div class="constpartyname">
+    					<h2 class="partyname" style="background-color: {{row.Color}} !important; color:#FFF;">{{ row.partyCode }}</h2>
+    				</div>
+    				<div class="constcandidatename">
+    					<h2>{{ row.Name }}</h2>
+    				</div>
 					<div class="constvotes">
-						<h2 class="partyname" style="background-color: {{constituency.conColor}} !important; text-align:right;">&nbsp;{{constituency.conPartyOneVotes}}</h2>
-					</div>
-                </div>
-                <div class="gradient-overlay party-breakdown">
-					<div class="constpartyname">
-						<h2 class="partyname" style="background-color: #ED1E0E !important;">&nbsp;{{constituency.conPartyTwo}}</h2>
-					</div>
-					<div class="constcandidatename">
-						<h2>&nbsp;{{constituency.conPartyTwoCandidate}}</h2>
-					</div>
-					<div class="constvotes">
-						<h2 class="partyname" style="background-color: #ED1E0E !important; text-align:right;">&nbsp;{{constituency.conPartyTwoVotes}}</h2>
-					</div>
-                </div>
-                <div class="gradient-overlay party-breakdown">
-					<div class="constpartyname">
-						<h2 class="partyname" style="background-color: #712F87 !important;">&nbsp;{{constituency.conPartyThree}}</h2>
-					</div>
-					<div class="constcandidatename">
-						<h2>&nbsp;{{constituency.conPartyThreeCandidate}}</h2>
-					</div>
-					<div class="constvotes">
-						<h2 class="partyname" style="background-color: #712F87 !important; text-align:right;">&nbsp;{{constituency.conPartyThreeVotes}}</h2>
-					</div>
-                </div>
-                <div class="gradient-overlay party-breakdown" >
-					<div class="constpartyname">
-						<h2 class="partyname" style="background-color: #FEAE14 !important;">&nbsp;{{constituency.conPartyFour}}</h2>
-					</div>
-					<div class="constcandidatename">
-						<h2>&nbsp;{{constituency.conPartyFourCandidate}}</h2>
-					</div>
-					<div class="constvotes">
-						<h2 class="partyname" style="background-color: #FEAE14 !important; text-align:right;">&nbsp;{{constituency.conPartyFourVotes}}</h2>
-					</div>
-                </div>
+						<h2 class="partyname" style="background-color: {{row.Color}} !important; text-align:right;">{{row.Votes}}</h2>
+					</div>	
+              </div>
+              </div>
                 
                 <div class="gradient-overlay party-breakdown">
 					<div style="float:left; width:48%;">

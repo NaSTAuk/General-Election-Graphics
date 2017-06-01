@@ -17,12 +17,11 @@
 	</div>
 </div>
 </div>
-
 	<div class="ui form segment">
 	<div class="fields sixteen wide column">
 		<div class="field seven wide">
 		<label>Constituency Name</label>
-				<input  type="text" id="conName" placeholder="Constituency Name" ng-model="constituency.conName">
+				<input readonly type="text" id="conName" placeholder="Constituency Name" ng-model="constituency.conName">
 		</div>
 		<div class="field four wide">
 			<label>Result Description</label>
@@ -30,83 +29,50 @@
 		</div>
 		<div class="field two wide">
 			<label>Turnout</label>
-				<input  type="text" id="conTurnout" placeholder="Turnout" ng-model="constituency.conTurnout">
+				<input readonly type="text" id="conTurnout" placeholder="Turnout" ng-model="constituency.conTurnout">
 		</div>
 		<div class="field two wide">
 			<label>Majority</label>
-				<input  type="text" id="conMajority" placeholder="Majority" ng-model="constituency.conMajority">
+				<input readonly  type="text" id="conMajority" placeholder="Majority" ng-model="constituency.conMajority">
 		</div>
 	</div>
 	<br />
 	<div class="fields sixteen wide column">
-		<div class="field four wide">
-			<label>Party One Code</label>
-				<input  id="conPartyOne" type="text" placeholder="Party One" ng-model="constituency.conPartyOne">
-				<input  id="conPartyOneColor" type="hidden" ng-model="constituency.conPartyOneColor">
-		</div>
-		<div class="field four wide">
-			<label>Party Two Code</label>
-				<input  id="conPartyTwo" type="text" placeholder="Party Two" ng-model="constituency.conPartyTwo">
-				<input  id="conPartyTwoColor" type="hidden" ng-model="constituency.conPartyTwoColor">
-		</div>
-		<div class="field four wide">
-			<label>Party Three Code</label>
-				<input  id="conPartyThree" type="text" placeholder="Party Three" ng-model="constituency.conPartyThree">
-				<input  id="conPartyThreeColor" type="hidden" ng-model="constituency.conPartyThreeColor">
-		</div>
-		<div class="field four wide">
-			<label>Party Four Code</label>
-				<input  id="conPartyFour" type="text" placeholder="Party Four" ng-model="constituency.conPartyFour">
-				<input  id="conPartyFourColor" type="hidden" ng-model="constituency.conPartyFourColor">
-		</div>
-	</div>
-	<br />
-	<div class="fields sixteen wide column">
-		<div class="field four wide">
-				<input  id="conPartyOneVotes" type="text" placeholder="Party one vote count" ng-model="constituency.conPartyOneVotes">
-		</div>
-		<div class="field four wide">
-				<input  id="conPartyTwoVotes" type="text" placeholder="Party two vote count" ng-model="constituency.conPartyTwoVotes">
-		</div>
-		<div class="field four wide">
-				<input  id="conPartyThreeVotes" type="text" placeholder="Party three vote count" ng-model="constituency.conPartyThreeVotes">
-		</div>
-		<div class="field four wide">
-				<input  id="conPartyFourVotes" type="text" placeholder="Party one four count" ng-model="constituency.conPartyFourVotes">
-		</div>
-	</div>
-	<br />
-	<div class="fields sixteen wide column">
-		<div class="field four wide">
-				<input  id="conPartyOneVotes" type="text" placeholder="Candidate" ng-model="constituency.conPartyOneCandidate">
-		</div>
-		<div class="field four wide">
-				<input  id="conPartyTwoVotes" type="text" placeholder="Candidate" ng-model="constituency.conPartyTwoCandidate">
-		</div>
-		<div class="field four wide">
-				<input  id="conPartyThreeVotes" type="text" placeholder="Candidate" ng-model="constituency.conPartyThreeCandidate">
-		</div>
-		<div class="field four wide">
-				<input  id="conPartyFourVotes" type="text" placeholder="Candidate" ng-model="constituency.conPartyFourCandidate">
-		</div>
-	</div>
-	<br />
-	<div class="fields sixteen wide column">
-		<div class="field four wide">
-			<label>EU Ref Leave %</label>
-				<input  id="conEULeave" type="text" placeholder="EU Remain Percentage" ng-model="constituency.euremain">
-		</div>
 		<div class="field four wide">
 			<label>EU Ref Remain %</label>
-				<input  id="conEURemain" type="text" placeholder="EU Leave Percentage" ng-model="constituency.euleave">
+				<input readonly id="conEURemain" type="text" placeholder="EU Remain Percentage" ng-model="constituency.euremain">
 		</div>
 		<div class="field four wide">
-			<label>Show EU Pie Chart</label>
-				<checkbox ng-model="constituency.showEURef" size="large" style="margin-bottom:10px;" type="toggle">Show EU Ref</checkbox>
+			<label>EU Ref Leave %</label>
+				<input readonly id="conEULeave" type="text" placeholder="EU Leave Percentage" ng-model="constituency.euleave">
 		</div>
-
+		<div class="field four wide">
+			<label>{{constituency.euMPName}} voted:</label>
+				<input readonly type="text" ng-model="constituency.euMPVote">	
+		</div>
+		<div class="field four wide">
+			<label>Maj/Turnout</label>	
+			<div class="ui purple button" ng-click="calculate()">Calculate</div>
+		</div>	
 	</div>
 	</div>
+	
+     <div class="sixteen wide field">
+          <div class="ui error form segment">
+                    <h2>List of Candidates</h2>
+            <div class="fields slide-left" ng-repeat="row in constituency.rows track by $index">
+              <div class="four wide field">
+                <input type="text" ng-model="row.Name" placeholder="Candidate Name">
+              </div>
+              <div class="five wide field">
+                <input readonly type="text" ng-model="row.partyName" placeholder="Candidate Party">
+              </div>
+               <div class="three wide field">
+                <input type="text" ng-model="row.Votes" placeholder="Votes">
+              </div>
+            </div>
+          </div>
+        </div>
 
 	<div class="ui form segment">
 		<h2>Get Searching</h2>
@@ -147,7 +113,13 @@
 			});
 		  });
 		  
-function myFunction(conID) {
-    document.getElementById("conID").value = conID;
-}	    
+	function myFunction(conID) {
+		document.getElementById("conID").value = conID;
+	}	
+
+            
+	function numberWithCommas(x) {
+    				return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+				}
+ 
 </script>
