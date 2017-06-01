@@ -488,7 +488,11 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
 		$http.get('/data/data_dump.json', config).then(function (response) {
 						conData = response.data;
 					 });    
-				};
+				
+		$http.get('/data/2017_candidates.json', config).then(function (response) {
+						candData = response.data;
+					 });    
+				};		
 				
         fetchData();
          
@@ -498,34 +502,64 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
     				return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 				}		
 				
-				var conName = conData[0].Const_Name;
+				var conID = Number($scope.constituency.conID);
+				var conDataID = conID - 1;
+				var conCode = conData[conDataID].Const_ID;
+				var conName = conData[conDataID].Const_Name;
+				var conColor = conData[conDataID].Color;
+				var conParty = conData[conDataID].Const_Name;
+				var conResult = conData[conDataID].Result;
+				var conTurnout = conData[conDataID].VALID15;
+				var conMajority = conData[conDataID].MAJ;
+				var euleave = conData[conDataID].EUHANLEAVE;
+				var euremain = conData[conDataID].EUHANREM;
 				
-           	    var liveSeats = {      	     
+				var candidates = [];  
+					for(var j = 0; j < candData.length; j++){
+						var buildArray = {};  
+						if(candData[j].gss_code == conCode){
+							buildArray["Name"] = candData[j].name;
+							buildArray["conCode"] = candData[j].gss_code;
+							buildArray["partyCode"] = candData[j].party_id;
+							buildArray["Color"] = candData[j].color;
+							candidates.push(buildArray);
+						}
+				}
+				
+				var conPartyOneCandidate = candidates[0].Name;
+				var conPartyOneCandidate = candidates[0].Name;
+				var conPartyTwoCandidate = candidates[1].Name;
+				var conPartyThreeCandidate = candidates[2].Name;
+				var conPartyFourCandidate = candidates[3].Name;
+				
+				var noCandidates = candidates.length;			
+								
+           	    var liveSeats = {
+           	    "conID": conID,      	     
            	    "conName":conName,
-           	    "conParty":"Party",
-           	    "conColor": "#00fff0",
-           	    "conTurnout":numberWithCommas(500000),
-           	    "conMajority":numberWithCommas(7500),
-           	    "conMPName":"Gerald Howarth",
-           	    "conDescription":"Con Hold",
+           	    "conParty":conParty,
+           	    "conColor": conColor,
+           	    "conTurnout":numberWithCommas(conTurnout),
+           	    "conMajority":numberWithCommas(conMajority),
+           	    "conDescription":conResult,
            	    "conPartyOne":"CON",
            	    "conPartyOneVotes":numberWithCommas(32000),
            	    "conPartyOneColor":"#0575C9",
-           	    "conPartyOneCandidate":"Johnny Cash",
+           	    "conPartyOneCandidate":conPartyOneCandidate,
            	    "conPartyTwo":"LAB",
            	    "conPartyTwoVotes":numberWithCommas(12000),
            	    "conPartyTwoColor":"#ED1E0E",
-           	    "conPartyTwoCandidate":"Willie Nelson",
+           	    "conPartyTwoCandidate":conPartyTwoCandidate,
            	    "conPartyThree":"UKIP",
            	    "conPartyThreeVotes":numberWithCommas(12000),
            	    "conPartyThreeColor":"#712F87",
-           	    "conPartyThreeCandidate":"Reba McEntire",
+           	    "conPartyThreeCandidate":conPartyThreeCandidate,
            	    "conPartyFour":"LIB",
            	    "conPartyFourVotes":numberWithCommas(8468),
            	    "conPartyFourColor":"#FEAE14",
-           	    "conPartyFourCandidate":"Dolly Parton",
-           	    "euleave":(0.64*100).toFixed(2),
-           	    "euremain":(0.36*100).toFixed(2)
+           	    "conPartyFourCandidate":conPartyFourCandidate,
+           	    "euleave":(euleave*100).toFixed(2),
+           	    "euremain":(euremain*100).toFixed(2)
            	    };
            	    return localStorageService.set('constituency',liveSeats);
            	        

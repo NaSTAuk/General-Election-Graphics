@@ -1,20 +1,22 @@
 <div class="ui form segment">
-	 <div style="clear:both"> <h2 style="float: left; padding-right: 10px;">Constituency Information</h2>
-				  <button class="ui green button" ng-click="show()">Show</button>
-				<div class="ui red button" ng-click="hide()">Hide</div>
-		 </div>
-		 </div>
-<div class="ui form segment">		 		 
 	<div class="fields sixteen wide column">
-			<div class="field eleven wide">			
-				<input  type="text" id="conID" placeholder="Constituency ID" ng-model="constituency.conID">
-			</div>
-			<div class="field five wide">	
-				<div class="ui purple button" ng-click="grabdata()" onClick="window.location.reload()">Get Latest Data</div>
-			</div>	
+		<div class="field eight wide">
+			<h2 style="padding-right: 10px; float:left;">Constituency Information</h2>
+		 	 <button class="ui green button" ng-click="show()">Show</button>
+			 <button class="ui red button" ng-click="hide()">Hide</button>
+		</div>
+		<div class="field one wide">
+			<strong>Enter ID:</strong>
+		</div>			
+		<div class="field three wide">			
+			<input  type="text" id="conID" placeholder="Constituency ID" ng-model="constituency.conID">
+		</div>
+		<div class="field four wide">	
+			<div class="ui purple button" ng-click="grabdata()" onClick="window.location.reload()">Get Latest Data</div>
+		</div>	
 	</div>
 </div>
-
+</div>
 
 	<div class="ui form segment">
 	<div class="fields sixteen wide column">
