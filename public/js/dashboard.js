@@ -511,11 +511,17 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
          	
 			$scope.constituency.conMajority = candidates[0].Votes - candidates[1].Votes;
 			$scope.constituency.conTurnout = 0;
+			
 			for (var i = 0; i < candidates.length; i ++) {
-				$scope.constituency.conTurnout = Number($scope.constituency.conTurnout) + Number(candidates[i].Votes);
+					$scope.constituency.conTurnout = Number($scope.constituency.conTurnout) + Number(candidates[i].Votes);
 			}	
 			
-			};
+			$scope.constituency.winnerGrin = candidates[0].Image;
+			if ($scope.constituency.winnerGrin === null ) {
+					$scope.constituency.winnerGrin = "/images/blankface.png";
+			}
+	
+		};
          
         $scope.grabdata = function() {
         		

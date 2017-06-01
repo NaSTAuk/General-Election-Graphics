@@ -429,10 +429,8 @@ h1, h2, h3, h4 {
 }
 
 .constituencyoverview {
-    min-width: 20%;
     min-height: 38px;
-    height: 250px;
-    width: 40%;
+    width: 50%;
     border-radius: 5px;
     background-clip: padding-box;
     margin: auto;
@@ -441,6 +439,15 @@ h1, h2, h3, h4 {
     left: 0;
     margin-top: 20px;
     }
+
+.constituencyoverview img {
+	border-bottom-left-radius: 5px;	
+	border-top-right-radius: 5px; 
+	float:right; 
+	padding-top:3px;
+	height: 155px;
+	width: 155px;
+}
 
 .constituencyoverview h1 {
     color: #fff;
@@ -508,7 +515,7 @@ h1, h2, h3, h4 {
 
 .constcandidatename {
 	float:left; 
-	width:65%;
+	width:68%;
 }
 
 .constpartyname {
@@ -522,7 +529,7 @@ h1, h2, h3, h4 {
 
 .constvotes {
 	float:right; 
-	width:20%;
+	width:17%;
 }
 
 .constturnout {
