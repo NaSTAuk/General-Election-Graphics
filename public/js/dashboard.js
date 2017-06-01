@@ -516,8 +516,19 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
 					$scope.constituency.conTurnout = Number($scope.constituency.conTurnout) + Number(candidates[i].Votes);
 			}	
 			
+			$scope.constituency.changeTurnout = Number($scope.constituency.conTurnout) - Number($scope.constituency.oldTurnout);
+			$scope.constituency.changeMajority = Number($scope.constituency.conMajority) - Number($scope.constituency.oldMajority);
 			$scope.constituency.winnerGrin = candidates[0].Image;
-
+			$scope.constituency.winnerColor = candidates[0].Color;
+			
+			var oldParty = $scope.constituency.conParty.toUpperCase();
+			
+			if (candidates[0].partyCode == oldParty){
+				$scope.constituency.conDescription = candidates[0].partyCode + " hold";
+				}
+			else {
+				$scope.constituency.conDescription = candidates[0].partyCode + " gain from " + oldParty; 	
+			}
 	
 		};
          
@@ -532,7 +543,7 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
 				var conCode = conData[conDataID].Const_ID;
 				var conName = conData[conDataID].Const_Name;
 				var conColor = conData[conDataID].Color;
-				var conParty = conData[conDataID].Const_Name;
+				var conParty = conData[conDataID].Winner;
 				var conResult = conData[conDataID].Result;
 				var conTurnout = conData[conDataID].VALID15;
 				var conMajority = conData[conDataID].MAJ;
@@ -570,12 +581,13 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
            	    "conName":conName,
            	    "conParty":conParty,
            	    "conColor": conColor,
-           	    "conDescription":conResult,
            	    "conNoCandidates": noCandidates,
            	    "euleave":(euleave*100).toFixed(2),
            	    "euremain":(euremain*100).toFixed(2),
            	    "euMPName": euMPName,
-           	    "euMPVote": euMPVote
+           	    "euMPVote": euMPVote,
+           	    "oldMajority": conMajority,
+           	    "oldTurnout": conTurnout
            	    };
 				
            	    return localStorageService.set('constituency',liveSeats);

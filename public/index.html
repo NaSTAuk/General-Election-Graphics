@@ -61,7 +61,7 @@
         <div ng-controller="constituencyCtrl">
         	<div class="constituencyoverview" ng-show="show">
                 <div class="gradient-overlay" style="clear: both">
-                    <h1 style="background-color: {{constituency.conColor}} !important;">{{constituency.conName}} - {{constituency.conDescription}} </h1>
+                    <h1 style="background-color: {{constituency.winnerColor}} !important;">{{constituency.conName}} - {{constituency.conDescription}} </h1>
                 	<div class="eurefinfo"> 
                 	<img ng-if="constituency.winnerGrin" ng-src="{{constituency.winnerGrin}}">
                 	<img ng-if="!constituency.winnerGrin" src="/images/blankface.png">

@@ -19,20 +19,20 @@
 </div>
 	<div class="ui form segment">
 	<div class="fields sixteen wide column">
-		<div class="field seven wide">
+		<div class="field six wide">
 		<label>Constituency Name</label>
 				<input readonly type="text" id="conName" placeholder="Constituency Name" ng-model="constituency.conName">
 		</div>
-		<div class="field four wide">
+		<div class="field three wide">
 			<label>Result Description</label>
 				<input  type="text" id="conDescription" placeholder="Description" ng-model="constituency.conDescription">
 		</div>
-		<div class="field two wide">
-			<label>Turnout</label>
+		<div class="field three wide">
+			<label>Turnout ({{constituency.changeTurnout}})</label>
 				<input readonly type="text" id="conTurnout" placeholder="Turnout" ng-model="constituency.conTurnout">
 		</div>
-		<div class="field two wide">
-			<label>Majority</label>
+		<div class="field three wide">
+			<label>Majority ({{constituency.changeMajority}})</label>
 				<input readonly  type="text" id="conMajority" placeholder="Majority" ng-model="constituency.conMajority">
 		</div>
 	</div>
