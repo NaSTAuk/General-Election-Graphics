@@ -44,7 +44,7 @@
 			<div class="field four wide">
 						Tories {{seats.conChange}}
 						<div class="ui icon buttons" style="float:right;">
-							<button class="ui green button" ng-click="seats.conScore = seats.conScore + 1;">
+							<button class="ui green button" ng-click="seats.conScore = seats.conScore - (-1);">
 								<i class="plus icon"></i>
 							</button>
 							<button class="ui red button" ng-click="seats.conScore = seats.conScore - 1;" ng-disabled="seats.conScore == 0">
@@ -57,7 +57,7 @@
 			<div class="field four wide">
 						Labour {{seats.labChange}}
 						<div class="ui icon buttons"  style="float:right;">
-							<button class="ui green button" ng-click="seats.labScore = seats.labScore + 1;">
+							<button class="ui green button" ng-click="seats.labScore = seats.labScore - (-1);">
 								<i class="plus icon"></i>
 							</button>
 							<button class="ui red button" ng-click="seats.labScore = seats.labScore - 1;" ng-disabled="seats.labScore == 0">
@@ -70,7 +70,7 @@
 			<div class="field four wide">
 						SNP {{seats.snpChange}}
 						<div class="ui icon buttons"  style="float:right;">
-							<button class="ui green button" ng-click="seats.snpScore = seats.snpScore + 1;">
+							<button class="ui green button" ng-click="seats.snpScore = seats.snpScore - (-1);">
 								<i class="plus icon"></i>
 							</button>
 							<button class="ui red button" ng-click="seats.snpScore = seats.snpScore - 1;" ng-disabled="seats.snpScore == 0">
@@ -82,7 +82,7 @@
 			<div class="field four wide">
 						Lib Dems {{seats.libChange}}
 						<div class="ui icon buttons"  style="float:right;">
-							<button class="ui green button" ng-click="seats.libScore = seats.libScore + 1;">
+							<button class="ui green button" ng-click="seats.libScore = seats.libScore - (-1);">
 								<i class="plus icon"></i>
 							</button>
 							<button class="ui red button" ng-click="seats.libScore = seats.libScore - 1;" ng-disabled="seats.libScore == 0">
@@ -110,7 +110,7 @@
 			<div class="field four wide">
 						Green {{seats.grnChange}}
 						<div class="ui icon buttons" style="float:right;">
-							<button class="ui green button" ng-click="seats.grnScore = seats.grnScore + 1;">
+							<button class="ui green button" ng-click="seats.grnScore = seats.grnScore - (-1);">
 								<i class="plus icon"></i>
 							</button>
 							<button class="ui red button" ng-click="seats.grnScore = seats.grnScore - 1;" ng-disabled="seats.grnScore == 0">
@@ -122,7 +122,7 @@
 			<div class="field four wide">
 						Plaid Cymru {{seats.pcChange}}
 						<div class="ui icon buttons" style="float:right;">
-							<button class="ui green button" ng-click="seats.pcScore = seats.pcScore + 1;">
+							<button class="ui green button" ng-click="seats.pcScore = seats.pcScore - (-1);">
 								<i class="plus icon"></i>
 							</button>
 							<button class="ui red button" ng-click="seats.pcScore = seats.pcScore - 1;" ng-disabled="seats.pcScore == 0">
@@ -134,7 +134,7 @@
 			<div class="field four wide">
 						DUP {{seats.dupChange}}
 						<div class="ui icon buttons" style="float:right;">
-							<button class="ui green button" ng-click="seats.dupScore = seats.dupScore + 1;">
+							<button class="ui green button" ng-click="seats.dupScore = seats.dupScore - (-1);">
 								<i class="plus icon"></i>
 							</button>
 							<button class="ui red button" ng-click="seats.dupScore = seats.dupScore - 1;" ng-disabled="seats.dupScore == 0">
@@ -146,7 +146,7 @@
 			<div class="field four wide">
 						Others {{seats.othChange}}
 						<div class="ui icon buttons" style="float:right;">
-							<button class="ui green button" ng-click="seats.othScore = seats.othScore + 1;">
+							<button class="ui green button" ng-click="seats.othScore = seats.othScore - (-1);">
 								<i class="plus icon"></i>
 							</button>
 							<button class="ui red button" ng-click="seats.othScore = seats.othScore - 1;" ng-disabled="seats.othScore == 0">

@@ -233,18 +233,6 @@ h1, h2, h3, h4 {
 	border-left:3px solid white;
 }
 
-.lowerthird:after {
-  content: "";
-  position: absolute;
-  left: 100%;
-  top: 0px;
-  width: 0px;
-  height: 0px;
-  border-top: 20px solid transparent;
-  border-left: 16.16px solid #a11a1e;
-  border-bottom: 20px solid transparent;
-}
-
 .lowerthird h2 {
     color: #111;
     font-size: 20px;
@@ -445,20 +433,31 @@ h1, h2, h3, h4 {
 	border-top-right-radius: 5px; 
 	float:right; 
 	padding-top:3px;
-	height: 155px;
-	width: 155px;
+	height: 100%;
+	width: 100%;
 }
 
 .constituencyoverview h1 {
     color: #fff;
     font-size: 28px;
     font-weight: bold;
-    background-color: #a11a1e;
     min-height: 38px;
     padding: 5px 8px;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
 	border-top-right-radius: 5px;
 	border-left:3px solid white;
+}
+
+.constituencyoverview h3 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 8px;
+    background-color: #fff;
+	border-left: 3px solid white;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+	border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 3px;
 }
 
 .constituencyoverview .majority {

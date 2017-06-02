@@ -481,6 +481,10 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
             socket.emit('constituency', 'hide');
             $log.info("constituency.hide()");
         };
+        
+        $scope.hidegraphic = function() {
+        	$scope.show = false;
+        };
 		
 		var fetchData = function () {
        				var config = {headers:  {
@@ -506,28 +510,69 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
         
         $scope.calculate = function() {
          	
-         	candidates = $scope.constituency.rows;
+         	function numberWithCommas(x) {
+    				return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+				}	
+				
+			candidates = $scope.constituency.rows;
          	candidates.sort(function(a,b){return b.Votes - a.Votes});
          	
 			$scope.constituency.conMajority = candidates[0].Votes - candidates[1].Votes;
+			$scope.constituency.conMajorityDisplay = numberWithCommas($scope.constituency.conMajority);
 			$scope.constituency.conTurnout = 0;
 			
 			for (var i = 0; i < candidates.length; i ++) {
 					$scope.constituency.conTurnout = Number($scope.constituency.conTurnout) + Number(candidates[i].Votes);
 			}	
+			$scope.constituency.conTurnoutDisplay = numberWithCommas($scope.constituency.conTurnout);
 			
 			$scope.constituency.changeTurnout = Number($scope.constituency.conTurnout) - Number($scope.constituency.oldTurnout);
+			$scope.constituency.changeTurnoutDisplay = ($scope.constituency.changeTurnout<=0?'':'+') + numberWithCommas($scope.constituency.changeTurnout);
+			var turnoutPC = ((Number($scope.constituency.changeTurnout) / Number($scope.constituency.oldTurnout)) * 100).toFixed(1);
+			$scope.constituency.changeTurnoutPC = (turnoutPC<=0?'':'+') + turnoutPC;
+			$scope.constituency.changeTurnoutPCDisplay = "(" + $scope.constituency.changeTurnoutPC + "%)";
 			$scope.constituency.changeMajority = Number($scope.constituency.conMajority) - Number($scope.constituency.oldMajority);
+			$scope.constituency.changeMajorityDisplay = ($scope.constituency.changeMajority<=0?'':'+') + numberWithCommas($scope.constituency.changeMajority);
+			var majorityPC = ((Number($scope.constituency.changeMajority) / Number($scope.constituency.oldMajority)) * 100).toFixed(1);
+			$scope.constituency.changeMajorityPC = (majorityPC<=0?'':'+') + majorityPC;
+			$scope.constituency.changeMajorityPCDisplay = "(" + $scope.constituency.changeMajorityPC + "%)";
 			$scope.constituency.winnerGrin = candidates[0].Image;
 			$scope.constituency.winnerColor = candidates[0].Color;
+			
+			if ($scope.constituency.euleave > $scope.constituency.euremain) {
+				$scope.constituency.EUResult = "Leave";
+				$scope.constituency.EUResultDisplay = Number($scope.constituency.euleave).toFixed(1) + "% Leave";
+			}
+			else {
+				$scope.constituency.EUResult = "Remain";
+				$scope.constituency.EUResultDisplay = Number($scope.constituency.euremain).toFixed(1) + "% Remain";
+			}
+			
+			if ($scope.constituency.euMPVote == $scope.constituency.EUResult) {
+				$scope.constituency.EUResultSubtitle = $scope.constituency.EUResultDisplay + " | " + $scope.constituency.euMPName + " voted " + $scope.constituency.euMPVote;
+			}
+			else {
+				$scope.constituency.EUResultSubtitle = $scope.constituency.EUResultDisplay + " | However " + $scope.constituency.euMPName + " voted " + $scope.constituency.euMPVote;
+			}
 			
 			var oldParty = $scope.constituency.conParty.toUpperCase();
 			
 			if (candidates[0].partyCode == oldParty){
-				$scope.constituency.conDescription = candidates[0].partyCode + " hold";
+				$scope.constituency.conDescription = "- " + candidates[0].partyCode + " hold";
 				}
 			else {
-				$scope.constituency.conDescription = candidates[0].partyCode + " gain from " + oldParty; 	
+				$scope.constituency.conDescription = "- " + candidates[0].partyCode + " gain from " + oldParty; 	
+			}
+			
+			if (candidates[0].Votes == "" ||candidates[0].Votes == null) {
+				$scope.constituency.conDescription = " - " + $scope.constituency.euMPName;
+				$scope.constituency.conTurnoutDisplay = $scope.constituency.oldTurnout;
+				$scope.constituency.changeTurnoutPCDisplay = "(" + $scope.constituency.oldTurnoutPC + "%)";
+				$scope.constituency.conMajorityDisplay = $scope.constituency.oldMajority;
+				$scope.constituency.changeMajorityPCDisplay = "(" + $scope.constituency.oldMajorityPC + "%)";
+				$scope.constituency.winnerGrin = $scope.constituency.oldWinnerImg;
+				$scope.constituency.winnerColor = $scope.constituency.conColor;
+				$scope.constituency.subtitle = $scope.constituency.EUResultSubtitle;
 			}
 	
 		};
@@ -546,9 +591,12 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
 				var conParty = conData[conDataID].Winner;
 				var conResult = conData[conDataID].Result;
 				var conTurnout = conData[conDataID].VALID15;
+				var conTurnoutPC = conData[conDataID].Turnout15;
 				var conMajority = conData[conDataID].MAJ;
+				var conMajorityPC = conData[conDataID].Majority15;
 				var euleave = conData[conDataID].EUHANLEAVE;
 				var euremain = conData[conDataID].EUHANREM;
+				var oldWinner = conData[conDataID].MP_Name;
 				
 					for(var i = 0; i < euData.length; i++){
 						if(euData[i].gss_code == conCode){
@@ -574,6 +622,12 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
 				}
 						
 				var noCandidates = candidates.length;
+				var oldWinnerImg = "";
+				for (var i = 0; i < candidates.length; i ++) {
+					if (oldWinner == candidates[i].Name) {
+						oldWinnerImg = candidates[i].Image;
+						}
+				}
 								
            	    var liveSeats = {
            	    "rows": candidates,
@@ -587,7 +641,11 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
            	    "euMPName": euMPName,
            	    "euMPVote": euMPVote,
            	    "oldMajority": conMajority,
-           	    "oldTurnout": conTurnout
+           	    "oldMajorityPC": conMajorityPC,
+           	    "oldTurnout": conTurnout,
+           	    "oldTurnoutPC": conTurnoutPC,
+           	    "oldWinner" : oldWinner,
+           	    "oldWinnerImg" : oldWinnerImg
            	    };
 				
            	    return localStorageService.set('constituency',liveSeats);

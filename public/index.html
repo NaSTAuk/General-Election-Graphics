@@ -61,7 +61,8 @@
         <div ng-controller="constituencyCtrl">
         	<div class="constituencyoverview" ng-show="show">
                 <div class="gradient-overlay" style="clear: both">
-                    <h1 style="background-color: {{constituency.winnerColor}} !important;">{{constituency.conName}} - {{constituency.conDescription}} </h1>
+                    <h1 style="background-color: {{constituency.winnerColor}} !important;">{{constituency.conName}} {{constituency.conDescription}} </h1>
+                    <h3 class="subtitle" ng-show="constituency.showSubtitle">{{constituency.subtitle}}</h3>
                 	<div class="eurefinfo"> 
                 	<img ng-if="constituency.winnerGrin" ng-src="{{constituency.winnerGrin}}">
                 	<img ng-if="!constituency.winnerGrin" src="/images/blankface.png">
@@ -83,10 +84,10 @@
                 
                 <div class="gradient-overlay party-breakdown">
 					<div style="float:left; width:48%;">
-						<h2>Turnout: <span style="float:right">{{constituency.conTurnout}}</span></h2>
+						<h2>Turnout: <span style="float:right">{{constituency.conTurnoutDisplay}} {{constituency.changeTurnoutPCDisplay}}</span></h2>
 					</div>
 					<div style="float:right; width:48%;">
-						<h2>Majority: <span style="float:right">{{constituency.conMajority}}</span></h2>
+						<h2>Majority: <span style="float:right">{{constituency.conMajorityDisplay}} {{constituency.changeMajorityPCDisplay}}</span></h2>
 					</div>
                 </div>
             </div>
@@ -147,7 +148,7 @@
         </div>  
           
         <div ng-controller="recentgridCtrl">
-            <div class="party-overview center top scale-fade" ng-show="show" >
+            <div class="party-overview center top scale-fade" ng-show="show">
               <div class="gradient-overlay">
                 <h1>{{ recentgrid.header }}</h1>
               </div>

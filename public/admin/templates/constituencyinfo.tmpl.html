@@ -1,17 +1,25 @@
 <div class="ui form segment">
+	<h2>Constituency Info</h2>
+
+	<div class="ui visible info message">
+		<i class="close icon"></i>
+		<div class="header">Instructions</div>
+		<p>Select the constituency using the dynamic list at the bottom. Ensure the Constituency ID is correct and click Get Latest Data. Enter votes for each candidate. </p>
+	</div>
 	<div class="fields sixteen wide column">
-		<div class="field eight wide">
-			<h2 style="padding-right: 10px; float:left;">Constituency Information</h2>
+		<div class="field five wide">
+			
 		 	 <button class="ui green button" ng-click="show()">Show</button>
-			 <button class="ui red button" ng-click="hide()">Hide</button>
+		 	  <button class="ui red button" ng-click="hidegraphic()">Hide</button>
+			 <button class="ui blue button" ng-click="hide()" onClick="window.location.reload()">Wipe</button>
 		</div>
-		<div class="field one wide">
-			<strong>Enter ID:</strong>
+		<div class="field five wide">
+			<h2 style="text-align:right !important;">Constituency ID:</h2>
 		</div>			
 		<div class="field three wide">			
 			<input  type="text" id="conID" placeholder="Constituency ID" ng-model="constituency.conID">
 		</div>
-		<div class="field four wide">	
+		<div class="field three wide">	
 			<div class="ui purple button" ng-click="grabdata()" onClick="window.location.reload()">Get Latest Data</div>
 		</div>	
 	</div>
@@ -28,21 +36,21 @@
 				<input  type="text" id="conDescription" placeholder="Description" ng-model="constituency.conDescription">
 		</div>
 		<div class="field three wide">
-			<label>Turnout ({{constituency.changeTurnout}})</label>
+			<label>Turnout ({{constituency.changeTurnoutDisplay}}) {{constituency.changeTurnoutPC}}%</label>
 				<input readonly type="text" id="conTurnout" placeholder="Turnout" ng-model="constituency.conTurnout">
 		</div>
 		<div class="field three wide">
-			<label>Majority ({{constituency.changeMajority}})</label>
+			<label>Majority ({{constituency.changeMajorityDisplay}}) {{constituency.changeMajorityPC}}%</label>
 				<input readonly  type="text" id="conMajority" placeholder="Majority" ng-model="constituency.conMajority">
 		</div>
 	</div>
 	<br />
 	<div class="fields sixteen wide column">
-		<div class="field four wide">
+		<div class="field three wide">
 			<label>EU Ref Remain %</label>
 				<input readonly id="conEURemain" type="text" placeholder="EU Remain Percentage" ng-model="constituency.euremain">
 		</div>
-		<div class="field four wide">
+		<div class="field three wide">
 			<label>EU Ref Leave %</label>
 				<input readonly id="conEULeave" type="text" placeholder="EU Leave Percentage" ng-model="constituency.euleave">
 		</div>
@@ -50,8 +58,12 @@
 			<label>{{constituency.euMPName}} voted:</label>
 				<input readonly type="text" ng-model="constituency.euMPVote">	
 		</div>
+		<div class="field three wide">
+			<label>Show Subtitle</label>
+				<checkbox size="large" ng-model="constituency.showSubtitle" type="toggle">Show EU Sub</checkbox>
+		</div>
 		<div class="field four wide">
-			<label>Maj/Turnout</label>	
+			<label>Maj/Turnout/Result</label>	
 			<div class="ui purple button" ng-click="calculate()">Calculate</div>
 		</div>	
 	</div>
@@ -102,7 +114,7 @@
 				  $.each(data, function(key, val){
 					if ((val.Const_Name.search(regex) != -1)) {
 					  output += '<div class="sixteen wide field" style="clear: both">';
-					  output += '<button style="float:left;" style="vertical-align:middle" class="ui purple button" onClick="myFunction(' + val.Constituency_ID + ')">Get Data</button>';
+					  output += '<button style="float:left;" style="vertical-align:middle" class="ui purple button" onClick="myFunction(' + val.Constituency_ID + ')">Set ID</button>';
 					  output += '<h2 style="color:' +val.Color + '">' + val.Const_Name + ' - ' + val.Winner15 + ' - ' + val.Constituency_ID + '&nbsp; </h2></div>';
 					  count++;
 					}
