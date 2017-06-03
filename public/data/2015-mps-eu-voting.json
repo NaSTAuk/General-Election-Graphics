@@ -1,0 +1,3896 @@
+[
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Gerald Howarth",
+    "gss_code": "E14000530"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Wendy Morton",
+    "gss_code": "E14000531"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Graham Brady",
+    "gss_code": "E14000532"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Nigel Mills",
+    "gss_code": "E14000533"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Nick Herbert",
+    "gss_code": "E14000534"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Gloria De Piero",
+    "gss_code": "E14000535"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Damian Green",
+    "gss_code": "E14000536"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Angela Rayner",
+    "gss_code": "E14000537"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "David Lidington",
+    "gss_code": "E14000538"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Victoria Prentis",
+    "gss_code": "E14000539"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Margaret Hodge",
+    "gss_code": "E14000540"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Dan Jarvis",
+    "gss_code": "E14000541"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Michael Dugher",
+    "gss_code": "E14000542"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "John Woodcock",
+    "gss_code": "E14000543"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "John Baron",
+    "gss_code": "E14000544"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Maria Miller",
+    "gss_code": "E14000545"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Lab",
+    "Name": "John Mann",
+    "gss_code": "E14000546"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Ben Howlett",
+    "gss_code": "E14000547"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Jane Ellison",
+    "gss_code": "E14000549"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Dominic Grieve",
+    "gss_code": "E14000550"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Bob Stewart",
+    "gss_code": "E14000551"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Richard Fuller",
+    "gss_code": "E14000552"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Neil Coyle",
+    "gss_code": "E14000553"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Anne-Marie Trevelyan",
+    "gss_code": "E14000554"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Rushanara Ali",
+    "gss_code": "E14000555"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Graham Stuart",
+    "gss_code": "E14000556"
+  },
+  {
+    "EU_Position": "ND",
+    "Party": "Con",
+    "Name": "Huw Merriman",
+    "gss_code": "E14000557"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "David Evennett",
+    "gss_code": "E14000558"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Lab",
+    "Name": "Frank Field",
+    "gss_code": "E14000559"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Lab",
+    "Name": "Gisela Stuart",
+    "gss_code": "E14000560"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Jack Dromey",
+    "gss_code": "E14000561"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Lab",
+    "Name": "Roger Godsiff",
+    "gss_code": "E14000562"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Liam Byrne",
+    "gss_code": "E14000563"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Shabana Mahmood",
+    "gss_code": "E14000564"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Richard Burden",
+    "gss_code": "E14000565"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Khalid Mahmood",
+    "gss_code": "E14000566"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Steve McCabe",
+    "gss_code": "E14000567"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Jess Phillips",
+    "gss_code": "E14000568"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Helen Goodman",
+    "gss_code": "E14000569"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Kate Hollern",
+    "gss_code": "E14000570"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Lab",
+    "Name": "Graham Stringer",
+    "gss_code": "E14000571"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Paul Maynard",
+    "gss_code": "E14000572"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Gordon Marsden",
+    "gss_code": "E14000573"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "David Anderson",
+    "gss_code": "E14000574"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Lab",
+    "Name": "Ronnie Campbell",
+    "gss_code": "E14000575"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Nick Gibb",
+    "gss_code": "E14000576"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Lab",
+    "Name": "Dennis Skinner",
+    "gss_code": "E14000577"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "David Crausby",
+    "gss_code": "E14000578"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Yasmin Qureshi",
+    "gss_code": "E14000579"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Chris Green",
+    "gss_code": "E14000580"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Peter Dowd",
+    "gss_code": "E14000581"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Matt Warman",
+    "gss_code": "E14000582"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "David Tredinnick",
+    "gss_code": "E14000583"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Tobias Ellwood",
+    "gss_code": "E14000584"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Conor Burns",
+    "gss_code": "E14000585"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Phillip Lee",
+    "gss_code": "E14000586"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Imran Hussain",
+    "gss_code": "E14000587"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Judith Cummins",
+    "gss_code": "E14000588"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Naseem Shah",
+    "gss_code": "E14000589"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "James Cleverly",
+    "gss_code": "E14000590"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Dawn Butler",
+    "gss_code": "E14000591"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Barry Gardiner",
+    "gss_code": "E14000592"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Ruth Cadbury",
+    "gss_code": "E14000593"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Eric Pickles",
+    "gss_code": "E14000594"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Ian Liddell-Grainger",
+    "gss_code": "E14000595"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Andrew Percy",
+    "gss_code": "E14000596"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Simon Kirby",
+    "gss_code": "E14000597"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Green",
+    "Name": "Caroline Lucas",
+    "gss_code": "E14000598"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Kerry McCarthy",
+    "gss_code": "E14000599"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Charlotte Leslie",
+    "gss_code": "E14000600"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Karin Smyth",
+    "gss_code": "E14000601"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Thangam Debbonaire",
+    "gss_code": "E14000602"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Keith Simpson",
+    "gss_code": "E14000603"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Bob Neill",
+    "gss_code": "E14000604"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Sajid Javid",
+    "gss_code": "E14000605"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Charles Walker",
+    "gss_code": "E14000606"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Anna Soubry",
+    "gss_code": "E14000607"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Speaker",
+    "Name": "John Bercow",
+    "gss_code": "E14000608"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Julie Cooper",
+    "gss_code": "E14000609"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Andrew Griffiths",
+    "gss_code": "E14000610"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "David Nuttall",
+    "gss_code": "E14000611"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Ivan Lewis",
+    "gss_code": "E14000612"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Jo Churchill",
+    "gss_code": "E14000613"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Craig Whittaker",
+    "gss_code": "E14000614"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Harriet Harman",
+    "gss_code": "E14000615"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "George Eustice",
+    "gss_code": "E14000616"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Daniel Zeichner",
+    "gss_code": "E14000617"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Amanda Milling",
+    "gss_code": "E14000618"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Julian Brazier",
+    "gss_code": "E14000619"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "John Stevenson",
+    "gss_code": "E14000620"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Liberal Democrat",
+    "Name": "Tom Brake",
+    "gss_code": "E14000621"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Rebecca Harris",
+    "gss_code": "E14000622"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Mel Stride",
+    "gss_code": "E14000623"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Daniel Poulter",
+    "gss_code": "E14000624"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Edward Argar",
+    "gss_code": "E14000625"
+  },
+  {
+    "EU_Position": "ND",
+    "Party": "Con",
+    "Name": "Tracey Crouch",
+    "gss_code": "E14000626"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Mary Robinson",
+    "gss_code": "E14000627"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Simon Burns",
+    "gss_code": "E14000628"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Greg Hands",
+    "gss_code": "E14000629"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Alex Chalk",
+    "gss_code": "E14000630"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Cheryl Gillan",
+    "gss_code": "E14000631"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Toby Perkins",
+    "gss_code": "E14000632"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Andrew Tyrie",
+    "gss_code": "E14000633"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Iain Duncan Smith",
+    "gss_code": "E14000634"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Michelle Donelan",
+    "gss_code": "E14000635"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Theresa Villiers",
+    "gss_code": "E14000636"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Lindsay Hoyle",
+    "gss_code": "E14000637"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Christopher Chope",
+    "gss_code": "E14000638"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Mark Field",
+    "gss_code": "E14000639"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Chris Matheson",
+    "gss_code": "E14000640"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Roberta Blackman-Woods",
+    "gss_code": "E14000641"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "UKIP",
+    "Name": "Douglas Carswell",
+    "gss_code": "E14000642"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Martin Vickers",
+    "gss_code": "E14000643"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Will Quince",
+    "gss_code": "E14000644"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Jason McCartney",
+    "gss_code": "E14000645"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Fiona Bruce",
+    "gss_code": "E14000646"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Tom Pursglove",
+    "gss_code": "E14000648"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Colleen Fletcher",
+    "gss_code": "E14000649"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Geoffrey Robinson",
+    "gss_code": "E14000650"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Jim Cunningham",
+    "gss_code": "E14000651"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Henry Smith",
+    "gss_code": "E14000652"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Edward Timpson",
+    "gss_code": "E14000653"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Gavin Barwell",
+    "gss_code": "E14000654"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Steve Reed",
+    "gss_code": "E14000655"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Chris Philp",
+    "gss_code": "E14000656"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Jon Cruddas",
+    "gss_code": "E14000657"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Jenny Chapman",
+    "gss_code": "E14000658"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Gareth Johnson",
+    "gss_code": "E14000659"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Chris Heaton-Harris",
+    "gss_code": "E14000660"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Andrew Gwynne",
+    "gss_code": "E14000661"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Amanda Solloway",
+    "gss_code": "E14000662"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Margaret Beckett",
+    "gss_code": "E14000663"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Patrick McLoughlin",
+    "gss_code": "E14000664"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Claire Perry",
+    "gss_code": "E14000665"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Paula Sherriff",
+    "gss_code": "E14000666"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Caroline Flint",
+    "gss_code": "E14000667"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Rosie Winterton",
+    "gss_code": "E14000668"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Ed Miliband",
+    "gss_code": "E14000669"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Charlie Elphicke",
+    "gss_code": "E14000670"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Ian Austin",
+    "gss_code": "E14000671"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Mike Wood",
+    "gss_code": "E14000672"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Helen Hayes",
+    "gss_code": "E14000673"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Rupa Huq",
+    "gss_code": "E14000674"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Steve Pound",
+    "gss_code": "E14000675"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Virendra Sharma",
+    "gss_code": "E14000676"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Grahame Morris",
+    "gss_code": "E14000677"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Hugo Swire",
+    "gss_code": "E14000678"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Stephen Timms",
+    "gss_code": "E14000679"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Damian Hinds",
+    "gss_code": "E14000680"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Sam Gyimah",
+    "gss_code": "E14000681"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Tim Loughton",
+    "gss_code": "E14000682"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Greg Knight",
+    "gss_code": "E14000683"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Caroline Ansell",
+    "gss_code": "E14000684"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Mims Davies",
+    "gss_code": "E14000685"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Antoinette Sandbach",
+    "gss_code": "E14000686"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Kate Osamor",
+    "gss_code": "E14000687"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Justin Madders",
+    "gss_code": "E14000688"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Alec Shelbrooke",
+    "gss_code": "E14000689"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Clive Efford",
+    "gss_code": "E14000690"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Joan Ryan",
+    "gss_code": "E14000691"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "David Burrowes",
+    "gss_code": "E14000692"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Eleanor Laing",
+    "gss_code": "E14000693"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Chris Grayling",
+    "gss_code": "E14000694"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Maggie Throup",
+    "gss_code": "E14000695"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Teresa Pearce",
+    "gss_code": "E14000696"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Dominic Raab",
+    "gss_code": "E14000697"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Ben Bradshaw",
+    "gss_code": "E14000698"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Suella Fernandes",
+    "gss_code": "E14000699"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Helen Whately",
+    "gss_code": "E14000700"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Seema Malhotra",
+    "gss_code": "E14000701"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Jack Lopresti",
+    "gss_code": "E14000702"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Mike Freer",
+    "gss_code": "E14000703"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Damian Collins",
+    "gss_code": "E14000704"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Mark Harper",
+    "gss_code": "E14000705"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Mark Menzies",
+    "gss_code": "E14000706"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Edward Leigh",
+    "gss_code": "E14000707"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Maria Eagle",
+    "gss_code": "E14000708"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Ian Mearns",
+    "gss_code": "E14000709"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Vernon Coaker",
+    "gss_code": "E14000710"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Rehman Chishti",
+    "gss_code": "E14000711"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Richard Graham",
+    "gss_code": "E14000712"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Caroline Dinenage",
+    "gss_code": "E14000713"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Nicholas Boles",
+    "gss_code": "E14000714"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Adam Holloway",
+    "gss_code": "E14000715"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Melanie Onn",
+    "gss_code": "E14000716"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Brandon Lewis",
+    "gss_code": "E14000717"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Matthew Pennycook",
+    "gss_code": "E14000718"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Anne Milton",
+    "gss_code": "E14000719"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Diane Abbott",
+    "gss_code": "E14000720"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Meg Hillier",
+    "gss_code": "E14000721"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "James Morris",
+    "gss_code": "E14000722"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Holly Lynch",
+    "gss_code": "E14000723"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "David Davis",
+    "gss_code": "E14000724"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Derek Twigg",
+    "gss_code": "E14000725"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Andrew Slaughter",
+    "gss_code": "E14000726"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Tulip Siddiq",
+    "gss_code": "E14000727"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Edward Garnier",
+    "gss_code": "E14000728"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Robert Halfon",
+    "gss_code": "E14000729"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Andrew Jones",
+    "gss_code": "E14000730"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Bob Blackman",
+    "gss_code": "E14000731"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Gareth Thomas",
+    "gss_code": "E14000732"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Iain Wright",
+    "gss_code": "E14000733"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Bernard Jenkin",
+    "gss_code": "E14000734"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Amber Rudd",
+    "gss_code": "E14000735"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Alan Mak",
+    "gss_code": "E14000736"
+  },
+  {
+    "EU_Position": "In/Out",
+    "Party": "Lab",
+    "Name": "John Martin McDonnell",
+    "gss_code": "E14000737"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "William Wragg",
+    "gss_code": "E14000738"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Mike Penning",
+    "gss_code": "E14000739"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Jon Trickett",
+    "gss_code": "E14000740"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Matthew Offord",
+    "gss_code": "E14000741"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "John Howell",
+    "gss_code": "E14000742"
+  },
+  {
+    "EU_Position": "ND",
+    "Party": "Con",
+    "Name": "Jesse Norman",
+    "gss_code": "E14000743"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Mark Prisk",
+    "gss_code": "E14000744"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Oliver Dowden",
+    "gss_code": "E14000745"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Guy Opperman",
+    "gss_code": "E14000746"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Liz McInnes",
+    "gss_code": "E14000747"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Andrew Bingham",
+    "gss_code": "E14000748"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Peter Lilley",
+    "gss_code": "E14000749"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Keir Starmer",
+    "gss_code": "E14000750"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Angela Watkinson",
+    "gss_code": "E14000751"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Catherine West",
+    "gss_code": "E14000752"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Jeremy Quin",
+    "gss_code": "E14000753"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Bridget Phillipson",
+    "gss_code": "E14000754"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Peter Kyle",
+    "gss_code": "E14000755"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Barry Sheerman",
+    "gss_code": "E14000756"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Jonathan Djanogly",
+    "gss_code": "E14000757"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Graham Jones",
+    "gss_code": "E14000758"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Wes Streeting",
+    "gss_code": "E14000759"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Mike Gapes",
+    "gss_code": "E14000760"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Ben Gummer",
+    "gss_code": "E14000761"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Andrew Turner",
+    "gss_code": "E14000762"
+  },
+  {
+    "EU_Position": "In/Out",
+    "Party": "Lab",
+    "Name": "Jeremy Corbyn",
+    "gss_code": "E14000763"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Emily Thornberry",
+    "gss_code": "E14000764"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Stephen Hepburn",
+    "gss_code": "E14000765"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Kris Hopkins",
+    "gss_code": "E14000766"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Jeremy Wright",
+    "gss_code": "E14000767"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Victoria Borwick",
+    "gss_code": "E14000768"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Philip Hollobone",
+    "gss_code": "E14000769"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "James Berry",
+    "gss_code": "E14000770"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Karl Turner",
+    "gss_code": "E14000771"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Diana R. Johnson",
+    "gss_code": "E14000772"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Alan Johnson",
+    "gss_code": "E14000773"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Chris Skidmore",
+    "gss_code": "E14000774"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "George Howarth",
+    "gss_code": "E14000775"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Cat Smith",
+    "gss_code": "E14000776"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Hilary Benn",
+    "gss_code": "E14000777"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Richard Burgon",
+    "gss_code": "E14000778"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Fabian Hamilton",
+    "gss_code": "E14000779"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Liberal Democrat",
+    "Name": "Greg Mulholland",
+    "gss_code": "E14000780"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Rachel Reeves",
+    "gss_code": "E14000781"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Keith Vaz",
+    "gss_code": "E14000782"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Jon Ashworth",
+    "gss_code": "E14000783"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Liz Kendall",
+    "gss_code": "E14000784"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Andy Burnham",
+    "gss_code": "E14000785"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Maria Caulfield",
+    "gss_code": "E14000786"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Heidi Alexander",
+    "gss_code": "E14000787"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Jim Dowd",
+    "gss_code": "E14000788"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Vicky Foxcroft",
+    "gss_code": "E14000789"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Lab",
+    "Name": "John Cryer",
+    "gss_code": "E14000790"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Michael Fabricant",
+    "gss_code": "E14000791"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Karl McCartney",
+    "gss_code": "E14000792"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Louise Ellman",
+    "gss_code": "E14000793"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Steve Rotheram",
+    "gss_code": "E14000794"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Luciana Berger",
+    "gss_code": "E14000795"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Stephen Twigg",
+    "gss_code": "E14000796"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Nicky Morgan",
+    "gss_code": "E14000797"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Victoria Atkins",
+    "gss_code": "E14000798"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Philip Dunne",
+    "gss_code": "E14000799"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Lab",
+    "Name": "Kelvin Hopkins",
+    "gss_code": "E14000800"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Gavin Shuker",
+    "gss_code": "E14000801"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "David Rutley",
+    "gss_code": "E14000802"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Theresa May",
+    "gss_code": "E14000803"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Helen Grant",
+    "gss_code": "E14000804"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Yvonne Fovargue",
+    "gss_code": "E14000805"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "John Whittingdale",
+    "gss_code": "E14000806"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Lucy Powell",
+    "gss_code": "E14000807"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Gerald Kaufman",
+    "gss_code": "E14000808"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Jeff Smith",
+    "gss_code": "E14000809"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Alan Meale",
+    "gss_code": "E14000810"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "George Hollingbery",
+    "gss_code": "E14000811"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Caroline Spelman",
+    "gss_code": "E14000812"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Nadine Dorries",
+    "gss_code": "E14000813"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Pauline Latham",
+    "gss_code": "E14000814"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Michael Tomlinson",
+    "gss_code": "E14000815"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "George Freeman",
+    "gss_code": "E14000816"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Nicholas Soames",
+    "gss_code": "E14000817"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Nigel Huddleston",
+    "gss_code": "E14000818"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Andy McDonald",
+    "gss_code": "E14000819"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Tom Blenkinsop",
+    "gss_code": "E14000820"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Mark Lancaster",
+    "gss_code": "E14000821"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Iain Stewart",
+    "gss_code": "E14000822"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Siobhain McDonagh",
+    "gss_code": "E14000823"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Paul Beresford",
+    "gss_code": "E14000824"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "David Morris",
+    "gss_code": "E14000825"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Andrea Jenkyns",
+    "gss_code": "E14000826"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Julian Lewis",
+    "gss_code": "E14000827"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Desmond Swayne",
+    "gss_code": "E14000828"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Robert Jenrick",
+    "gss_code": "E14000829"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Richard Benyon",
+    "gss_code": "E14000830"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Chi Onwurah",
+    "gss_code": "E14000831"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Nick Brown",
+    "gss_code": "E14000832"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Catherine McKinnell",
+    "gss_code": "E14000833"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Paul Farrelly",
+    "gss_code": "E14000834"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Anne Marie Morris",
+    "gss_code": "E14000835"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Yvette Cooper",
+    "gss_code": "E14000836"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Scott Mann",
+    "gss_code": "E14000837"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Peter Heaton-Jones",
+    "gss_code": "E14000838"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Simon Hoare",
+    "gss_code": "E14000839"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Kevan Jones",
+    "gss_code": "E14000840"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Alistair Burt",
+    "gss_code": "E14000841"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Stephen Barclay",
+    "gss_code": "E14000842"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Natascha Engel",
+    "gss_code": "E14000843"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Ranil Jayawardena",
+    "gss_code": "E14000844"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Oliver Heald",
+    "gss_code": "E14000845"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Jacob Rees-Mogg",
+    "gss_code": "E14000846"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Bill Wiggin",
+    "gss_code": "E14000847"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Liberal Democrat",
+    "Name": "Norman Lamb",
+    "gss_code": "E14000848"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Owen Paterson",
+    "gss_code": "E14000849"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Liam Fox",
+    "gss_code": "E14000850"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Justin Tomlinson",
+    "gss_code": "E14000851"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Roger Gale",
+    "gss_code": "E14000852"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Mary Glindon",
+    "gss_code": "E14000853"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Craig Tracey",
+    "gss_code": "E14000854"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Shailesh Vara",
+    "gss_code": "E14000855"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Pat Glass",
+    "gss_code": "E14000856"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Kit Malthouse",
+    "gss_code": "E14000857"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Andrew Bridgen",
+    "gss_code": "E14000858"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Henry Bellingham",
+    "gss_code": "E14000859"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "James Gray",
+    "gss_code": "E14000860"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Michael Ellis",
+    "gss_code": "E14000861"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "David Mackintosh",
+    "gss_code": "E14000862"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Chloe Smith",
+    "gss_code": "E14000863"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Clive Lewis",
+    "gss_code": "E14000864"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Chris Leslie",
+    "gss_code": "E14000865"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Graham Allen",
+    "gss_code": "E14000866"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Lilian Greenwood",
+    "gss_code": "E14000867"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Marcus Jones",
+    "gss_code": "E14000868"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "James Brokenshire",
+    "gss_code": "E14000869"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Debbie Abrahams",
+    "gss_code": "E14000870"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Jim McMahon",
+    "gss_code": "E14000871"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Jo Johnson",
+    "gss_code": "E14000872"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Andrew Smith",
+    "gss_code": "E14000873"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Nicola Blackwood",
+    "gss_code": "E14000874"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Andrew Stephenson",
+    "gss_code": "E14000875"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Angela Smith",
+    "gss_code": "E14000876"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Rory Stewart",
+    "gss_code": "E14000877"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Stewart Jackson",
+    "gss_code": "E14000878"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Johnny Mercer",
+    "gss_code": "E14000879"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Oliver Colvile",
+    "gss_code": "E14000880"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Robert Syms",
+    "gss_code": "E14000881"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Jim Fitzpatrick",
+    "gss_code": "E14000882"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Penny Mordaunt",
+    "gss_code": "E14000883"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Flick Drummond",
+    "gss_code": "E14000884"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Mark Hendrick",
+    "gss_code": "E14000885"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Stuart Andrew",
+    "gss_code": "E14000886"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Justine Greening",
+    "gss_code": "E14000887"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Mark Francois",
+    "gss_code": "E14000888"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Rob Wilson",
+    "gss_code": "E14000889"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Alok Sharma",
+    "gss_code": "E14000890"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Anna Turley",
+    "gss_code": "E14000891"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Karen Lumley",
+    "gss_code": "E14000892"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Crispin Blunt",
+    "gss_code": "E14000893"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Nigel Evans",
+    "gss_code": "E14000894"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Rishi Sunak",
+    "gss_code": "E14000895"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Simon Danczuk",
+    "gss_code": "E14000897"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Kelly Tolhurst",
+    "gss_code": "E14000898"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "James Duddridge",
+    "gss_code": "E14000899"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Andrew Rosindell",
+    "gss_code": "E14000900"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Caroline Nokes",
+    "gss_code": "E14000901"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Jake Berry",
+    "gss_code": "E14000902"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Kevin Barron",
+    "gss_code": "E14000903"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Sarah Champion",
+    "gss_code": "E14000904"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Mark Pawsey",
+    "gss_code": "E14000905"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Nick Hurd",
+    "gss_code": "E14000906"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Philip Hammond",
+    "gss_code": "E14000907"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Kenneth Clarke",
+    "gss_code": "E14000908"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Alan Duncan",
+    "gss_code": "E14000909"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Alan Haselhurst",
+    "gss_code": "E14000910"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Rebecca Long-Bailey",
+    "gss_code": "E14000911"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "John Glen",
+    "gss_code": "E14000912"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Robert Goodwill",
+    "gss_code": "E14000913"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Nicholas Dakin",
+    "gss_code": "E14000914"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Phil Wilson",
+    "gss_code": "E14000915"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Bill Esterson",
+    "gss_code": "E14000916"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Nigel Adams",
+    "gss_code": "E14000917"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Michael Fallon",
+    "gss_code": "E14000918"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Paul Blomfield",
+    "gss_code": "E14000919"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Clive Betts",
+    "gss_code": "E14000920"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Liberal Democrat",
+    "Name": "Nick Clegg",
+    "gss_code": "E14000922"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Louise Haigh",
+    "gss_code": "E14000923"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Mark Spencer",
+    "gss_code": "E14000924"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Philip Davies",
+    "gss_code": "E14000925"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Daniel Kawczynski",
+    "gss_code": "E14000926"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Gordon Henderson",
+    "gss_code": "E14000927"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Julian Smith",
+    "gss_code": "E14000928"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Fiona Mactaggart",
+    "gss_code": "E14000930"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Julian Knight",
+    "gss_code": "E14000931"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "David Warburton",
+    "gss_code": "E14000932"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Stephen Metcalfe",
+    "gss_code": "E14000933"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Heidi Allen",
+    "gss_code": "E14000934"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Heather Wheeler",
+    "gss_code": "E14000935"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Richard Drax",
+    "gss_code": "E14000936"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Lucy Frazer",
+    "gss_code": "E14000937"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Sheryll Murray",
+    "gss_code": "E14000938"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "John Hayes",
+    "gss_code": "E14000939"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Alberto Costa",
+    "gss_code": "E14000940"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Richard Bacon",
+    "gss_code": "E14000941"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Andrea Leadsom",
+    "gss_code": "E14000942"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Seema Kennedy",
+    "gss_code": "E14000943"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Emma Lewell-Buck",
+    "gss_code": "E14000944"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Gavin Williamson",
+    "gss_code": "E14000945"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "James Cartlidge",
+    "gss_code": "E14000946"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Robert Buckland",
+    "gss_code": "E14000947"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Craig Mackinlay",
+    "gss_code": "E14000948"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Andrew Selous",
+    "gss_code": "E14000949"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Gary Streeter",
+    "gss_code": "E14000950"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "David Gauke",
+    "gss_code": "E14000951"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Elizabeth Truss",
+    "gss_code": "E14000952"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Jeremy Hunt",
+    "gss_code": "E14000953"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Andrew Murrison",
+    "gss_code": "E14000954"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Royston Smith",
+    "gss_code": "E14000955"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Alan Whitehead",
+    "gss_code": "E14000956"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "David Amess",
+    "gss_code": "E14000957"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Liberal Democrat",
+    "Name": "John Pugh",
+    "gss_code": "E14000958"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Kwasi Kwarteng",
+    "gss_code": "E14000959"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Anne Main",
+    "gss_code": "E14000960"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Steve Double",
+    "gss_code": "E14000961"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Conor McGinn",
+    "gss_code": "E14000962"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Marie Rimmer",
+    "gss_code": "E14000963"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Derek Thomas",
+    "gss_code": "E14000964"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Jeremy Lefroy",
+    "gss_code": "E14000965"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Karen Bradley",
+    "gss_code": "E14000966"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Jonathan Reynolds",
+    "gss_code": "E14000967"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Stephen McPartland",
+    "gss_code": "E14000968"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Ann Coffey",
+    "gss_code": "E14000969"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Alex Cunningham",
+    "gss_code": "E14000970"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "James Wharton",
+    "gss_code": "E14000971"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Ruth Smeeth",
+    "gss_code": "E14000973"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Rob Flello",
+    "gss_code": "E14000974"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Bill Cash",
+    "gss_code": "E14000975"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Margot James",
+    "gss_code": "E14000976"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Nadhim Zahawi",
+    "gss_code": "E14000977"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Chuka Umunna",
+    "gss_code": "E14000978"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Kate Green",
+    "gss_code": "E14000979"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Neil Carmichael",
+    "gss_code": "E14000980"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Therese Coffey",
+    "gss_code": "E14000981"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Julie Elliott",
+    "gss_code": "E14000982"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Michael Gove",
+    "gss_code": "E14000983"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Paul Scully",
+    "gss_code": "E14000984"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Andrew Mitchell",
+    "gss_code": "E14000985"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Christopher Pincher",
+    "gss_code": "E14000986"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "George Osborne",
+    "gss_code": "E14000987"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Rebecca Pow",
+    "gss_code": "E14000988"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Lucy Allan",
+    "gss_code": "E14000989"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Laurence Robertson",
+    "gss_code": "E14000990"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Geoffrey Clifton-Brown",
+    "gss_code": "E14000991"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Mark Pritchard",
+    "gss_code": "E14000992"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Kevin Hollinrake",
+    "gss_code": "E14000993"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Luke Hall",
+    "gss_code": "E14000994"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Jackie Doyle-Price",
+    "gss_code": "E14000995"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Neil Parish",
+    "gss_code": "E14000996"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Thomas Tugendhat",
+    "gss_code": "E14000997"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Kevin Foster",
+    "gss_code": "E14000999"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Geoffrey Cox",
+    "gss_code": "E14001000"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Sarah Wollaston",
+    "gss_code": "E14001001"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "David Lammy",
+    "gss_code": "E14001002"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Sarah Newton",
+    "gss_code": "E14001003"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Greg Clark",
+    "gss_code": "E14001004"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Tania Mathias",
+    "gss_code": "E14001005"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Alan Campbell",
+    "gss_code": "E14001006"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Boris Johnson",
+    "gss_code": "E14001007"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Lab",
+    "Name": "Kate Hoey",
+    "gss_code": "E14001008"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Mary Creagh",
+    "gss_code": "E14001009"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Angela Eagle",
+    "gss_code": "E14001010"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "David Winnick",
+    "gss_code": "E14001011"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Valerie Vaz",
+    "gss_code": "E14001012"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Stella Creasy",
+    "gss_code": "E14001013"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Ian Lavery",
+    "gss_code": "E14001014"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Ed Vaizey",
+    "gss_code": "E14001015"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "John Spellar",
+    "gss_code": "E14001016"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Helen Jones",
+    "gss_code": "E14001017"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "David Mowat",
+    "gss_code": "E14001018"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Chris White",
+    "gss_code": "E14001019"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Sharon Hodgson",
+    "gss_code": "E14001020"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Richard Harrington",
+    "gss_code": "E14001021"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Peter Aldous",
+    "gss_code": "E14001022"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Nusrat Ghani",
+    "gss_code": "E14001023"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Graham Evans",
+    "gss_code": "E14001024"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Peter Bone",
+    "gss_code": "E14001025"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "James Heappey",
+    "gss_code": "E14001026"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Grant Shapps",
+    "gss_code": "E14001027"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "John Healey",
+    "gss_code": "E14001028"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Tom Watson",
+    "gss_code": "E14001029"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Adrian Bailey",
+    "gss_code": "E14001030"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Oliver Letwin",
+    "gss_code": "E14001031"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Lyn Brown",
+    "gss_code": "E14001032"
+  },
+  {
+    "EU_Position": "ND",
+    "Party": "Lab",
+    "Name": "Rosie Cooper",
+    "gss_code": "E14001033"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Matthew Hancock",
+    "gss_code": "E14001034"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Harriett Baldwin",
+    "gss_code": "E14001035"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Karen Buck",
+    "gss_code": "E14001036"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Liberal Democrat",
+    "Name": "Tim Farron",
+    "gss_code": "E14001037"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "John Penrose",
+    "gss_code": "E14001038"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Lisa Nandy",
+    "gss_code": "E14001039"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Stephen Hammond",
+    "gss_code": "E14001040"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Steve Brine",
+    "gss_code": "E14001041"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Adam Afriyie",
+    "gss_code": "E14001042"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Alison McGovern",
+    "gss_code": "E14001043"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Margaret Greenwood",
+    "gss_code": "E14001044"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Priti Patel",
+    "gss_code": "E14001045"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Jonathan Lord",
+    "gss_code": "E14001047"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "John Redwood",
+    "gss_code": "E14001048"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Emma Reynolds",
+    "gss_code": "E14001049"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Pat McFadden",
+    "gss_code": "E14001050"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Rob Marris",
+    "gss_code": "E14001051"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Robin Walker",
+    "gss_code": "E14001052"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Sue Hayman",
+    "gss_code": "E14001053"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Barbara Keeley",
+    "gss_code": "E14001054"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Peter Bottomley",
+    "gss_code": "E14001055"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Steven Baker",
+    "gss_code": "E14001056"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Ben Wallace",
+    "gss_code": "E14001057"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Mark Garnier",
+    "gss_code": "E14001058"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Mike Kane",
+    "gss_code": "E14001059"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Marcus Fysh",
+    "gss_code": "E14001060"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Rachael Maskell",
+    "gss_code": "E14001061"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Julian Sturdy",
+    "gss_code": "E14001062"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "DUP",
+    "Name": "Gavin Robinson",
+    "gss_code": "N06000001"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "DUP",
+    "Name": "Nigel Dodds",
+    "gss_code": "N06000002"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Social Democratic and Labour Party",
+    "Name": "Alasdair McDonnell",
+    "gss_code": "N06000003"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Sinn Féin",
+    "Name": "Paul Maskey",
+    "gss_code": "N06000004"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "DUP",
+    "Name": "Sammy Wilson",
+    "gss_code": "N06000005"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "DUP",
+    "Name": "Gregory Campbell",
+    "gss_code": "N06000006"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "UUP",
+    "Name": "Tom Elliott",
+    "gss_code": "N06000007"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Social Democratic and Labour Party",
+    "Name": "Mark Durkan",
+    "gss_code": "N06000008"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "DUP",
+    "Name": "Jeffrey M. Donaldson",
+    "gss_code": "N06000009"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Sinn Féin",
+    "Name": "Francie Molloy",
+    "gss_code": "N06000010"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Sinn Féin",
+    "Name": "Mickey Brady",
+    "gss_code": "N06000011"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "DUP",
+    "Name": "Ian Paisley Jnr",
+    "gss_code": "N06000012"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Independent",
+    "Name": "Sylvia Hermon",
+    "gss_code": "N06000013"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "UUP",
+    "Name": "Danny Kinahan",
+    "gss_code": "N06000014"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Social Democratic and Labour Party",
+    "Name": "Margaret Ritchie",
+    "gss_code": "N06000015"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "DUP",
+    "Name": "Jim Shannon",
+    "gss_code": "N06000016"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "DUP",
+    "Name": "David Simpson",
+    "gss_code": "N06000017"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Sinn Féin",
+    "Name": "Pat Doherty",
+    "gss_code": "N06000018"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Kirsty Blackman",
+    "gss_code": "S14000001"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Callum McCaig",
+    "gss_code": "S14000002"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Neil Gray",
+    "gss_code": "S14000003"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Michael Weir",
+    "gss_code": "S14000004"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Brendan O'Hara",
+    "gss_code": "S14000005"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Corri Wilson",
+    "gss_code": "S14000006"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Eilidh Whiteford",
+    "gss_code": "S14000007"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Calum Kerr",
+    "gss_code": "S14000008"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Paul Monaghan",
+    "gss_code": "S14000009"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Philippa Whitford",
+    "gss_code": "S14000010"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Phil Boswell",
+    "gss_code": "S14000011"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Stuart McDonald",
+    "gss_code": "S14000012"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Richard Arkless",
+    "gss_code": "S14000013"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "David Mundell",
+    "gss_code": "S14000014"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Stewart Hosie",
+    "gss_code": "S14000015"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Chris Law",
+    "gss_code": "S14000016"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Douglas Chapman",
+    "gss_code": "S14000017"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "John Nicolson",
+    "gss_code": "S14000018"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Lisa Cameron",
+    "gss_code": "S14000019"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "George Kerevan",
+    "gss_code": "S14000020"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Kirsten Oswald",
+    "gss_code": "S14000021"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Tommy Sheppard",
+    "gss_code": "S14000022"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Deidre Brock",
+    "gss_code": "S14000023"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Ian Murray",
+    "gss_code": "S14000024"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Joanna Cherry",
+    "gss_code": "S14000025"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Independent",
+    "Name": "Michelle Thomson",
+    "gss_code": "S14000026"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Angus MacNeil",
+    "gss_code": "S14000027"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "John McNally",
+    "gss_code": "S14000028"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Alison Thewliss",
+    "gss_code": "S14000029"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Natalie McGarry",
+    "gss_code": "S14000030"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Patrick Grady",
+    "gss_code": "S14000031"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Anne McLaughlin",
+    "gss_code": "S14000032"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Carol Monaghan",
+    "gss_code": "S14000033"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Stewart McDonald",
+    "gss_code": "S14000034"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Chris Stephens",
+    "gss_code": "S14000035"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Peter Grant",
+    "gss_code": "S14000036"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Alex Salmond",
+    "gss_code": "S14000037"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Ronnie Cowan",
+    "gss_code": "S14000038"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Drew Hendry",
+    "gss_code": "S14000039"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Alan Brown",
+    "gss_code": "S14000040"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Roger Mullin",
+    "gss_code": "S14000041"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Angela Crawley",
+    "gss_code": "S14000042"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Martyn Day",
+    "gss_code": "S14000043"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Hannah Bardell",
+    "gss_code": "S14000044"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Owen Thompson",
+    "gss_code": "S14000045"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Angus Robertson",
+    "gss_code": "S14000046"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Marion Fellows",
+    "gss_code": "S14000047"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Patricia Gibson",
+    "gss_code": "S14000048"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Stephen Gethins",
+    "gss_code": "S14000049"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Tasmina Ahmed-Sheikh",
+    "gss_code": "S14000050"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Liberal Democrat",
+    "Name": "Alistair Carmichael",
+    "gss_code": "S14000051"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Gavin Newlands",
+    "gss_code": "S14000052"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Mhairi Black",
+    "gss_code": "S14000053"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Pete Wishart",
+    "gss_code": "S14000054"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Ian Blackford",
+    "gss_code": "S14000055"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Margaret Ferrier",
+    "gss_code": "S14000056"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Steven Paterson",
+    "gss_code": "S14000057"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Stuart Donaldson",
+    "gss_code": "S14000058"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Scottish National Party",
+    "Name": "Martin Docherty",
+    "gss_code": "S14000059"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Albert Owen",
+    "gss_code": "W07000041"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "David Hanson",
+    "gss_code": "W07000042"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Mark Tami",
+    "gss_code": "W07000043"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Ian Lucas",
+    "gss_code": "W07000044"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Nia Griffith",
+    "gss_code": "W07000045"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Byron Davies",
+    "gss_code": "W07000046"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Geraint Davies",
+    "gss_code": "W07000047"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Carolyn Harris",
+    "gss_code": "W07000048"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Stephen Kinnock",
+    "gss_code": "W07000049"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Jo Stevens",
+    "gss_code": "W07000050"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Craig Williams",
+    "gss_code": "W07000051"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Chris Bryant",
+    "gss_code": "W07000052"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Nick Thomas-Symonds",
+    "gss_code": "W07000053"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "David Davies",
+    "gss_code": "W07000054"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Jessica Morden",
+    "gss_code": "W07000055"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Paul Flynn",
+    "gss_code": "W07000056"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Plaid Cymru",
+    "Name": "Hywel Williams",
+    "gss_code": "W07000057"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Guto Bebb",
+    "gss_code": "W07000058"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "David Jones",
+    "gss_code": "W07000059"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "James Davies",
+    "gss_code": "W07000060"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Plaid Cymru",
+    "Name": "Liz Saville-Roberts",
+    "gss_code": "W07000061"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Susan Elan Jones",
+    "gss_code": "W07000062"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Glyn Davies",
+    "gss_code": "W07000063"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Liberal Democrat",
+    "Name": "Mark Williams",
+    "gss_code": "W07000064"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Stephen Crabb",
+    "gss_code": "W07000065"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Simon Hart",
+    "gss_code": "W07000066"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Plaid Cymru",
+    "Name": "Jonathan Edwards",
+    "gss_code": "W07000067"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Chris Davies",
+    "gss_code": "W07000068"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Christina Rees",
+    "gss_code": "W07000069"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Ann Clwyd",
+    "gss_code": "W07000070"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Gerald Jones",
+    "gss_code": "W07000071"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Nick Smith",
+    "gss_code": "W07000072"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Madeleine Moon",
+    "gss_code": "W07000073"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Owen Smith",
+    "gss_code": "W07000075"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Wayne David",
+    "gss_code": "W07000076"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Chris Evans",
+    "gss_code": "W07000077"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Con",
+    "Name": "Alun Cairns",
+    "gss_code": "W07000078"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Kevin Brennan",
+    "gss_code": "W07000079"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Stephen Doughty",
+    "gss_code": "W07000080"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Robert Courts",
+    "gss_code": "E14001046"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Liberal Democrat",
+    "Name": "Sarah Olney",
+    "gss_code": "E14000896"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Caroline Johnson",
+    "gss_code": "E14000929"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Tracy Brabin",
+    "gss_code": "E14000548"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Gareth Snell",
+    "gss_code": "E14000972"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Chris Elmore",
+    "gss_code": "W07000074"
+  },
+  {
+    "EU_Position": "Remain",
+    "Party": "Lab",
+    "Name": "Rosena Allin-Khan",
+    "gss_code": "E14000998"
+  },
+  {
+    "EU_Position": "Leave",
+    "Party": "Con",
+    "Name": "Trudy Harrison",
+    "gss_code": "E14000647"
+  }
+]

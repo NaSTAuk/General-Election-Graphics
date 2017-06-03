@@ -9,14 +9,17 @@
 	</div>
 
   <div class="fields sixteen wide column">
-  		  <div class="field six wide">
+  		  <div class="field four wide">
 				<checkbox size="large" ng-model="seats.showSeats" type="toggle">Show Seats Scores</checkbox>
 		  </div>
-		  <div class="field five wide">
+		  <div class="field four wide">
 				<checkbox size="large" ng-model="seats.showSeatsNames" type="toggle">Show Party Names</checkbox>
 		  </div>
+		   <div class="field four wide">
+				<checkbox size="large" ng-model="seats.showSubtitle" type="toggle">Show Subtitle</checkbox>
+		  </div>
 		  
-		   <div class="field five wide">
+		   <div class="field four wide">
 				 <dropdown title="Seats Location"  ng-model="seats.position">
 					<dropdown-group>left</dropdown-group>
 					<dropdown-group>right</dropdown-group>
@@ -28,32 +31,67 @@
 				<input  type="text" placeholder="Subtitle" ng-model="seats.subtitle">
 		  </div>
 		  <div class="field three wide">		
-				<checkbox size="large" ng-model="seats.showSubtitle" type="toggle">Show ({{seats.announced}})</checkbox>
+				<checkbox size="large" ng-model="seats.showSubtitleAnnounced" type="toggle">Show {{seats.announced}} announced</checkbox>
 		  </div>
 		  
-		  	<div class="field four wide">	
+		  	<div class="field three wide">	
 				<div class="ui purple button" ng-click="updateseats()">Get Latest Data</div>
 			</div>
-			<div class="field four wide">	
+			<div class="field six wide">	
 				<div class="ui purple button" onClick="window.location.reload()" ng-click="showallseats()">Show All Seats</div>
+				<div class="ui purple button" onClick="window.location.reload()" ng-click="showtopseats()">Show Top Seats</div>
 			</div>		
   </div>
   <div class="ui divider"></div>
       <div style="margin-top:20px;" class="ui grid aligned">
 			<div class="field four wide">
-						Tories {{seats.conChange}} <checkbox ng-model="seats.showcon" size="large" style="margin-bottom:10px; float: right;" type="toggle"></checkbox>
+						Tories {{seats.conChange}}
+						<div class="ui icon buttons" style="float:right;">
+							<button class="ui green button" ng-click="seats.conScore = seats.conScore - (-1);">
+								<i class="plus icon"></i>
+							</button>
+							<button class="ui red button" ng-click="seats.conScore = seats.conScore - 1;" ng-disabled="seats.conScore == 0">
+								<i class="minus icon"></i>
+							</button>
+						</div>
 						<input  type="text" placeholder="Con Seats" ng-model="seats.conScore">
+
 			</div>
 			<div class="field four wide">
-						Labour {{seats.labChange}}<checkbox ng-model="seats.showlab" size="large" style="margin-bottom:10px; float: right;" type="toggle"></checkbox>
+						Labour {{seats.labChange}}
+						<div class="ui icon buttons"  style="float:right;">
+							<button class="ui green button" ng-click="seats.labScore = seats.labScore - (-1);">
+								<i class="plus icon"></i>
+							</button>
+							<button class="ui red button" ng-click="seats.labScore = seats.labScore - 1;" ng-disabled="seats.labScore == 0">
+								<i class="minus icon"></i>
+							</button>
+						</div>
 						<input  type="text" placeholder="Lab Seats" ng-model="seats.labScore">
+
 			</div>
 			<div class="field four wide">
-						SNP {{seats.snpChange}}<checkbox ng-model="seats.showsnp" size="large" style="margin-bottom:10px; float: right;" type="toggle"></checkbox>
+						SNP {{seats.snpChange}}
+						<div class="ui icon buttons"  style="float:right;">
+							<button class="ui green button" ng-click="seats.snpScore = seats.snpScore - (-1);">
+								<i class="plus icon"></i>
+							</button>
+							<button class="ui red button" ng-click="seats.snpScore = seats.snpScore - 1;" ng-disabled="seats.snpScore == 0">
+								<i class="minus icon"></i>
+							</button>
+						</div>
 						<input  type="text" placeholder="SNP Seats" ng-model="seats.snpScore">
 			</div>
 			<div class="field four wide">
-						Lib Dems {{seats.libChange}}<checkbox ng-model="seats.showlib" size="large" style="margin-bottom:10px; float: right;" type="toggle"></checkbox>
+						Lib Dems {{seats.libChange}}
+						<div class="ui icon buttons"  style="float:right;">
+							<button class="ui green button" ng-click="seats.libScore = seats.libScore - (-1);">
+								<i class="plus icon"></i>
+							</button>
+							<button class="ui red button" ng-click="seats.libScore = seats.libScore - 1;" ng-disabled="seats.libScore == 0">
+								<i class="minus icon"></i>
+							</button>
+						</div>
 						<input  type="text" placeholder="Lib Seats" ng-model="seats.libScore">
 			</div>
 	</div>		
@@ -73,22 +111,55 @@
 	</div>		
 	 <div style="margin-top:40px;" class="ui grid aligned">
 			<div class="field four wide">
-						Green {{seats.grnChange}}<checkbox ng-model="seats.showgrn" size="large" style="margin-bottom:10px; float:right;" type="toggle"></checkbox>
+						Green {{seats.grnChange}}
+						<div class="ui icon buttons" style="float:right;">
+							<button class="ui green button" ng-click="seats.grnScore = seats.grnScore - (-1);">
+								<i class="plus icon"></i>
+							</button>
+							<button class="ui red button" ng-click="seats.grnScore = seats.grnScore - 1;" ng-disabled="seats.grnScore == 0">
+								<i class="minus icon"></i>
+							</button>
+						</div>
 						<input  type="text" placeholder="Green Seats" ng-model="seats.grnScore">
 			</div>
 			<div class="field four wide">
-						Plaid Cymru {{seats.pcChange}}<checkbox ng-model="seats.showpc" size="large" style="margin-bottom:10px; float:right;" type="toggle"></checkbox>
+						Plaid Cymru {{seats.pcChange}}
+						<div class="ui icon buttons" style="float:right;">
+							<button class="ui green button" ng-click="seats.pcScore = seats.pcScore - (-1);">
+								<i class="plus icon"></i>
+							</button>
+							<button class="ui red button" ng-click="seats.pcScore = seats.pcScore - 1;" ng-disabled="seats.pcScore == 0">
+								<i class="minus icon"></i>
+							</button>
+						</div>
 						<input  type="text" placeholder="Plaid Seats" ng-model="seats.pcScore">
 			</div>
 			<div class="field four wide">
-						DUP {{seats.dupChange}}<checkbox ng-model="seats.showdup" size="large" style="margin-bottom:10px; float:right;" type="toggle"></checkbox>
+						DUP {{seats.dupChange}}
+						<div class="ui icon buttons" style="float:right;">
+							<button class="ui green button" ng-click="seats.dupScore = seats.dupScore - (-1);">
+								<i class="plus icon"></i>
+							</button>
+							<button class="ui red button" ng-click="seats.dupScore = seats.dupScore - 1;" ng-disabled="seats.dupScore == 0">
+								<i class="minus icon"></i>
+							</button>
+						</div>
 						<input  type="text" placeholder="DUP Seats" ng-model="seats.dupScore">
 			</div>
 			<div class="field four wide">
-						Others {{seats.othChange}}<checkbox ng-model="seats.showoth" size="large" style="margin-bottom:10px; float:right;" type="toggle"></checkbox>
+						Others {{seats.othChange}}
+						<div class="ui icon buttons" style="float:right;">
+							<button class="ui green button" ng-click="seats.othScore = seats.othScore - (-1);">
+								<i class="plus icon"></i>
+							</button>
+							<button class="ui red button" ng-click="seats.othScore = seats.othScore - 1;" ng-disabled="seats.othScore == 0">
+								<i class="minus icon"></i>
+							</button>
+						</div>
 						<input  type="text" placeholder="Others Seats" ng-model="seats.othScore">
-			</div>       		      
-	<div style="margin-top:20px;" class="ui grid aligned">
+			</div>     
+		</div>
+	<div style="margin-top:20px;margin-bottom:20px;" class="ui grid aligned">
 			<div class="field four wide">
 						Change<input  type="text" placeholder="Grn Change" ng-model="seats.grnLiveChange">
 			</div>
@@ -102,9 +173,33 @@
 						Change<input  type="text" placeholder="OTH Change" ng-model="seats.othLiveChange">
 			</div>  
 	</div>		
-		<div class="four wide column">
-
-        </div>
-    </div>   
-  
+<div class="ui divider"></div>
+      <div style="margin-top:20px;" class="ui grid aligned">
+			<div class="field four wide {{seats.partyOneName}}">
+						1st - {{seats.partyOneName}} ({{seats.partyOneScore}} | {{seats.partyOneChange}}) <checkbox ng-model="seats.showone" size="large" style="margin-bottom:10px; float: right;" type="toggle"></checkbox>
+			</div>
+			<div class="field four wide {{seats.partyTwoName}}">
+						2nd - {{seats.partyTwoName}} ({{seats.partyTwoScore}} | {{seats.partyTwoChange}}) <checkbox ng-model="seats.showtwo" size="large" style="margin-bottom:10px; float: right;" type="toggle"></checkbox>
+			</div>
+			<div class="field four wide {{seats.partyThreeName}}">
+						3rd - {{seats.partyThreeName}} ({{seats.partyThreeScore}} | {{seats.partyThreeChange}}) <checkbox ng-model="seats.showthree" size="large" style="margin-bottom:10px; float: right;" type="toggle"></checkbox>
+			</div>
+			<div class="field four wide {{seats.partyFourName}}">
+						4th  - {{seats.partyFourName}} ({{seats.partyFourScore}} | {{seats.partyFourChange}}) <checkbox ng-model="seats.showfour" size="large" style="margin-bottom:10px; float: right;" type="toggle"></checkbox>
+			</div>
+	</div>
+<div style="margin-top:20px;" class="ui grid aligned">
+			<div class="field four wide {{seats.partyFiveName}}">
+						5th - {{seats.partyFiveName}} ({{seats.partyFiveScore}} | {{seats.partyFiveChange}}) <checkbox ng-model="seats.showfive" size="large" style="margin-bottom:10px; float: right;" type="toggle"></checkbox>
+			</div>
+			<div class="field four wide {{seats.partySixName"}}>
+						6th - {{seats.partySixName}} ({{seats.partySixScore}} | {{seats.partySixChange}}) <checkbox ng-model="seats.showsix" size="large" style="margin-bottom:10px; float: right;" type="toggle"></checkbox>
+			</div>
+			<div class="field four wide {{seats.partySevenName}}">
+						7th - {{seats.partySevenName}} ({{seats.partySevenScore}} | {{seats.partySevenChange}}) <checkbox ng-model="seats.showseven" size="large" style="margin-bottom:10px; float: right;" type="toggle"></checkbox>
+			</div>
+			<div class="field four wide {{seats.partyEightName}}">
+						8th  - {{seats.partyEightName}} ({{seats.partyEightScore}} | {{seats.partyEightChange}}) <checkbox ng-model="seats.showeight" size="large" style="margin-bottom:10px; float: right;" type="toggle"></checkbox>
+			</div>
+	</div>			
 </div>
