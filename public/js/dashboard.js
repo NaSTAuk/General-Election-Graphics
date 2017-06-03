@@ -324,16 +324,55 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
     
         socket.on("seats", function (msg) {
             $scope.seats = msg;
-            	$scope.seats.conChange = $scope.seats.conScore - 330;
-				$scope.seats.labChange = $scope.seats.labScore - 229;
-				$scope.seats.snpChange = $scope.seats.snpScore - 54;
-				$scope.seats.libChange = $scope.seats.libScore - 9;
-				$scope.seats.dupChange = $scope.seats.dupScore - 8;
-				$scope.seats.pcChange = $scope.seats.pcScore - 3;
-				$scope.seats.grnChange = $scope.seats.grnScore - 1;
-				$scope.seats.othChange = 15;
-				$scope.seats.announced = Number($scope.seats.conScore) +  Number($scope.seats.labScore) +  Number($scope.seats.snpScore) +  Number($scope.seats.libScore) +  Number($scope.seats.dupScore) +  Number($scope.seats.pcScore) +  Number($scope.seats.grnScore) +  Number($scope.seats.othScore);
-        });
+			$scope.seats.conChange = $scope.seats.conScore - 330;
+			$scope.seats.labChange = $scope.seats.labScore - 229;
+			$scope.seats.snpChange = $scope.seats.snpScore - 54;
+			$scope.seats.libChange = $scope.seats.libScore - 9;
+			$scope.seats.dupChange = $scope.seats.dupScore - 8;
+			$scope.seats.pcChange = $scope.seats.pcScore - 3;
+			$scope.seats.grnChange = $scope.seats.grnScore - 1;
+			$scope.seats.othChange = 15;
+			$scope.seats.announced = Number($scope.seats.conScore) +  Number($scope.seats.labScore) +  Number($scope.seats.snpScore) +  Number($scope.seats.libScore) +  Number($scope.seats.dupScore) +  Number($scope.seats.pcScore) +  Number($scope.seats.grnScore) +  Number($scope.seats.othScore);
+			
+			var seats = [
+				{party: "CON", score: $scope.seats.conScore, change: $scope.seats.conLiveChange},
+				{party: "LAB", score: $scope.seats.labScore, change: $scope.seats.labLiveChange},
+				{party: "SNP", score: $scope.seats.snpScore, change: $scope.seats.snpLiveChange},
+				{party: "LIB", score: $scope.seats.libScore, change: $scope.seats.libLiveChange},
+				{party: "DUP", score: $scope.seats.dupScore, change: $scope.seats.dupLiveChange},
+				{party: "PC", score: $scope.seats.pcScore, change: $scope.seats.pcLiveChange},
+				{party: "GRN", score: $scope.seats.grnScore, change: $scope.seats.grnLiveChange},
+				{party: "OTH", score: $scope.seats.othScore, change: $scope.seats.othLiveChange}
+			];
+			
+			// sort by seats			
+			seats.sort(function(a,b){return b.score - a.score});
+			
+			$scope.seats.partyOneScore = seats[0].score;
+			$scope.seats.partyOneName = seats[0].party;
+			$scope.seats.partyOneChange = seats[0].change;
+			$scope.seats.partyTwoScore = seats[1].score;
+			$scope.seats.partyTwoName = seats[1].party;
+			$scope.seats.partyTwoChange = seats[1].change;
+			$scope.seats.partyThreeScore = seats[2].score;
+			$scope.seats.partyThreeName = seats[2].party;
+			$scope.seats.partyThreeChange = seats[2].change;
+			$scope.seats.partyFourScore = seats[3].score;
+			$scope.seats.partyFourName = seats[3].party;
+			$scope.seats.partyFourChange = seats[3].change;
+			$scope.seats.partyFiveScore = seats[4].score;
+			$scope.seats.partyFiveName = seats[4].party;
+			$scope.seats.partyFiveChange = seats[4].change;
+			$scope.seats.partySixScore = seats[5].score;
+			$scope.seats.partySixName = seats[5].party;
+			$scope.seats.partySixChange = seats[5].change;
+			$scope.seats.partySevenScore = seats[6].score;
+			$scope.seats.partySevenName = seats[6].party;
+			$scope.seats.partySevenChange = seats[6].change;
+			$scope.seats.partyEightScore = seats[7].score;
+			$scope.seats.partyEightName = seats[7].party;
+			$scope.seats.partyEightChange = seats[7].change;			
+		});
 
         $scope.$watch('seats', function() {
             if ($scope.seats) {
@@ -357,60 +396,75 @@ app.controller('seatsCGController', ['$scope', 'socket', '$http', 'localStorageS
     			};
 
 				$http.get('/data/live-seats.json', config).then(function (response) {
-						$scope.seats.datadump = response.data;
+						$scope.seats.liveseats = response.data;
 					 });    
 				};         		     		
          		fetchData();	
 				var newLiveSeats = {"rows": []};        	    
-           	    for(var i = 0; i < $scope.seats.datadump.length; i++){
+           	    for(var i = 0; i < $scope.seats.liveseats.length; i++){
            	    	var buildArray = {};   
-					for(var j = 0; j < $scope.seats.datadump.length; j++){
-						buildArray["Party_Code"] = $scope.seats.datadump[i].Party_Code;
-						buildArray["Live_Seats"] = $scope.seats.datadump[i].PreElection_Seats;
-						buildArray["Live_Change"] = $scope.seats.datadump[i].Live_Change;
-						buildArray["Color"] = $scope.seats.datadump[i].Color;
+					for(var j = 0; j < $scope.seats.liveseats.length; j++){
+						buildArray["Party_Code"] = $scope.seats.liveseats[i].Party_Code;
+						buildArray["Live_Seats"] = $scope.seats.liveseats[i].PreElection_Seats;
+						buildArray["Live_Change"] = $scope.seats.liveseats[i].Live_Change;
+						buildArray["Color"] = $scope.seats.liveseats[i].Color;
 					}
 					newLiveSeats["rows"].push(buildArray);
 				}
-           	    
-				$scope.seats.conScore = $scope.seats.datadump[0].Live_Seats;
-                $scope.seats.labScore = $scope.seats.datadump[1].Live_Seats;
-				$scope.seats.snpScore = $scope.seats.datadump[2].Live_Seats;
-				$scope.seats.libScore = $scope.seats.datadump[3].Live_Seats;
-				$scope.seats.dupScore = $scope.seats.datadump[4].Live_Seats;
-				$scope.seats.pcScore = $scope.seats.datadump[8].Live_Seats;
-				$scope.seats.grnScore = $scope.seats.datadump[11].Live_Seats;
-				$scope.seats.othScore = 0;
-				$scope.seats.conLiveChange = $scope.seats.datadump[0].Live_Change;
-                $scope.seats.labLiveChange = $scope.seats.datadump[1].Live_Change;
-				$scope.seats.snpLiveChange = $scope.seats.datadump[2].Live_Change;
-				$scope.seats.libLiveChange = $scope.seats.datadump[3].Live_Change;
-				$scope.seats.dupLiveChange = $scope.seats.datadump[4].Live_Change;
-				$scope.seats.pcLiveChange = $scope.seats.datadump[8].Live_Change;
-				$scope.seats.grnLiveChange = $scope.seats.datadump[11].Live_Change;
-				$scope.seats.othLiveChange = 0;
+          
+				$scope.seats.conScore = $scope.seats.liveseats[0].Live_Seats;
+                $scope.seats.labScore = $scope.seats.liveseats[1].Live_Seats;
+				$scope.seats.snpScore = $scope.seats.liveseats[2].Live_Seats;
+				$scope.seats.libScore = $scope.seats.liveseats[3].Live_Seats;
+				$scope.seats.dupScore = $scope.seats.liveseats[4].Live_Seats;
+				$scope.seats.pcScore = $scope.seats.liveseats[8].Live_Seats;
+				$scope.seats.grnScore = $scope.seats.liveseats[11].Live_Seats;
+				$scope.seats.othScore = Number($scope.seats.liveseats[5].Live_Seats) + Number($scope.seats.liveseats[6].Live_Seats) + Number($scope.seats.liveseats[7].Live_Seats) + Number($scope.seats.liveseats[9].Live_Seats) + Number($scope.seats.liveseats[10].Live_Seats);
+				$scope.seats.conLiveChange = $scope.seats.liveseats[0].Live_Change;
+                $scope.seats.labLiveChange = $scope.seats.liveseats[1].Live_Change;
+				$scope.seats.snpLiveChange = $scope.seats.liveseats[2].Live_Change;
+				$scope.seats.libLiveChange = $scope.seats.liveseats[3].Live_Change;
+				$scope.seats.dupLiveChange = $scope.seats.liveseats[4].Live_Change;
+				$scope.seats.pcLiveChange = $scope.seats.liveseats[8].Live_Change;
+				$scope.seats.grnLiveChange = $scope.seats.liveseats[11].Live_Change;
+				$scope.seats.othLiveChange = Number($scope.seats.liveseats[5].Live_Change) + Number($scope.seats.liveseats[6].Live_Change) + Number($scope.seats.liveseats[7].Live_Change) + Number($scope.seats.liveseats[9].Live_Change) + Number($scope.seats.liveseats[10].Live_Change);
+
 				
 				return localStorageService.set('seats',newLiveSeats);
         };
 		
 		$scope.showallseats = function() {         		
-         		$scope.seats.showcon = true;
-				$scope.seats.showlab = true;
-				$scope.seats.showlib = true;
-				$scope.seats.showsnp = true;
-				$scope.seats.showgrn = true;
-				$scope.seats.showpc = true;
-				$scope.seats.showdup = true;
-				$scope.seats.showoth = true;
+         		$scope.seats.showone = true;
+				$scope.seats.showtwo = true;
+				$scope.seats.showthree = true;
+				$scope.seats.showfour = true;
+				$scope.seats.showfive = true;
+				$scope.seats.showsix = true;
+				$scope.seats.showseven = true;
+				$scope.seats.showeight = true;
+        };		
+		$scope.showtopseats = function() {         		
+         		$scope.seats.showone = true;
+				$scope.seats.showtwo = true;
+				$scope.seats.showthree = true;
+				$scope.seats.showfour = true;
+				$scope.seats.showfive = false;
+				$scope.seats.showsix = false;
+				$scope.seats.showseven = false;
+				$scope.seats.showeight = false;
         };
-
-		
     }
 ]);
 
 app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localStorageService', 'socket',
     function($scope, $log, $http, localStorageService, socket){
-
+    
+    	socket.on("constituency", function (msg) {
+            if (msg !== 'hide') {
+                $scope.constituency = msg;
+            }
+        });
+        
         var stored = localStorageService.get('constituency');
 
         if(stored === null) {
@@ -420,6 +474,7 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
         }
 
         $scope.show = function() {
+            $scope.calculate();
             socket.emit('constituency', $scope.constituency);
             $log.info("constituency.show()");
             $log.info($scope.constituency);
@@ -429,77 +484,177 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
             socket.emit('constituency', 'hide');
             $log.info("constituency.hide()");
         };
+        
+        $scope.hidegraphic = function() {
+            socket.emit('constituency', 'hide');
+        };
+		
+		var fetchData = function () {
+       				var config = {headers:  {
+					  'Accept': 'application/json',
+					  'Content-Type': 'application/json',
+					}
+    			};
+
+		$http.get('/data/data_dump.json', config).then(function (response) {
+						conData = response.data;
+					 });    
+				
+		$http.get('/data/2017_candidates.json', config).then(function (response) {
+						candData = response.data;
+					 });    
+				
+		$http.get('/data/2015-mps-eu-voting.json', config).then(function (response) {
+						euData = response.data;
+					 });    
+				};					
+				
+        fetchData();
+        
+        $scope.calculate = function() {
+         	
+         	function numberWithCommas(x) {
+    				return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+				}	
+				
+			candidates = $scope.constituency.rows;
+         	candidates.sort(function(a,b){return b.Votes - a.Votes});
+         	
+			$scope.constituency.conMajority = candidates[0].Votes - candidates[1].Votes;
+			$scope.constituency.conMajorityDisplay = numberWithCommas($scope.constituency.conMajority);
+			$scope.constituency.conTurnout = 0;
+			
+			for (var i = 0; i < candidates.length; i ++) {
+					$scope.constituency.conTurnout = Number($scope.constituency.conTurnout) + Number(candidates[i].Votes);
+			}	
+			$scope.constituency.conTurnoutDisplay = numberWithCommas($scope.constituency.conTurnout);
+			
+			$scope.constituency.changeTurnout = Number($scope.constituency.conTurnout) - Number($scope.constituency.oldTurnout);
+			$scope.constituency.changeTurnoutDisplay = ($scope.constituency.changeTurnout<=0?'':'+') + numberWithCommas($scope.constituency.changeTurnout);
+			var turnoutPC = ((Number($scope.constituency.changeTurnout) / Number($scope.constituency.oldTurnout)) * 100).toFixed(1);
+			$scope.constituency.changeTurnoutPC = (turnoutPC<=0?'':'+') + turnoutPC;
+			$scope.constituency.changeTurnoutPCDisplay = "(" + $scope.constituency.changeTurnoutPC + "%)";
+			$scope.constituency.changeMajority = Number($scope.constituency.conMajority) - Number($scope.constituency.oldMajority);
+			$scope.constituency.changeMajorityDisplay = ($scope.constituency.changeMajority<=0?'':'+') + numberWithCommas($scope.constituency.changeMajority);
+			var majorityPC = ((Number($scope.constituency.changeMajority) / Number($scope.constituency.oldMajority)) * 100).toFixed(1);
+			$scope.constituency.changeMajorityPC = (majorityPC<=0?'':'+') + majorityPC;
+			$scope.constituency.changeMajorityPCDisplay = "(" + $scope.constituency.changeMajorityPC + "%)";
+			$scope.constituency.winnerGrin = candidates[0].Image;
+			$scope.constituency.winnerColor = candidates[0].Color;
+			
+			if ($scope.constituency.euleave > $scope.constituency.euremain) {
+				$scope.constituency.EUResult = "Leave";
+				$scope.constituency.EUResultDisplay = Number($scope.constituency.euleave).toFixed(1) + "% Leave";
+			}
+			else {
+				$scope.constituency.EUResult = "Remain";
+				$scope.constituency.EUResultDisplay = Number($scope.constituency.euremain).toFixed(1) + "% Remain";
+			}
+			
+			if ($scope.constituency.euMPVote == $scope.constituency.EUResult) {
+				$scope.constituency.EUResultSubtitle = $scope.constituency.EUResultDisplay + " | " + $scope.constituency.euMPName + " voted " + $scope.constituency.euMPVote;
+			}
+			else {
+				$scope.constituency.EUResultSubtitle = $scope.constituency.EUResultDisplay + " | However " + $scope.constituency.euMPName + " voted " + $scope.constituency.euMPVote;
+			}
+			
+			var oldParty = $scope.constituency.conParty.toUpperCase();
+			
+			if (candidates[0].partyCode == oldParty){
+				$scope.constituency.conDescription = "- " + candidates[0].partyCode + " hold";
+				}
+			else {
+				$scope.constituency.conDescription = "- " + candidates[0].partyCode + " gain from " + oldParty; 	
+			}
+			
+			if (candidates[0].Votes == "" ||candidates[0].Votes == null) {
+				$scope.constituency.conDescription = " - " + $scope.constituency.euMPName;
+				$scope.constituency.conTurnoutDisplay = $scope.constituency.oldTurnout;
+				$scope.constituency.changeTurnoutPCDisplay = "(" + $scope.constituency.oldTurnoutPC + "%)";
+				$scope.constituency.conMajorityDisplay = $scope.constituency.oldMajority;
+				$scope.constituency.changeMajorityPCDisplay = "(" + $scope.constituency.oldMajorityPC + "%)";
+				$scope.constituency.winnerGrin = $scope.constituency.oldWinnerImg;
+				$scope.constituency.winnerColor = $scope.constituency.conColor;
+				$scope.constituency.subtitle = $scope.constituency.EUResultSubtitle;
+			}
+	
+		};
          
-        $scope.grabdata = function(conID) {
+        $scope.grabdata = function() {
         		
         		function numberWithCommas(x) {
     				return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+				}		
+				
+				var conID = Number($scope.constituency.conID);
+				var conDataID = conID - 1;
+				var conCode = conData[conDataID].Const_ID;
+				var conName = conData[conDataID].Const_Name;
+				var conColor = conData[conDataID].Color;
+				var conParty = conData[conDataID].Winner;
+				var conResult = conData[conDataID].Result;
+				var conTurnout = conData[conDataID].VALID15;
+				var conTurnoutPC = conData[conDataID].Turnout15;
+				var conMajority = conData[conDataID].MAJ;
+				var conMajorityPC = conData[conDataID].Majority15;
+				var euleave = conData[conDataID].EUHANLEAVE;
+				var euremain = conData[conDataID].EUHANREM;
+				var oldWinner = conData[conDataID].MP_Name;
+				
+					for(var i = 0; i < euData.length; i++){
+						if(euData[i].gss_code == conCode){
+							var euMPVote = euData[i].EU_Position;
+							var euMPName = euData[i].Name;
+						}
+					}
+					
+				var candidates = [];  
+					for(var j = 0; j < candData.length; j++){
+						var buildArray = {}; 
+						var totalVotes = 0; 
+						if(candData[j].gss_code == conCode){
+							buildArray["Name"] = candData[j].name;
+							buildArray["conCode"] = candData[j].gss_code;
+							buildArray["partyCode"] = candData[j].party_id;
+							buildArray["partyName"] = candData[j].party_name;
+							buildArray["Color"] = candData[j].color;
+							buildArray["Votes"] = candData[j].votes;
+							buildArray["Image"] = candData[j].image_url;
+						    candidates.push(buildArray);
+						}
 				}
-				
-				
-				var fetchColors = function () {
-       				var config = {headers:  {
-					  'Accept': 'application/json',
-					  'Content-Type': 'application/json',
-					}
-    			};
-
-				$http.get('/data/party_color_codes.json', config).then(function (response) {
-						$scope.constituency.partycolors = response.data;
-					 });    
-				};
-         
-         		fetchColors();
-         		
-         		var fetchData = function () {
-       				var config = {headers:  {
-					  'Accept': 'application/json',
-					  'Content-Type': 'application/json',
-					}
-    			};
-
-				$http.get('/data/data_dump.json', config).then(function (response) {
-						$scope.constituency.datadump = response.data;
-					 });    
-				};
-         
-         		fetchData();		
-
-				$scope.constituency.conScore = $scope.constituency.datadump[0].Const_Name;
-           	   	$scope.constituency.conRegn = $scope.constituency.datadump[0].REGID;
-           	   	$scope.constituency.conParty = $scope.constituency.datadump[0].Winner15;
-           	   	$scope.constituency.conColor = $scope.constituency.datadump[0].Color;
-           	   	$scope.constituency.conTurnout = $scope.constituency.datadump[0].VALID15;  	   
-
-           	    var liveSeats = {      	     
+						
+				var noCandidates = candidates.length;
+				var oldWinnerImg = "";
+				for (var i = 0; i < candidates.length; i ++) {
+					if (oldWinner == candidates[i].Name) {
+						oldWinnerImg = candidates[i].Image;
+						}
+				}
+								
+           	    var liveSeats = {
+           	    "rows": candidates,
+           	    "conID": conID,      	     
            	    "conName":conName,
-           	    "conRegn":conRegn,
            	    "conParty":conParty,
            	    "conColor": conColor,
-           	    "conTurnout":numberWithCommas(conTurnout),
-           	    "conMajority":numberWithCommas(7500),
-           	    "conMPName":"Gerald Howarth",
-           	    "conDescription":"Con Hold",
-           	    "conPartyOne":"CON",
-           	    "conPartyOneVotes":numberWithCommas(32000),
-           	    "conPartyOneColor":"#0575C9",
-           	    "conPartyOneCandidate":"Johnny Cash",
-           	    "conPartyTwo":"LAB",
-           	    "conPartyTwoVotes":numberWithCommas(12000),
-           	    "conPartyTwoColor":"#ED1E0E",
-           	    "conPartyTwoCandidate":"Willie Nelson",
-           	    "conPartyThree":"UKIP",
-           	    "conPartyThreeVotes":numberWithCommas(12000),
-           	    "conPartyThreeColor":"#712F87",
-           	    "conPartyThreeCandidate":"Reba McEntire",
-           	    "conPartyFour":"LIB",
-           	    "conPartyFourVotes":numberWithCommas(8468),
-           	    "conPartyFourColor":"#FEAE14",
-           	    "conPartyFourCandidate":"Dolly Parton",
-           	    "euleave":(0.64*100).toFixed(2),
-           	    "euremain":(0.36*100).toFixed(2)
+           	    "conNoCandidates": noCandidates,
+           	    "euleave":(euleave*100).toFixed(2),
+           	    "euremain":(euremain*100).toFixed(2),
+           	    "euMPName": euMPName,
+           	    "euMPVote": euMPVote,
+           	    "oldMajority": conMajority,
+           	    "oldMajorityPC": conMajorityPC,
+           	    "oldTurnout": conTurnout,
+           	    "oldTurnoutPC": conTurnoutPC,
+           	    "oldWinner" : oldWinner,
+           	    "oldWinnerImg" : oldWinnerImg
            	    };
+				
            	    return localStorageService.set('constituency',liveSeats);
+
+				$scope.constituency.conTurnout = 100;
+	
            	        
             $log.info("constituency.show()");
         };

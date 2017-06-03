@@ -182,7 +182,6 @@ app.controller('constituencyCtrl', ['$scope', 'socket',
     function($scope, socket){
         socket.on("constituency", function (payload) {
             if (payload === "hide") {
-                $scope.constituency = {};
                 $scope.show = false;
             } else {
                 $scope.show = true;
