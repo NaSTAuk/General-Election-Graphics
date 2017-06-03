@@ -127,7 +127,7 @@
 					<p><span class="party-name" ng-show="seats.showSeatsNames">{{seats.partyEightName}}</span> <span id="othScore" class="seats"> {{seats.partyEightScore}}</span><span id="othChange" class="seats" style="display:none;"> ({{seats.partyEightChange}})</span></p>
 					</div>
 					<br>
-					<div ng-show="seats.showSubtitle" class="subtitle slide-{{seats.position}}"><h2 class="subtitle">&nbsp;{{seats.subtitle}}<span class="announced">{{seats.announced}}/650 Announced</span></h2></div>
+					<div ng-show="seats.showSubtitle" class="subtitle slide-{{seats.position}}"><h2 class="subtitle">{{seats.subtitle}}&nbsp;<span class="announced" ng-show="seats.showSubtitleAnnounced">{{seats.announced}}/650 Announced</span></h2></div>
                 	
                 	<div class="clearfix"></div>
             	</div>

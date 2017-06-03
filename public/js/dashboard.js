@@ -474,6 +474,7 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
         }
 
         $scope.show = function() {
+            $scope.calculate();
             socket.emit('constituency', $scope.constituency);
             $log.info("constituency.show()");
             $log.info($scope.constituency);

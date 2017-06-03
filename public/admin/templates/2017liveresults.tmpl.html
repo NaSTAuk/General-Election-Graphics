@@ -9,14 +9,17 @@
 	</div>
 
   <div class="fields sixteen wide column">
-  		  <div class="field six wide">
+  		  <div class="field four wide">
 				<checkbox size="large" ng-model="seats.showSeats" type="toggle">Show Seats Scores</checkbox>
 		  </div>
-		  <div class="field five wide">
+		  <div class="field four wide">
 				<checkbox size="large" ng-model="seats.showSeatsNames" type="toggle">Show Party Names</checkbox>
 		  </div>
+		   <div class="field four wide">
+				<checkbox size="large" ng-model="seats.showSubtitle" type="toggle">Show Subtitle</checkbox>
+		  </div>
 		  
-		   <div class="field five wide">
+		   <div class="field four wide">
 				 <dropdown title="Seats Location"  ng-model="seats.position">
 					<dropdown-group>left</dropdown-group>
 					<dropdown-group>right</dropdown-group>
@@ -28,7 +31,7 @@
 				<input  type="text" placeholder="Subtitle" ng-model="seats.subtitle">
 		  </div>
 		  <div class="field three wide">		
-				<checkbox size="large" ng-model="seats.showSubtitle" type="toggle">Show ({{seats.announced}})</checkbox>
+				<checkbox size="large" ng-model="seats.showSubtitleAnnounced" type="toggle">Show {{seats.announced}} announced</checkbox>
 		  </div>
 		  
 		  	<div class="field three wide">	
