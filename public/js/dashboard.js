@@ -460,7 +460,9 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
     function($scope, $log, $http, localStorageService, socket){
     
     	socket.on("constituency", function (msg) {
-            $scope.constituency = msg;
+            if (msg !== 'hide') {
+                $scope.constituency = msg;
+            }
         });
         
         var stored = localStorageService.get('constituency');
@@ -483,7 +485,7 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
         };
         
         $scope.hidegraphic = function() {
-        	$scope.show = false;
+            socket.emit('constituency', 'hide');
         };
 		
 		var fetchData = function () {
