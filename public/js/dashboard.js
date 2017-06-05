@@ -465,6 +465,10 @@ app.controller('constituencyCGController', ['$scope', '$log', '$http', 'localSto
             }
         });
         
+         $scope.remove = function(index){
+            $scope.constituency.rows.splice(index, 1);
+        };
+        
         var stored = localStorageService.get('constituency');
 
         if(stored === null) {
