@@ -36,21 +36,21 @@
         </div>
 
         <div ng-controller="lowerThirdsCtrl">
-        	<div class="lowerthird bottom fullwidth scale-fade" ng-show="showFull">
+        	<div class="lowerthird bottom fullwidth scale-fade" style="margin-bottom:{{left.padding}}px;" ng-show="showFull">
                 <div class="gradient-overlay">
                     <h1>{{full.heading}}</h1>
                 </div>
                 <h2 ng-show="full.subHeading">{{full.subHeading}}</h2>
             </div>
         
-            <div class="lowerthird left bottom slide-left" ng-show="showLeft">
+            <div class="lowerthird left bottom slide-left" style="margin-bottom:{{left.padding}}px;" ng-show="showLeft">
                 <div class="gradient-overlay">
                     <h1>{{left.heading}}</h1>
                 </div>
                 <h2 ng-show="left.subHeading">{{left.subHeading}}</h2>
             </div>
 
-            <div class="lowerthird right bottom slide-right" ng-show="showRight">
+            <div class="lowerthird right bottom slide-right" style="margin-bottom:{{left.padding}}px;" ng-show="showRight">
                 <div class="gradient-overlay">
                     <h1>{{right.heading}}</h1>
                 </div>
