@@ -34,7 +34,13 @@
                 </div>
             </div>
         </div>
-
+        
+       <div ng-controller="announceCtrl">
+            <div class="announce gradient-overlay slide-left" ng-show="announce.showLive">
+                 	<h1 class="livetext" style="background-color:{{announce.color}};">{{announce.constituency}} {{announce.conclusion}}</h1>
+                </div>
+        </div>
+            
         <div ng-controller="lowerThirdsCtrl">
         	<div class="lowerthird bottom fullwidth scale-fade" style="margin-bottom:{{left.padding}}px;" ng-show="showFull">
                 <div class="gradient-overlay">

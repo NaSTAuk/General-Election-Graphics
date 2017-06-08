@@ -671,3 +671,24 @@ h1, h2, h3, h4 {
         margin-bottom: 5px;
         border-bottom-left-radius: 5px;
     }
+    
+    
+ .announce {
+    
+}
+
+.announce h1 {
+    color: #fff;
+    position: absolute;
+    bottom: 64px;
+    min-width: 20%;
+    background-clip: padding-box;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 5px 8px;
+    background-color: #a11a1e;
+	border-left:3px solid white;
+	border-top-right-radius: 5px;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+
+}   

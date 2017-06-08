@@ -1,0 +1,166 @@
+<div class="ui form segment">
+  <h2>Constituency Announcements</h2>
+
+<div class="ui divider"></div>
+    <div class="sixteen wide column">
+      <div class="inline fields">
+        <div class="two wide field">
+          <checkbox size="large" ng-model="announce.showLive" type="toggle">Show Live</checkbox>
+        </div>
+         <div class="five wide field">
+         	<input id="constituency" type="text" ng-model="announce.constituency" />
+        </div>
+        <div class="five wide field">
+          New party color: <input id="constituency" type="text" ng-model="announce.color" />
+        </div>
+         <div class="four wide field">
+          Old color: <input id="oldcolor" type="text" ng-model="announce.oldcolor" />
+        </div>
+	</div>   
+    <div class="sixteen wide column">
+      <div class="inline fields">
+		   <div class="field eight wide">
+				 <dropdown title="New Party" style="width:100%;"  ng-model="announce.newparty">
+					<dropdown-group>Alliance - Alliance Party of Northern Ireland</dropdown-group>
+					<dropdown-group>Alliance For Green Socialism</dropdown-group>
+					<dropdown-group>Animal Welfare Party</dropdown-group>
+					<dropdown-group>Apolitical Democrats</dropdown-group>
+					<dropdown-group>Ashfield Independents</dropdown-group>
+					<dropdown-group>Better for Bradford</dropdown-group>
+					<dropdown-group>Blue Revolution</dropdown-group>
+					<dropdown-group>British National Party</dropdown-group>
+					<dropdown-group>Christian Party "Proclaiming Christ's Lordship</dropdown-group>
+					<dropdown-group>Christian Peoples Alliance</dropdown-group>
+					<dropdown-group>Church of the Militant Elvis</dropdown-group>
+					<dropdown-group>Citizens Independent Social Thought Alliance</dropdown-group>
+					<dropdown-group>Common Good</dropdown-group>
+					<dropdown-group>Communist League Election Campaign</dropdown-group>
+					<dropdown-group>Compass Party</dropdown-group>
+					<dropdown-group>Concordia</dropdown-group>
+					<dropdown-group>Conservative Party</dropdown-group>
+					<dropdown-group>Conservative and Unionist Party</dropdown-group>
+					<dropdown-group>Democratic Unionist Party - D.U.P.</dropdown-group>
+					<dropdown-group>Demos Direct Initiative Party</dropdown-group>
+					<dropdown-group>English Democrats</dropdown-group>
+					<dropdown-group>Friends Party</dropdown-group>
+					<dropdown-group>Greater Manchester Homeless Voice</dropdown-group>
+					<dropdown-group>Green Party</dropdown-group>
+					<dropdown-group>Green Party</dropdown-group>
+					<dropdown-group>Humanity</dropdown-group>
+					<dropdown-group>Independent</dropdown-group>
+					<dropdown-group>Independent Save Withybush Save Lives</dropdown-group>
+					<dropdown-group>Independent Sovereign Democratic Britain</dropdown-group>
+					<dropdown-group>Labour and Co-operative Party</dropdown-group>
+					<dropdown-group>Labour Party</dropdown-group>
+					<dropdown-group>Liberal Democrats</dropdown-group>
+					<dropdown-group>Libertarian Party</dropdown-group>
+					<dropdown-group>Money Free Party</dropdown-group>
+					<dropdown-group>Movement for Active Democracy (M.A.D.)</dropdown-group>
+					<dropdown-group>National Health Action Party</dropdown-group>
+					<dropdown-group>North of England Community Alliance</dropdown-group>
+					<dropdown-group>Official Monster Raving Loony Party</dropdown-group>
+					<dropdown-group>Open Borders Party</dropdown-group>
+					<dropdown-group>Patria</dropdown-group>
+					<dropdown-group>People Before Profit Alliance</dropdown-group>
+					<dropdown-group>Pirate Party UK</dropdown-group>
+					<dropdown-group>Plaid Cymru - The Party of Wales</dropdown-group>
+					<dropdown-group>Populist Party</dropdown-group>
+					<dropdown-group>Rebooting Democracy</dropdown-group>
+					<dropdown-group>Scotland's Independence Referendum Party</dropdown-group>
+					<dropdown-group>Scottish Green Party</dropdown-group>
+					<dropdown-group>Scottish National Party (SNP)</dropdown-group>
+					<dropdown-group>SDLP (Social Democratic & Labour Party)</dropdown-group>
+					<dropdown-group>Sinn Fein</dropdown-group>
+					<dropdown-group>Social Democratic Party</dropdown-group>
+					<dropdown-group>Socialist Labour Party</dropdown-group>
+					<dropdown-group>Something New</dropdown-group>
+					<dropdown-group>Southampton Independents</dropdown-group>
+					<dropdown-group>Southend Independent Association</dropdown-group>
+					<dropdown-group>Space Navies Party</dropdown-group>
+					<dropdown-group>Speaker seeking re-election</dropdown-group>
+					<dropdown-group>The Just Political Party</dropdown-group>
+					<dropdown-group>The Justice & Anti-Corruption Party</dropdown-group>
+					<dropdown-group>The Liberal Party</dropdown-group>
+					<dropdown-group>The New Society of Worth</dropdown-group>
+					<dropdown-group>The North East Party</dropdown-group>
+					<dropdown-group>The Peace Party - Non-violence, Justice, Environment</dropdown-group>
+					<dropdown-group>The Radical Party</dropdown-group>
+					<dropdown-group>The Realists' Party</dropdown-group>
+					<dropdown-group>The Socialist Party of Great Britain</dropdown-group>
+					<dropdown-group>The Workers Party</dropdown-group>
+					<dropdown-group>The Yorkshire Party</dropdown-group>
+					<dropdown-group>Traditional Unionist Voice - TUV</dropdown-group>
+					<dropdown-group>UK Independence Party (UKIP)</dropdown-group>
+					<dropdown-group>Ulster Unionist Party</dropdown-group>
+					<dropdown-group>War Veteran's Pro-Traditional Family Party</dropdown-group>
+					<dropdown-group>Wessex Regionalists</dropdown-group>
+					<dropdown-group>Women's Equality Party</dropdown-group>
+					<dropdown-group>Workers Revolutionary Party</dropdown-group>
+					<dropdown-group>Young People's Party YPP</dropdown-group>
+				  </dropdown>
+		   </div>
+		   <div class="field four wide">
+				    <checkbox size="large" ng-model="announce.held" type="toggle">Seat Held (Blue/True)</checkbox>
+		   </div>
+		   <div class="field four wide">
+				 <label>from</label>
+				<input id="oldparty" type="text" ng-model="announce.oldparty" />
+		   </div>
+	</div>
+		
+		<div class="ui form segment">
+		<h2>Get Searching</h2>
+		<div class="sixteen wide column">
+			<form role="form">
+					<div class="form-group">
+					  <input type="text" class="form-control input-lg" id="consearch" placeholder="Type constituency name here...">
+					</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="ui form segment">
+		<div id="constituencyresults">Please search using the bar above</div>
+    </div>
+	
+	<script>
+	$(window).load(function(){
+			$('#consearch').keyup(function(){
+				var searchField = $('#consearch').val();
+				var regex = new RegExp(searchField, "i");
+				var output = '<div class="four wide column">';
+				var count = 1;
+				$.getJSON('/data/data_dump.json', function(data) {
+				  $.each(data, function(key, val){
+					if ((val.Const_Name.search(regex) != -1)) {
+					  output += '<div class="sixteen wide field" style="clear: both">';
+					  output += '<button style="float:left;" style="vertical-align:middle" class="ui purple button" onClick="myFunction(' + val.Constituency_ID + ')">Use This</button>';
+					  output += '<h2 style="color:' +val.Color + '">' + val.Const_Name + ' - ' + val.Winner15 + ' - ' + val.Constituency_ID + '&nbsp; </h2></div>';
+					  count++;
+					}
+				  });
+				  output += '</div>';
+				  $('#constituencyresults').html(output);
+				}); 
+			});
+		  });
+		  
+	function myFunction(conID) {
+			$.getJSON('/data/data_dump.json', function(data) {
+			$.each(data, function(kay,val){
+				if((val.Constituency_ID == conID)){
+					document.getElementById("oldparty").value = val.Winner;
+					document.getElementById("constituency").value = val.Const_Name;
+					document.getElementById("oldcolor").value = val.Color;
+				}
+			});		
+
+		});
+	}	
+
+            
+	function numberWithCommas(x) {
+    				return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+				}
+ 
+</script>

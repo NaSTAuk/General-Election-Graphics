@@ -11,6 +11,7 @@ var score = {};
 var grid = {headingcolor:"#BC204B", leftcolor: "#1f1a34"};
 var seats = {};
 var recentgrid = {};
+var announce = {};
 var constituency = {euleave:"50", euremain:"50"};
 
 	io.on('connection', function(socket) {
@@ -60,6 +61,18 @@ var constituency = {euleave:"50", euremain:"50"};
 
     socket.on("bug:get", function(msg) {
 		io.sockets.emit("bug", bug);
+	});
+	
+	/*
+	 * 		Announcement Functions
+	 */
+	socket.on("announce", function(msg) {
+        announce = msg;
+		io.sockets.emit("announce", msg);
+	});
+
+    socket.on("announce:get", function(msg) {
+		io.sockets.emit("announce", announce);
 	});
     
     /*
