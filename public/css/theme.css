@@ -679,8 +679,8 @@ h1, h2, h3, h4 {
 
 .announce h1 {
     color: #fff;
+    bottom: 36px;
     position: absolute;
-    bottom: 64px;
     min-width: 20%;
     background-clip: padding-box;
     font-size: 28px;

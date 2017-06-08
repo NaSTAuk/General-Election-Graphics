@@ -107,6 +107,18 @@
 				<input id="oldparty" type="text" ng-model="announce.oldparty" />
 		   </div>
 	</div>
+	
+	    <div class="four wide column">
+          <h2 class="left aligned ui header">
+    			<input placeholder="Added Height" style="width:147px; text-align:center;" type="number" ng-model="announce.padding">
+							<button class="ui green button" ng-click="announce.padding = 36;">
+								Above Just Seats
+							</button>
+							<button class="ui red button" ng-click="announce.padding = 66;">
+								Above Full Seats
+							</button>
+			</h2>			
+    </div>
 		
 		<div class="ui form segment">
 		<h2>Get Searching</h2>
@@ -118,6 +130,8 @@
 			</form>
 		</div>
 	</div>
+	
+	
 
 	<div class="ui form segment">
 		<div id="constituencyresults">Please search using the bar above</div>
