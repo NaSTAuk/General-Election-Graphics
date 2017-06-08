@@ -130,6 +130,25 @@ app.controller('scoringCtrl', ['$scope', '$interval', '$http', 'socket',
 
 ]);
 
+app.controller('announceCtrl', ['$scope', '$interval', '$http', 'socket',
+    function($scope, $interval, $http, socket){        
+        socket.on("announce", function (msg) {
+				$scope.announce = msg;
+			});
+        
+        $scope.$watch('announce', function() {
+            if (!$scope.announce) {
+                getAnnounceData();
+            }
+        }, true);
+
+        function getAnnounceData() {
+            socket.emit("announce:get");
+        }
+    }
+
+]);
+
 app.controller('gridCtrl', ['$scope', 'socket',
     function($scope, socket){
         socket.on("grid", function (payload) {

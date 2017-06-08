@@ -28,6 +28,13 @@ app.controller('AppCtrl', ['$scope', '$location',
             type: 'link',
             icon: 'violet home'
         });
+        
+         $scope.menu.push({
+            name: 'Announcements',
+            url: '/announcements',
+            type: 'link',
+            icon: 'pink home'
+        });
 
         $scope.menu.push({
             name: 'Grid',
@@ -72,6 +79,10 @@ app.config(['$routeProvider', 'localStorageServiceProvider',
                 templateUrl: '/admin/templates/constituencyinfo.tmpl.html',
                 controller: 'constituencyCGController'
             })
+            .when("/announcements", {
+                templateUrl: '/admin/templates/constituency-announcements.html',
+                controller: 'announceCGController'
+            })
             .when("/roses", {
                 templateUrl: '/admin/templates/roses.tmpl.html',
                 controller: 'rosesCGController'
@@ -79,10 +90,6 @@ app.config(['$routeProvider', 'localStorageServiceProvider',
             .when("/2017results", {
                 templateUrl: '/admin/templates/2017liveresults.tmpl.html',
                 controller: 'seatsCGController'
-            })
-            .when("/football", {
-                templateUrl: '/admin/templates/football.tmpl.html',
-                controller: 'footballCGController'
             })
             .when("/grid", {
                 templateUrl: '/admin/templates/grid.tmpl.html',
@@ -120,6 +127,77 @@ app.controller('generalCGController', ['$scope', 'socket',
 	
         function getBugData() {
             socket.emit("bug:get");
+        }
+    }
+]);
+
+app.controller('announceCGController', ['$scope', 'socket', '$http',
+    function($scope, socket, $http){
+    	$http.get('/data/data_dump.json')
+       		.then(function(res){
+          	$scope.constituencies = res.data.map(function(c) {return {Const_Name: c.Const_Name,Color: c.Color, Winner15: c.Winner15, Constituency_ID: c.Constituency_ID}})
+          	console.log($scope.constituencies)
+        });
+        
+        socket.on("announce", function (msg) {
+            $scope.announce = msg;
+            
+            var fetchData = function () {
+       				var config = {headers:  {
+					  'Accept': 'application/json',
+					  'Content-Type': 'application/json',
+					}
+    		};
+
+				$http.get('/data/2017_party_color_codes.json', config).then(function (response) {
+						$scope.announce.data = response.data;
+				});    
+			};
+				         		     		
+         	fetchData();	
+   	    
+           	for(var i = 0; i < $scope.announce.data.length; i++){
+           	 	if ($scope.announce.newparty == $scope.announce.data[i].party_name) {
+           	    		$scope.announce.color = $scope.announce.data[i].party_color;
+           	    }
+			}
+			
+			if ($scope.announce.held == true) {
+				$scope.announce.conclusion = $scope.announce.oldparty + " HELD";
+				$scope.announce.color = $scope.announce.oldcolor;
+			}
+			else {
+				$scope.announce.conclusion = $scope.announce.newparty + " GAIN FROM " + $scope.announce.oldparty;
+			}
+            
+        });
+
+        $scope.$watch('announce', function() {
+            if ($scope.announce) {
+                socket.emit("announce", $scope.announce);
+            } else {
+                getAnnounceData();
+            }
+        }, true);
+        
+        socket.on("announce", function (msg) {
+            $scope.announce = msg;
+        });
+        
+        $scope.changeConstituency = function(conID) {
+        	var constituency = $scope.constituencies.filter(function( obj ) {
+  				return obj.Constituency_ID == conID;
+			});
+			console.log(conID);
+			console.log(constituency);
+
+        	$scope.announce.constituency = constituency[0].Const_Name;
+        	$scope.announce.oldparty = constituency[0].Winner15;
+        	$scope.announce.oldcolor = constituency[0].Color;
+        }
+	
+        function getAnnounceData() {
+            socket.emit("announce:get");
         }
     }
 ]);
