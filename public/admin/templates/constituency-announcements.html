@@ -113,7 +113,7 @@
 		<div class="sixteen wide column">
 			<form role="form">
 					<div class="form-group">
-					  <input type="text" class="form-control input-lg" id="consearch" placeholder="Type constituency name here...">
+					  <input type="text" class="form-control input-lg" ng-model="conSearch" id="conSearch" placeholder="Type constituency name here...">
 					</div>
 			</form>
 		</div>
@@ -121,6 +121,13 @@
 
 	<div class="ui form segment">
 		<div id="constituencyresults">Please search using the bar above</div>
+		<div ng-repeat="con in constituencies | filter:conSearch" class="four wide column">
+			<div class="sixteen wide field" style="clear: both">
+			<button style="float:left;" style="vertical-align:middle" class="ui purple button" ng-click="changeConstituency(con.Constituency_ID)">Use This</button>
+			<h2 style="color:' +val.Color + '">{{ con.Const_Name }} - {{ con.Winner15 }} - {{ con.Constituency_ID }} </h2></div>
+		</div>
+
+
     </div>
 	
 	<script>
@@ -134,19 +141,19 @@
 				  $.each(data, function(key, val){
 					if ((val.Const_Name.search(regex) != -1)) {
 					  output += '<div class="sixteen wide field" style="clear: both">';
-					  output += '<button style="float:left;" style="vertical-align:middle" class="ui purple button" onClick="myFunction(' + val.Constituency_ID + ')">Use This</button>';
+					  output += '<button style="float:left;" style="vertical-align:middle" class="ui purple button" ng-click="changeConstituency(' + val.Constituency_ID + ')">Use This</button>';
 					  output += '<h2 style="color:' +val.Color + '">' + val.Const_Name + ' - ' + val.Winner15 + ' - ' + val.Constituency_ID + '&nbsp; </h2></div>';
 					  count++;
 					}
 				  });
 				  output += '</div>';
-				  $('#constituencyresults').html(output);
+// 				  $('#constituencyresults').html(output);
 				}); 
 			});
 		  });
 		  
 	function myFunction(conID) {
-			$.getJSON('/data/data_dump.json', function(data) {
+		$.getJSON('/data/data_dump.json', function(data) {
 			$.each(data, function(kay,val){
 				if((val.Constituency_ID == conID)){
 					document.getElementById("oldparty").value = val.Winner;

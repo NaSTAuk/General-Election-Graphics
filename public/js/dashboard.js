@@ -133,6 +133,12 @@ app.controller('generalCGController', ['$scope', 'socket',
 
 app.controller('announceCGController', ['$scope', 'socket', '$http',
     function($scope, socket, $http){
+    	$http.get('/data/data_dump.json')
+       		.then(function(res){
+          	$scope.constituencies = res.data.map(function(c) {return {Const_Name: c.Const_Name,Color: c.Color, Winner15: c.Winner15, Constituency_ID: c.Constituency_ID}})
+          	console.log($scope.constituencies)
+        });
+        
         socket.on("announce", function (msg) {
             $scope.announce = msg;
             
@@ -177,6 +183,18 @@ app.controller('announceCGController', ['$scope', 'socket', '$http',
         socket.on("announce", function (msg) {
             $scope.announce = msg;
         });
+        
+        $scope.changeConstituency = function(conID) {
+        	var constituency = $scope.constituencies.filter(function( obj ) {
+  				return obj.Constituency_ID == conID;
+			});
+			console.log(conID);
+			console.log(constituency);
+
+        	$scope.announce.constituency = constituency[0].Const_Name;
+        	$scope.announce.oldparty = constituency[0].Winner15;
+        	$scope.announce.oldcolor = constituency[0].Color;
+        }
 	
         function getAnnounceData() {
             socket.emit("announce:get");
